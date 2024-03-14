@@ -451,6 +451,10 @@
     {
       "name": "folio_consortia-settings",
       "version": "latest"
+    },
+    {
+      "name": "folio_stripes-marc-components",
+      "version": "latest"
     }
   ]
 }
