@@ -217,9 +217,29 @@
     {
       "name": "mod-lists",
       "version": "latest"
+    },
+    {
+      "name": "mod-serials-management",
+      "version": "latest"
+    },
+    {
+      "name": "mod-circulation-item",
+      "version": "latest"
+    },
+    {
+      "name": "mod-dcb",
+      "version": "latest"
+    },
+    {
+      "name": "mod-batch-print",
+      "version": "latest"
     }
   ],
   "uiModules": [
+    {
+      "name": "folio_serials-management",
+      "version": "latest"
+    },
     {
       "name": "folio_organizations",
       "version": "latest"
