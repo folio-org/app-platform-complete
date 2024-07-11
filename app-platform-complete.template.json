@@ -455,6 +455,22 @@
     {
       "name": "folio_stripes-marc-components",
       "version": "latest"
+    },
+    {
+      "id": "mod-login-keycloak",
+      "version": "latest"
+    },
+    {
+      "id": "mod-roles-keycloak",
+      "version": "latest"
+    },
+    {
+      "id": "mod-scheduler",
+      "version": "latest"
+    },
+    {
+      "id": "mod-users-keycloak",
+      "version": "latest"
     }
   ]
 }
