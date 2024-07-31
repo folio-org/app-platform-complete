@@ -1,6 +1,7 @@
 # app-platform-complete
 
-Application descriptor repository for app-platform-complete.  Comprised of most modules not included in app-platform-minimal.
+Application descriptor repository for app-platform-complete. Comprised of most modules not included in
+app-platform-minimal.
 
 ## Modules
 
@@ -8,7 +9,6 @@ Application descriptor repository for app-platform-complete.  Comprised of most 
 |:----------------------------|
 | `mod-organizations`         |
 | `mod-graphql`               |
-| `mod-consortia-keycloak`    |
 | `mod-organizations-storage` |
 | `mod-orders`                |
 | `mod-orders-storage`        |
@@ -58,6 +58,8 @@ Application descriptor repository for app-platform-complete.  Comprised of most 
 | `mod-ebsconet`              |
 | `mod-fqm-manager`           |
 | `mod-lists`                 |
+| `mod-batch-print`           |
+| `mod-serials-management`    |
 
 ## UI Modules
 
@@ -82,7 +84,7 @@ Application descriptor repository for app-platform-complete.  Comprised of most 
 | `folio_plugin-create-inventory-records` |
 | `folio_plugin-find-instance`            |
 | `folio_plugin-find-package-title`       |
-| `folio_checkin`                         | 
+| `folio_checkin`                         |
 | `folio_checkout`                        |
 | `folio_circulation`                     |
 | `folio_plugin-find-user`                |
@@ -115,5 +117,6 @@ Application descriptor repository for app-platform-complete.  Comprised of most 
 | `folio_service-interaction`             |
 | `folio_users`                           |
 | `folio_lists`                           |
-| `folio_consortia-settings`              |
+| `folio_serials-management`              |
+| `folio_stripes-marc-components`         |
 
