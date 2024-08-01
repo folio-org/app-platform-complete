@@ -19,10 +19,6 @@
       "version": "latest"
     },
     {
-      "name": "mod-consortia-keycloak",
-      "version": "latest"
-    },
-    {
       "name": "mod-organizations-storage",
       "version": "latest"
     },
@@ -219,27 +215,15 @@
       "version": "latest"
     },
     {
-      "name": "mod-serials-management",
-      "version": "latest"
-    },
-    {
-      "name": "mod-circulation-item",
-      "version": "latest"
-    },
-    {
-      "name": "mod-dcb",
-      "version": "latest"
-    },
-    {
       "name": "mod-batch-print",
+      "version": "latest"
+    },
+    {
+      "name": "mod-serials-management",
       "version": "latest"
     }
   ],
   "uiModules": [
-    {
-      "name": "folio_serials-management",
-      "version": "latest"
-    },
     {
       "name": "folio_organizations",
       "version": "latest"
@@ -449,7 +433,7 @@
       "version": "latest"
     },
     {
-      "name": "folio_consortia-settings",
+      "name": "folio_serials-management",
       "version": "latest"
     },
     {
