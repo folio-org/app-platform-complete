@@ -60,6 +60,14 @@ app-platform-minimal.
 | `mod-lists`                 |
 | `mod-batch-print`           |
 | `mod-serials-management`    |
+| `mod-tlr`                   |
+| `mod-record-specifications` |
+| `mod-reporting`             |
+| `mod-marc-migrations`       |
+| `mod-requests-mediated`     |
+| `mod-reading-room`          |
+| `mod-okapi-facade`          |
+| `mod-oa`                    |
 
 ## UI Modules
 
@@ -119,4 +127,8 @@ app-platform-minimal.
 | `folio_lists`                           |
 | `folio_serials-management`              |
 | `folio_stripes-marc-components`         |
+| `folio_requests-mediated`               |
+| `folio_stripes-inventory-components`    |
+| `folio_reading-room`                    |
+| `folio_oa`                              |
 
