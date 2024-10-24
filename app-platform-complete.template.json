@@ -231,10 +231,6 @@
       "version": "latest"
     },
     {
-      "name": "mod-marc-migrations",
-      "version": "latest"
-    },
-    {
       "name": "mod-requests-mediated",
       "version": "latest"
     },
@@ -243,7 +239,11 @@
       "version": "latest"
     },
     {
-      "name": "mod-okapi-facade",
+      "name": "mod-ldp",
+      "version": "latest"
+    },
+    {
+      "name": "mod-circulation-bff",
       "version": "latest"
     }
   ],
@@ -474,6 +474,10 @@
     },
     {
       "name": "folio_reading-room",
+      "version": "latest"
+    },
+    {
+      "name": "folio_ldp",
       "version": "latest"
     }
   ]
