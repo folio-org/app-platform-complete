@@ -241,10 +241,6 @@
     {
       "name": "mod-ldp",
       "version": "latest"
-    },
-    {
-      "name": "mod-circulation-bff",
-      "version": "latest"
     }
   ],
   "uiModules": [
