@@ -245,10 +245,6 @@
     {
       "name": "mod-okapi-facade",
       "version": "latest"
-    },
-    {
-      "name": "mod-oa",
-      "version": "latest"
     }
   ],
   "uiModules": [
@@ -478,10 +474,6 @@
     },
     {
       "name": "folio_reading-room",
-      "version": "latest"
-    },
-    {
-      "name": "folio_oa",
       "version": "latest"
     }
   ]
