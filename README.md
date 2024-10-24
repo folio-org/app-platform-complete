@@ -62,12 +62,10 @@ app-platform-minimal.
 | `mod-serials-management`    |
 | `mod-tlr`                   |
 | `mod-record-specifications` |
-| `mod-reporting`             |
-| `mod-marc-migrations`       |
 | `mod-requests-mediated`     |
 | `mod-reading-room`          |
-| `mod-okapi-facade`          |
-| `mod-oa`                    |
+| `mod-ldp`                   |
+| `mod-circulation-bff`       |
 
 ## UI Modules
 
@@ -130,5 +128,5 @@ app-platform-minimal.
 | `folio_requests-mediated`               |
 | `folio_stripes-inventory-components`    |
 | `folio_reading-room`                    |
-| `folio_oa`                              |
+| `folio_ldp`                             |
 
