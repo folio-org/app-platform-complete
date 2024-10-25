@@ -239,10 +239,6 @@
       "version": "latest"
     },
     {
-      "name": "mod-ldp",
-      "version": "latest"
-    },
-    {
       "name": "mod-circulation-bff",
       "version": "latest"
     }
@@ -474,10 +470,6 @@
     },
     {
       "name": "folio_reading-room",
-      "version": "latest"
-    },
-    {
-      "name": "folio_ldp",
       "version": "latest"
     }
   ]
