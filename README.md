@@ -64,7 +64,6 @@ app-platform-minimal.
 | `mod-record-specifications` |
 | `mod-requests-mediated`     |
 | `mod-reading-room`          |
-| `mod-ldp`                   |
 | `mod-circulation-bff`       |
 
 ## UI Modules
