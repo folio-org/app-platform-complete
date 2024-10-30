@@ -127,5 +127,3 @@ app-platform-minimal.
 | `folio_requests-mediated`               |
 | `folio_stripes-inventory-components`    |
 | `folio_reading-room`                    |
-| `folio_ldp`                             |
-
