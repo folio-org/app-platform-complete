@@ -6,7 +6,7 @@
   "dependencies": [
     {
       "name": "app-platform-minimal",
-      "version": "^1.0.0"
+      "version": "^1.0.0-SNAPSHOT"
     }
   ],
   "modules": [
@@ -220,6 +220,26 @@
     },
     {
       "name": "mod-serials-management",
+      "version": "latest"
+    },
+    {
+      "name": "mod-tlr",
+      "version": "latest"
+    },
+    {
+      "name": "mod-record-specifications",
+      "version": "latest"
+    },
+    {
+      "name": "mod-requests-mediated",
+      "version": "latest"
+    },
+    {
+      "name": "mod-reading-room",
+      "version": "latest"
+    },
+    {
+      "name": "mod-circulation-bff",
       "version": "latest"
     }
   ],
@@ -438,6 +458,18 @@
     },
     {
       "name": "folio_stripes-marc-components",
+      "version": "latest"
+    },
+    {
+      "name": "folio_requests-mediated",
+      "version": "latest"
+    },
+    {
+      "name": "folio_stripes-inventory-components",
+      "version": "latest"
+    },
+    {
+      "name": "folio_reading-room",
       "version": "latest"
     }
   ]
