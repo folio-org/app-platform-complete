@@ -262,7 +262,7 @@
     },
     {
       "name": "folio_invoice",
-      "version": "6.2.0"
+      "version": "6.1.0"
     },
     {
       "name": "folio_finance",
@@ -394,7 +394,7 @@
     },
     {
       "name": "folio_eholdings",
-      "version": "10.0.0."
+      "version": "10.0.0"
     },
     {
       "name": "folio_licenses",
