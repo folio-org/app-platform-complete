@@ -20,11 +20,11 @@
     },
     {
       "name": "mod-organizations-storage",
-      "version": "4.8.0"
+      "version": "4.8.1"
     },
     {
       "name": "mod-orders",
-      "version": "12.9.0"
+      "version": "12.9.1"
     },
     {
       "name": "mod-orders-storage",
@@ -52,7 +52,7 @@
     },
     {
       "name": "mod-inventory-storage",
-      "version": "28.0.0"
+      "version": "28.0.1"
     },
     {
       "name": "mod-circulation-storage",
@@ -104,11 +104,11 @@
     },
     {
       "name": "mod-data-export-worker",
-      "version": "3.3.0"
+      "version": "3.3.1"
     },
     {
       "name": "mod-bulk-operations",
-      "version": "2.1.0"
+      "version": "2.1.1"
     },
     {
       "name": "mod-oai-pmh",
@@ -124,7 +124,7 @@
     },
     {
       "name": "mod-calendar",
-      "version": "3.1.0"
+      "version": "3.2.0"
     },
     {
       "name": "mod-audit",
@@ -140,7 +140,7 @@
     },
     {
       "name": "mod-data-import",
-      "version": "3.2.0"
+      "version": "3.2.1"
     },
     {
       "name": "mod-agreements",
@@ -208,11 +208,11 @@
     },
     {
       "name": "mod-fqm-manager",
-      "version": "3.0.0"
+      "version": "3.0.1"
     },
     {
       "name": "mod-lists",
-      "version": "3.0.0"
+      "version": "3.0.1"
     },
     {
       "name": "mod-batch-print",
@@ -278,7 +278,7 @@
     },
     {
       "name": "folio_receiving",
-      "version": "6.0.0"
+      "version": "6.0.1"
     },
     {
       "name": "folio_acquisition-units",
@@ -346,11 +346,11 @@
     },
     {
       "name": "folio_plugin-bursar-export",
-      "version": "4.0.2"
+      "version": "4.0.3"
     },
     {
       "name": "folio_bulk-edit",
-      "version": "4.2.0"
+      "version": "4.2.1"
     },
     {
       "name": "folio_oai-pmh",
@@ -366,7 +366,7 @@
     },
     {
       "name": "folio_calendar",
-      "version": "11.0.2"
+      "version": "11.0.3"
     },
     {
       "name": "folio_courses",
@@ -438,7 +438,7 @@
     },
     {
       "name": "folio_plugin-query-builder",
-      "version": "1.2.1"
+      "version": "1.2.2"
     },
     {
       "name": "folio_service-interaction",
@@ -446,7 +446,7 @@
     },
     {
       "name": "folio_users",
-      "version": "11.0.0"
+      "version": "11.0.2"
     },
     {
       "name": "folio_lists",
