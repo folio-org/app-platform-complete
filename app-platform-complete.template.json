@@ -235,10 +235,6 @@
       "version": "latest"
     },
     {
-      "name": "mod-reading-room",
-      "version": "latest"
-    },
-    {
       "name": "mod-circulation-bff",
       "version": "latest"
     }
@@ -466,10 +462,6 @@
     },
     {
       "name": "folio_stripes-inventory-components",
-      "version": "latest"
-    },
-    {
-      "name": "folio_reading-room",
       "version": "latest"
     }
   ]
