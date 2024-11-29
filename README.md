@@ -63,7 +63,6 @@ app-platform-minimal.
 | `mod-tlr`                   |
 | `mod-record-specifications` |
 | `mod-requests-mediated`     |
-| `mod-reading-room`          |
 | `mod-circulation-bff`       |
 
 ## UI Modules
@@ -126,4 +125,3 @@ app-platform-minimal.
 | `folio_stripes-marc-components`         |
 | `folio_requests-mediated`               |
 | `folio_stripes-inventory-components`    |
-| `folio_reading-room`                    |
