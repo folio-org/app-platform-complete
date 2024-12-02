@@ -60,9 +60,7 @@ app-platform-minimal.
 | `mod-lists`                 |
 | `mod-batch-print`           |
 | `mod-serials-management`    |
-| `mod-tlr`                   |
 | `mod-record-specifications` |
-| `mod-requests-mediated`     |
 | `mod-circulation-bff`       |
 
 ## UI Modules
@@ -123,5 +121,4 @@ app-platform-minimal.
 | `folio_lists`                           |
 | `folio_serials-management`              |
 | `folio_stripes-marc-components`         |
-| `folio_requests-mediated`               |
 | `folio_stripes-inventory-components`    |

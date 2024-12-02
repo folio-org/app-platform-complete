@@ -223,15 +223,7 @@
       "version": "latest"
     },
     {
-      "name": "mod-tlr",
-      "version": "latest"
-    },
-    {
       "name": "mod-record-specifications",
-      "version": "latest"
-    },
-    {
-      "name": "mod-requests-mediated",
       "version": "latest"
     },
     {
@@ -454,10 +446,6 @@
     },
     {
       "name": "folio_stripes-marc-components",
-      "version": "latest"
-    },
-    {
-      "name": "folio_requests-mediated",
       "version": "latest"
     },
     {
