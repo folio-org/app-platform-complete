@@ -61,7 +61,6 @@ app-platform-minimal.
 | `mod-batch-print`           |
 | `mod-serials-management`    |
 | `mod-record-specifications` |
-| `mod-reading-room`          |
 | `mod-circulation-bff`       |
 
 ## UI Modules
@@ -123,4 +122,3 @@ app-platform-minimal.
 | `folio_serials-management`              |
 | `folio_stripes-marc-components`         |
 | `folio_stripes-inventory-components`    |
-| `folio_reading-room`                    |
