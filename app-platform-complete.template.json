@@ -221,20 +221,12 @@
       "version": "1.1.0"
     },
         {
-      "name": "mod-tlr",
-      "version": "1.0.0"
-    },
-        {
       "name": "mod-record-specifications",
       "version": "1.0.2"
     },
         {
-      "name": "mod-requests-mediated",
-      "version": "1.0.0"
-    },
-        {
       "name": "mod-circulation-bff",
-      "version": "1.0.0"
+      "version": "1.0.1"
     }
   ],
   "uiModules":   [
@@ -452,10 +444,6 @@
     },
         {
       "name": "folio_stripes-marc-components",
-      "version": "1.1.0"
-    },
-        {
-      "name": "folio_requests-mediated",
       "version": "1.1.0"
     },
         {
