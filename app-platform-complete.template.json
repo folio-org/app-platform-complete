@@ -6,24 +6,16 @@
   "dependencies": [
     {
       "name": "app-platform-minimal",
-      "version": "^1.0.0"
+      "version": "^1.0.0-SNAPSHOT"
     }
   ],
   "modules": [
-    {
-      "name": "mod-okapi-facade",
-      "version": "latest"
-    },
     {
       "name": "mod-organizations",
       "version": "latest"
     },
     {
       "name": "mod-graphql",
-      "version": "latest"
-    },
-    {
-      "name": "mod-consortia-keycloak",
       "version": "latest"
     },
     {
@@ -223,27 +215,23 @@
       "version": "latest"
     },
     {
+      "name": "mod-batch-print",
+      "version": "latest"
+    },
+    {
       "name": "mod-serials-management",
       "version": "latest"
     },
     {
-      "name": "mod-circulation-item",
+      "name": "mod-record-specifications",
       "version": "latest"
     },
     {
-      "name": "mod-dcb",
-      "version": "latest"
-    },
-    {
-      "name": "mod-batch-print",
+      "name": "mod-circulation-bff",
       "version": "latest"
     }
   ],
   "uiModules": [
-    {
-      "name": "folio_serials-management",
-      "version": "latest"
-    },
     {
       "name": "folio_organizations",
       "version": "latest"
@@ -453,7 +441,7 @@
       "version": "latest"
     },
     {
-      "name": "folio_consortia-settings",
+      "name": "folio_serials-management",
       "version": "latest"
     },
     {
@@ -461,19 +449,7 @@
       "version": "latest"
     },
     {
-      "name": "mod-login-keycloak",
-      "version": "latest"
-    },
-    {
-      "name": "mod-roles-keycloak",
-      "version": "latest"
-    },
-    {
-      "name": "mod-scheduler",
-      "version": "latest"
-    },
-    {
-      "name": "mod-users-keycloak",
+      "name": "folio_stripes-inventory-components",
       "version": "latest"
     }
   ]
