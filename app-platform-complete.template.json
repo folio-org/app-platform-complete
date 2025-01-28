@@ -11,6 +11,10 @@
   ],
   "modules": [
     {
+      "name": "mod-oa",
+      "version": "latest"
+    },
+    {
       "name": "mod-organizations",
       "version": "latest"
     },
@@ -450,6 +454,10 @@
     },
     {
       "name": "folio_stripes-inventory-components",
+      "version": "latest"
+    },
+    {
+      "name": "folio_oa",
       "version": "latest"
     }
   ]
