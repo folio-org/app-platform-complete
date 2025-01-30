@@ -233,6 +233,10 @@
     {
       "name": "mod-circulation-bff",
       "version": "latest"
+    },
+    {
+      "name": "mod-reporting",
+      "version": "latest"
     }
   ],
   "uiModules": [
@@ -458,6 +462,10 @@
     },
     {
       "name": "folio_oa",
+      "version": "latest"
+    },
+    {
+      "name": "folio_ldp",
       "version": "latest"
     }
   ]
