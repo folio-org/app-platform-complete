@@ -11,39 +11,7 @@
   ],
   "modules": [
     {
-      "name": "mod-organizations",
-      "version": "latest"
-    },
-    {
       "name": "mod-graphql",
-      "version": "latest"
-    },
-    {
-      "name": "mod-organizations-storage",
-      "version": "latest"
-    },
-    {
-      "name": "mod-orders",
-      "version": "latest"
-    },
-    {
-      "name": "mod-orders-storage",
-      "version": "latest"
-    },
-    {
-      "name": "mod-invoice",
-      "version": "latest"
-    },
-    {
-      "name": "mod-invoice-storage",
-      "version": "latest"
-    },
-    {
-      "name": "mod-finance-storage",
-      "version": "latest"
-    },
-    {
-      "name": "mod-finance",
       "version": "latest"
     },
     {
@@ -232,50 +200,6 @@
     }
   ],
   "uiModules": [
-    {
-      "name": "folio_organizations",
-      "version": "latest"
-    },
-    {
-      "name": "folio_plugin-find-organization",
-      "version": "latest"
-    },
-    {
-      "name": "folio_plugin-find-contact",
-      "version": "latest"
-    },
-    {
-      "name": "folio_plugin-find-interface",
-      "version": "latest"
-    },
-    {
-      "name": "folio_invoice",
-      "version": "latest"
-    },
-    {
-      "name": "folio_finance",
-      "version": "latest"
-    },
-    {
-      "name": "folio_plugin-find-fund",
-      "version": "latest"
-    },
-    {
-      "name": "folio_orders",
-      "version": "latest"
-    },
-    {
-      "name": "folio_receiving",
-      "version": "latest"
-    },
-    {
-      "name": "folio_acquisition-units",
-      "version": "latest"
-    },
-    {
-      "name": "folio_plugin-find-po-line",
-      "version": "latest"
-    },
     {
       "name": "folio_marc-authorities",
       "version": "latest"
