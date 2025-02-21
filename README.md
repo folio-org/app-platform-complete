@@ -76,6 +76,7 @@ app-platform-minimal.
 | `folio_plugin-find-fund`                |
 | `folio_orders`                          |
 | `folio_receiving`                       |
+| `folio_claims`                          |
 | `folio_acquisition-units`               |
 | `folio_plugin-find-po-line`             |
 | `folio_marc-authorities`                |

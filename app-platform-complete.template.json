@@ -277,6 +277,10 @@
       "version": "latest"
     },
     {
+      "name": "folio_claims",
+      "version": "latest"
+    },
+    {
       "name": "folio_acquisition-units",
       "version": "latest"
     },
