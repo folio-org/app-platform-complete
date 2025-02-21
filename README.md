@@ -48,8 +48,6 @@ app-platform-minimal.
 | `mod-user-import`           |
 | `mod-service-interaction`   |
 | `mod-ebsconet`              |
-| `mod-fqm-manager`           |
-| `mod-lists`                 |
 | `mod-batch-print`           |
 | `mod-serials-management`    |
 | `mod-record-specifications` |
@@ -96,10 +94,8 @@ app-platform-minimal.
 | `folio_handler-stripes-registry`        |
 | `folio_myprofile`                       |
 | `folio_plugin-find-authority`           |
-| `folio_plugin-query-builder`            |
 | `folio_service-interaction`             |
 | `folio_users`                           |
-| `folio_lists`                           |
 | `folio_serials-management`              |
 | `folio_stripes-marc-components`         |
 | `folio_stripes-inventory-components`    |

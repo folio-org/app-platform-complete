@@ -179,14 +179,6 @@
       "version": "latest"
     },
     {
-      "name": "mod-fqm-manager",
-      "version": "latest"
-    },
-    {
-      "name": "mod-lists",
-      "version": "latest"
-    },
-    {
       "name": "mod-batch-print",
       "version": "latest"
     },
@@ -357,19 +349,11 @@
       "version": "latest"
     },
     {
-      "name": "folio_plugin-query-builder",
-      "version": "latest"
-    },
-    {
       "name": "folio_service-interaction",
       "version": "latest"
     },
     {
       "name": "folio_users",
-      "version": "latest"
-    },
-    {
-      "name": "folio_lists",
       "version": "latest"
     },
     {
