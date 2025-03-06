@@ -23,6 +23,8 @@ app-platform-minimal.
 | `mod-data-export`           |
 | `mod-data-export-spring`    |
 | `mod-data-export-worker`    |
+| `mod-bulk-operations`       |
+| `mod-oai-pmh`               |
 | `mod-rtac`                  |
 | `mod-remote-storage`        |
 | `mod-calendar`              |
@@ -70,6 +72,8 @@ app-platform-minimal.
 | `folio_data-export`                     |
 | `folio_export-manager`                  |
 | `folio_plugin-bursar-export`            |
+| `folio_bulk-edit`                       |
+| `folio_oai-pmh`                         |
 | `folio_remote-storage`                  |
 | `folio_circulation-log`                 |
 | `folio_calendar`                        |
