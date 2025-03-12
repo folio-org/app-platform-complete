@@ -79,14 +79,6 @@
       "version": "latest"
     },
     {
-      "name": "mod-bulk-operations",
-      "version": "latest"
-    },
-    {
-      "name": "mod-oai-pmh",
-      "version": "latest"
-    },
-    {
       "name": "mod-rtac",
       "version": "latest"
     },
@@ -258,14 +250,6 @@
     },
     {
       "name": "folio_plugin-bursar-export",
-      "version": "latest"
-    },
-    {
-      "name": "folio_bulk-edit",
-      "version": "latest"
-    },
-    {
-      "name": "folio_oai-pmh",
       "version": "latest"
     },
     {
