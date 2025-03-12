@@ -49,7 +49,6 @@ app-platform-minimal.
 | `mod-batch-print`           |
 | `mod-serials-management`    |
 | `mod-record-specifications` |
-| `mod-circulation-bff`       |
 
 ## UI Modules
 

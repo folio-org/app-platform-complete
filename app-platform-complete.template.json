@@ -183,10 +183,6 @@
       "version": "latest"
     },
     {
-      "name": "mod-circulation-bff",
-      "version": "latest"
-    },
-    {
       "name": "mod-reporting",
       "version": "latest"
     }
