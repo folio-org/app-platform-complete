@@ -7,15 +7,7 @@ app-platform-minimal.
 
 | Module name                 |
 |:----------------------------|
-| `mod-organizations`         |
 | `mod-graphql`               |
-| `mod-organizations-storage` |
-| `mod-orders`                |
-| `mod-orders-storage`        |
-| `mod-invoice`               |
-| `mod-invoice-storage`       |
-| `mod-finance-storage`       |
-| `mod-finance`               |
 | `mod-quick-marc`            |
 | `mod-inventory-storage`     |
 | `mod-circulation-storage`   |
@@ -31,8 +23,6 @@ app-platform-minimal.
 | `mod-data-export`           |
 | `mod-data-export-spring`    |
 | `mod-data-export-worker`    |
-| `mod-bulk-operations`       |
-| `mod-oai-pmh`               |
 | `mod-rtac`                  |
 | `mod-remote-storage`        |
 | `mod-calendar`              |
@@ -56,28 +46,14 @@ app-platform-minimal.
 | `mod-user-import`           |
 | `mod-service-interaction`   |
 | `mod-ebsconet`              |
-| `mod-fqm-manager`           |
-| `mod-lists`                 |
 | `mod-batch-print`           |
 | `mod-serials-management`    |
 | `mod-record-specifications` |
-| `mod-circulation-bff`       |
 
 ## UI Modules
 
 | Module name                             |
 |:----------------------------------------|
-| `folio_organizations`                   |
-| `folio_plugin-find-organization`        |
-| `folio_plugin-find-contact`             |
-| `folio_plugin-find-interface`           |
-| `folio_invoice`                         |
-| `folio_finance`                         |
-| `folio_plugin-find-fund`                |
-| `folio_orders`                          |
-| `folio_receiving`                       |
-| `folio_acquisition-units`               |
-| `folio_plugin-find-po-line`             |
 | `folio_marc-authorities`                |
 | `folio_stripes-authority-components`    |
 | `folio_quick-marc`                      |
@@ -93,8 +69,6 @@ app-platform-minimal.
 | `folio_data-export`                     |
 | `folio_export-manager`                  |
 | `folio_plugin-bursar-export`            |
-| `folio_bulk-edit`                       |
-| `folio_oai-pmh`                         |
 | `folio_remote-storage`                  |
 | `folio_circulation-log`                 |
 | `folio_calendar`                        |
@@ -115,10 +89,8 @@ app-platform-minimal.
 | `folio_handler-stripes-registry`        |
 | `folio_myprofile`                       |
 | `folio_plugin-find-authority`           |
-| `folio_plugin-query-builder`            |
 | `folio_service-interaction`             |
 | `folio_users`                           |
-| `folio_lists`                           |
 | `folio_serials-management`              |
 | `folio_stripes-marc-components`         |
 | `folio_stripes-inventory-components`    |

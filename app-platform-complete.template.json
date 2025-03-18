@@ -6,44 +6,16 @@
   "dependencies": [
     {
       "name": "app-platform-minimal",
-      "version": "^2.1.0-SNAPSHOT"
+      "version": "^1.0.0-SNAPSHOT"
     }
   ],
   "modules": [
     {
-      "name": "mod-organizations",
+      "name": "mod-oa",
       "version": "latest"
     },
     {
       "name": "mod-graphql",
-      "version": "latest"
-    },
-    {
-      "name": "mod-organizations-storage",
-      "version": "latest"
-    },
-    {
-      "name": "mod-orders",
-      "version": "latest"
-    },
-    {
-      "name": "mod-orders-storage",
-      "version": "latest"
-    },
-    {
-      "name": "mod-invoice",
-      "version": "latest"
-    },
-    {
-      "name": "mod-invoice-storage",
-      "version": "latest"
-    },
-    {
-      "name": "mod-finance-storage",
-      "version": "latest"
-    },
-    {
-      "name": "mod-finance",
       "version": "latest"
     },
     {
@@ -104,14 +76,6 @@
     },
     {
       "name": "mod-data-export-worker",
-      "version": "latest"
-    },
-    {
-      "name": "mod-bulk-operations",
-      "version": "latest"
-    },
-    {
-      "name": "mod-oai-pmh",
       "version": "latest"
     },
     {
@@ -207,14 +171,6 @@
       "version": "latest"
     },
     {
-      "name": "mod-fqm-manager",
-      "version": "latest"
-    },
-    {
-      "name": "mod-lists",
-      "version": "latest"
-    },
-    {
       "name": "mod-batch-print",
       "version": "latest"
     },
@@ -227,55 +183,11 @@
       "version": "latest"
     },
     {
-      "name": "mod-circulation-bff",
+      "name": "mod-reporting",
       "version": "latest"
     }
   ],
   "uiModules": [
-    {
-      "name": "folio_organizations",
-      "version": "latest"
-    },
-    {
-      "name": "folio_plugin-find-organization",
-      "version": "latest"
-    },
-    {
-      "name": "folio_plugin-find-contact",
-      "version": "latest"
-    },
-    {
-      "name": "folio_plugin-find-interface",
-      "version": "latest"
-    },
-    {
-      "name": "folio_invoice",
-      "version": "latest"
-    },
-    {
-      "name": "folio_finance",
-      "version": "latest"
-    },
-    {
-      "name": "folio_plugin-find-fund",
-      "version": "latest"
-    },
-    {
-      "name": "folio_orders",
-      "version": "latest"
-    },
-    {
-      "name": "folio_receiving",
-      "version": "latest"
-    },
-    {
-      "name": "folio_acquisition-units",
-      "version": "latest"
-    },
-    {
-      "name": "folio_plugin-find-po-line",
-      "version": "latest"
-    },
     {
       "name": "folio_marc-authorities",
       "version": "latest"
@@ -334,14 +246,6 @@
     },
     {
       "name": "folio_plugin-bursar-export",
-      "version": "latest"
-    },
-    {
-      "name": "folio_bulk-edit",
-      "version": "latest"
-    },
-    {
-      "name": "folio_oai-pmh",
       "version": "latest"
     },
     {
@@ -425,19 +329,11 @@
       "version": "latest"
     },
     {
-      "name": "folio_plugin-query-builder",
-      "version": "latest"
-    },
-    {
       "name": "folio_service-interaction",
       "version": "latest"
     },
     {
       "name": "folio_users",
-      "version": "latest"
-    },
-    {
-      "name": "folio_lists",
       "version": "latest"
     },
     {
@@ -450,6 +346,14 @@
     },
     {
       "name": "folio_stripes-inventory-components",
+      "version": "latest"
+    },
+    {
+      "name": "folio_oa",
+      "version": "latest"
+    },
+    {
+      "name": "folio_ldp",
       "version": "latest"
     }
   ]
