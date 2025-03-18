@@ -11,10 +11,6 @@
   ],
   "modules": [
     {
-      "name": "mod-organizations",
-      "version": "2.1.0"
-    },
-    {
       "name": "mod-graphql",
       "version": "1.13.1"
     },
