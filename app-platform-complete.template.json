@@ -6,14 +6,10 @@
   "dependencies": [
     {
       "name": "app-platform-minimal",
-      "version": "^1.0.0-SNAPSHOT"
+      "version": "^2.0.0-SNAPSHOT"
     }
   ],
   "modules": [
-    {
-      "name": "mod-oa",
-      "version": "latest"
-    },
     {
       "name": "mod-graphql",
       "version": "latest"
@@ -181,10 +177,6 @@
     {
       "name": "mod-record-specifications",
       "version": "latest"
-    },
-    {
-      "name": "mod-reporting",
-      "version": "latest"
     }
   ],
   "uiModules": [
@@ -346,14 +338,6 @@
     },
     {
       "name": "folio_stripes-inventory-components",
-      "version": "latest"
-    },
-    {
-      "name": "folio_oa",
-      "version": "latest"
-    },
-    {
-      "name": "folio_ldp",
       "version": "latest"
     }
   ]
