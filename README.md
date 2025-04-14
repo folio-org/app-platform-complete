@@ -39,6 +39,7 @@ app-platform-minimal.
 | `mod-template-engine`       |
 | `mod-pubsub`                |
 | `mod-gobi`                  |
+| `mod-mosaic`                |
 | `mod-copycat`               |
 | `mod-kb-ebsco-java`         |
 | `mod-ncip`                  |
@@ -86,6 +87,7 @@ app-platform-minimal.
 | `folio_dashboard`                       |
 | `folio_tenant-settings`                 |
 | `folio_gobi-settings`                   |
+| `folio_mosaic-settings`                 |
 | `folio_handler-stripes-registry`        |
 | `folio_myprofile`                       |
 | `folio_plugin-find-authority`           |
