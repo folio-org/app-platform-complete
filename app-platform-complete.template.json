@@ -11,10 +11,6 @@
   ],
   "modules": [
     {
-      "name": "mod-oa",
-      "version": "latest"
-    },
-    {
       "name": "mod-graphql",
       "version": "latest"
     },
@@ -326,10 +322,6 @@
     },
     {
       "name": "folio_stripes-inventory-components",
-      "version": "latest"
-    },
-    {
-      "name": "folio_oa",
       "version": "latest"
     }
   ]
