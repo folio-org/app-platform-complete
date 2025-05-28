@@ -103,10 +103,6 @@
       "version": "latest"
     },
     {
-      "name": "mod-licenses",
-      "version": "latest"
-    },
-    {
       "name": "mod-email",
       "version": "latest"
     },
@@ -266,14 +262,6 @@
     },
     {
       "name": "folio_eholdings",
-      "version": "latest"
-    },
-    {
-      "name": "folio_licenses",
-      "version": "latest"
-    },
-    {
-      "name": "folio_plugin-find-license",
       "version": "latest"
     },
     {
