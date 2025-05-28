@@ -23,7 +23,6 @@ app-platform-minimal.
 | `mod-data-export`           |
 | `mod-data-export-spring`    |
 | `mod-data-export-worker`    |
-| `mod-rtac`                  |
 | `mod-remote-storage`        |
 | `mod-calendar`              |
 | `mod-audit`                 |
