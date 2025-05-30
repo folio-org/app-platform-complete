@@ -79,10 +79,6 @@
       "version": "latest"
     },
     {
-      "name": "mod-rtac",
-      "version": "latest"
-    },
-    {
       "name": "mod-remote-storage",
       "version": "latest"
     },
@@ -139,14 +135,6 @@
       "version": "latest"
     },
     {
-      "name": "mod-gobi",
-      "version": "latest"
-    },
-    {
-      "name": "mod-mosaic",
-      "version": "latest"
-    },
-    {
       "name": "mod-copycat",
       "version": "latest"
     },
@@ -168,10 +156,6 @@
     },
     {
       "name": "mod-service-interaction",
-      "version": "latest"
-    },
-    {
-      "name": "mod-ebsconet",
       "version": "latest"
     },
     {
@@ -310,14 +294,6 @@
     },
     {
       "name": "folio_tenant-settings",
-      "version": "latest"
-    },
-    {
-      "name": "folio_gobi-settings",
-      "version": "latest"
-    },
-    {
-      "name": "folio_mosaic-settings",
       "version": "latest"
     },
     {

@@ -23,7 +23,6 @@ app-platform-minimal.
 | `mod-data-export`           |
 | `mod-data-export-spring`    |
 | `mod-data-export-worker`    |
-| `mod-rtac`                  |
 | `mod-remote-storage`        |
 | `mod-calendar`              |
 | `mod-audit`                 |
@@ -38,15 +37,12 @@ app-platform-minimal.
 | `mod-sender`                |
 | `mod-template-engine`       |
 | `mod-pubsub`                |
-| `mod-gobi`                  |
-| `mod-mosaic`                |
 | `mod-copycat`               |
 | `mod-kb-ebsco-java`         |
 | `mod-ncip`                  |
 | `mod-inventory-update`      |
 | `mod-user-import`           |
 | `mod-service-interaction`   |
-| `mod-ebsconet`              |
 | `mod-batch-print`           |
 | `mod-serials-management`    |
 | `mod-record-specifications` |
@@ -86,8 +82,6 @@ app-platform-minimal.
 | `folio_plugin-find-eresource`           |
 | `folio_dashboard`                       |
 | `folio_tenant-settings`                 |
-| `folio_gobi-settings`                   |
-| `folio_mosaic-settings`                 |
 | `folio_handler-stripes-registry`        |
 | `folio_myprofile`                       |
 | `folio_plugin-find-authority`           |
