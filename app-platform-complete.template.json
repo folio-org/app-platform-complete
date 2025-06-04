@@ -99,10 +99,6 @@
       "version": "latest"
     },
     {
-      "name": "mod-agreements",
-      "version": "latest"
-    },
-    {
       "name": "mod-email",
       "version": "latest"
     },
@@ -253,23 +249,7 @@
       "version": "latest"
     },
     {
-      "name": "folio_agreements",
-      "version": "latest"
-    },
-    {
-      "name": "folio_plugin-find-agreement",
-      "version": "latest"
-    },
-    {
       "name": "folio_eholdings",
-      "version": "latest"
-    },
-    {
-      "name": "folio_local-kb-admin",
-      "version": "latest"
-    },
-    {
-      "name": "folio_plugin-find-eresource",
       "version": "latest"
     },
     {
