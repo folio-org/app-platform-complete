@@ -143,10 +143,6 @@
       "version": "latest"
     },
     {
-      "name": "mod-service-interaction",
-      "version": "latest"
-    },
-    {
       "name": "mod-batch-print",
       "version": "latest"
     },
@@ -253,10 +249,6 @@
       "version": "latest"
     },
     {
-      "name": "folio_dashboard",
-      "version": "latest"
-    },
-    {
       "name": "folio_tenant-settings",
       "version": "latest"
     },
@@ -270,10 +262,6 @@
     },
     {
       "name": "folio_plugin-find-authority",
-      "version": "latest"
-    },
-    {
-      "name": "folio_service-interaction",
       "version": "latest"
     },
     {
