@@ -29,8 +29,6 @@ app-platform-minimal.
 | `mod-courses`               |
 | `mod-source-record-storage` |
 | `mod-data-import`           |
-| `mod-agreements`            |
-| `mod-licenses`              |
 | `mod-email`                 |
 | `mod-event-config`          |
 | `mod-notify`                |
@@ -42,7 +40,6 @@ app-platform-minimal.
 | `mod-ncip`                  |
 | `mod-inventory-update`      |
 | `mod-user-import`           |
-| `mod-service-interaction`   |
 | `mod-batch-print`           |
 | `mod-serials-management`    |
 | `mod-record-specifications` |
@@ -73,19 +70,11 @@ app-platform-minimal.
 | `folio_requests`                        |
 | `folio_data-import`                     |
 | `folio_plugin-find-import-profile`      |
-| `folio_agreements`                      |
-| `folio_plugin-find-agreement`           |
 | `folio_eholdings`                       |
-| `folio_licenses`                        |
-| `folio_plugin-find-license`             |
-| `folio_local-kb-admin`                  |
-| `folio_plugin-find-eresource`           |
-| `folio_dashboard`                       |
 | `folio_tenant-settings`                 |
 | `folio_handler-stripes-registry`        |
 | `folio_myprofile`                       |
 | `folio_plugin-find-authority`           |
-| `folio_service-interaction`             |
 | `folio_users`                           |
 | `folio_serials-management`              |
 | `folio_stripes-marc-components`         |

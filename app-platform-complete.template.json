@@ -11,10 +11,6 @@
   ],
   "modules": [
     {
-      "name": "mod-oa",
-      "version": "latest"
-    },
-    {
       "name": "mod-graphql",
       "version": "latest"
     },
@@ -103,14 +99,6 @@
       "version": "latest"
     },
     {
-      "name": "mod-agreements",
-      "version": "latest"
-    },
-    {
-      "name": "mod-licenses",
-      "version": "latest"
-    },
-    {
       "name": "mod-email",
       "version": "latest"
     },
@@ -152,10 +140,6 @@
     },
     {
       "name": "mod-user-import",
-      "version": "latest"
-    },
-    {
-      "name": "mod-service-interaction",
       "version": "latest"
     },
     {
@@ -261,35 +245,7 @@
       "version": "latest"
     },
     {
-      "name": "folio_agreements",
-      "version": "latest"
-    },
-    {
-      "name": "folio_plugin-find-agreement",
-      "version": "latest"
-    },
-    {
       "name": "folio_eholdings",
-      "version": "latest"
-    },
-    {
-      "name": "folio_licenses",
-      "version": "latest"
-    },
-    {
-      "name": "folio_plugin-find-license",
-      "version": "latest"
-    },
-    {
-      "name": "folio_local-kb-admin",
-      "version": "latest"
-    },
-    {
-      "name": "folio_plugin-find-eresource",
-      "version": "latest"
-    },
-    {
-      "name": "folio_dashboard",
       "version": "latest"
     },
     {
@@ -309,10 +265,6 @@
       "version": "latest"
     },
     {
-      "name": "folio_service-interaction",
-      "version": "latest"
-    },
-    {
       "name": "folio_users",
       "version": "latest"
     },
@@ -326,10 +278,6 @@
     },
     {
       "name": "folio_stripes-inventory-components",
-      "version": "latest"
-    },
-    {
-      "name": "folio_oa",
       "version": "latest"
     }
   ]
