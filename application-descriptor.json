@@ -1,0 +1,284 @@
+{
+  "name": "app-platform-complete",
+  "version": "3.0.0-SNAPSHOT",
+  "description": "Application comprised of most Folio modules not present in app-platform-minimal",
+  "platform": "base",
+  "dependencies": [
+    {
+      "name": "app-platform-minimal",
+      "version": "^2.1.0-SNAPSHOT"
+    }
+  ],
+  "modules": [
+    {
+      "name": "mod-graphql",
+      "version": "1.13.1000377"
+    },
+    {
+      "name": "mod-quick-marc",
+      "version": "7.1.0-SNAPSHOT.328"
+    },
+    {
+      "name": "mod-inventory-storage",
+      "version": "30.0.0-SNAPSHOT.1182"
+    },
+    {
+      "name": "mod-circulation-storage",
+      "version": "17.5.0-SNAPSHOT.474"
+    },
+    {
+      "name": "mod-search",
+      "version": "6.0.0-SNAPSHOT.718"
+    },
+    {
+      "name": "mod-inventory",
+      "version": "21.2.0-SNAPSHOT.887"
+    },
+    {
+      "name": "mod-circulation",
+      "version": "24.5.0-SNAPSHOT.1324"
+    },
+    {
+      "name": "mod-feesfines",
+      "version": "19.4.0-SNAPSHOT.253"
+    },
+    {
+      "name": "mod-patron-blocks",
+      "version": "1.13.0-SNAPSHOT.111"
+    },
+    {
+      "name": "mod-entities-links",
+      "version": "4.1.0-SNAPSHOT.345"
+    },
+    {
+      "name": "mod-source-record-manager",
+      "version": "3.11.0-SNAPSHOT.1037"
+    },
+    {
+      "name": "mod-di-converter-storage",
+      "version": "2.5.0-SNAPSHOT.74"
+    },
+    {
+      "name": "mod-patron",
+      "version": "6.4.0-SNAPSHOT.169"
+    },
+    {
+      "name": "mod-data-export",
+      "version": "5.3.0-SNAPSHOT.477"
+    },
+    {
+      "name": "mod-data-export-spring",
+      "version": "3.6.0-SNAPSHOT.309"
+    },
+    {
+      "name": "mod-data-export-worker",
+      "version": "3.5.0-SNAPSHOT.627"
+    },
+    {
+      "name": "mod-remote-storage",
+      "version": "3.5.0-SNAPSHOT.234"
+    },
+    {
+      "name": "mod-calendar",
+      "version": "3.4.0-SNAPSHOT.185"
+    },
+    {
+      "name": "mod-audit",
+      "version": "3.0.0-SNAPSHOT.225"
+    },
+    {
+      "name": "mod-courses",
+      "version": "1.5.0-SNAPSHOT.170"
+    },
+    {
+      "name": "mod-source-record-storage",
+      "version": "5.11.0-SNAPSHOT.699"
+    },
+    {
+      "name": "mod-data-import",
+      "version": "3.4.0-SNAPSHOT.335"
+    },
+    {
+      "name": "mod-email",
+      "version": "1.20.0-SNAPSHOT.93"
+    },
+    {
+      "name": "mod-event-config",
+      "version": "2.10.0-SNAPSHOT.72"
+    },
+    {
+      "name": "mod-notify",
+      "version": "3.5.0-SNAPSHOT.139"
+    },
+    {
+      "name": "mod-sender",
+      "version": "1.14.1"
+    },
+    {
+      "name": "mod-template-engine",
+      "version": "1.23.0-SNAPSHOT.103"
+    },
+    {
+      "name": "mod-pubsub",
+      "version": "2.17.0-SNAPSHOT.263"
+    },
+    {
+      "name": "mod-copycat",
+      "version": "1.8.0"
+    },
+    {
+      "name": "mod-kb-ebsco-java",
+      "version": "6.1.0-SNAPSHOT.474"
+    },
+    {
+      "name": "mod-ncip",
+      "version": "1.16.0-SNAPSHOT.110"
+    },
+    {
+      "name": "mod-inventory-update",
+      "version": "5.0.0-SNAPSHOT.142"
+    },
+    {
+      "name": "mod-user-import",
+      "version": "3.11.0-SNAPSHOT.110"
+    },
+    {
+      "name": "mod-batch-print",
+      "version": "1.3.1-SNAPSHOT.16"
+    },
+    {
+      "name": "mod-serials-management",
+      "version": "2.1.0-SNAPSHOT.165"
+    },
+    {
+      "name": "mod-record-specifications",
+      "version": "2.1.0-SNAPSHOT.105"
+    }
+  ],
+  "uiModules": [
+    {
+      "name": "folio_marc-authorities",
+      "version": "8.0.1099000000001003"
+    },
+    {
+      "name": "folio_stripes-authority-components",
+      "version": "6.1.109900000000138"
+    },
+    {
+      "name": "folio_quick-marc",
+      "version": "10.1.109900000000342"
+    },
+    {
+      "name": "folio_inventory",
+      "version": "14.0.109900000000959"
+    },
+    {
+      "name": "folio_servicepoints",
+      "version": "8.0.10990000000029"
+    },
+    {
+      "name": "folio_plugin-create-inventory-records",
+      "version": "7.0.10990000000074"
+    },
+    {
+      "name": "folio_plugin-find-instance",
+      "version": "9.1.10990000000091"
+    },
+    {
+      "name": "folio_plugin-find-package-title",
+      "version": "7.0.10990000000054"
+    },
+    {
+      "name": "folio_checkin",
+      "version": "12.0.109900000000146"
+    },
+    {
+      "name": "folio_checkout",
+      "version": "12.0.109900000000133"
+    },
+    {
+      "name": "folio_circulation",
+      "version": "11.1.109900000000184"
+    },
+    {
+      "name": "folio_plugin-find-user",
+      "version": "8.0.10990000000079"
+    },
+    {
+      "name": "folio_data-export",
+      "version": "7.0.10990000000069"
+    },
+    {
+      "name": "folio_export-manager",
+      "version": "4.0.10990000000071"
+    },
+    {
+      "name": "folio_plugin-bursar-export",
+      "version": "5.0.109900000000208"
+    },
+    {
+      "name": "folio_remote-storage",
+      "version": "7.0.10990000000057"
+    },
+    {
+      "name": "folio_circulation-log",
+      "version": "6.0.10990000000075"
+    },
+    {
+      "name": "folio_calendar",
+      "version": "12.0.109900000000163"
+    },
+    {
+      "name": "folio_courses",
+      "version": "7.0.309900000000121"
+    },
+    {
+      "name": "folio_requests",
+      "version": "13.0.109900000000261"
+    },
+    {
+      "name": "folio_data-import",
+      "version": "9.0.109900000000129"
+    },
+    {
+      "name": "folio_plugin-find-import-profile",
+      "version": "9.0.10990000000046"
+    },
+    {
+      "name": "folio_eholdings",
+      "version": "11.1.109900000000247"
+    },
+    {
+      "name": "folio_tenant-settings",
+      "version": "11.0.10990000000097"
+    },
+    {
+      "name": "folio_handler-stripes-registry",
+      "version": "3.1.10990000000079"
+    },
+    {
+      "name": "folio_myprofile",
+      "version": "11.0.109900000000115"
+    },
+    {
+      "name": "folio_plugin-find-authority",
+      "version": "5.1.10990000000081"
+    },
+    {
+      "name": "folio_users",
+      "version": "13.0.109900000000573"
+    },
+    {
+      "name": "folio_serials-management",
+      "version": "2.1.109900000000804"
+    },
+    {
+      "name": "folio_stripes-marc-components",
+      "version": "2.0.109900000000167"
+    },
+    {
+      "name": "folio_stripes-inventory-components",
+      "version": "2.1.109000000730"
+    }
+  ]
+}
