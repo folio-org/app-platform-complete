@@ -40,7 +40,6 @@ app-platform-minimal.
 | `mod-pubsub`                |
 | `mod-gobi`                  |
 | `mod-copycat`               |
-| `mod-kb-ebsco-java`         |
 | `mod-ncip`                  |
 | `mod-inventory-update`      |
 | `mod-user-import`           |
@@ -78,7 +77,6 @@ app-platform-minimal.
 | `folio_plugin-find-import-profile`      |
 | `folio_agreements`                      |
 | `folio_plugin-find-agreement`           |
-| `folio_eholdings`                       |
 | `folio_licenses`                        |
 | `folio_plugin-find-license`             |
 | `folio_local-kb-admin`                  |
