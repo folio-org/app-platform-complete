@@ -127,10 +127,6 @@
       "version": "latest"
     },
     {
-      "name": "mod-kb-ebsco-java",
-      "version": "latest"
-    },
-    {
       "name": "mod-ncip",
       "version": "latest"
     },
@@ -242,10 +238,6 @@
     },
     {
       "name": "folio_plugin-find-import-profile",
-      "version": "latest"
-    },
-    {
-      "name": "folio_eholdings",
       "version": "latest"
     },
     {
