@@ -127,10 +127,6 @@
       "version": "1.8.0"
     },
     {
-      "name": "mod-kb-ebsco-java",
-      "version": "6.1.0-SNAPSHOT.474"
-    },
-    {
       "name": "mod-ncip",
       "version": "1.16.0-SNAPSHOT.110"
     },
@@ -243,10 +239,6 @@
     {
       "name": "folio_plugin-find-import-profile",
       "version": "9.0.10990000000046"
-    },
-    {
-      "name": "folio_eholdings",
-      "version": "11.1.109900000000247"
     },
     {
       "name": "folio_tenant-settings",
