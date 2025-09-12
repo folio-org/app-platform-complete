@@ -143,10 +143,6 @@
       "version": "latest"
     },
     {
-      "name": "mod-serials-management",
-      "version": "latest"
-    },
-    {
       "name": "mod-record-specifications",
       "version": "latest"
     }
@@ -258,10 +254,6 @@
     },
     {
       "name": "folio_users",
-      "version": "latest"
-    },
-    {
-      "name": "folio_serials-management",
       "version": "latest"
     },
     {
