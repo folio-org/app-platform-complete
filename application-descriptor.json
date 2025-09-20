@@ -16,7 +16,7 @@
     },
     {
       "name": "mod-quick-marc",
-      "version": "7.1.0-SNAPSHOT.328"
+      "version": "7.1.0-SNAPSHOT.331"
     },
     {
       "name": "mod-inventory-storage",
@@ -52,7 +52,7 @@
     },
     {
       "name": "mod-source-record-manager",
-      "version": "3.11.0-SNAPSHOT.1037"
+      "version": "3.11.0-SNAPSHOT.1038"
     },
     {
       "name": "mod-di-converter-storage",
