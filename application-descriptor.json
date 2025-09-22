@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.0.0-SNAPSHOT.100100000000049",
+  "version": "3.0.0-SNAPSHOT.100100000000050",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -40,7 +40,7 @@
     },
     {
       "name": "mod-feesfines",
-      "version": "19.4.0-SNAPSHOT.257"
+      "version": "19.4.0-SNAPSHOT.258"
     },
     {
       "name": "mod-patron-blocks",
