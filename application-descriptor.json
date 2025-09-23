@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.0.0-SNAPSHOT.100100000000110",
+  "version": "3.0.0-SNAPSHOT.100100000000121",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -242,7 +242,7 @@
     },
     {
       "name": "folio_tenant-settings",
-      "version": "11.0.109900000000113"
+      "version": "11.0.1099000000000119"
     },
     {
       "name": "folio_handler-stripes-registry",
