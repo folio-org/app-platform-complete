@@ -16,7 +16,7 @@
     },
     {
       "name": "mod-quick-marc",
-      "version": "8.0.0-SNAPSHOT.337"
+      "version": "8.0.0-SNAPSHOT.336"
     },
     {
       "name": "mod-inventory-storage",
@@ -143,10 +143,6 @@
       "version": "1.3.1-SNAPSHOT.16"
     },
     {
-      "name": "mod-serials-management",
-      "version": "2.1.0-SNAPSHOT.166"
-    },
-    {
       "name": "mod-record-specifications",
       "version": "2.1.0-SNAPSHOT.113"
     }
@@ -259,10 +255,6 @@
     {
       "name": "folio_users",
       "version": "13.0.1099000000000863"
-    },
-    {
-      "name": "folio_serials-management",
-      "version": "2.1.109900000000813"
     },
     {
       "name": "folio_stripes-marc-components",
