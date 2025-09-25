@@ -7,7 +7,7 @@
   <artifactId>app-platform-complete</artifactId>
   <groupId>org.folio</groupId>
   <description>Application comprised of most Folio modules not present in app-platform-minimal</description>
-  <version>3.0.0-SNAPSHOT</version>
+  <version>3.0.1-SNAPSHOT</version>
 
   <properties>
     <project.name>app-platform-complete</project.name>
