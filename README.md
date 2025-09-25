@@ -41,7 +41,6 @@ app-platform-minimal.
 | `mod-inventory-update`      |
 | `mod-user-import`           |
 | `mod-batch-print`           |
-| `mod-serials-management`    |
 | `mod-record-specifications` |
 
 ## UI Modules
@@ -76,6 +75,5 @@ app-platform-minimal.
 | `folio_myprofile`                       |
 | `folio_plugin-find-authority`           |
 | `folio_users`                           |
-| `folio_serials-management`              |
 | `folio_stripes-marc-components`         |
 | `folio_stripes-inventory-components`    |
