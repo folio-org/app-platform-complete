@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.0.1-SNAPSHOT.100100000000491",
+  "version": "3.0.1-SNAPSHOT.100100000000496",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -48,7 +48,7 @@
     },
     {
       "name": "mod-entities-links",
-      "version": "4.1.0-SNAPSHOT.352"
+      "version": "4.1.0-SNAPSHOT.353"
     },
     {
       "name": "mod-source-record-manager",
@@ -162,7 +162,7 @@
     },
     {
       "name": "folio_inventory",
-      "version": "14.0.1099000000001232"
+      "version": "14.0.1099000000001241"
     },
     {
       "name": "folio_servicepoints",
