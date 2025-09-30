@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.0.1-SNAPSHOT.100100000000579",
+  "version": "3.0.1-SNAPSHOT.100100000000580",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -16,7 +16,7 @@
     },
     {
       "name": "mod-quick-marc",
-      "version": "8.0.0-SNAPSHOT.340"
+      "version": "8.0.0-SNAPSHOT.341"
     },
     {
       "name": "mod-inventory-storage",
