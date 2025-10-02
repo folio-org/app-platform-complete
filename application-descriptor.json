@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.0.1-SNAPSHOT.100100000000657",
+  "version": "3.0.1-SNAPSHOT.100100000000696",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -52,7 +52,7 @@
     },
     {
       "name": "mod-source-record-manager",
-      "version": "4.0.0-SNAPSHOT.1043"
+      "version": "4.0.0-SNAPSHOT.1044"
     },
     {
       "name": "mod-di-converter-storage",
