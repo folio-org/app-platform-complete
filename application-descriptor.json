@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.0.1-SNAPSHOT.100100000000854",
+  "version": "3.0.1-SNAPSHOT.100100000000858",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -154,7 +154,7 @@
     },
     {
       "name": "folio_stripes-authority-components",
-      "version": "6.1.1099000000000146"
+      "version": "6.1.1099000000000156"
     },
     {
       "name": "folio_quick-marc",
@@ -262,7 +262,7 @@
     },
     {
       "name": "folio_stripes-inventory-components",
-      "version": "2.1.1090000000784"
+      "version": "2.1.1090000000788"
     }
   ]
 }
