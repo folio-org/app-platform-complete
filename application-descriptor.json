@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.0.1-SNAPSHOT.100100000000853",
+  "version": "3.0.1-SNAPSHOT.100100000000854",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -150,7 +150,7 @@
   "uiModules": [
     {
       "name": "folio_marc-authorities",
-      "version": "8.0.1099000000001072"
+      "version": "8.0.1099000000001092"
     },
     {
       "name": "folio_stripes-authority-components",
@@ -158,7 +158,7 @@
     },
     {
       "name": "folio_quick-marc",
-      "version": "10.1.1099000000000401"
+      "version": "10.1.1099000000000405"
     },
     {
       "name": "folio_inventory",
@@ -170,7 +170,7 @@
     },
     {
       "name": "folio_plugin-create-inventory-records",
-      "version": "7.0.1099000000000091"
+      "version": "7.0.1099000000000095"
     },
     {
       "name": "folio_plugin-find-instance",
@@ -202,11 +202,11 @@
     },
     {
       "name": "folio_export-manager",
-      "version": "5.0.1099000000000119"
+      "version": "5.0.1099000000000123"
     },
     {
       "name": "folio_plugin-bursar-export",
-      "version": "5.0.1099000000000225"
+      "version": "5.0.1099000000000229"
     },
     {
       "name": "folio_remote-storage",
@@ -214,7 +214,7 @@
     },
     {
       "name": "folio_circulation-log",
-      "version": "6.0.109900000000103"
+      "version": "6.0.1099000000000109"
     },
     {
       "name": "folio_calendar",
@@ -222,7 +222,7 @@
     },
     {
       "name": "folio_courses",
-      "version": "7.0.309900000000136"
+      "version": "7.0.3099000000000142"
     },
     {
       "name": "folio_requests",
