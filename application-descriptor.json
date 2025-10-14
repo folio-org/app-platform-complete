@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.0.1-SNAPSHOT.100100000001501",
+  "version": "3.0.1-SNAPSHOT.100100000001502",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -174,7 +174,7 @@
     },
     {
       "name": "folio_plugin-find-instance",
-      "version": "9.1.1099000000000121"
+      "version": "9.1.1099000000000132"
     },
     {
       "name": "folio_plugin-find-package-title",
@@ -262,7 +262,7 @@
     },
     {
       "name": "folio_stripes-inventory-components",
-      "version": "2.1.1090000000791"
+      "version": "2.1.1090000000794"
     }
   ]
 }
