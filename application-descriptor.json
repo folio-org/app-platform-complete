@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.0.1-SNAPSHOT.100100000001603",
+  "version": "3.0.1-SNAPSHOT.100100000001613",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -158,11 +158,11 @@
     },
     {
       "name": "folio_quick-marc",
-      "version": "10.1.1099000000000408"
+      "version": "10.1.1099000000000420"
     },
     {
       "name": "folio_inventory",
-      "version": "14.0.1099000000001341"
+      "version": "14.0.1099000000001345"
     },
     {
       "name": "folio_servicepoints",
@@ -190,7 +190,7 @@
     },
     {
       "name": "folio_circulation",
-      "version": "11.1.1099000000000238"
+      "version": "11.1.1099000000000242"
     },
     {
       "name": "folio_plugin-find-user",
@@ -230,7 +230,7 @@
     },
     {
       "name": "folio_data-import",
-      "version": "9.0.1099000000000170"
+      "version": "9.0.1099000000000177"
     },
     {
       "name": "folio_plugin-find-import-profile",
@@ -254,7 +254,7 @@
     },
     {
       "name": "folio_users",
-      "version": "13.0.1099000000000882"
+      "version": "13.0.1099000000000894"
     },
     {
       "name": "folio_stripes-marc-components",
