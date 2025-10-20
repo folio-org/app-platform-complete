@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.0.1-SNAPSHOT.100100000001898",
+  "version": "3.0.1-SNAPSHOT.100100000001899",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -28,7 +28,7 @@
     },
     {
       "name": "mod-search",
-      "version": "6.0.0-SNAPSHOT.745"
+      "version": "6.0.0-SNAPSHOT.747"
     },
     {
       "name": "mod-inventory",
@@ -48,7 +48,7 @@
     },
     {
       "name": "mod-entities-links",
-      "version": "4.1.0-SNAPSHOT.356"
+      "version": "4.1.0-SNAPSHOT.357"
     },
     {
       "name": "mod-source-record-manager",
