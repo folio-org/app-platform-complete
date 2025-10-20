@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.0.1-SNAPSHOT.100100000001709",
+  "version": "3.0.1-SNAPSHOT.100100000001889",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -254,7 +254,7 @@
     },
     {
       "name": "folio_users",
-      "version": "13.0.1099000000000899"
+      "version": "13.0.1099000000000906"
     },
     {
       "name": "folio_stripes-marc-components",
