@@ -54,7 +54,6 @@ app-platform-minimal.
 | `folio_servicepoints`                   |
 | `folio_plugin-create-inventory-records` |
 | `folio_plugin-find-instance`            |
-| `folio_plugin-find-package-title`       |
 | `folio_checkin`                         |
 | `folio_checkout`                        |
 | `folio_circulation`                     |

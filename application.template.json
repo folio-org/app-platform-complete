@@ -219,11 +219,6 @@
       "preRelease": "only"
     },
     {
-      "name": "folio_plugin-find-package-title",
-      "version": "latest",
-      "preRelease": "only"
-    },
-    {
       "name": "folio_checkin",
       "version": "latest",
       "preRelease": "only"
