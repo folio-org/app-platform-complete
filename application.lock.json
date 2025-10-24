@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.0.1-SNAPSHOT.100100000002034",
+  "version": "3.0.1-SNAPSHOT.100100000002042",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -28,11 +28,11 @@
     },
     {
       "name": "mod-search",
-      "version": "6.0.0-SNAPSHOT.749"
+      "version": "6.0.0-SNAPSHOT.750"
     },
     {
       "name": "mod-inventory",
-      "version": "21.2.0-SNAPSHOT.906"
+      "version": "21.2.0-SNAPSHOT.907"
     },
     {
       "name": "mod-circulation",
@@ -64,7 +64,7 @@
     },
     {
       "name": "mod-data-export",
-      "version": "5.3.0-SNAPSHOT.481"
+      "version": "5.3.0-SNAPSHOT.483"
     },
     {
       "name": "mod-data-export-spring",
@@ -162,7 +162,7 @@
     },
     {
       "name": "folio_inventory",
-      "version": "14.0.1099000000001348"
+      "version": "14.0.1099000000001366"
     },
     {
       "name": "folio_servicepoints",
@@ -182,7 +182,7 @@
     },
     {
       "name": "folio_checkin",
-      "version": "12.0.1099000000000231"
+      "version": "12.0.1099000000000244"
     },
     {
       "name": "folio_checkout",
@@ -230,7 +230,7 @@
     },
     {
       "name": "folio_data-import",
-      "version": "9.0.1099000000000177"
+      "version": "9.0.1099000000000180"
     },
     {
       "name": "folio_plugin-find-import-profile",
