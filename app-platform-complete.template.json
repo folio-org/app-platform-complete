@@ -63,10 +63,6 @@
       "version": "latest"
     },
     {
-      "name": "mod-data-export",
-      "version": "latest"
-    },
-    {
       "name": "mod-data-export-spring",
       "version": "latest"
     },
@@ -194,10 +190,6 @@
     },
     {
       "name": "folio_plugin-find-user",
-      "version": "latest"
-    },
-    {
-      "name": "folio_data-export",
       "version": "latest"
     },
     {
