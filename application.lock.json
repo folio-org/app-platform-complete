@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.0.1-SNAPSHOT.100100000002100",
+  "version": "3.1.0-SNAPSHOT.100100000000000",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -61,10 +61,6 @@
     {
       "name": "mod-patron",
       "version": "6.4.0-SNAPSHOT.172"
-    },
-    {
-      "name": "mod-data-export",
-      "version": "5.3.0-SNAPSHOT.484"
     },
     {
       "name": "mod-data-export-spring",
@@ -195,10 +191,6 @@
     {
       "name": "folio_plugin-find-user",
       "version": "8.0.1099000000000098"
-    },
-    {
-      "name": "folio_data-export",
-      "version": "7.0.1099000000000102"
     },
     {
       "name": "folio_export-manager",

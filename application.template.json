@@ -77,11 +77,6 @@
       "preRelease": "only"
     },
     {
-      "name": "mod-data-export",
-      "version": "latest",
-      "preRelease": "only"
-    },
-    {
       "name": "mod-data-export-spring",
       "version": "latest",
       "preRelease": "only"
@@ -240,11 +235,6 @@
     },
     {
       "name": "folio_plugin-find-user",
-      "version": "latest",
-      "preRelease": "only"
-    },
-    {
-      "name": "folio_data-export",
       "version": "latest",
       "preRelease": "only"
     },
