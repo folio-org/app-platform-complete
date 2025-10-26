@@ -20,7 +20,6 @@ app-platform-minimal.
 | `mod-source-record-manager` |
 | `mod-di-converter-storage`  |
 | `mod-patron`                |
-| `mod-data-export`           |
 | `mod-data-export-spring`    |
 | `mod-data-export-worker`    |
 | `mod-remote-storage`        |
@@ -59,7 +58,6 @@ app-platform-minimal.
 | `folio_checkout`                        |
 | `folio_circulation`                     |
 | `folio_plugin-find-user`                |
-| `folio_data-export`                     |
 | `folio_export-manager`                  |
 | `folio_plugin-bursar-export`            |
 | `folio_remote-storage`                  |
