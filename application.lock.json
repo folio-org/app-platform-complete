@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.1.0-SNAPSHOT.100100000002282",
+  "version": "3.1.0-SNAPSHOT.100100000002286",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -158,7 +158,7 @@
     },
     {
       "name": "folio_inventory",
-      "version": "14.0.1099000000001372"
+      "version": "14.0.1099000000001375"
     },
     {
       "name": "folio_servicepoints",
