@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.1.0-SNAPSHOT.100100000002340",
+  "version": "3.1.0-SNAPSHOT.100100000002365",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -52,7 +52,7 @@
     },
     {
       "name": "mod-source-record-manager",
-      "version": "4.0.0-SNAPSHOT.1048"
+      "version": "4.0.0-SNAPSHOT.1050"
     },
     {
       "name": "mod-di-converter-storage",
@@ -246,7 +246,7 @@
     },
     {
       "name": "folio_users",
-      "version": "13.0.1099000000000909"
+      "version": "13.0.1099000000000914"
     },
     {
       "name": "folio_stripes-marc-components",
