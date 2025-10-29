@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.1.0-SNAPSHOT.100100000002408",
+  "version": "3.1.0-SNAPSHOT.100100000002435",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -190,7 +190,7 @@
     },
     {
       "name": "folio_plugin-find-user",
-      "version": "8.0.1099000000000098"
+      "version": "8.0.1099000000000103"
     },
     {
       "name": "folio_export-manager",
