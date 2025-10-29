@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.1.0-SNAPSHOT.100100000002404",
+  "version": "3.1.0-SNAPSHOT.100100000002406",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -32,7 +32,7 @@
     },
     {
       "name": "mod-inventory",
-      "version": "21.2.0-SNAPSHOT.907"
+      "version": "21.2.0-SNAPSHOT.908"
     },
     {
       "name": "mod-circulation",
