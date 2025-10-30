@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.1.0-SNAPSHOT.100100000002468",
+  "version": "3.1.0-SNAPSHOT.100100000002472",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -20,7 +20,7 @@
     },
     {
       "name": "mod-inventory-storage",
-      "version": "30.0.0-SNAPSHOT.1197"
+      "version": "30.0.0-SNAPSHOT.1200"
     },
     {
       "name": "mod-circulation-storage",
@@ -230,7 +230,7 @@
     },
     {
       "name": "folio_tenant-settings",
-      "version": "11.0.1099000000000119"
+      "version": "11.0.1099000000000135"
     },
     {
       "name": "folio_handler-stripes-registry",
