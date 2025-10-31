@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.1.0-SNAPSHOT.100100000002550",
+  "version": "3.1.0-SNAPSHOT.100100000002556",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -44,7 +44,7 @@
     },
     {
       "name": "mod-patron-blocks",
-      "version": "1.13.0-SNAPSHOT.112"
+      "version": "1.13.0-SNAPSHOT.114"
     },
     {
       "name": "mod-entities-links",
