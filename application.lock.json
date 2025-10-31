@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.1.0-SNAPSHOT.100100000002548",
+  "version": "3.1.0-SNAPSHOT.100100000002550",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -178,11 +178,11 @@
     },
     {
       "name": "folio_checkin",
-      "version": "12.0.1099000000000254"
+      "version": "12.0.1099000000000277"
     },
     {
       "name": "folio_checkout",
-      "version": "13.0.1099000000000205"
+      "version": "13.0.1099000000000208"
     },
     {
       "name": "folio_circulation",
@@ -218,7 +218,7 @@
     },
     {
       "name": "folio_requests",
-      "version": "13.0.1099000000000340"
+      "version": "13.0.1099000000000343"
     },
     {
       "name": "folio_data-import",
