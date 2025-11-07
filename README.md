@@ -11,7 +11,6 @@ app-platform-minimal.
 | `mod-quick-marc`            |
 | `mod-inventory-storage`     |
 | `mod-circulation-storage`   |
-| `mod-search`                |
 | `mod-inventory`             |
 | `mod-circulation`           |
 | `mod-feesfines`             |
