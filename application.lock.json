@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.1.0-SNAPSHOT.100200000000368",
+  "version": "3.1.0-SNAPSHOT.100200000000371",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -32,7 +32,7 @@
     },
     {
       "name": "mod-inventory",
-      "version": "21.2.0-SNAPSHOT.909"
+      "version": "21.2.0-SNAPSHOT.910"
     },
     {
       "name": "mod-circulation",
@@ -198,7 +198,7 @@
     },
     {
       "name": "folio_plugin-bursar-export",
-      "version": "5.0.1099000000000229"
+      "version": "5.0.1099000000000238"
     },
     {
       "name": "folio_remote-storage",
