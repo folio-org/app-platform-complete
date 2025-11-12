@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.1.0-SNAPSHOT.100200000000499",
+  "version": "3.1.0-SNAPSHOT.100200000000500",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -36,7 +36,7 @@
     },
     {
       "name": "mod-circulation",
-      "version": "24.5.0-SNAPSHOT.1338"
+      "version": "24.5.0-SNAPSHOT.1339"
     },
     {
       "name": "mod-feesfines",
