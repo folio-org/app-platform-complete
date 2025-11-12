@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.1.0-SNAPSHOT.100200000000500",
+  "version": "3.1.0-SNAPSHOT.100200000000505",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -108,7 +108,7 @@
     },
     {
       "name": "mod-sender",
-      "version": "1.13.1-SNAPSHOT.54"
+      "version": "1.15.0-SNAPSHOT.57"
     },
     {
       "name": "mod-template-engine",
