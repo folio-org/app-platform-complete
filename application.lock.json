@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.1.0-SNAPSHOT.100200000000580",
+  "version": "3.1.0-SNAPSHOT.100200000000587",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -120,7 +120,7 @@
     },
     {
       "name": "mod-copycat",
-      "version": "1.8.1-SNAPSHOT.110"
+      "version": "1.8.1-SNAPSHOT.111"
     },
     {
       "name": "mod-ncip",
@@ -132,7 +132,7 @@
     },
     {
       "name": "mod-user-import",
-      "version": "3.11.0-SNAPSHOT.115"
+      "version": "3.11.0-SNAPSHOT.116"
     },
     {
       "name": "mod-batch-print",
