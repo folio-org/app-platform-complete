@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.1.0-SNAPSHOT.100200000000633",
+  "version": "3.1.0-SNAPSHOT.100200000000636",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -12,7 +12,7 @@
   "modules": [
     {
       "name": "mod-graphql",
-      "version": "1.15.1000384"
+      "version": "1.15.1000385"
     },
     {
       "name": "mod-quick-marc",
