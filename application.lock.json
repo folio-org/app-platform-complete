@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.1.0-SNAPSHOT.100200000000639",
+  "version": "3.1.0-SNAPSHOT.100200000000643",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -80,7 +80,7 @@
     },
     {
       "name": "mod-audit",
-      "version": "3.0.0-SNAPSHOT.225"
+      "version": "3.0.0-SNAPSHOT.226"
     },
     {
       "name": "mod-courses",
