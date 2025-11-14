@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.1.0-SNAPSHOT.100200000000587",
+  "version": "3.1.0-SNAPSHOT.100200000000633",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -60,7 +60,7 @@
     },
     {
       "name": "mod-patron",
-      "version": "6.4.0-SNAPSHOT.178"
+      "version": "6.4.0-SNAPSHOT.179"
     },
     {
       "name": "mod-data-export-spring",
