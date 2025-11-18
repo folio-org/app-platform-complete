@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.1.0-SNAPSHOT.100200000000883",
+  "version": "3.1.0-SNAPSHOT.100200000000888",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -88,7 +88,7 @@
     },
     {
       "name": "mod-source-record-storage",
-      "version": "5.11.0-SNAPSHOT.708"
+      "version": "5.11.0-SNAPSHOT.709"
     },
     {
       "name": "mod-data-import",
