@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.1.0-SNAPSHOT.100200000000888",
+  "version": "3.1.0-SNAPSHOT.100200000000891",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -154,7 +154,7 @@
     },
     {
       "name": "folio_quick-marc",
-      "version": "10.1.1099000000000443"
+      "version": "10.1.1099000000000452"
     },
     {
       "name": "folio_inventory",
