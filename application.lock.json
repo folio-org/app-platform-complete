@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.1.0-SNAPSHOT.100200000001049",
+  "version": "3.1.0-SNAPSHOT.100200000001056",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -72,7 +72,7 @@
     },
     {
       "name": "mod-calendar",
-      "version": "3.4.0-SNAPSHOT.193"
+      "version": "3.4.0-SNAPSHOT.194"
     },
     {
       "name": "mod-audit",
@@ -146,7 +146,7 @@
     },
     {
       "name": "folio_stripes-authority-components",
-      "version": "6.1.1099000000000162"
+      "version": "6.1.1099000000000168"
     },
     {
       "name": "folio_quick-marc",
@@ -230,7 +230,7 @@
     },
     {
       "name": "folio_handler-stripes-registry",
-      "version": "3.1.10990000000089"
+      "version": "3.1.1099000000000103"
     },
     {
       "name": "folio_myprofile",
@@ -246,11 +246,11 @@
     },
     {
       "name": "folio_stripes-marc-components",
-      "version": "2.0.109900000000173"
+      "version": "2.0.1099000000000181"
     },
     {
       "name": "folio_stripes-inventory-components",
-      "version": "2.1.1090000000794"
+      "version": "2.1.1090000000802"
     }
   ]
 }
