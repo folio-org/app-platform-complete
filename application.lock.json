@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.1.0-SNAPSHOT.100200000001021",
+  "version": "3.1.0-SNAPSHOT.100200000001022",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -222,7 +222,7 @@
     },
     {
       "name": "folio_data-import",
-      "version": "9.0.1099000000000188"
+      "version": "10.0.1099000000000201"
     },
     {
       "name": "folio_plugin-find-import-profile",
