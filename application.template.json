@@ -8,6 +8,11 @@
       "name": "app-platform-minimal",
       "version": "^2.1.0-SNAPSHOT",
       "preRelease": "only"
+    },
+    {
+      "name": "app-search",
+      "version": "^1.0.0-SNAPSHOT",
+      "preRelease": "only"
     }
   ],
   "modules": [
@@ -28,11 +33,6 @@
     },
     {
       "name": "mod-circulation-storage",
-        "version": "latest",
-        "preRelease": "only"
-    },
-    {
-      "name": "mod-search",
         "version": "latest",
         "preRelease": "only"
     },
