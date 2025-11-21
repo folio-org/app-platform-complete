@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.1.0-SNAPSHOT.100200000001059",
+  "version": "3.1.0-SNAPSHOT.100200000001060",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -142,7 +142,7 @@
   "uiModules": [
     {
       "name": "folio_marc-authorities",
-      "version": "8.0.1099000000001092"
+      "version": "8.0.1099000000001114"
     },
     {
       "name": "folio_stripes-authority-components",
@@ -162,7 +162,7 @@
     },
     {
       "name": "folio_plugin-create-inventory-records",
-      "version": "7.0.1099000000000095"
+      "version": "7.0.1099000000000101"
     },
     {
       "name": "folio_plugin-find-instance",
@@ -170,7 +170,7 @@
     },
     {
       "name": "folio_plugin-find-package-title",
-      "version": "7.1.1099000000000074"
+      "version": "7.1.1099000000000078"
     },
     {
       "name": "folio_checkin",
@@ -190,11 +190,11 @@
     },
     {
       "name": "folio_export-manager",
-      "version": "5.0.1099000000000123"
+      "version": "5.0.1099000000000131"
     },
     {
       "name": "folio_plugin-bursar-export",
-      "version": "5.0.1099000000000244"
+      "version": "5.0.1099000000000249"
     },
     {
       "name": "folio_remote-storage",
@@ -202,7 +202,7 @@
     },
     {
       "name": "folio_circulation-log",
-      "version": "6.0.1099000000000121"
+      "version": "6.0.1099000000000125"
     },
     {
       "name": "folio_calendar",
@@ -210,7 +210,7 @@
     },
     {
       "name": "folio_courses",
-      "version": "7.0.3099000000000147"
+      "version": "7.0.3099000000000151"
     },
     {
       "name": "folio_requests",
@@ -222,11 +222,11 @@
     },
     {
       "name": "folio_plugin-find-import-profile",
-      "version": "9.0.10990000000053"
+      "version": "9.0.1099000000000062"
     },
     {
       "name": "folio_tenant-settings",
-      "version": "11.0.1099000000000154"
+      "version": "11.0.1099000000000158"
     },
     {
       "name": "folio_handler-stripes-registry",
@@ -238,7 +238,7 @@
     },
     {
       "name": "folio_plugin-find-authority",
-      "version": "5.1.10990000000088"
+      "version": "5.1.1099000000000097"
     },
     {
       "name": "folio_users",
