@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.1.0-SNAPSHOT.100200000001056",
+  "version": "3.1.0-SNAPSHOT.100200000001059",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -154,11 +154,11 @@
     },
     {
       "name": "folio_inventory",
-      "version": "14.0.1099000000001460"
+      "version": "14.0.1099000000001464"
     },
     {
       "name": "folio_servicepoints",
-      "version": "8.0.10990000000041"
+      "version": "8.0.1099000000000056"
     },
     {
       "name": "folio_plugin-create-inventory-records",
@@ -166,7 +166,7 @@
     },
     {
       "name": "folio_plugin-find-instance",
-      "version": "9.1.1099000000000132"
+      "version": "9.1.1099000000000138"
     },
     {
       "name": "folio_plugin-find-package-title",
@@ -174,19 +174,19 @@
     },
     {
       "name": "folio_checkin",
-      "version": "12.0.1099000000000301"
+      "version": "12.0.1099000000000307"
     },
     {
       "name": "folio_checkout",
-      "version": "13.0.1099000000000224"
+      "version": "13.0.1099000000000228"
     },
     {
       "name": "folio_circulation",
-      "version": "11.1.1099000000000271"
+      "version": "11.1.1099000000000275"
     },
     {
       "name": "folio_plugin-find-user",
-      "version": "8.0.1099000000000103"
+      "version": "8.0.1099000000000107"
     },
     {
       "name": "folio_export-manager",
@@ -206,7 +206,7 @@
     },
     {
       "name": "folio_calendar",
-      "version": "12.0.1099000000000178"
+      "version": "12.0.1099000000000184"
     },
     {
       "name": "folio_courses",
@@ -214,11 +214,11 @@
     },
     {
       "name": "folio_requests",
-      "version": "13.0.1099000000000360"
+      "version": "13.0.1099000000000364"
     },
     {
       "name": "folio_data-import",
-      "version": "10.0.1099000000000201"
+      "version": "10.0.1099000000000205"
     },
     {
       "name": "folio_plugin-find-import-profile",
@@ -234,7 +234,7 @@
     },
     {
       "name": "folio_myprofile",
-      "version": "11.0.1099000000000141"
+      "version": "11.0.1099000000000145"
     },
     {
       "name": "folio_plugin-find-authority",
@@ -242,7 +242,7 @@
     },
     {
       "name": "folio_users",
-      "version": "13.0.1099000000000961"
+      "version": "13.0.1099000000000965"
     },
     {
       "name": "folio_stripes-marc-components",
