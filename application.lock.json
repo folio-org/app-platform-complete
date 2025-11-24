@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.1.0-SNAPSHOT.100200000001274",
+  "version": "3.1.0-SNAPSHOT.100200000001277",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -64,7 +64,7 @@
     },
     {
       "name": "mod-data-export-worker",
-      "version": "3.5.0-SNAPSHOT.638"
+      "version": "3.5.0-SNAPSHOT.639"
     },
     {
       "name": "mod-remote-storage",
@@ -136,7 +136,7 @@
     },
     {
       "name": "mod-record-specifications",
-      "version": "2.1.0-SNAPSHOT.122"
+      "version": "2.1.0-SNAPSHOT.123"
     }
   ],
   "uiModules": [
