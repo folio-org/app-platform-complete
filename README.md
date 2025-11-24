@@ -25,7 +25,6 @@ app-platform-minimal.
 | `mod-calendar`              |
 | `mod-audit`                 |
 | `mod-courses`               |
-| `mod-source-record-storage` |
 | `mod-data-import`           |
 | `mod-email`                 |
 | `mod-event-config`          |
