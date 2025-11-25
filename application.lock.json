@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.1.0-SNAPSHOT.100200000001311",
+  "version": "3.1.0-SNAPSHOT.100200000001334",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -202,7 +202,7 @@
     },
     {
       "name": "folio_circulation-log",
-      "version": "6.0.2099000000000132"
+      "version": "6.1.1099000000000135"
     },
     {
       "name": "folio_calendar",
