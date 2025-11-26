@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.1.0-SNAPSHOT.100200000001412",
+  "version": "3.1.0-SNAPSHOT.100200000001414",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -92,7 +92,7 @@
     },
     {
       "name": "mod-email",
-      "version": "1.20.0-SNAPSHOT.95"
+      "version": "1.20.0-SNAPSHOT.96"
     },
     {
       "name": "mod-event-config",
