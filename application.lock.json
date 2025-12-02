@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.1.0-SNAPSHOT.100200000001733",
+  "version": "3.1.0-SNAPSHOT.100200000001757",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -20,7 +20,7 @@
     },
     {
       "name": "mod-inventory-storage",
-      "version": "30.0.0-SNAPSHOT.1211"
+      "version": "30.0.0-SNAPSHOT.1212"
     },
     {
       "name": "mod-circulation-storage",
@@ -28,7 +28,7 @@
     },
     {
       "name": "mod-inventory",
-      "version": "21.2.0-SNAPSHOT.911"
+      "version": "21.2.0-SNAPSHOT.912"
     },
     {
       "name": "mod-circulation",
@@ -44,7 +44,7 @@
     },
     {
       "name": "mod-entities-links",
-      "version": "4.1.0-SNAPSHOT.363"
+      "version": "4.1.0-SNAPSHOT.365"
     },
     {
       "name": "mod-source-record-manager",
@@ -150,11 +150,11 @@
     },
     {
       "name": "folio_quick-marc",
-      "version": "10.1.1099000000000455"
+      "version": "10.1.1099000000000462"
     },
     {
       "name": "folio_inventory",
-      "version": "14.0.1099000000001470"
+      "version": "14.0.1099000000001483"
     },
     {
       "name": "folio_servicepoints",
@@ -174,15 +174,15 @@
     },
     {
       "name": "folio_checkin",
-      "version": "12.0.1099000000000312"
+      "version": "12.0.1099000000000316"
     },
     {
       "name": "folio_checkout",
-      "version": "13.0.1099000000000228"
+      "version": "13.0.1099000000000232"
     },
     {
       "name": "folio_circulation",
-      "version": "11.1.1099000000000275"
+      "version": "11.1.1099000000000279"
     },
     {
       "name": "folio_plugin-find-user",
@@ -190,7 +190,7 @@
     },
     {
       "name": "folio_export-manager",
-      "version": "5.0.1099000000000131"
+      "version": "5.0.1099000000000135"
     },
     {
       "name": "folio_plugin-bursar-export",
@@ -218,7 +218,7 @@
     },
     {
       "name": "folio_data-import",
-      "version": "10.0.1099000000000213"
+      "version": "10.0.1099000000000217"
     },
     {
       "name": "folio_plugin-find-import-profile",
@@ -242,7 +242,7 @@
     },
     {
       "name": "folio_users",
-      "version": "13.0.1099000000000965"
+      "version": "13.0.1099000000000972"
     },
     {
       "name": "folio_stripes-marc-components",
@@ -250,7 +250,7 @@
     },
     {
       "name": "folio_stripes-inventory-components",
-      "version": "2.1.1090000000811"
+      "version": "2.1.1090000000815"
     }
   ]
 }
