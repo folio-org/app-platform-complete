@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.1.0-SNAPSHOT.100200000001847",
+  "version": "3.1.0-SNAPSHOT.100200000001866",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -136,7 +136,7 @@
     },
     {
       "name": "mod-record-specifications",
-      "version": "2.1.0-SNAPSHOT.123"
+      "version": "2.1.0-SNAPSHOT.124"
     }
   ],
   "uiModules": [
