@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.1.0-SNAPSHOT.100200000002134",
+  "version": "3.1.0-SNAPSHOT.100200000002150",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -12,7 +12,7 @@
   "modules": [
     {
       "name": "mod-graphql",
-      "version": "1.15.1000386"
+      "version": "1.15.1000384"
     },
     {
       "name": "mod-quick-marc",
@@ -68,7 +68,7 @@
     },
     {
       "name": "mod-remote-storage",
-      "version": "3.5.0-SNAPSHOT.236"
+      "version": "3.5.0-SNAPSHOT.235"
     },
     {
       "name": "mod-calendar",
@@ -84,7 +84,7 @@
     },
     {
       "name": "mod-source-record-storage",
-      "version": "5.11.0-SNAPSHOT.710"
+      "version": "5.11.0-SNAPSHOT.709"
     },
     {
       "name": "mod-data-import",
@@ -96,7 +96,7 @@
     },
     {
       "name": "mod-event-config",
-      "version": "2.10.0-SNAPSHOT.72"
+      "version": "2.9.1-SNAPSHOT.71"
     },
     {
       "name": "mod-notify",
