@@ -38,7 +38,6 @@ app-platform-minimal.
 | `mod-inventory-update`      |
 | `mod-user-import`           |
 | `mod-batch-print`           |
-| `mod-record-specifications` |
 
 ## UI Modules
 
