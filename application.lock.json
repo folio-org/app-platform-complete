@@ -1,6 +1,6 @@
 {
   "name": "app-platform-complete",
-  "version": "3.1.0-SNAPSHOT.100200000001277",
+  "version": "3.1.0-SNAPSHOT.100200000002151",
   "description": "Application comprised of most Folio modules not present in app-platform-minimal",
   "platform": "base",
   "dependencies": [
@@ -12,27 +12,27 @@
   "modules": [
     {
       "name": "mod-graphql",
-      "version": "1.15.1000385"
+      "version": "1.15.1000386"
     },
     {
       "name": "mod-quick-marc",
-      "version": "8.0.0-SNAPSHOT.350"
+      "version": "8.0.0-SNAPSHOT.351"
     },
     {
       "name": "mod-inventory-storage",
-      "version": "30.0.0-SNAPSHOT.1207"
+      "version": "30.0.0-SNAPSHOT.1213"
     },
     {
       "name": "mod-circulation-storage",
-      "version": "17.5.0-SNAPSHOT.477"
+      "version": "17.5.0-SNAPSHOT.478"
     },
     {
       "name": "mod-inventory",
-      "version": "21.2.0-SNAPSHOT.910"
+      "version": "21.2.0-SNAPSHOT.912"
     },
     {
       "name": "mod-circulation",
-      "version": "24.5.0-SNAPSHOT.1339"
+      "version": "24.5.0-SNAPSHOT.1342"
     },
     {
       "name": "mod-feesfines",
@@ -44,11 +44,11 @@
     },
     {
       "name": "mod-entities-links",
-      "version": "4.1.0-SNAPSHOT.362"
+      "version": "4.1.0-SNAPSHOT.365"
     },
     {
       "name": "mod-source-record-manager",
-      "version": "4.0.0-SNAPSHOT.1050"
+      "version": "4.0.0-SNAPSHOT.1058"
     },
     {
       "name": "mod-di-converter-storage",
@@ -56,7 +56,7 @@
     },
     {
       "name": "mod-patron",
-      "version": "6.4.0-SNAPSHOT.179"
+      "version": "6.4.0-SNAPSHOT.180"
     },
     {
       "name": "mod-data-export-spring",
@@ -84,15 +84,15 @@
     },
     {
       "name": "mod-source-record-storage",
-      "version": "5.11.0-SNAPSHOT.709"
+      "version": "5.11.0-SNAPSHOT.710"
     },
     {
       "name": "mod-data-import",
-      "version": "3.4.0-SNAPSHOT.336"
+      "version": "3.4.0-SNAPSHOT.338"
     },
     {
       "name": "mod-email",
-      "version": "1.20.0-SNAPSHOT.93"
+      "version": "1.20.0-SNAPSHOT.96"
     },
     {
       "name": "mod-event-config",
@@ -136,13 +136,13 @@
     },
     {
       "name": "mod-record-specifications",
-      "version": "2.1.0-SNAPSHOT.123"
+      "version": "2.1.0-SNAPSHOT.124"
     }
   ],
   "uiModules": [
     {
       "name": "folio_marc-authorities",
-      "version": "8.0.1099000000001114"
+      "version": "8.0.1099000000001133"
     },
     {
       "name": "folio_stripes-authority-components",
@@ -150,11 +150,11 @@
     },
     {
       "name": "folio_quick-marc",
-      "version": "10.1.1099000000000455"
+      "version": "10.1.1099000000000462"
     },
     {
       "name": "folio_inventory",
-      "version": "14.0.1099000000001464"
+      "version": "14.0.1099000000001494"
     },
     {
       "name": "folio_servicepoints",
@@ -174,15 +174,15 @@
     },
     {
       "name": "folio_checkin",
-      "version": "12.0.1099000000000312"
+      "version": "12.0.1099000000000316"
     },
     {
       "name": "folio_checkout",
-      "version": "13.0.1099000000000228"
+      "version": "13.0.1099000000000232"
     },
     {
       "name": "folio_circulation",
-      "version": "11.1.1099000000000275"
+      "version": "11.1.1099000000000284"
     },
     {
       "name": "folio_plugin-find-user",
@@ -190,7 +190,7 @@
     },
     {
       "name": "folio_export-manager",
-      "version": "5.0.1099000000000131"
+      "version": "5.0.1099000000000135"
     },
     {
       "name": "folio_plugin-bursar-export",
@@ -202,7 +202,7 @@
     },
     {
       "name": "folio_circulation-log",
-      "version": "6.0.2099000000000132"
+      "version": "6.1.1099000000000139"
     },
     {
       "name": "folio_calendar",
@@ -218,7 +218,7 @@
     },
     {
       "name": "folio_data-import",
-      "version": "10.0.1099000000000209"
+      "version": "10.0.1099000000000217"
     },
     {
       "name": "folio_plugin-find-import-profile",
@@ -242,7 +242,7 @@
     },
     {
       "name": "folio_users",
-      "version": "13.0.1099000000000965"
+      "version": "13.0.1099000000000977"
     },
     {
       "name": "folio_stripes-marc-components",
@@ -250,7 +250,7 @@
     },
     {
       "name": "folio_stripes-inventory-components",
-      "version": "2.1.1090000000802"
+      "version": "2.1.1090000000815"
     }
   ]
 }
