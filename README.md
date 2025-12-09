@@ -25,7 +25,6 @@ app-platform-minimal.
 | `mod-calendar`              |
 | `mod-audit`                 |
 | `mod-courses`               |
-| `mod-source-record-storage` |
 | `mod-data-import`           |
 | `mod-email`                 |
 | `mod-event-config`          |
@@ -39,7 +38,6 @@ app-platform-minimal.
 | `mod-inventory-update`      |
 | `mod-user-import`           |
 | `mod-batch-print`           |
-| `mod-record-specifications` |
 
 ## UI Modules
 

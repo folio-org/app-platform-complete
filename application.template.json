@@ -13,6 +13,11 @@
       "name": "app-search",
       "version": "^1.0.0-SNAPSHOT",
       "preRelease": "only"
+    },
+    {
+      "name": "app-marc-storage",
+      "version": "^1.0.0-SNAPSHOT",
+      "preRelease": "only"
     }
   ],
   "modules": [
@@ -107,11 +112,6 @@
       "preRelease": "only"
     },
     {
-      "name": "mod-source-record-storage",
-      "version": "latest",
-      "preRelease": "only"
-    },
-    {
       "name": "mod-data-import",
       "version": "latest",
       "preRelease": "only"
@@ -168,11 +168,6 @@
     },
     {
       "name": "mod-batch-print",
-      "version": "latest",
-      "preRelease": "only"
-    },
-    {
-      "name": "mod-record-specifications",
       "version": "latest",
       "preRelease": "only"
     }
