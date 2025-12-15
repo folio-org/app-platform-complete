@@ -18,6 +18,11 @@
       "name": "app-marc-storage",
       "version": "^1.0.0-SNAPSHOT",
       "preRelease": "only"
+    },
+    {
+      "name": "app-notification",
+      "version": "^1.0.0-SNAPSHOT",
+      "preRelease": "only"
     }
   ],
   "modules": [
@@ -117,31 +122,6 @@
       "preRelease": "only"
     },
     {
-      "name": "mod-email",
-      "version": "latest",
-      "preRelease": "only"
-    },
-    {
-      "name": "mod-event-config",
-      "version": "latest",
-      "preRelease": "only"
-    },
-    {
-      "name": "mod-notify",
-      "version": "latest",
-      "preRelease": "only"
-    },
-    {
-      "name": "mod-sender",
-      "version": "latest",
-      "preRelease": "only"
-    },
-    {
-      "name": "mod-template-engine",
-      "version": "latest",
-      "preRelease": "only"
-    },
-    {
       "name": "mod-pubsub",
       "version": "latest",
       "preRelease": "only"
@@ -163,11 +143,6 @@
     },
     {
       "name": "mod-user-import",
-      "version": "latest",
-      "preRelease": "only"
-    },
-    {
-      "name": "mod-batch-print",
       "version": "latest",
       "preRelease": "only"
     }
