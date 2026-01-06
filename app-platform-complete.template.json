@@ -2,334 +2,340 @@
   "name": "${project.name}",
   "version": "${project.version}",
   "description": "${project.description}",
-  "dependencies": [
-    {
-      "name": "app-platform-minimal",
-      "version": "^2.0.0"
-    }
-  ],
-  "modules": [
-    {
-      "name": "mod-graphql",
-      "version": "latest"
-    },
-    {
-      "name": "mod-quick-marc",
-      "version": "latest"
-    },
-    {
-      "name": "mod-inventory-storage",
-      "version": "latest"
-    },
-    {
-      "name": "mod-circulation-storage",
-      "version": "latest"
-    },
-    {
-      "name": "mod-search",
-      "version": "latest"
-    },
-    {
+  "dependencies": [  {
+    "name": "app-platform-minimal",
+    "version": "^2.0.0"
+  }],
+  "modules":   [
+        {
       "name": "mod-inventory",
-      "version": "latest"
+      "version": "21.1.17"
     },
-    {
-      "name": "mod-circulation",
-      "version": "latest"
-    },
-    {
-      "name": "mod-feesfines",
-      "version": "latest"
-    },
-    {
-      "name": "mod-patron-blocks",
-      "version": "latest"
-    },
-    {
-      "name": "mod-entities-links",
-      "version": "latest"
-    },
-    {
-      "name": "mod-source-record-manager",
-      "version": "latest"
-    },
-    {
-      "name": "mod-di-converter-storage",
-      "version": "latest"
-    },
-    {
-      "name": "mod-patron",
-      "version": "latest"
-    },
-    {
-      "name": "mod-data-export",
-      "version": "latest"
-    },
-    {
-      "name": "mod-data-export-spring",
-      "version": "latest"
-    },
-    {
-      "name": "mod-data-export-worker",
-      "version": "latest"
-    },
-    {
-      "name": "mod-rtac",
-      "version": "latest"
-    },
-    {
-      "name": "mod-remote-storage",
-      "version": "latest"
-    },
-    {
-      "name": "mod-calendar",
-      "version": "latest"
-    },
-    {
-      "name": "mod-audit",
-      "version": "latest"
-    },
-    {
-      "name": "mod-courses",
-      "version": "latest"
-    },
-    {
-      "name": "mod-source-record-storage",
-      "version": "latest"
-    },
-    {
-      "name": "mod-data-import",
-      "version": "latest"
-    },
-    {
-      "name": "mod-agreements",
-      "version": "latest"
-    },
-    {
-      "name": "mod-licenses",
-      "version": "latest"
-    },
-    {
-      "name": "mod-email",
-      "version": "latest"
-    },
-    {
-      "name": "mod-event-config",
-      "version": "latest"
-    },
-    {
-      "name": "mod-notify",
-      "version": "latest"
-    },
-    {
-      "name": "mod-sender",
-      "version": "latest"
-    },
-    {
-      "name": "mod-template-engine",
-      "version": "latest"
-    },
-    {
+        {
       "name": "mod-pubsub",
-      "version": "latest"
+      "version": "2.16.2"
     },
-    {
+        {
+      "name": "mod-graphql",
+      "version": "1.13.1"
+    },
+        {
+      "name": "mod-quick-marc",
+      "version": "7.0.0"
+    },
+        {
+      "name": "mod-inventory-storage",
+      "version": "29.0.16"
+    },
+        {
+      "name": "mod-circulation-storage",
+      "version": "17.4.1"
+    },
+        {
+      "name": "mod-search",
+      "version": "5.0.8"
+    },
+        {
+      "name": "mod-circulation",
+      "version": "24.4.13"
+    },
+        {
+      "name": "mod-feesfines",
+      "version": "19.3.2"
+    },
+        {
+      "name": "mod-patron-blocks",
+      "version": "1.12.2"
+    },
+        {
+      "name": "mod-entities-links",
+      "version": "4.0.3"
+    },
+        {
+      "name": "mod-source-record-manager",
+      "version": "3.10.9"
+    },
+        {
+      "name": "mod-di-converter-storage",
+      "version": "2.4.2"
+    },
+        {
+      "name": "mod-patron",
+      "version": "6.3.3"
+    },
+        {
+      "name": "mod-data-export",
+      "version": "5.2.3"
+    },
+        {
+      "name": "mod-data-export-spring",
+      "version": "3.5.2"
+    },
+        {
+      "name": "mod-data-export-worker",
+      "version": "3.4.10"
+    },
+        {
+      "name": "mod-rtac",
+      "version": "3.8.2"
+    },
+        {
+      "name": "mod-remote-storage",
+      "version": "3.4.3"
+    },
+        {
+      "name": "mod-calendar",
+      "version": "3.3.1"
+    },
+        {
+      "name": "mod-audit",
+      "version": "2.11.1"
+    },
+        {
+      "name": "mod-courses",
+      "version": "1.4.12"
+    },
+        {
+      "name": "mod-source-record-storage",
+      "version": "5.10.13"
+    },
+        {
+      "name": "mod-data-import",
+      "version": "3.3.5"
+    },
+        {
+      "name": "mod-agreements",
+      "version": "7.2.3"
+    },
+        {
+      "name": "mod-licenses",
+      "version": "6.2.3"
+    },
+        {
+      "name": "mod-email",
+      "version": "1.19.1"
+    },
+        {
+      "name": "mod-event-config",
+      "version": "2.9.0"
+    },
+        {
+      "name": "mod-notify",
+      "version": "3.4.1"
+    },
+        {
+      "name": "mod-sender",
+      "version": "1.14.2"
+    },
+        {
+      "name": "mod-template-engine",
+      "version": "1.22.0"
+    },
+        {
       "name": "mod-gobi",
-      "version": "latest"
+      "version": "3.0.1"
     },
-    {
+        {
       "name": "mod-copycat",
-      "version": "latest"
+      "version": "1.8.1"
     },
-    {
+        {
+      "name": "mod-kb-ebsco-java",
+      "version": "6.0.1"
+    },
+        {
       "name": "mod-ncip",
-      "version": "latest"
+      "version": "1.16.1"
     },
-    {
+        {
       "name": "mod-inventory-update",
-      "version": "latest"
+      "version": "4.1.0"
     },
-    {
+        {
       "name": "mod-user-import",
-      "version": "latest"
+      "version": "3.10.2"
     },
-    {
+        {
       "name": "mod-service-interaction",
-      "version": "latest"
+      "version": "4.2.3"
     },
-    {
+        {
       "name": "mod-ebsconet",
-      "version": "latest"
+      "version": "2.4.0"
     },
-    {
+        {
       "name": "mod-batch-print",
-      "version": "latest"
+      "version": "1.3.0"
     },
-    {
+        {
       "name": "mod-serials-management",
-      "version": "latest"
+      "version": "2.0.4"
     },
-    {
+        {
       "name": "mod-record-specifications",
-      "version": "latest"
+      "version": "2.0.2"
     }
   ],
-  "uiModules": [
-    {
-      "name": "folio_marc-authorities",
-      "version": "latest"
-    },
-    {
-      "name": "folio_stripes-authority-components",
-      "version": "latest"
-    },
-    {
-      "name": "folio_quick-marc",
-      "version": "latest"
-    },
-    {
-      "name": "folio_inventory",
-      "version": "latest"
-    },
-    {
-      "name": "folio_servicepoints",
-      "version": "latest"
-    },
-    {
-      "name": "folio_plugin-create-inventory-records",
-      "version": "latest"
-    },
-    {
-      "name": "folio_plugin-find-instance",
-      "version": "latest"
-    },
-    {
-      "name": "folio_plugin-find-package-title",
-      "version": "latest"
-    },
-    {
-      "name": "folio_checkin",
-      "version": "latest"
-    },
-    {
-      "name": "folio_checkout",
-      "version": "latest"
-    },
-    {
-      "name": "folio_circulation",
-      "version": "latest"
-    },
-    {
-      "name": "folio_plugin-find-user",
-      "version": "latest"
-    },
-    {
-      "name": "folio_data-export",
-      "version": "latest"
-    },
-    {
-      "name": "folio_export-manager",
-      "version": "latest"
-    },
-    {
-      "name": "folio_plugin-bursar-export",
-      "version": "latest"
-    },
-    {
-      "name": "folio_remote-storage",
-      "version": "latest"
-    },
-    {
-      "name": "folio_circulation-log",
-      "version": "latest"
-    },
-    {
-      "name": "folio_calendar",
-      "version": "latest"
-    },
-    {
-      "name": "folio_courses",
-      "version": "latest"
-    },
-    {
-      "name": "folio_requests",
-      "version": "latest"
-    },
-    {
-      "name": "folio_data-import",
-      "version": "latest"
-    },
-    {
-      "name": "folio_plugin-find-import-profile",
-      "version": "latest"
-    },
-    {
-      "name": "folio_agreements",
-      "version": "latest"
-    },
-    {
-      "name": "folio_plugin-find-agreement",
-      "version": "latest"
-    },
-    {
-      "name": "folio_licenses",
-      "version": "latest"
-    },
-    {
-      "name": "folio_plugin-find-license",
-      "version": "latest"
-    },
-    {
-      "name": "folio_local-kb-admin",
-      "version": "latest"
-    },
-    {
-      "name": "folio_plugin-find-eresource",
-      "version": "latest"
-    },
-    {
-      "name": "folio_dashboard",
-      "version": "latest"
-    },
-    {
-      "name": "folio_tenant-settings",
-      "version": "latest"
-    },
-    {
-      "name": "folio_gobi-settings",
-      "version": "latest"
-    },
-    {
-      "name": "folio_handler-stripes-registry",
-      "version": "latest"
-    },
-    {
-      "name": "folio_myprofile",
-      "version": "latest"
-    },
-    {
-      "name": "folio_plugin-find-authority",
-      "version": "latest"
-    },
-    {
-      "name": "folio_service-interaction",
-      "version": "latest"
-    },
-    {
+  "uiModules":   [
+        {
       "name": "folio_users",
-      "version": "latest"
+      "version": "12.1.16"
     },
-    {
+        {
+      "name": "folio_marc-authorities",
+      "version": "7.0.3"
+    },
+        {
+      "name": "folio_stripes-authority-components",
+      "version": "6.0.3"
+    },
+        {
+      "name": "folio_quick-marc",
+      "version": "10.0.4"
+    },
+        {
+      "name": "folio_inventory",
+      "version": "13.0.11"
+    },
+        {
+      "name": "folio_servicepoints",
+      "version": "8.0.0"
+    },
+        {
+      "name": "folio_plugin-create-inventory-records",
+      "version": "6.0.0"
+    },
+        {
+      "name": "folio_plugin-find-instance",
+      "version": "9.0.2"
+    },
+        {
+      "name": "folio_plugin-find-package-title",
+      "version": "7.0.0"
+    },
+        {
+      "name": "folio_checkin",
+      "version": "11.0.3"
+    },
+        {
+      "name": "folio_checkout",
+      "version": "12.0.2"
+    },
+        {
+      "name": "folio_circulation",
+      "version": "11.0.4"
+    },
+        {
+      "name": "folio_plugin-find-user",
+      "version": "8.0.0"
+    },
+        {
+      "name": "folio_data-export",
+      "version": "7.0.0"
+    },
+        {
+      "name": "folio_export-manager",
+      "version": "4.0.0"
+    },
+        {
+      "name": "folio_plugin-bursar-export",
+      "version": "5.0.1"
+    },
+        {
+      "name": "folio_remote-storage",
+      "version": "7.0.1"
+    },
+        {
+      "name": "folio_circulation-log",
+      "version": "6.0.2"
+    },
+        {
+      "name": "folio_calendar",
+      "version": "12.0.0"
+    },
+        {
+      "name": "folio_courses",
+      "version": "7.0.3"
+    },
+        {
+      "name": "folio_requests",
+      "version": "12.0.4"
+    },
+        {
+      "name": "folio_data-import",
+      "version": "9.0.2"
+    },
+        {
+      "name": "folio_plugin-find-import-profile",
+      "version": "9.0.0"
+    },
+        {
+      "name": "folio_agreements",
+      "version": "12.0.2"
+    },
+        {
+      "name": "folio_plugin-find-agreement",
+      "version": "12.0.0"
+    },
+        {
+      "name": "folio_eholdings",
+      "version": "11.0.1"
+    },
+        {
+      "name": "folio_licenses",
+      "version": "12.0.1"
+    },
+        {
+      "name": "folio_plugin-find-license",
+      "version": "12.0.0"
+    },
+        {
+      "name": "folio_local-kb-admin",
+      "version": "9.0.0"
+    },
+        {
+      "name": "folio_plugin-find-eresource",
+      "version": "8.0.0"
+    },
+        {
+      "name": "folio_dashboard",
+      "version": "7.0.0"
+    },
+        {
+      "name": "folio_tenant-settings",
+      "version": "10.0.0"
+    },
+        {
+      "name": "folio_gobi-settings",
+      "version": "4.0.0"
+    },
+        {
+      "name": "folio_handler-stripes-registry",
+      "version": "3.0.0"
+    },
+        {
+      "name": "folio_myprofile",
+      "version": "10.0.0"
+    },
+        {
+      "name": "folio_plugin-find-authority",
+      "version": "5.0.1"
+    },
+        {
+      "name": "folio_service-interaction",
+      "version": "4.0.0"
+    },
+        {
       "name": "folio_serials-management",
-      "version": "latest"
+      "version": "2.0.4"
     },
-    {
+        {
       "name": "folio_stripes-marc-components",
-      "version": "latest"
+      "version": "2.0.2"
     },
-    {
+        {
       "name": "folio_stripes-inventory-components",
-      "version": "latest"
+      "version": "2.0.8"
     }
   ]
 }
