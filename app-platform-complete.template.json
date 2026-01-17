@@ -19,15 +19,15 @@
     {
       "name": "app-notification",
       "version": "^1.0.0-SNAPSHOT"
+    },
+    {
+      "name": "app-quick-marc",
+      "version": "^1.0.0-SNAPSHOT"
     }
   ],
   "modules": [
     {
       "name": "mod-graphql",
-      "version": "latest"
-    },
-    {
-      "name": "mod-quick-marc",
       "version": "latest"
     },
     {
@@ -129,10 +129,6 @@
       "version": "latest"
     },
     {
-      "name": "folio_quick-marc",
-      "version": "latest"
-    },
-    {
       "name": "folio_inventory",
       "version": "latest"
     },
@@ -218,10 +214,6 @@
     },
     {
       "name": "folio_users",
-      "version": "latest"
-    },
-    {
-      "name": "folio_stripes-marc-components",
       "version": "latest"
     },
     {

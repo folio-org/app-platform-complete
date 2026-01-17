@@ -8,7 +8,6 @@ app-platform-minimal.
 | Module name                 |
 |:----------------------------|
 | `mod-graphql`               |
-| `mod-quick-marc`            |
 | `mod-inventory-storage`     |
 | `mod-circulation-storage`   |
 | `mod-inventory`             |
@@ -39,7 +38,6 @@ app-platform-minimal.
 |:----------------------------------------|
 | `folio_marc-authorities`                |
 | `folio_stripes-authority-components`    |
-| `folio_quick-marc`                      |
 | `folio_inventory`                       |
 | `folio_servicepoints`                   |
 | `folio_plugin-create-inventory-records` |
@@ -63,5 +61,4 @@ app-platform-minimal.
 | `folio_myprofile`                       |
 | `folio_plugin-find-authority`           |
 | `folio_users`                           |
-| `folio_stripes-marc-components`         |
 | `folio_stripes-inventory-components`    |

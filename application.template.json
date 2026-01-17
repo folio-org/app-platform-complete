@@ -23,16 +23,16 @@
       "name": "app-notification",
       "version": "^1.0.0-SNAPSHOT",
       "preRelease": "only"
+    },
+    {
+      "name": "app-quick-marc",
+      "version": "^1.0.0-SNAPSHOT",
+      "preRelease": "only"
     }
   ],
   "modules": [
     {
       "name": "mod-graphql",
-        "version": "latest",
-        "preRelease": "only"
-    },
-    {
-      "name": "mod-quick-marc",
         "version": "latest",
         "preRelease": "only"
     },
@@ -159,11 +159,6 @@
       "preRelease": "only"
     },
     {
-      "name": "folio_quick-marc",
-      "version": "latest",
-      "preRelease": "only"
-    },
-    {
       "name": "folio_inventory",
       "version": "latest",
       "preRelease": "only"
@@ -270,11 +265,6 @@
     },
     {
       "name": "folio_users",
-      "version": "latest",
-      "preRelease": "only"
-    },
-    {
-      "name": "folio_stripes-marc-components",
       "version": "latest",
       "preRelease": "only"
     },
