@@ -25,18 +25,12 @@ app-platform-minimal.
 | `mod-audit`                 |
 | `mod-courses`               |
 | `mod-data-import`           |
-| `mod-email`                 |
-| `mod-event-config`          |
-| `mod-notify`                |
-| `mod-sender`                |
-| `mod-template-engine`       |
 | `mod-pubsub`                |
 | `mod-copycat`               |
 | `mod-kb-ebsco-java`         |
 | `mod-ncip`                  |
 | `mod-inventory-update`      |
 | `mod-user-import`           |
-| `mod-batch-print`           |
 
 ## UI Modules
 
