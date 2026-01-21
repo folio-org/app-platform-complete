@@ -28,6 +28,11 @@
       "name": "app-quick-marc",
       "version": "^1.0.0-SNAPSHOT",
       "preRelease": "only"
+    },
+    {
+      "name": "app-authority-records",
+      "version": "^1.0.0-SNAPSHOT",
+      "preRelease": "only"
     }
   ],
   "modules": [
@@ -63,11 +68,6 @@
     },
     {
       "name": "mod-patron-blocks",
-      "version": "latest",
-      "preRelease": "only"
-    },
-    {
-      "name": "mod-entities-links",
       "version": "latest",
       "preRelease": "only"
     },
@@ -148,16 +148,6 @@
     }
   ],
   "uiModules": [
-    {
-      "name": "folio_marc-authorities",
-      "version": "latest",
-      "preRelease": "only"
-    },
-    {
-      "name": "folio_stripes-authority-components",
-      "version": "latest",
-      "preRelease": "only"
-    },
     {
       "name": "folio_inventory",
       "version": "latest",
@@ -255,11 +245,6 @@
     },
     {
       "name": "folio_myprofile",
-      "version": "latest",
-      "preRelease": "only"
-    },
-    {
-      "name": "folio_plugin-find-authority",
       "version": "latest",
       "preRelease": "only"
     },
