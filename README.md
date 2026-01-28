@@ -14,7 +14,6 @@ app-platform-minimal.
 | `mod-circulation`           |
 | `mod-feesfines`             |
 | `mod-patron-blocks`         |
-| `mod-entities-links`        |
 | `mod-source-record-manager` |
 | `mod-di-converter-storage`  |
 | `mod-patron`                |
@@ -36,8 +35,6 @@ app-platform-minimal.
 
 | Module name                             |
 |:----------------------------------------|
-| `folio_marc-authorities`                |
-| `folio_stripes-authority-components`    |
 | `folio_inventory`                       |
 | `folio_servicepoints`                   |
 | `folio_plugin-create-inventory-records` |
@@ -59,6 +56,5 @@ app-platform-minimal.
 | `folio_tenant-settings`                 |
 | `folio_handler-stripes-registry`        |
 | `folio_myprofile`                       |
-| `folio_plugin-find-authority`           |
 | `folio_users`                           |
 | `folio_stripes-inventory-components`    |
