@@ -26,7 +26,6 @@ app-platform-minimal.
 | `mod-data-import`           |
 | `mod-pubsub`                |
 | `mod-copycat`               |
-| `mod-kb-ebsco-java`         |
 | `mod-ncip`                  |
 | `mod-inventory-update`      |
 | `mod-user-import`           |
@@ -52,7 +51,6 @@ app-platform-minimal.
 | `folio_requests`                        |
 | `folio_data-import`                     |
 | `folio_plugin-find-import-profile`      |
-| `folio_eholdings`                       |
 | `folio_tenant-settings`                 |
 | `folio_handler-stripes-registry`        |
 | `folio_myprofile`                       |
