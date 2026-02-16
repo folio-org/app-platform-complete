@@ -17,8 +17,6 @@ app-platform-minimal.
 | `mod-feesfines`             |
 | `mod-patron-blocks`         |
 | `mod-entities-links`        |
-| `mod-source-record-manager` |
-| `mod-di-converter-storage`  |
 | `mod-patron`                |
 | `mod-data-export`           |
 | `mod-data-export-spring`    |
@@ -29,7 +27,6 @@ app-platform-minimal.
 | `mod-audit`                 |
 | `mod-courses`               |
 | `mod-source-record-storage` |
-| `mod-data-import`           |
 | `mod-agreements`            |
 | `mod-licenses`              |
 | `mod-email`                 |
@@ -73,8 +70,6 @@ app-platform-minimal.
 | `folio_calendar`                        |
 | `folio_courses`                         |
 | `folio_requests`                        |
-| `folio_data-import`                     |
-| `folio_plugin-find-import-profile`      |
 | `folio_agreements`                      |
 | `folio_plugin-find-agreement`           |
 | `folio_licenses`                        |
