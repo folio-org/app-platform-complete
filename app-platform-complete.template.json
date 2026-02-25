@@ -6,20 +6,32 @@
   "dependencies": [
     {
       "name": "app-platform-minimal",
+      "version": "^2.1.0-SNAPSHOT"
+    },
+    {
+      "name": "app-search",
+      "version": "^1.0.0-SNAPSHOT"
+    },
+    {
+      "name": "app-marc-storage",
+      "version": "^1.0.0-SNAPSHOT"
+    },
+    {
+      "name": "app-notification",
+      "version": "^1.0.0-SNAPSHOT"
+    },
+    {
+      "name": "app-quick-marc",
+      "version": "^1.0.0-SNAPSHOT"
+    },
+    {
+      "name": "app-authority-records",
       "version": "^1.0.0-SNAPSHOT"
     }
   ],
   "modules": [
     {
-      "name": "mod-oa",
-      "version": "latest"
-    },
-    {
       "name": "mod-graphql",
-      "version": "latest"
-    },
-    {
-      "name": "mod-quick-marc",
       "version": "latest"
     },
     {
@@ -28,10 +40,6 @@
     },
     {
       "name": "mod-circulation-storage",
-      "version": "latest"
-    },
-    {
-      "name": "mod-search",
       "version": "latest"
     },
     {
@@ -51,10 +59,6 @@
       "version": "latest"
     },
     {
-      "name": "mod-entities-links",
-      "version": "latest"
-    },
-    {
       "name": "mod-source-record-manager",
       "version": "latest"
     },
@@ -67,19 +71,11 @@
       "version": "latest"
     },
     {
-      "name": "mod-data-export",
-      "version": "latest"
-    },
-    {
       "name": "mod-data-export-spring",
       "version": "latest"
     },
     {
       "name": "mod-data-export-worker",
-      "version": "latest"
-    },
-    {
-      "name": "mod-rtac",
       "version": "latest"
     },
     {
@@ -99,39 +95,7 @@
       "version": "latest"
     },
     {
-      "name": "mod-source-record-storage",
-      "version": "latest"
-    },
-    {
       "name": "mod-data-import",
-      "version": "latest"
-    },
-    {
-      "name": "mod-agreements",
-      "version": "latest"
-    },
-    {
-      "name": "mod-licenses",
-      "version": "latest"
-    },
-    {
-      "name": "mod-email",
-      "version": "latest"
-    },
-    {
-      "name": "mod-event-config",
-      "version": "latest"
-    },
-    {
-      "name": "mod-notify",
-      "version": "latest"
-    },
-    {
-      "name": "mod-sender",
-      "version": "latest"
-    },
-    {
-      "name": "mod-template-engine",
       "version": "latest"
     },
     {
@@ -139,19 +103,7 @@
       "version": "latest"
     },
     {
-      "name": "mod-gobi",
-      "version": "latest"
-    },
-    {
-      "name": "mod-mosaic",
-      "version": "latest"
-    },
-    {
       "name": "mod-copycat",
-      "version": "latest"
-    },
-    {
-      "name": "mod-kb-ebsco-java",
       "version": "latest"
     },
     {
@@ -165,45 +117,9 @@
     {
       "name": "mod-user-import",
       "version": "latest"
-    },
-    {
-      "name": "mod-service-interaction",
-      "version": "latest"
-    },
-    {
-      "name": "mod-ebsconet",
-      "version": "latest"
-    },
-    {
-      "name": "mod-batch-print",
-      "version": "latest"
-    },
-    {
-      "name": "mod-serials-management",
-      "version": "latest"
-    },
-    {
-      "name": "mod-record-specifications",
-      "version": "latest"
-    },
-    {
-      "name": "mod-reporting",
-      "version": "latest"
     }
   ],
   "uiModules": [
-    {
-      "name": "folio_marc-authorities",
-      "version": "latest"
-    },
-    {
-      "name": "folio_stripes-authority-components",
-      "version": "latest"
-    },
-    {
-      "name": "folio_quick-marc",
-      "version": "latest"
-    },
     {
       "name": "folio_inventory",
       "version": "latest"
@@ -225,10 +141,6 @@
       "version": "latest"
     },
     {
-      "name": "folio_plugin-find-package-title",
-      "version": "latest"
-    },
-    {
       "name": "folio_checkin",
       "version": "latest"
     },
@@ -242,10 +154,6 @@
     },
     {
       "name": "folio_plugin-find-user",
-      "version": "latest"
-    },
-    {
-      "name": "folio_data-export",
       "version": "latest"
     },
     {
@@ -285,47 +193,7 @@
       "version": "latest"
     },
     {
-      "name": "folio_agreements",
-      "version": "latest"
-    },
-    {
-      "name": "folio_plugin-find-agreement",
-      "version": "latest"
-    },
-    {
-      "name": "folio_eholdings",
-      "version": "latest"
-    },
-    {
-      "name": "folio_licenses",
-      "version": "latest"
-    },
-    {
-      "name": "folio_plugin-find-license",
-      "version": "latest"
-    },
-    {
-      "name": "folio_local-kb-admin",
-      "version": "latest"
-    },
-    {
-      "name": "folio_plugin-find-eresource",
-      "version": "latest"
-    },
-    {
-      "name": "folio_dashboard",
-      "version": "latest"
-    },
-    {
       "name": "folio_tenant-settings",
-      "version": "latest"
-    },
-    {
-      "name": "folio_gobi-settings",
-      "version": "latest"
-    },
-    {
-      "name": "folio_mosaic-settings",
       "version": "latest"
     },
     {
@@ -337,35 +205,11 @@
       "version": "latest"
     },
     {
-      "name": "folio_plugin-find-authority",
-      "version": "latest"
-    },
-    {
-      "name": "folio_service-interaction",
-      "version": "latest"
-    },
-    {
       "name": "folio_users",
       "version": "latest"
     },
     {
-      "name": "folio_serials-management",
-      "version": "latest"
-    },
-    {
-      "name": "folio_stripes-marc-components",
-      "version": "latest"
-    },
-    {
       "name": "folio_stripes-inventory-components",
-      "version": "latest"
-    },
-    {
-      "name": "folio_oa",
-      "version": "latest"
-    },
-    {
-      "name": "folio_ldp",
       "version": "latest"
     }
   ]
