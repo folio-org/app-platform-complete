@@ -209,6 +209,10 @@
       "version": "latest"
     },
     {
+      "name": "folio_inventory-import",
+      "version": "latest"
+    },
+    {
       "name": "folio_servicepoints",
       "version": "latest"
     },
