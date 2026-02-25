@@ -57,6 +57,7 @@ app-platform-minimal.
 | `folio_stripes-authority-components`    |
 | `folio_quick-marc`                      |
 | `folio_inventory`                       |
+| `folio_inventory-import`                |
 | `folio_servicepoints`                   |
 | `folio_plugin-create-inventory-records` |
 | `folio_plugin-find-instance`            |

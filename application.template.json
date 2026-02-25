@@ -238,6 +238,11 @@
       "preRelease": "false"
     },
     {
+      "name": "folio_inventory-import",
+      "version": "latest",
+      "preRelease": "false"
+    },
+    {
       "name": "folio_servicepoints",
       "version": "latest",
       "preRelease": "false"
