@@ -8,9 +8,7 @@ app-platform-minimal.
 | Module name                 |
 |:----------------------------|
 | `mod-graphql`               |
-| `mod-inventory-storage`     |
 | `mod-circulation-storage`   |
-| `mod-inventory`             |
 | `mod-circulation`           |
 | `mod-feesfines`             |
 | `mod-patron-blocks`         |
@@ -27,17 +25,13 @@ app-platform-minimal.
 | `mod-pubsub`                |
 | `mod-copycat`               |
 | `mod-ncip`                  |
-| `mod-inventory-update`      |
 | `mod-user-import`           |
 
 ## UI Modules
 
 | Module name                             |
 |:----------------------------------------|
-| `folio_inventory`                       |
 | `folio_servicepoints`                   |
-| `folio_plugin-create-inventory-records` |
-| `folio_plugin-find-instance`            |
 | `folio_checkin`                         |
 | `folio_checkout`                        |
 | `folio_circulation`                     |
@@ -55,4 +49,3 @@ app-platform-minimal.
 | `folio_handler-stripes-registry`        |
 | `folio_myprofile`                       |
 | `folio_users`                           |
-| `folio_stripes-inventory-components`    |
