@@ -35,6 +35,7 @@ app-platform-minimal.
 | Module name                             |
 |:----------------------------------------|
 | `folio_inventory`                       |
+| `folio_inventory-import`                |
 | `folio_servicepoints`                   |
 | `folio_plugin-create-inventory-records` |
 | `folio_plugin-find-instance`            |
