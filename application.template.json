@@ -227,6 +227,6 @@
       "name": "folio_users",
       "version": "latest",
       "preRelease": "only"
-    },
+    }
   ]
 }
