@@ -33,6 +33,11 @@
       "name": "app-authority-records",
       "version": "^1.0.0-SNAPSHOT",
       "preRelease": "only"
+    },
+    {
+      "name": "app-inventory",
+      "version": "^1.0.0-SNAPSHOT",
+      "preRelease": "only"
     }
   ],
   "modules": [
@@ -42,17 +47,7 @@
         "preRelease": "only"
     },
     {
-      "name": "mod-inventory-storage",
-        "version": "latest",
-        "preRelease": "only"
-    },
-    {
       "name": "mod-circulation-storage",
-        "version": "latest",
-        "preRelease": "only"
-    },
-    {
-      "name": "mod-inventory",
         "version": "latest",
         "preRelease": "only"
     },
@@ -137,11 +132,6 @@
       "preRelease": "only"
     },
     {
-      "name": "mod-inventory-update",
-      "version": "latest",
-      "preRelease": "only"
-    },
-    {
       "name": "mod-user-import",
       "version": "latest",
       "preRelease": "only"
@@ -149,22 +139,7 @@
   ],
   "uiModules": [
     {
-      "name": "folio_inventory",
-      "version": "latest",
-      "preRelease": "only"
-    },
-    {
       "name": "folio_servicepoints",
-      "version": "latest",
-      "preRelease": "only"
-    },
-    {
-      "name": "folio_plugin-create-inventory-records",
-      "version": "latest",
-      "preRelease": "only"
-    },
-    {
-      "name": "folio_plugin-find-instance",
       "version": "latest",
       "preRelease": "only"
     },
@@ -253,10 +228,5 @@
       "version": "latest",
       "preRelease": "only"
     },
-    {
-      "name": "folio_stripes-inventory-components",
-      "version": "latest",
-      "preRelease": "only"
-    }
   ]
 }
