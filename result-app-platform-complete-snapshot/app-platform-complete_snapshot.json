@@ -11,7 +11,7 @@
   "updates_cnt": 15,
   "updated_modules": "BE Upgraded:\nmod-graphql (1.15.1000387 -> 1.15.1000391)\nmod-circulation-storage (17.5.0-SNAPSHOT.504 -> 17.5.0-SNAPSHOT.2068)\nmod-circulation (24.5.0-SNAPSHOT.1362 -> 24.5.0-SNAPSHOT.2005)\nmod-feesfines (19.4.0-SNAPSHOT.276 -> 19.4.0-SNAPSHOT.2003)\nmod-patron-blocks (1.13.0-SNAPSHOT.120 -> 1.13.0-SNAPSHOT.2010)\nmod-source-record-manager (4.0.0-SNAPSHOT.1069 -> 4.0.0-SNAPSHOT.1073)\nmod-patron (6.4.0-SNAPSHOT.187 -> 6.4.0-SNAPSHOT.2003)\nmod-data-export-worker (3.5.0-SNAPSHOT.2112 -> 3.5.0-SNAPSHOT.2121)\nmod-data-import (3.4.0-SNAPSHOT.344 -> 3.4.0-SNAPSHOT.345)\nmod-pubsub (2.17.0-SNAPSHOT.265 -> 2.17.0-SNAPSHOT.2003)\n\nUI Upgraded:\nfolio_checkout (13.0.1099000000000346 -> 13.0.1099000000000351)\nfolio_circulation (12.0.1099000000000386 -> 12.0.1099000000000391)\nfolio_tenant-settings (11.0.1099000000000274 -> 11.0.1099000000000277)\nfolio_myprofile (11.0.1099000000000182 -> 11.0.1099000000000188)\nfolio_users (13.0.1099000000001191 -> 13.0.1099000000001199)\n\n",
   "previous_version": "3.3.0-SNAPSHOT.100200000007109",
-  "new_version": "3.3.0-SNAPSHOT.100200000007127",
+  "new_version": "3.3.0-SNAPSHOT.100200000007128",
   "failure_reason": "Dependencies integrity validation request failed (HTTP 400)",
   "commit_sha": "",
   "pr_created": false,
