@@ -5,411 +5,411 @@
   "dependencies": [
     {
       "name": "app-platform-minimal",
-      "version": "^2.0.0",
+      "version": "^VERSION_^2.0.0",
       "preRelease": "false"
     }
   ],
   "modules": [
     {
       "name": "mod-graphql",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-quick-marc",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-inventory-storage",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-circulation-storage",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-search",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-inventory",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-circulation",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-feesfines",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-patron-blocks",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-entities-links",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-source-record-manager",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-di-converter-storage",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-patron",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-data-export",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-data-export-spring",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-data-export-worker",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-rtac",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-remote-storage",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-calendar",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-audit",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-courses",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-source-record-storage",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-data-import",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-agreements",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-licenses",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-email",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-event-config",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-notify",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-sender",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-template-engine",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-pubsub",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-gobi",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-copycat",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-ncip",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-inventory-update",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-user-import",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-service-interaction",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-ebsconet",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-batch-print",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-serials-management",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "mod-record-specifications",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     }
   ],
   "uiModules": [
     {
       "name": "folio_marc-authorities",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_stripes-authority-components",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_quick-marc",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_inventory",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_servicepoints",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_plugin-create-inventory-records",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_plugin-find-instance",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_plugin-find-package-title",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_checkin",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_checkout",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_circulation",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_plugin-find-user",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_data-export",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_export-manager",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_plugin-bursar-export",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_remote-storage",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_circulation-log",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_calendar",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_courses",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_requests",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_data-import",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_plugin-find-import-profile",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_agreements",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_plugin-find-agreement",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_licenses",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_plugin-find-license",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_local-kb-admin",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_plugin-find-eresource",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_dashboard",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_tenant-settings",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_gobi-settings",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_handler-stripes-registry",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_myprofile",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_plugin-find-authority",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_service-interaction",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_users",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_serials-management",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_stripes-marc-components",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     },
     {
       "name": "folio_stripes-inventory-components",
-      "version": "latest",
+      "version": "^VERSION_latest",
       "preRelease": "false"
     }
   ]
