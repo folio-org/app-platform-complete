@@ -12,8 +12,6 @@ app-platform-minimal.
 | `mod-circulation`           |
 | `mod-feesfines`             |
 | `mod-patron-blocks`         |
-| `mod-source-record-manager` |
-| `mod-di-converter-storage`  |
 | `mod-patron`                |
 | `mod-data-export-spring`    |
 | `mod-data-export-worker`    |
@@ -21,7 +19,6 @@ app-platform-minimal.
 | `mod-calendar`              |
 | `mod-audit`                 |
 | `mod-courses`               |
-| `mod-data-import`           |
 | `mod-pubsub`                |
 | `mod-copycat`               |
 | `mod-ncip`                  |
@@ -43,8 +40,6 @@ app-platform-minimal.
 | `folio_calendar`                        |
 | `folio_courses`                         |
 | `folio_requests`                        |
-| `folio_data-import`                     |
-| `folio_plugin-find-import-profile`      |
 | `folio_tenant-settings`                 |
 | `folio_handler-stripes-registry`        |
 | `folio_myprofile`                       |

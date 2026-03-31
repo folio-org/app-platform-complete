@@ -67,16 +67,6 @@
       "preRelease": "only"
     },
     {
-      "name": "mod-source-record-manager",
-      "version": "latest",
-      "preRelease": "only"
-    },
-    {
-      "name": "mod-di-converter-storage",
-      "version": "latest",
-      "preRelease": "only"
-    },
-    {
       "name": "mod-patron",
       "version": "latest",
       "preRelease": "only"
@@ -108,11 +98,6 @@
     },
     {
       "name": "mod-courses",
-      "version": "latest",
-      "preRelease": "only"
-    },
-    {
-      "name": "mod-data-import",
       "version": "latest",
       "preRelease": "only"
     },
@@ -195,16 +180,6 @@
     },
     {
       "name": "folio_requests",
-      "version": "latest",
-      "preRelease": "only"
-    },
-    {
-      "name": "folio_data-import",
-      "version": "latest",
-      "preRelease": "only"
-    },
-    {
-      "name": "folio_plugin-find-import-profile",
       "version": "latest",
       "preRelease": "only"
     },
