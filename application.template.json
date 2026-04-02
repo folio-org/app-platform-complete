@@ -42,7 +42,7 @@
     },
     {
       "name": "mod-circulation",
-      "version": "24.4.18",
+      "version": "~24.4.18",
       "preRelease": "false"
     },
     {
@@ -239,7 +239,7 @@
     },
     {
       "name": "folio_inventory",
-      "version": "13.0.12",
+      "version": "^13.0.12",
       "preRelease": "false"
     },
     {
