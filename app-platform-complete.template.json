@@ -55,14 +55,6 @@
       "version": "latest"
     },
     {
-      "name": "mod-source-record-manager",
-      "version": "latest"
-    },
-    {
-      "name": "mod-di-converter-storage",
-      "version": "latest"
-    },
-    {
       "name": "mod-patron",
       "version": "latest"
     },
@@ -88,10 +80,6 @@
     },
     {
       "name": "mod-courses",
-      "version": "latest"
-    },
-    {
-      "name": "mod-data-import",
       "version": "latest"
     },
     {
@@ -158,14 +146,6 @@
     },
     {
       "name": "folio_requests",
-      "version": "latest"
-    },
-    {
-      "name": "folio_data-import",
-      "version": "latest"
-    },
-    {
-      "name": "folio_plugin-find-import-profile",
       "version": "latest"
     },
     {
