@@ -25,11 +25,6 @@
       "preRelease": "only"
     },
     {
-      "name": "app-authority-records",
-      "version": "^1.0.0-SNAPSHOT",
-      "preRelease": "only"
-    },
-    {
       "name": "app-inventory",
       "version": "^1.0.0-SNAPSHOT",
       "preRelease": "only"
