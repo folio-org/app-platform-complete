@@ -5,7 +5,7 @@
   "dependencies": [
     {
       "name": "app-platform-minimal",
-      "version": "^2.0.51",
+      "version": "~2.0.51",
       "preRelease": "false"
     }
   ],
@@ -17,12 +17,12 @@
     },
     {
       "name": "mod-quick-marc",
-      "version": "^7.0.0",
+      "version": "~7.0.0",
       "preRelease": "false"
     },
     {
       "name": "mod-inventory-storage",
-      "version": "^29.0.18",
+      "version": "~29.0.18",
       "preRelease": "false"
     },
     {
@@ -32,7 +32,7 @@
     },
     {
       "name": "mod-search",
-      "version": "^5.0.12",
+      "version": "~5.0.12",
       "preRelease": "false"
     },
     {
@@ -57,7 +57,7 @@
     },
     {
       "name": "mod-entities-links",
-      "version": "^4.0.3",
+      "version": "~4.0.3",
       "preRelease": "false"
     },
     {
@@ -177,7 +177,7 @@
     },
     {
       "name": "mod-kb-ebsco-java",
-      "version": "^6.0.1",
+      "version": "~6.0.1",
       "preRelease": "false"
     },    
     {
@@ -212,214 +212,214 @@
     },
     {
       "name": "mod-serials-management",
-      "version": "^2.0.4",
+      "version": "~2.0.4",
       "preRelease": "false"
     },
     {
       "name": "mod-record-specifications",
-      "version": "^2.0.3",
+      "version": "~2.0.3",
       "preRelease": "false"
     }
   ],
   "uiModules": [
     {
       "name": "folio_marc-authorities",
-      "version": "^7.0.3",
+      "version": "~7.0.3",
       "preRelease": "false"
     },
     {
       "name": "folio_stripes-authority-components",
-      "version": "^6.0.3",
+      "version": "~6.0.3",
       "preRelease": "false"
     },
     {
       "name": "folio_quick-marc",
-      "version": "^10.0.4",
+      "version": "~10.0.4",
       "preRelease": "false"
     },
     {
       "name": "folio_inventory",
-      "version": "^13.0.12",
+      "version": "~13.0.12",
       "preRelease": "false"
     },
     {
       "name": "folio_servicepoints",
-      "version": "^8.0.0",
+      "version": "~8.0.0",
       "preRelease": "false"
     },
     {
       "name": "folio_plugin-create-inventory-records",
-      "version": "^6.0.0",
+      "version": "~6.0.0",
       "preRelease": "false"
     },
     {
       "name": "folio_plugin-find-instance",
-      "version": "^9.0.2",
+      "version": "~9.0.2",
       "preRelease": "false"
     },
     {
       "name": "folio_plugin-find-package-title",
-      "version": "^7.0.0",
+      "version": "~7.0.0",
       "preRelease": "false"
     },
     {
       "name": "folio_checkin",
-      "version": "^11.0.3",
+      "version": "~11.0.3",
       "preRelease": "false"
     },
     {
       "name": "folio_checkout",
-      "version": "^12.0.2",
+      "version": "~12.0.2",
       "preRelease": "false"
     },
     {
       "name": "folio_circulation",
-      "version": "^11.0.4",
+      "version": "~11.0.4",
       "preRelease": "false"
     },
     {
       "name": "folio_plugin-find-user",
-      "version": "^8.0.0",
+      "version": "~8.0.0",
       "preRelease": "false"
     },
     {
       "name": "folio_data-export",
-      "version": "^7.0.0",
+      "version": "~7.0.0",
       "preRelease": "false"
     },
     {
       "name": "folio_export-manager",
-      "version": "^4.0.0",
+      "version": "~4.0.0",
       "preRelease": "false"
     },
     {
       "name": "folio_plugin-bursar-export",
-      "version": "^5.0.1",
+      "version": "~5.0.1",
       "preRelease": "false"
     },
     {
       "name": "folio_remote-storage",
-      "version": "^7.0.1",
+      "version": "~7.0.1",
       "preRelease": "false"
     },
     {
       "name": "folio_circulation-log",
-      "version": "^6.0.2",
+      "version": "~6.0.2",
       "preRelease": "false"
     },
     {
       "name": "folio_calendar",
-      "version": "^12.0.0",
+      "version": "~12.0.0",
       "preRelease": "false"
     },
     {
       "name": "folio_courses",
-      "version": "^7.0.3",
+      "version": "~7.0.3",
       "preRelease": "false"
     },
     {
       "name": "folio_requests",
-      "version": "^12.0.4",
+      "version": "~12.0.4",
       "preRelease": "false"
     },
     {
       "name": "folio_data-import",
-      "version": "^9.0.2",
+      "version": "~9.0.2",
       "preRelease": "false"
     },
     {
       "name": "folio_plugin-find-import-profile",
-      "version": "^9.0.0",
+      "version": "~9.0.0",
       "preRelease": "false"
     },
     {
       "name": "folio_agreements",
-      "version": "^12.0.2",
+      "version": "~12.0.2",
       "preRelease": "false"
     },
     {
       "name": "folio_plugin-find-agreement",
-      "version": "^12.0.0",
+      "version": "~12.0.0",
       "preRelease": "false"
     },
     {
       "name": "folio_eholdings",
-      "version": "^11.0.1",
+      "version": "~11.0.1",
       "preRelease": "false"
     },    
     {
       "name": "folio_licenses",
-      "version": "^12.0.1",
+      "version": "~12.0.1",
       "preRelease": "false"
     },
     {
       "name": "folio_plugin-find-license",
-      "version": "^12.0.0",
+      "version": "~12.0.0",
       "preRelease": "false"
     },
     {
       "name": "folio_local-kb-admin",
-      "version": "^9.0.0",
+      "version": "~9.0.0",
       "preRelease": "false"
     },
     {
       "name": "folio_plugin-find-eresource",
-      "version": "^8.0.0",
+      "version": "~8.0.0",
       "preRelease": "false"
     },
     {
       "name": "folio_dashboard",
-      "version": "^7.0.0",
+      "version": "~7.0.0",
       "preRelease": "false"
     },
     {
       "name": "folio_tenant-settings",
-      "version": "^10.0.0",
+      "version": "~10.0.0",
       "preRelease": "false"
     },
     {
       "name": "folio_gobi-settings",
-      "version": "^4.0.0",
+      "version": "~4.0.0",
       "preRelease": "false"
     },
     {
       "name": "folio_handler-stripes-registry",
-      "version": "^3.0.0",
+      "version": "~3.0.0",
       "preRelease": "false"
     },
     {
       "name": "folio_myprofile",
-      "version": "^10.0.0",
+      "version": "~10.0.0",
       "preRelease": "false"
     },
     {
       "name": "folio_plugin-find-authority",
-      "version": "^5.0.1",
+      "version": "~5.0.1",
       "preRelease": "false"
     },
     {
       "name": "folio_service-interaction",
-      "version": "^4.0.0",
+      "version": "~4.0.0",
       "preRelease": "false"
     },
     {
       "name": "folio_users",
-      "version": "^12.1.16",
+      "version": "~12.1.16",
       "preRelease": "false"
     },
     {
       "name": "folio_serials-management",
-      "version": "^2.0.4",
+      "version": "~2.0.4",
       "preRelease": "false"
     },
     {
       "name": "folio_stripes-marc-components",
-      "version": "^2.0.2",
+      "version": "~2.0.2",
       "preRelease": "false"
     },
     {
       "name": "folio_stripes-inventory-components",
-      "version": "^2.0.9",
+      "version": "~2.0.9",
       "preRelease": "false"
     }
   ]
