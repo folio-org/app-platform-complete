@@ -108,7 +108,7 @@
     },
     {
       "name": "mod-user-import",
-      "version": "^VERSION_latest",
+      "version": "~3.11.0",
       "preRelease": "false"
     }
   ],
