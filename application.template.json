@@ -6,104 +6,104 @@
   "dependencies": [
     {
       "name": "app-platform-minimal",
-      "version": "^VERSION_^2.1.0-SNAPSHOT",
+      "version": "~2.1.0",
       "preRelease": "false"
     },
     {
       "name": "app-search",
-      "version": "^VERSION_^1.0.0-SNAPSHOT",
+      "version": "~1.0.0",
       "preRelease": "false"
     },
     {
       "name": "app-marc-storage",
-      "version": "^VERSION_^1.0.0-SNAPSHOT",
+      "version": "~1.0.0",
       "preRelease": "false"
     },
     {
       "name": "app-notification",
-      "version": "^VERSION_^1.0.0-SNAPSHOT",
+      "version": "~1.0.0",
       "preRelease": "false"
     },
     {
       "name": "app-inventory",
-      "version": "^VERSION_^1.0.0-SNAPSHOT",
+      "version": "~1.0.0",
       "preRelease": "false"
     }
   ],
   "modules": [
     {
       "name": "mod-graphql",
-      "version": "^VERSION_latest",
+      "version": "~1.15.1",
       "preRelease": "false"
     },
     {
       "name": "mod-circulation-storage",
-      "version": "^VERSION_latest",
+      "version": "~17.5.0",
       "preRelease": "false"
     },
     {
       "name": "mod-circulation",
-      "version": "^VERSION_latest",
+      "version": "~24.5.0",
       "preRelease": "false"
     },
     {
       "name": "mod-feesfines",
-      "version": "^VERSION_latest",
+      "version": "~19.4.0",
       "preRelease": "false"
     },
     {
       "name": "mod-patron-blocks",
-      "version": "^VERSION_latest",
+      "version": "~1.13.0",
       "preRelease": "false"
     },
     {
       "name": "mod-patron",
-      "version": "^VERSION_latest",
+      "version": "~6.4.0",
       "preRelease": "false"
     },
     {
       "name": "mod-data-export-spring",
-      "version": "^VERSION_latest",
+      "version": "~3.6.0",
       "preRelease": "false"
     },
     {
       "name": "mod-data-export-worker",
-      "version": "^VERSION_latest",
+      "version": "~3.5.0",
       "preRelease": "false"
     },
     {
       "name": "mod-remote-storage",
-      "version": "^VERSION_latest",
+      "version": "~4.0.0",
       "preRelease": "false"
     },
     {
       "name": "mod-calendar",
-      "version": "^VERSION_latest",
+      "version": "~4.0.0",
       "preRelease": "false"
     },
     {
       "name": "mod-audit",
-      "version": "^VERSION_latest",
+      "version": "~3.0.0",
       "preRelease": "false"
     },
     {
       "name": "mod-courses",
-      "version": "^VERSION_latest",
+      "version": "~1.6.0",
       "preRelease": "false"
     },
     {
       "name": "mod-pubsub",
-      "version": "^VERSION_latest",
+      "version": "~2.17.0",
       "preRelease": "false"
     },
     {
       "name": "mod-copycat",
-      "version": "^VERSION_latest",
+      "version": "~1.9.0",
       "preRelease": "false"
     },
     {
       "name": "mod-ncip",
-      "version": "^VERSION_latest",
+      "version": "~1.17.0",
       "preRelease": "false"
     },
     {
@@ -115,82 +115,82 @@
   "uiModules": [
     {
       "name": "folio_servicepoints",
-      "version": "^VERSION_latest",
+      "version": "~9.0.0",
       "preRelease": "false"
     },
     {
       "name": "folio_checkin",
-      "version": "^VERSION_latest",
+      "version": "~12.0.0",
       "preRelease": "false"
     },
     {
       "name": "folio_checkout",
-      "version": "^VERSION_latest",
+      "version": "~13.0.0",
       "preRelease": "false"
     },
     {
       "name": "folio_circulation",
-      "version": "^VERSION_latest",
+      "version": "~12.0.0",
       "preRelease": "false"
     },
     {
       "name": "folio_plugin-find-user",
-      "version": "^VERSION_latest",
+      "version": "~8.1.0",
       "preRelease": "false"
     },
     {
       "name": "folio_export-manager",
-      "version": "^VERSION_latest",
+      "version": "~5.0.0",
       "preRelease": "false"
     },
     {
       "name": "folio_plugin-bursar-export",
-      "version": "^VERSION_latest",
+      "version": "~6.0.0",
       "preRelease": "false"
     },
     {
       "name": "folio_remote-storage",
-      "version": "^VERSION_latest",
+      "version": "~7.1.0",
       "preRelease": "false"
     },
     {
       "name": "folio_circulation-log",
-      "version": "^VERSION_latest",
+      "version": "~6.1.0",
       "preRelease": "false"
     },
     {
       "name": "folio_calendar",
-      "version": "^VERSION_latest",
+      "version": "~13.0.0",
       "preRelease": "false"
     },
     {
       "name": "folio_courses",
-      "version": "^VERSION_latest",
+      "version": "~7.1.0",
       "preRelease": "false"
     },
     {
       "name": "folio_requests",
-      "version": "^VERSION_latest",
+      "version": "~13.0.0",
       "preRelease": "false"
     },
     {
       "name": "folio_tenant-settings",
-      "version": "^VERSION_latest",
+      "version": "~11.0.0",
       "preRelease": "false"
     },
     {
       "name": "folio_handler-stripes-registry",
-      "version": "^VERSION_latest",
+      "version": "~3.1.0",
       "preRelease": "false"
     },
     {
       "name": "folio_myprofile",
-      "version": "^VERSION_latest",
+      "version": "~11.0.0",
       "preRelease": "false"
     },
     {
       "name": "folio_users",
-      "version": "^VERSION_latest",
+      "version": "~13.0.0",
       "preRelease": "false"
     }
   ]
