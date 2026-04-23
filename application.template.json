@@ -6,27 +6,27 @@
   "dependencies": [
     {
       "name": "app-platform-minimal",
-      "version": "^VERSION_^2.1.0-SNAPSHOT",
+      "version": "~2.1.0",
       "preRelease": "false"
     },
     {
       "name": "app-search",
-      "version": "^VERSION_^1.0.0-SNAPSHOT",
+      "version": "~1.0.0",
       "preRelease": "false"
     },
     {
       "name": "app-marc-storage",
-      "version": "^VERSION_^1.0.0-SNAPSHOT",
+      "version": "~1.0.0",
       "preRelease": "false"
     },
     {
       "name": "app-notification",
-      "version": "^VERSION_^1.0.0-SNAPSHOT",
+      "version": "~1.0.0",
       "preRelease": "false"
     },
     {
       "name": "app-inventory",
-      "version": "^VERSION_^1.0.0-SNAPSHOT",
+      "version": "~1.0.0",
       "preRelease": "false"
     }
   ],
@@ -78,12 +78,12 @@
     },
     {
       "name": "mod-calendar",
-      "version": "^VERSION_latest",
+      "version": "~4.0.0",
       "preRelease": "false"
     },
     {
       "name": "mod-audit",
-      "version": "^VERSION_latest",
+      "version": "~3.0.0",
       "preRelease": "false"
     },
     {
