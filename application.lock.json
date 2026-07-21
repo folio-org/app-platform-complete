@@ -1,16 +1,16 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010054",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010110",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000010054",
+  "version" : "3.4.0-SNAPSHOT.100200000010110",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2154",
-    "name" : "mod-circulation-storage",
-    "version" : "17.6.0-SNAPSHOT.2154"
-  }, {
     "id" : "mod-graphql-1.15.1000407",
     "name" : "mod-graphql",
     "version" : "1.15.1000407"
+  }, {
+    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2154",
+    "name" : "mod-circulation-storage",
+    "version" : "17.6.0-SNAPSHOT.2154"
   }, {
     "id" : "mod-circulation-24.6.0-SNAPSHOT.2143",
     "name" : "mod-circulation",
@@ -69,13 +69,13 @@
     "version" : "3.12.0-SNAPSHOT.2010"
   } ],
   "uiModules" : [ {
+    "id" : "folio_checkin-12.0.1099000000000422",
+    "name" : "folio_checkin",
+    "version" : "12.0.1099000000000422"
+  }, {
     "id" : "folio_servicepoints-9.0.1099000000000099",
     "name" : "folio_servicepoints",
     "version" : "9.0.1099000000000099"
-  }, {
-    "id" : "folio_checkin-12.0.1099000000000400",
-    "name" : "folio_checkin",
-    "version" : "12.0.1099000000000400"
   }, {
     "id" : "folio_checkout-13.1.1099000000000394",
     "name" : "folio_checkout",
@@ -6591,7 +6591,7 @@
       }
     }
   }, {
-    "id" : "folio_checkin-12.0.1099000000000400",
+    "id" : "folio_checkin-12.0.1099000000000422",
     "name" : "Item Check-in",
     "requires" : [ {
       "id" : "circulation",
