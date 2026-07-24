@@ -1,9 +1,13 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010147",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010149",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000010147",
+  "version" : "3.4.0-SNAPSHOT.100200000010149",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2192",
+    "name" : "mod-circulation",
+    "version" : "24.6.0-SNAPSHOT.2192"
+  }, {
     "id" : "mod-graphql-1.15.1000408",
     "name" : "mod-graphql",
     "version" : "1.15.1000408"
@@ -11,10 +15,6 @@
     "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2154",
     "name" : "mod-circulation-storage",
     "version" : "17.6.0-SNAPSHOT.2154"
-  }, {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2163",
-    "name" : "mod-circulation",
-    "version" : "24.6.0-SNAPSHOT.2163"
   }, {
     "id" : "mod-feesfines-19.5.0-SNAPSHOT.2032",
     "name" : "mod-feesfines",
@@ -1135,7 +1135,7 @@
       }
     }
   }, {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2163",
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2192",
     "name" : "Circulation Module",
     "requires" : [ {
       "id" : "loan-storage",
@@ -2230,7 +2230,7 @@
       "visible" : false
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-circulation:24.6.0-SNAPSHOT.2163",
+      "dockerImage" : "folioci/mod-circulation:24.6.0-SNAPSHOT.2192",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
