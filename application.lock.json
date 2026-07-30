@@ -1,20 +1,12 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010229",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010234",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000010229",
+  "version" : "3.4.0-SNAPSHOT.100200000010234",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2216",
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2219",
     "name" : "mod-circulation",
-    "version" : "24.6.0-SNAPSHOT.2216"
-  }, {
-    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2142",
-    "name" : "mod-data-export-spring",
-    "version" : "3.7.0-SNAPSHOT.2142"
-  }, {
-    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2282",
-    "name" : "mod-data-export-worker",
-    "version" : "3.6.0-SNAPSHOT.2282"
+    "version" : "24.6.0-SNAPSHOT.2219"
   }, {
     "id" : "mod-graphql-1.15.1000412",
     "name" : "mod-graphql",
@@ -35,6 +27,14 @@
     "id" : "mod-patron-6.5.0-SNAPSHOT.2023",
     "name" : "mod-patron",
     "version" : "6.5.0-SNAPSHOT.2023"
+  }, {
+    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2142",
+    "name" : "mod-data-export-spring",
+    "version" : "3.7.0-SNAPSHOT.2142"
+  }, {
+    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2282",
+    "name" : "mod-data-export-worker",
+    "version" : "3.6.0-SNAPSHOT.2282"
   }, {
     "id" : "mod-remote-storage-4.1.0-SNAPSHOT.2079",
     "name" : "mod-remote-storage",
@@ -1135,7 +1135,7 @@
       }
     }
   }, {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2216",
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2219",
     "name" : "Circulation Module",
     "requires" : [ {
       "id" : "loan-storage",
@@ -1251,6 +1251,15 @@
     }, {
       "id" : "template-engine",
       "version" : "2.2"
+    }, {
+      "id" : "checkout-lock-storage",
+      "version" : "0.1"
+    }, {
+      "id" : "search-inventory",
+      "version" : "1.0"
+    }, {
+      "id" : "locale",
+      "version" : "1.0"
     } ],
     "provides" : [ {
       "id" : "requests-reports",
@@ -2230,7 +2239,7 @@
       "visible" : false
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-circulation:24.6.0-SNAPSHOT.2216",
+      "dockerImage" : "folioci/mod-circulation:24.6.0-SNAPSHOT.2219",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
