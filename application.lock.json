@@ -1,9 +1,21 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010227",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010229",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000010227",
+  "version" : "3.4.0-SNAPSHOT.100200000010229",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2216",
+    "name" : "mod-circulation",
+    "version" : "24.6.0-SNAPSHOT.2216"
+  }, {
+    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2142",
+    "name" : "mod-data-export-spring",
+    "version" : "3.7.0-SNAPSHOT.2142"
+  }, {
+    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2282",
+    "name" : "mod-data-export-worker",
+    "version" : "3.6.0-SNAPSHOT.2282"
+  }, {
     "id" : "mod-graphql-1.15.1000412",
     "name" : "mod-graphql",
     "version" : "1.15.1000412"
@@ -11,10 +23,6 @@
     "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2154",
     "name" : "mod-circulation-storage",
     "version" : "17.6.0-SNAPSHOT.2154"
-  }, {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2198",
-    "name" : "mod-circulation",
-    "version" : "24.6.0-SNAPSHOT.2198"
   }, {
     "id" : "mod-feesfines-19.5.0-SNAPSHOT.2032",
     "name" : "mod-feesfines",
@@ -27,14 +35,6 @@
     "id" : "mod-patron-6.5.0-SNAPSHOT.2023",
     "name" : "mod-patron",
     "version" : "6.5.0-SNAPSHOT.2023"
-  }, {
-    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2135",
-    "name" : "mod-data-export-spring",
-    "version" : "3.7.0-SNAPSHOT.2135"
-  }, {
-    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2269",
-    "name" : "mod-data-export-worker",
-    "version" : "3.6.0-SNAPSHOT.2269"
   }, {
     "id" : "mod-remote-storage-4.1.0-SNAPSHOT.2079",
     "name" : "mod-remote-storage",
@@ -1135,7 +1135,7 @@
       }
     }
   }, {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2198",
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2216",
     "name" : "Circulation Module",
     "requires" : [ {
       "id" : "loan-storage",
@@ -2230,7 +2230,7 @@
       "visible" : false
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-circulation:24.6.0-SNAPSHOT.2198",
+      "dockerImage" : "folioci/mod-circulation:24.6.0-SNAPSHOT.2216",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -3730,7 +3730,7 @@
       }
     }
   }, {
-    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2135",
+    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2142",
     "name" : "Data Export Spring Module",
     "requires" : [ {
       "id" : "login",
@@ -3964,7 +3964,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-data-export-spring:3.7.0-SNAPSHOT.2135",
+      "dockerImage" : "folioci/mod-data-export-spring:3.7.0-SNAPSHOT.2142",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -4024,7 +4024,7 @@
       }
     }
   }, {
-    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2269",
+    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2282",
     "name" : "Data Export Worker Module",
     "requires" : [ {
       "id" : "users",
@@ -4240,7 +4240,7 @@
       "subPermissions" : [ "refresh-presigned-url.get" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-data-export-worker:3.6.0-SNAPSHOT.2269",
+      "dockerImage" : "folioci/mod-data-export-worker:3.6.0-SNAPSHOT.2282",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
