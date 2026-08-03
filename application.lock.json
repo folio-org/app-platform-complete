@@ -1,12 +1,12 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010234",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010281",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000010234",
+  "version" : "3.4.0-SNAPSHOT.100200000010281",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2219",
-    "name" : "mod-circulation",
-    "version" : "24.6.0-SNAPSHOT.2219"
+    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2293",
+    "name" : "mod-data-export-worker",
+    "version" : "3.6.0-SNAPSHOT.2293"
   }, {
     "id" : "mod-graphql-1.15.1000412",
     "name" : "mod-graphql",
@@ -15,6 +15,10 @@
     "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2154",
     "name" : "mod-circulation-storage",
     "version" : "17.6.0-SNAPSHOT.2154"
+  }, {
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2219",
+    "name" : "mod-circulation",
+    "version" : "24.6.0-SNAPSHOT.2219"
   }, {
     "id" : "mod-feesfines-19.5.0-SNAPSHOT.2032",
     "name" : "mod-feesfines",
@@ -31,10 +35,6 @@
     "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2142",
     "name" : "mod-data-export-spring",
     "version" : "3.7.0-SNAPSHOT.2142"
-  }, {
-    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2282",
-    "name" : "mod-data-export-worker",
-    "version" : "3.6.0-SNAPSHOT.2282"
   }, {
     "id" : "mod-remote-storage-4.1.0-SNAPSHOT.2079",
     "name" : "mod-remote-storage",
@@ -4033,7 +4033,7 @@
       }
     }
   }, {
-    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2282",
+    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2293",
     "name" : "Data Export Worker Module",
     "requires" : [ {
       "id" : "users",
@@ -4249,7 +4249,7 @@
       "subPermissions" : [ "refresh-presigned-url.get" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-data-export-worker:3.6.0-SNAPSHOT.2282",
+      "dockerImage" : "folioci/mod-data-export-worker:3.6.0-SNAPSHOT.2293",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
