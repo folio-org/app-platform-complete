@@ -1,7 +1,7 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010282",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010283",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000010282",
+  "version" : "3.4.0-SNAPSHOT.100200000010283",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
     "id" : "mod-graphql-1.15.1000413",
@@ -69,6 +69,10 @@
     "version" : "3.12.0-SNAPSHOT.2010"
   } ],
   "uiModules" : [ {
+    "id" : "folio_circulation-12.1.1099000000000466",
+    "name" : "folio_circulation",
+    "version" : "12.1.1099000000000466"
+  }, {
     "id" : "folio_servicepoints-9.0.1099000000000099",
     "name" : "folio_servicepoints",
     "version" : "9.0.1099000000000099"
@@ -80,10 +84,6 @@
     "id" : "folio_checkout-13.1.1099000000000394",
     "name" : "folio_checkout",
     "version" : "13.1.1099000000000394"
-  }, {
-    "id" : "folio_circulation-12.1.1099000000000457",
-    "name" : "folio_circulation",
-    "version" : "12.1.1099000000000457"
   }, {
     "id" : "folio_plugin-find-user-8.1.1099000000000170",
     "name" : "folio_plugin-find-user",
@@ -6751,7 +6751,7 @@
       }
     }
   }, {
-    "id" : "folio_circulation-12.1.1099000000000457",
+    "id" : "folio_circulation-12.1.1099000000000466",
     "name" : "Circulation manager",
     "requires" : [ {
       "id" : "circulation",
