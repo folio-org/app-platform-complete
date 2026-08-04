@@ -1,16 +1,20 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010283",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010293",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000010283",
+  "version" : "3.4.0-SNAPSHOT.100200000010293",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
+    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2216",
+    "name" : "mod-circulation-storage",
+    "version" : "17.6.0-SNAPSHOT.2216"
+  }, {
+    "id" : "mod-calendar-4.1.0-SNAPSHOT.2166",
+    "name" : "mod-calendar",
+    "version" : "4.1.0-SNAPSHOT.2166"
+  }, {
     "id" : "mod-graphql-1.15.1000413",
     "name" : "mod-graphql",
     "version" : "1.15.1000413"
-  }, {
-    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2154",
-    "name" : "mod-circulation-storage",
-    "version" : "17.6.0-SNAPSHOT.2154"
   }, {
     "id" : "mod-circulation-24.6.0-SNAPSHOT.2219",
     "name" : "mod-circulation",
@@ -40,10 +44,6 @@
     "name" : "mod-remote-storage",
     "version" : "4.1.0-SNAPSHOT.2079"
   }, {
-    "id" : "mod-calendar-4.1.0-SNAPSHOT.2155",
-    "name" : "mod-calendar",
-    "version" : "4.1.0-SNAPSHOT.2155"
-  }, {
     "id" : "mod-audit-3.1.0-SNAPSHOT.2148",
     "name" : "mod-audit",
     "version" : "3.1.0-SNAPSHOT.2148"
@@ -69,10 +69,6 @@
     "version" : "3.12.0-SNAPSHOT.2010"
   } ],
   "uiModules" : [ {
-    "id" : "folio_circulation-12.1.1099000000000466",
-    "name" : "folio_circulation",
-    "version" : "12.1.1099000000000466"
-  }, {
     "id" : "folio_servicepoints-9.0.1099000000000099",
     "name" : "folio_servicepoints",
     "version" : "9.0.1099000000000099"
@@ -84,6 +80,10 @@
     "id" : "folio_checkout-13.1.1099000000000394",
     "name" : "folio_checkout",
     "version" : "13.1.1099000000000394"
+  }, {
+    "id" : "folio_circulation-12.1.1099000000000466",
+    "name" : "folio_circulation",
+    "version" : "12.1.1099000000000466"
   }, {
     "id" : "folio_plugin-find-user-8.1.1099000000000170",
     "name" : "folio_plugin-find-user",
@@ -181,7 +181,7 @@
       }
     }
   }, {
-    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2154",
+    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2216",
     "name" : "Circulation Storage Module",
     "requires" : [ {
       "id" : "item-storage",
@@ -1081,7 +1081,7 @@
       "description" : "get locks"
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-circulation-storage:17.6.0-SNAPSHOT.2154",
+      "dockerImage" : "folioci/mod-circulation-storage:17.6.0-SNAPSHOT.2216",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -4732,7 +4732,7 @@
       }
     }
   }, {
-    "id" : "mod-calendar-4.1.0-SNAPSHOT.2155",
+    "id" : "mod-calendar-4.1.0-SNAPSHOT.2166",
     "name" : "Calendar for Service Point Opening Hours",
     "requires" : [ ],
     "provides" : [ {
@@ -4851,7 +4851,7 @@
       "visible" : false
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-calendar:4.1.0-SNAPSHOT.2155",
+      "dockerImage" : "folioci/mod-calendar:4.1.0-SNAPSHOT.2166",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
