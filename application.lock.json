@@ -1,20 +1,16 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010293",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010294",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000010293",
+  "version" : "3.4.0-SNAPSHOT.100200000010294",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2216",
-    "name" : "mod-circulation-storage",
-    "version" : "17.6.0-SNAPSHOT.2216"
-  }, {
-    "id" : "mod-calendar-4.1.0-SNAPSHOT.2166",
-    "name" : "mod-calendar",
-    "version" : "4.1.0-SNAPSHOT.2166"
-  }, {
     "id" : "mod-graphql-1.15.1000413",
     "name" : "mod-graphql",
     "version" : "1.15.1000413"
+  }, {
+    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2216",
+    "name" : "mod-circulation-storage",
+    "version" : "17.6.0-SNAPSHOT.2216"
   }, {
     "id" : "mod-circulation-24.6.0-SNAPSHOT.2219",
     "name" : "mod-circulation",
@@ -44,6 +40,10 @@
     "name" : "mod-remote-storage",
     "version" : "4.1.0-SNAPSHOT.2079"
   }, {
+    "id" : "mod-calendar-4.1.0-SNAPSHOT.2166",
+    "name" : "mod-calendar",
+    "version" : "4.1.0-SNAPSHOT.2166"
+  }, {
     "id" : "mod-audit-3.1.0-SNAPSHOT.2148",
     "name" : "mod-audit",
     "version" : "3.1.0-SNAPSHOT.2148"
@@ -69,6 +69,10 @@
     "version" : "3.12.0-SNAPSHOT.2010"
   } ],
   "uiModules" : [ {
+    "id" : "folio_users-13.1.1099000000001473",
+    "name" : "folio_users",
+    "version" : "13.1.1099000000001473"
+  }, {
     "id" : "folio_servicepoints-9.0.1099000000000099",
     "name" : "folio_servicepoints",
     "version" : "9.0.1099000000000099"
@@ -128,10 +132,6 @@
     "id" : "folio_myprofile-11.0.1099000000000206",
     "name" : "folio_myprofile",
     "version" : "11.0.1099000000000206"
-  }, {
-    "id" : "folio_users-13.1.1099000000001461",
-    "name" : "folio_users",
-    "version" : "13.1.1099000000001461"
   } ],
   "dependencies" : [ {
     "name" : "app-platform-minimal",
@@ -7683,7 +7683,7 @@
       }
     }
   }, {
-    "id" : "folio_users-13.1.1099000000001461",
+    "id" : "folio_users-13.1.1099000000001473",
     "name" : "User management",
     "requires" : [ {
       "id" : "users",
