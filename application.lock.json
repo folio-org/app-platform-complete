@@ -1,9 +1,13 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010305",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010306",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000010305",
+  "version" : "3.4.0-SNAPSHOT.100200000010306",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
+    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2309",
+    "name" : "mod-data-export-worker",
+    "version" : "3.6.0-SNAPSHOT.2309"
+  }, {
     "id" : "mod-graphql-1.15.1000415",
     "name" : "mod-graphql",
     "version" : "1.15.1000415"
@@ -31,10 +35,6 @@
     "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2149",
     "name" : "mod-data-export-spring",
     "version" : "3.7.0-SNAPSHOT.2149"
-  }, {
-    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2293",
-    "name" : "mod-data-export-worker",
-    "version" : "3.6.0-SNAPSHOT.2293"
   }, {
     "id" : "mod-remote-storage-4.1.0-SNAPSHOT.2079",
     "name" : "mod-remote-storage",
@@ -69,10 +69,6 @@
     "version" : "3.12.0-SNAPSHOT.2010"
   } ],
   "uiModules" : [ {
-    "id" : "folio_circulation-12.1.1099000000000472",
-    "name" : "folio_circulation",
-    "version" : "12.1.1099000000000472"
-  }, {
     "id" : "folio_servicepoints-9.0.1099000000000099",
     "name" : "folio_servicepoints",
     "version" : "9.0.1099000000000099"
@@ -84,6 +80,10 @@
     "id" : "folio_checkout-13.1.1099000000000394",
     "name" : "folio_checkout",
     "version" : "13.1.1099000000000394"
+  }, {
+    "id" : "folio_circulation-12.1.1099000000000472",
+    "name" : "folio_circulation",
+    "version" : "12.1.1099000000000472"
   }, {
     "id" : "folio_plugin-find-user-8.1.1099000000000170",
     "name" : "folio_plugin-find-user",
@@ -4033,7 +4033,7 @@
       }
     }
   }, {
-    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2293",
+    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2309",
     "name" : "Data Export Worker Module",
     "requires" : [ {
       "id" : "users",
@@ -4188,7 +4188,7 @@
       "version" : "2.0"
     }, {
       "id" : "email",
-      "version" : "1.1"
+      "version" : "1.2"
     }, {
       "id" : "template-engine",
       "version" : "2.2"
@@ -4233,7 +4233,7 @@
       "version" : "3.0"
     }, {
       "id" : "eholdings",
-      "version" : "4.0"
+      "version" : "5.0"
     }, {
       "id" : "instance-authority-links-statistics",
       "version" : "2.1 3.0"
@@ -4249,7 +4249,7 @@
       "subPermissions" : [ "refresh-presigned-url.get" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-data-export-worker:3.6.0-SNAPSHOT.2293",
+      "dockerImage" : "folioci/mod-data-export-worker:3.6.0-SNAPSHOT.2309",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
