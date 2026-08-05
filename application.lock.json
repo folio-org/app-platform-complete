@@ -1,16 +1,12 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010295",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010305",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000010295",
+  "version" : "3.4.0-SNAPSHOT.100200000010305",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2149",
-    "name" : "mod-data-export-spring",
-    "version" : "3.7.0-SNAPSHOT.2149"
-  }, {
-    "id" : "mod-graphql-1.15.1000413",
+    "id" : "mod-graphql-1.15.1000415",
     "name" : "mod-graphql",
-    "version" : "1.15.1000413"
+    "version" : "1.15.1000415"
   }, {
     "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2216",
     "name" : "mod-circulation-storage",
@@ -31,6 +27,10 @@
     "id" : "mod-patron-6.5.0-SNAPSHOT.2023",
     "name" : "mod-patron",
     "version" : "6.5.0-SNAPSHOT.2023"
+  }, {
+    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2149",
+    "name" : "mod-data-export-spring",
+    "version" : "3.7.0-SNAPSHOT.2149"
   }, {
     "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2293",
     "name" : "mod-data-export-worker",
@@ -69,6 +69,10 @@
     "version" : "3.12.0-SNAPSHOT.2010"
   } ],
   "uiModules" : [ {
+    "id" : "folio_circulation-12.1.1099000000000472",
+    "name" : "folio_circulation",
+    "version" : "12.1.1099000000000472"
+  }, {
     "id" : "folio_servicepoints-9.0.1099000000000099",
     "name" : "folio_servicepoints",
     "version" : "9.0.1099000000000099"
@@ -80,10 +84,6 @@
     "id" : "folio_checkout-13.1.1099000000000394",
     "name" : "folio_checkout",
     "version" : "13.1.1099000000000394"
-  }, {
-    "id" : "folio_circulation-12.1.1099000000000466",
-    "name" : "folio_circulation",
-    "version" : "12.1.1099000000000466"
   }, {
     "id" : "folio_plugin-find-user-8.1.1099000000000170",
     "name" : "folio_plugin-find-user",
@@ -155,7 +155,7 @@
     "preRelease" : "only"
   } ],
   "moduleDescriptors" : [ {
-    "id" : "mod-graphql-1.15.1000413",
+    "id" : "mod-graphql-1.15.1000415",
     "name" : "GraphQL API for FOLIO",
     "provides" : [ {
       "id" : "graphql",
@@ -167,7 +167,7 @@
       } ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-graphql:1.15.1000413",
+      "dockerImage" : "folioci/mod-graphql:1.15.1000415",
       "dockerPull" : true,
       "dockerArgs" : {
         "HostConfig" : {
@@ -6751,7 +6751,7 @@
       }
     }
   }, {
-    "id" : "folio_circulation-12.1.1099000000000466",
+    "id" : "folio_circulation-12.1.1099000000000472",
     "name" : "Circulation manager",
     "requires" : [ {
       "id" : "circulation",
