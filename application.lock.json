@@ -1,9 +1,13 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010309",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010328",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000010309",
+  "version" : "3.4.0-SNAPSHOT.100200000010328",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
+    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2164",
+    "name" : "mod-data-export-spring",
+    "version" : "3.7.0-SNAPSHOT.2164"
+  }, {
     "id" : "mod-graphql-1.15.1000415",
     "name" : "mod-graphql",
     "version" : "1.15.1000415"
@@ -27,10 +31,6 @@
     "id" : "mod-patron-6.5.0-SNAPSHOT.2023",
     "name" : "mod-patron",
     "version" : "6.5.0-SNAPSHOT.2023"
-  }, {
-    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2149",
-    "name" : "mod-data-export-spring",
-    "version" : "3.7.0-SNAPSHOT.2149"
   }, {
     "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2309",
     "name" : "mod-data-export-worker",
@@ -69,10 +69,6 @@
     "version" : "3.12.0-SNAPSHOT.2010"
   } ],
   "uiModules" : [ {
-    "id" : "folio_circulation-12.1.1099000000000475",
-    "name" : "folio_circulation",
-    "version" : "12.1.1099000000000475"
-  }, {
     "id" : "folio_servicepoints-9.0.1099000000000099",
     "name" : "folio_servicepoints",
     "version" : "9.0.1099000000000099"
@@ -84,6 +80,10 @@
     "id" : "folio_checkout-13.1.1099000000000394",
     "name" : "folio_checkout",
     "version" : "13.1.1099000000000394"
+  }, {
+    "id" : "folio_circulation-12.1.1099000000000475",
+    "name" : "folio_circulation",
+    "version" : "12.1.1099000000000475"
   }, {
     "id" : "folio_plugin-find-user-8.1.1099000000000170",
     "name" : "folio_plugin-find-user",
@@ -3739,7 +3739,7 @@
       }
     }
   }, {
-    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2149",
+    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2164",
     "name" : "Data Export Spring Module",
     "requires" : [ {
       "id" : "login",
@@ -3973,7 +3973,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-data-export-spring:3.7.0-SNAPSHOT.2149",
+      "dockerImage" : "folioci/mod-data-export-spring:3.7.0-SNAPSHOT.2164",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -4014,6 +4014,10 @@
       }, {
         "name" : "ENV",
         "value" : "folio"
+      }, {
+        "name" : "KAFKA_PRODUCER_TENANT_COLLECTION",
+        "value" : "ALL",
+        "description" : "Tenant partitioning mode for Kafka topics. 'ALL' (default, matches folio-kafka-wrapper) publishes every tenant's events to a single topic per entity (e.g. 'folio.ALL.data-export.config'); consumers route by the 'tenant' field in the event envelope. Any other value falls back to per-tenant topics."
       }, {
         "name" : "JOB_EXPIRATION_PERIOD_DAYS",
         "value" : "7"
