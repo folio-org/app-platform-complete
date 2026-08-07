@@ -1,36 +1,36 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010328",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010334",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000010328",
+  "version" : "3.4.0-SNAPSHOT.100200000010334",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2164",
-    "name" : "mod-data-export-spring",
-    "version" : "3.7.0-SNAPSHOT.2164"
+    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2231",
+    "name" : "mod-circulation-storage",
+    "version" : "17.6.0-SNAPSHOT.2231"
+  }, {
+    "id" : "mod-feesfines-19.5.0-SNAPSHOT.2062",
+    "name" : "mod-feesfines",
+    "version" : "19.5.0-SNAPSHOT.2062"
+  }, {
+    "id" : "mod-patron-blocks-1.14.0-SNAPSHOT.2076",
+    "name" : "mod-patron-blocks",
+    "version" : "1.14.0-SNAPSHOT.2076"
   }, {
     "id" : "mod-graphql-1.15.1000415",
     "name" : "mod-graphql",
     "version" : "1.15.1000415"
   }, {
-    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2216",
-    "name" : "mod-circulation-storage",
-    "version" : "17.6.0-SNAPSHOT.2216"
-  }, {
     "id" : "mod-circulation-24.6.0-SNAPSHOT.2219",
     "name" : "mod-circulation",
     "version" : "24.6.0-SNAPSHOT.2219"
   }, {
-    "id" : "mod-feesfines-19.5.0-SNAPSHOT.2032",
-    "name" : "mod-feesfines",
-    "version" : "19.5.0-SNAPSHOT.2032"
-  }, {
-    "id" : "mod-patron-blocks-1.14.0-SNAPSHOT.2055",
-    "name" : "mod-patron-blocks",
-    "version" : "1.14.0-SNAPSHOT.2055"
-  }, {
     "id" : "mod-patron-6.5.0-SNAPSHOT.2023",
     "name" : "mod-patron",
     "version" : "6.5.0-SNAPSHOT.2023"
+  }, {
+    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2164",
+    "name" : "mod-data-export-spring",
+    "version" : "3.7.0-SNAPSHOT.2164"
   }, {
     "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2309",
     "name" : "mod-data-export-worker",
@@ -181,7 +181,7 @@
       }
     }
   }, {
-    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2216",
+    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2231",
     "name" : "Circulation Storage Module",
     "requires" : [ {
       "id" : "item-storage",
@@ -1081,7 +1081,7 @@
       "description" : "get locks"
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-circulation-storage:17.6.0-SNAPSHOT.2216",
+      "dockerImage" : "folioci/mod-circulation-storage:17.6.0-SNAPSHOT.2231",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -2278,7 +2278,7 @@
       }
     }
   }, {
-    "id" : "mod-feesfines-19.5.0-SNAPSHOT.2032",
+    "id" : "mod-feesfines-19.5.0-SNAPSHOT.2062",
     "name" : "feesfines",
     "requires" : [ {
       "id" : "patron-notice",
@@ -3150,7 +3150,7 @@
       "description" : "Bill actual cost fee/fine"
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-feesfines:19.5.0-SNAPSHOT.2032",
+      "dockerImage" : "folioci/mod-feesfines:19.5.0-SNAPSHOT.2062",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -3179,6 +3179,18 @@
       }, {
         "name" : "DB_MAXPOOLSIZE",
         "value" : "5"
+      }, {
+        "name" : "KAFKA_HOST",
+        "value" : "kafka"
+      }, {
+        "name" : "KAFKA_PORT",
+        "value" : "9092"
+      }, {
+        "name" : "REPLICATION_FACTOR",
+        "value" : "1"
+      }, {
+        "name" : "ENV",
+        "value" : "folio"
       } ],
       "dockerArgs" : {
         "HostConfig" : {
@@ -3192,7 +3204,7 @@
       }
     }
   }, {
-    "id" : "mod-patron-blocks-1.14.0-SNAPSHOT.2055",
+    "id" : "mod-patron-blocks-1.14.0-SNAPSHOT.2076",
     "name" : "Patron Blocks Module",
     "requires" : [ {
       "id" : "pubsub-event-types",
@@ -3396,7 +3408,7 @@
       "description" : "Get Synchronization job"
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-patron-blocks:1.14.0-SNAPSHOT.2055",
+      "dockerImage" : "folioci/mod-patron-blocks:1.14.0-SNAPSHOT.2076",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -3425,6 +3437,18 @@
       }, {
         "name" : "DB_MAXPOOLSIZE",
         "value" : "5"
+      }, {
+        "name" : "KAFKA_HOST",
+        "value" : "kafka"
+      }, {
+        "name" : "KAFKA_PORT",
+        "value" : "9092"
+      }, {
+        "name" : "REPLICATION_FACTOR",
+        "value" : "1"
+      }, {
+        "name" : "ENV",
+        "value" : "folio"
       } ],
       "dockerArgs" : {
         "HostConfig" : {
