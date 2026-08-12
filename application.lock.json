@@ -1,16 +1,20 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010434",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010451",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000010434",
+  "version" : "3.4.0-SNAPSHOT.100200000010451",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-feesfines-19.5.0-SNAPSHOT.2065",
-    "name" : "mod-feesfines",
-    "version" : "19.5.0-SNAPSHOT.2065"
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2232",
+    "name" : "mod-circulation",
+    "version" : "24.6.0-SNAPSHOT.2232"
   }, {
-    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2325",
+    "id" : "mod-patron-blocks-1.14.0-SNAPSHOT.2079",
+    "name" : "mod-patron-blocks",
+    "version" : "1.14.0-SNAPSHOT.2079"
+  }, {
+    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2334",
     "name" : "mod-data-export-worker",
-    "version" : "3.6.0-SNAPSHOT.2325"
+    "version" : "3.6.0-SNAPSHOT.2334"
   }, {
     "id" : "mod-graphql-1.15.1000417",
     "name" : "mod-graphql",
@@ -20,13 +24,9 @@
     "name" : "mod-circulation-storage",
     "version" : "17.6.0-SNAPSHOT.2237"
   }, {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2219",
-    "name" : "mod-circulation",
-    "version" : "24.6.0-SNAPSHOT.2219"
-  }, {
-    "id" : "mod-patron-blocks-1.14.0-SNAPSHOT.2076",
-    "name" : "mod-patron-blocks",
-    "version" : "1.14.0-SNAPSHOT.2076"
+    "id" : "mod-feesfines-19.5.0-SNAPSHOT.2065",
+    "name" : "mod-feesfines",
+    "version" : "19.5.0-SNAPSHOT.2065"
   }, {
     "id" : "mod-patron-6.5.0-SNAPSHOT.2023",
     "name" : "mod-patron",
@@ -1135,7 +1135,7 @@
       }
     }
   }, {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2219",
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2232",
     "name" : "Circulation Module",
     "requires" : [ {
       "id" : "loan-storage",
@@ -2239,7 +2239,7 @@
       "visible" : false
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-circulation:24.6.0-SNAPSHOT.2219",
+      "dockerImage" : "folioci/mod-circulation:24.6.0-SNAPSHOT.2232",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -3210,7 +3210,7 @@
       }
     }
   }, {
-    "id" : "mod-patron-blocks-1.14.0-SNAPSHOT.2076",
+    "id" : "mod-patron-blocks-1.14.0-SNAPSHOT.2079",
     "name" : "Patron Blocks Module",
     "requires" : [ {
       "id" : "pubsub-event-types",
@@ -3227,6 +3227,9 @@
     }, {
       "id" : "users",
       "version" : "15.1 16.0"
+    }, {
+      "id" : "feesfines",
+      "version" : "19.1"
     } ],
     "provides" : [ {
       "id" : "automated-patron-blocks",
@@ -3414,7 +3417,7 @@
       "description" : "Get Synchronization job"
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-patron-blocks:1.14.0-SNAPSHOT.2076",
+      "dockerImage" : "folioci/mod-patron-blocks:1.14.0-SNAPSHOT.2079",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -4067,7 +4070,7 @@
       }
     }
   }, {
-    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2325",
+    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2334",
     "name" : "Data Export Worker Module",
     "requires" : [ {
       "id" : "users",
@@ -4283,7 +4286,7 @@
       "subPermissions" : [ "refresh-presigned-url.get" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-data-export-worker:3.6.0-SNAPSHOT.2325",
+      "dockerImage" : "folioci/mod-data-export-worker:3.6.0-SNAPSHOT.2334",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
