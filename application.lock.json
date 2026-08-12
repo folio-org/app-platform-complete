@@ -1,20 +1,12 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010451",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010453",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000010451",
+  "version" : "3.4.0-SNAPSHOT.100200000010453",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2232",
-    "name" : "mod-circulation",
-    "version" : "24.6.0-SNAPSHOT.2232"
-  }, {
-    "id" : "mod-patron-blocks-1.14.0-SNAPSHOT.2079",
-    "name" : "mod-patron-blocks",
-    "version" : "1.14.0-SNAPSHOT.2079"
-  }, {
-    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2334",
-    "name" : "mod-data-export-worker",
-    "version" : "3.6.0-SNAPSHOT.2334"
+    "id" : "mod-patron-6.5.0-SNAPSHOT.2031",
+    "name" : "mod-patron",
+    "version" : "6.5.0-SNAPSHOT.2031"
   }, {
     "id" : "mod-graphql-1.15.1000417",
     "name" : "mod-graphql",
@@ -24,17 +16,25 @@
     "name" : "mod-circulation-storage",
     "version" : "17.6.0-SNAPSHOT.2237"
   }, {
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2232",
+    "name" : "mod-circulation",
+    "version" : "24.6.0-SNAPSHOT.2232"
+  }, {
     "id" : "mod-feesfines-19.5.0-SNAPSHOT.2065",
     "name" : "mod-feesfines",
     "version" : "19.5.0-SNAPSHOT.2065"
   }, {
-    "id" : "mod-patron-6.5.0-SNAPSHOT.2023",
-    "name" : "mod-patron",
-    "version" : "6.5.0-SNAPSHOT.2023"
+    "id" : "mod-patron-blocks-1.14.0-SNAPSHOT.2079",
+    "name" : "mod-patron-blocks",
+    "version" : "1.14.0-SNAPSHOT.2079"
   }, {
     "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2164",
     "name" : "mod-data-export-spring",
     "version" : "3.7.0-SNAPSHOT.2164"
+  }, {
+    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2334",
+    "name" : "mod-data-export-worker",
+    "version" : "3.6.0-SNAPSHOT.2334"
   }, {
     "id" : "mod-remote-storage-4.1.0-SNAPSHOT.2079",
     "name" : "mod-remote-storage",
@@ -3471,7 +3471,7 @@
       }
     }
   }, {
-    "id" : "mod-patron-6.5.0-SNAPSHOT.2023",
+    "id" : "mod-patron-6.5.0-SNAPSHOT.2031",
     "name" : "Patron Services Module",
     "requires" : [ {
       "id" : "settings",
@@ -3482,6 +3482,9 @@
     }, {
       "id" : "circulation",
       "version" : "14.0"
+    }, {
+      "id" : "circulation-rules",
+      "version" : "1.1"
     }, {
       "id" : "feesfines",
       "version" : "14.0 15.0 16.0 17.0 18.0 19.0"
@@ -3494,6 +3497,12 @@
     }, {
       "id" : "holdings-storage",
       "version" : "8.0"
+    }, {
+      "id" : "request-policy-storage",
+      "version" : "1.0"
+    }, {
+      "id" : "locale",
+      "version" : "1.0"
     } ],
     "provides" : [ {
       "id" : "patron",
@@ -3730,7 +3739,7 @@
       "subPermissions" : [ "patron.item.post", "patron.item.put", "patron.account.item.get", "patron.account.item.put", "patron.account-by-email.item.put", "patron.account.collection.get", "patron.account-renew.item.post", "patron.renew.item.post", "patron.account.item-hold.item.post", "patron.account.instance-hold.item.post", "patron.account.hold-cancel.item.post", "patron.account.item-allowed-service-points.item.get", "patron.account.instance-allowed-service-points.item.get", "patron.registration-status.item.get", "patron.account.instance-allowed-service-points-multi-item.collection.post", "patron.account.instance-batch-request.item.post", "patron.account.instance-batch-request-status.item.get", "patron.settings.all" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-patron:6.5.0-SNAPSHOT.2023",
+      "dockerImage" : "folioci/mod-patron:6.5.0-SNAPSHOT.2031",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
