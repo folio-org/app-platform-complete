@@ -1,20 +1,20 @@
 {
-  "id" : "app-platform-complete-3.3.10",
+  "id" : "app-platform-complete-3.3.11",
   "name" : "app-platform-complete",
-  "version" : "3.3.10",
+  "version" : "3.3.11",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-circulation-storage-17.5.1",
-    "name" : "mod-circulation-storage",
-    "version" : "17.5.1"
+    "id" : "mod-circulation-24.5.1",
+    "name" : "mod-circulation",
+    "version" : "24.5.1"
   }, {
     "id" : "mod-graphql-1.15.1",
     "name" : "mod-graphql",
     "version" : "1.15.1"
   }, {
-    "id" : "mod-circulation-24.5.0",
-    "name" : "mod-circulation",
-    "version" : "24.5.0"
+    "id" : "mod-circulation-storage-17.5.1",
+    "name" : "mod-circulation-storage",
+    "version" : "17.5.1"
   }, {
     "id" : "mod-feesfines-19.4.0",
     "name" : "mod-feesfines",
@@ -1135,7 +1135,7 @@
       }
     }
   }, {
-    "id" : "mod-circulation-24.5.0",
+    "id" : "mod-circulation-24.5.1",
     "name" : "Circulation Module",
     "requires" : [ {
       "id" : "loan-storage",
@@ -1251,6 +1251,15 @@
     }, {
       "id" : "template-engine",
       "version" : "2.2"
+    }, {
+      "id" : "checkout-lock-storage",
+      "version" : "0.1"
+    }, {
+      "id" : "search-inventory",
+      "version" : "1.0"
+    }, {
+      "id" : "locale",
+      "version" : "1.0"
     } ],
     "provides" : [ {
       "id" : "requests-reports",
@@ -1693,8 +1702,8 @@
         "methods" : [ "POST" ],
         "pathPattern" : "/circulation/scheduled-digital-reminders-processing",
         "schedule" : {
-          "zone" : "CET",
-          "cron" : "1 0 * * *"
+          "cron" : "1 0 * * *",
+          "zone" : "CET"
         },
         "modulePermissions" : [ "scheduled-notice-storage.scheduled-notices.collection.get", "scheduled-notice-storage.scheduled-notices.item.delete", "scheduled-notice-storage.scheduled-notices.item.put", "circulation-storage.loans.item.get", "circulation-storage.loans.item.put", "circulation-storage.loan-policies.item.get", "circulation-storage.loan-policies.collection.get", "overdue-fines-policies.item.get", "circulation.internal.fetch-items.collection.get", "circulation.rules.loan-policy.get", "circulation-storage.circulation-settings.item.get", "circulation-storage.circulation-settings.collection.get", "patron-notice.post", "users.item.get", "addresstypes.collection.get", "templates.item.get", "owners.collection.get", "pubsub.publish.post", "circulation-storage.circulation-rules.get", "circulation.rules.notice-policy.get", "circulation-storage.fixed-due-date-schedules.item.get", "circulation-storage.fixed-due-date-schedules.collection.get", "accounts.item.get", "accounts.collection.get", "accounts.item.post", "feefineactions.item.post", "circulation-storage.loans-history.collection.get", "calendar.endpoint.calendars.surroundingOpenings.get", "calendar.endpoint.calendars.allOpenings.get", "mod-settings.global.read.stripes-core.prefs.manage" ]
       } ]
@@ -2230,7 +2239,7 @@
       "visible" : false
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioorg/mod-circulation:24.5.0",
+      "dockerImage" : "folioorg/mod-circulation:24.5.1",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
