@@ -1,13 +1,9 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010453",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010469",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000010453",
+  "version" : "3.4.0-SNAPSHOT.100200000010469",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-patron-6.5.0-SNAPSHOT.2031",
-    "name" : "mod-patron",
-    "version" : "6.5.0-SNAPSHOT.2031"
-  }, {
     "id" : "mod-graphql-1.15.1000417",
     "name" : "mod-graphql",
     "version" : "1.15.1000417"
@@ -27,6 +23,10 @@
     "id" : "mod-patron-blocks-1.14.0-SNAPSHOT.2079",
     "name" : "mod-patron-blocks",
     "version" : "1.14.0-SNAPSHOT.2079"
+  }, {
+    "id" : "mod-patron-6.5.0-SNAPSHOT.2031",
+    "name" : "mod-patron",
+    "version" : "6.5.0-SNAPSHOT.2031"
   }, {
     "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2164",
     "name" : "mod-data-export-spring",
@@ -69,6 +69,10 @@
     "version" : "3.12.0-SNAPSHOT.2010"
   } ],
   "uiModules" : [ {
+    "id" : "folio_users-13.1.1099000000001487",
+    "name" : "folio_users",
+    "version" : "13.1.1099000000001487"
+  }, {
     "id" : "folio_servicepoints-9.0.1099000000000099",
     "name" : "folio_servicepoints",
     "version" : "9.0.1099000000000099"
@@ -128,10 +132,6 @@
     "id" : "folio_myprofile-11.0.1099000000000206",
     "name" : "folio_myprofile",
     "version" : "11.0.1099000000000206"
-  }, {
-    "id" : "folio_users-13.1.1099000000001482",
-    "name" : "folio_users",
-    "version" : "13.1.1099000000001482"
   } ],
   "dependencies" : [ {
     "name" : "app-platform-minimal",
@@ -7729,7 +7729,7 @@
       }
     }
   }, {
-    "id" : "folio_users-13.1.1099000000001482",
+    "id" : "folio_users-13.1.1099000000001487",
     "name" : "User management",
     "requires" : [ {
       "id" : "users",
