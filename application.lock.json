@@ -1,12 +1,12 @@
 {
-  "id" : "app-platform-complete-3.3.11",
+  "id" : "app-platform-complete-3.3.12",
   "name" : "app-platform-complete",
-  "version" : "3.3.11",
+  "version" : "3.3.12",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-circulation-24.5.1",
-    "name" : "mod-circulation",
-    "version" : "24.5.1"
+    "id" : "mod-feesfines-19.4.1",
+    "name" : "mod-feesfines",
+    "version" : "19.4.1"
   }, {
     "id" : "mod-graphql-1.15.1",
     "name" : "mod-graphql",
@@ -16,9 +16,9 @@
     "name" : "mod-circulation-storage",
     "version" : "17.5.1"
   }, {
-    "id" : "mod-feesfines-19.4.0",
-    "name" : "mod-feesfines",
-    "version" : "19.4.0"
+    "id" : "mod-circulation-24.5.1",
+    "name" : "mod-circulation",
+    "version" : "24.5.1"
   }, {
     "id" : "mod-patron-blocks-1.13.0",
     "name" : "mod-patron-blocks",
@@ -2278,7 +2278,7 @@
       }
     }
   }, {
-    "id" : "mod-feesfines-19.4.0",
+    "id" : "mod-feesfines-19.4.1",
     "name" : "feesfines",
     "requires" : [ {
       "id" : "patron-notice",
@@ -2295,6 +2295,9 @@
     }, {
       "id" : "locations",
       "version" : "3.0"
+    }, {
+      "id" : "locale",
+      "version" : "1.0"
     }, {
       "id" : "location-units",
       "version" : "2.0"
@@ -2328,6 +2331,9 @@
     }, {
       "id" : "loan-storage",
       "version" : "7.3"
+    }, {
+      "id" : "loan-policy-storage",
+      "version" : "2.4"
     } ],
     "provides" : [ {
       "id" : "feesfines",
@@ -3150,7 +3156,7 @@
       "description" : "Bill actual cost fee/fine"
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioorg/mod-feesfines:19.4.0",
+      "dockerImage" : "folioorg/mod-feesfines:19.4.1",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
