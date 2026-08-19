@@ -1,9 +1,13 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010674",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010684",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000010674",
+  "version" : "3.4.0-SNAPSHOT.100200000010684",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
+    "id" : "mod-remote-storage-4.1.0-SNAPSHOT.2090",
+    "name" : "mod-remote-storage",
+    "version" : "4.1.0-SNAPSHOT.2090"
+  }, {
     "id" : "mod-graphql-1.15.1000417",
     "name" : "mod-graphql",
     "version" : "1.15.1000417"
@@ -36,10 +40,6 @@
     "name" : "mod-data-export-worker",
     "version" : "3.6.0-SNAPSHOT.2334"
   }, {
-    "id" : "mod-remote-storage-4.1.0-SNAPSHOT.2079",
-    "name" : "mod-remote-storage",
-    "version" : "4.1.0-SNAPSHOT.2079"
-  }, {
     "id" : "mod-calendar-4.1.0-SNAPSHOT.2166",
     "name" : "mod-calendar",
     "version" : "4.1.0-SNAPSHOT.2166"
@@ -69,10 +69,6 @@
     "version" : "3.12.0-SNAPSHOT.2010"
   } ],
   "uiModules" : [ {
-    "id" : "folio_circulation-12.1.1099000000000482",
-    "name" : "folio_circulation",
-    "version" : "12.1.1099000000000482"
-  }, {
     "id" : "folio_servicepoints-9.0.1099000000000099",
     "name" : "folio_servicepoints",
     "version" : "9.0.1099000000000099"
@@ -84,6 +80,10 @@
     "id" : "folio_checkout-13.1.1099000000000394",
     "name" : "folio_checkout",
     "version" : "13.1.1099000000000394"
+  }, {
+    "id" : "folio_circulation-12.1.1099000000000482",
+    "name" : "folio_circulation",
+    "version" : "12.1.1099000000000482"
   }, {
     "id" : "folio_plugin-find-user-8.1.1099000000000170",
     "name" : "folio_plugin-find-user",
@@ -4379,7 +4379,7 @@
       }
     }
   }, {
-    "id" : "mod-remote-storage-4.1.0-SNAPSHOT.2079",
+    "id" : "mod-remote-storage-4.1.0-SNAPSHOT.2090",
     "name" : "Remote storage API module",
     "requires" : [ {
       "id" : "inventory",
@@ -4715,7 +4715,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-remote-storage:4.1.0-SNAPSHOT.2079",
+      "dockerImage" : "folioci/mod-remote-storage:4.1.0-SNAPSHOT.2090",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
