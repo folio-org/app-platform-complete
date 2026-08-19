@@ -1,13 +1,9 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010641",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010674",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000010641",
+  "version" : "3.4.0-SNAPSHOT.100200000010674",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2275",
-    "name" : "mod-circulation",
-    "version" : "24.6.0-SNAPSHOT.2275"
-  }, {
     "id" : "mod-graphql-1.15.1000417",
     "name" : "mod-graphql",
     "version" : "1.15.1000417"
@@ -15,6 +11,10 @@
     "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2237",
     "name" : "mod-circulation-storage",
     "version" : "17.6.0-SNAPSHOT.2237"
+  }, {
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2275",
+    "name" : "mod-circulation",
+    "version" : "24.6.0-SNAPSHOT.2275"
   }, {
     "id" : "mod-feesfines-19.5.0-SNAPSHOT.2065",
     "name" : "mod-feesfines",
@@ -69,6 +69,10 @@
     "version" : "3.12.0-SNAPSHOT.2010"
   } ],
   "uiModules" : [ {
+    "id" : "folio_circulation-12.1.1099000000000482",
+    "name" : "folio_circulation",
+    "version" : "12.1.1099000000000482"
+  }, {
     "id" : "folio_servicepoints-9.0.1099000000000099",
     "name" : "folio_servicepoints",
     "version" : "9.0.1099000000000099"
@@ -80,10 +84,6 @@
     "id" : "folio_checkout-13.1.1099000000000394",
     "name" : "folio_checkout",
     "version" : "13.1.1099000000000394"
-  }, {
-    "id" : "folio_circulation-12.1.1099000000000475",
-    "name" : "folio_circulation",
-    "version" : "12.1.1099000000000475"
   }, {
     "id" : "folio_plugin-find-user-8.1.1099000000000170",
     "name" : "folio_plugin-find-user",
@@ -6797,7 +6797,7 @@
       }
     }
   }, {
-    "id" : "folio_circulation-12.1.1099000000000475",
+    "id" : "folio_circulation-12.1.1099000000000482",
     "name" : "Circulation manager",
     "requires" : [ {
       "id" : "circulation",
