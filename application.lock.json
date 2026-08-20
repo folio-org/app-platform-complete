@@ -4,9 +4,9 @@
   "version" : "3.3.12",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-feesfines-19.4.1",
-    "name" : "mod-feesfines",
-    "version" : "19.4.1"
+    "id" : "mod-data-export-worker-3.5.3",
+    "name" : "mod-data-export-worker",
+    "version" : "3.5.3"
   }, {
     "id" : "mod-graphql-1.15.1",
     "name" : "mod-graphql",
@@ -20,6 +20,10 @@
     "name" : "mod-circulation",
     "version" : "24.5.1"
   }, {
+    "id" : "mod-feesfines-19.4.1",
+    "name" : "mod-feesfines",
+    "version" : "19.4.1"
+  }, {
     "id" : "mod-patron-blocks-1.13.0",
     "name" : "mod-patron-blocks",
     "version" : "1.13.0"
@@ -31,10 +35,6 @@
     "id" : "mod-data-export-spring-3.6.1",
     "name" : "mod-data-export-spring",
     "version" : "3.6.1"
-  }, {
-    "id" : "mod-data-export-worker-3.5.2",
-    "name" : "mod-data-export-worker",
-    "version" : "3.5.2"
   }, {
     "id" : "mod-remote-storage-4.0.0",
     "name" : "mod-remote-storage",
@@ -4039,7 +4039,7 @@
       }
     }
   }, {
-    "id" : "mod-data-export-worker-3.5.2",
+    "id" : "mod-data-export-worker-3.5.3",
     "name" : "Data Export Worker Module",
     "requires" : [ {
       "id" : "users",
@@ -4246,7 +4246,7 @@
       "subPermissions" : [ "refresh-presigned-url.get" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioorg/mod-data-export-worker:3.5.2",
+      "dockerImage" : "folioorg/mod-data-export-worker:3.5.3",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
