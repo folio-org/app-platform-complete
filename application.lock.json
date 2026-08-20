@@ -4,9 +4,13 @@
   "version" : "3.3.12",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-data-export-worker-3.5.3",
-    "name" : "mod-data-export-worker",
-    "version" : "3.5.3"
+    "id" : "mod-patron-blocks-1.13.1",
+    "name" : "mod-patron-blocks",
+    "version" : "1.13.1"
+  }, {
+    "id" : "mod-patron-6.4.2",
+    "name" : "mod-patron",
+    "version" : "6.4.2"
   }, {
     "id" : "mod-graphql-1.15.1",
     "name" : "mod-graphql",
@@ -24,17 +28,13 @@
     "name" : "mod-feesfines",
     "version" : "19.4.1"
   }, {
-    "id" : "mod-patron-blocks-1.13.0",
-    "name" : "mod-patron-blocks",
-    "version" : "1.13.0"
-  }, {
-    "id" : "mod-patron-6.4.1",
-    "name" : "mod-patron",
-    "version" : "6.4.1"
-  }, {
     "id" : "mod-data-export-spring-3.6.1",
     "name" : "mod-data-export-spring",
     "version" : "3.6.1"
+  }, {
+    "id" : "mod-data-export-worker-3.5.3",
+    "name" : "mod-data-export-worker",
+    "version" : "3.5.3"
   }, {
     "id" : "mod-remote-storage-4.0.0",
     "name" : "mod-remote-storage",
@@ -3198,7 +3198,7 @@
       }
     }
   }, {
-    "id" : "mod-patron-blocks-1.13.0",
+    "id" : "mod-patron-blocks-1.13.1",
     "name" : "Patron Blocks Module",
     "requires" : [ {
       "id" : "pubsub-event-types",
@@ -3215,6 +3215,9 @@
     }, {
       "id" : "users",
       "version" : "15.1 16.0"
+    }, {
+      "id" : "feesfines",
+      "version" : "19.1"
     } ],
     "provides" : [ {
       "id" : "automated-patron-blocks",
@@ -3402,7 +3405,7 @@
       "description" : "Get Synchronization job"
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioorg/mod-patron-blocks:1.13.0",
+      "dockerImage" : "folioorg/mod-patron-blocks:1.13.1",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -3444,7 +3447,7 @@
       }
     }
   }, {
-    "id" : "mod-patron-6.4.1",
+    "id" : "mod-patron-6.4.2",
     "name" : "Patron Services Module",
     "requires" : [ {
       "id" : "settings",
@@ -3455,6 +3458,9 @@
     }, {
       "id" : "circulation",
       "version" : "14.0"
+    }, {
+      "id" : "circulation-rules",
+      "version" : "1.1"
     }, {
       "id" : "feesfines",
       "version" : "14.0 15.0 16.0 17.0 18.0 19.0"
@@ -3467,6 +3473,12 @@
     }, {
       "id" : "holdings-storage",
       "version" : "8.0"
+    }, {
+      "id" : "request-policy-storage",
+      "version" : "1.0"
+    }, {
+      "id" : "locale",
+      "version" : "1.0"
     } ],
     "provides" : [ {
       "id" : "patron",
@@ -3703,7 +3715,7 @@
       "subPermissions" : [ "patron.item.post", "patron.item.put", "patron.account.item.get", "patron.account.item.put", "patron.account-by-email.item.put", "patron.account.collection.get", "patron.account-renew.item.post", "patron.renew.item.post", "patron.account.item-hold.item.post", "patron.account.instance-hold.item.post", "patron.account.hold-cancel.item.post", "patron.account.item-allowed-service-points.item.get", "patron.account.instance-allowed-service-points.item.get", "patron.registration-status.item.get", "patron.account.instance-allowed-service-points-multi-item.collection.post", "patron.account.instance-batch-request.item.post", "patron.account.instance-batch-request-status.item.get", "patron.settings.all" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioorg/mod-patron:6.4.1",
+      "dockerImage" : "folioorg/mod-patron:6.4.2",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
