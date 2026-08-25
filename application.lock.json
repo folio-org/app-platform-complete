@@ -1,9 +1,13 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010753",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010903",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000010753",
+  "version" : "3.4.0-SNAPSHOT.100200000010903",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
+    "id" : "mod-audit-3.1.0-SNAPSHOT.2200",
+    "name" : "mod-audit",
+    "version" : "3.1.0-SNAPSHOT.2200"
+  }, {
     "id" : "mod-graphql-1.15.1000417",
     "name" : "mod-graphql",
     "version" : "1.15.1000417"
@@ -44,10 +48,6 @@
     "name" : "mod-calendar",
     "version" : "4.1.0-SNAPSHOT.2166"
   }, {
-    "id" : "mod-audit-3.1.0-SNAPSHOT.2186",
-    "name" : "mod-audit",
-    "version" : "3.1.0-SNAPSHOT.2186"
-  }, {
     "id" : "mod-courses-1.6.0-SNAPSHOT.2015",
     "name" : "mod-courses",
     "version" : "1.6.0-SNAPSHOT.2015"
@@ -69,10 +69,6 @@
     "version" : "3.12.0-SNAPSHOT.2010"
   } ],
   "uiModules" : [ {
-    "id" : "folio_users-13.1.1099000000001499",
-    "name" : "folio_users",
-    "version" : "13.1.1099000000001499"
-  }, {
     "id" : "folio_servicepoints-9.0.1099000000000099",
     "name" : "folio_servicepoints",
     "version" : "9.0.1099000000000099"
@@ -132,6 +128,10 @@
     "id" : "folio_myprofile-11.0.1099000000000206",
     "name" : "folio_myprofile",
     "version" : "11.0.1099000000000206"
+  }, {
+    "id" : "folio_users-13.1.1099000000001499",
+    "name" : "folio_users",
+    "version" : "13.1.1099000000001499"
   } ],
   "dependencies" : [ {
     "name" : "app-platform-minimal",
@@ -4930,7 +4930,7 @@
       }
     }
   }, {
-    "id" : "mod-audit-3.1.0-SNAPSHOT.2186",
+    "id" : "mod-audit-3.1.0-SNAPSHOT.2200",
     "name" : "Audit Module",
     "requires" : [ {
       "id" : "pubsub-event-types",
@@ -5292,7 +5292,7 @@
       "subPermissions" : [ "audit.collection.get", "audit.item.get", "audit.item.post", "audit.item.put", "audit.item.delete", "circulation-logs.collection.get", "acquisition.order.events.get", "acquisition.order-line.events.get", "acquisition.piece.events.get", "acquisition.piece.events.history.get", "acquisition.invoice.events.get", "acquisition.invoice-line.events.get", "acquisition.organization.events.get", "audit.inventory.instance.collection.get", "audit.inventory.holdings.collection.get", "audit.inventory.item.collection.get", "audit.user.collection.get", "audit.marc.bib.collection.get", "audit.marc.authority.collection.get" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-audit:3.1.0-SNAPSHOT.2186",
+      "dockerImage" : "folioci/mod-audit:3.1.0-SNAPSHOT.2200",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -5321,18 +5321,6 @@
       }, {
         "name" : "DB_MAXPOOLSIZE",
         "value" : "5"
-      }, {
-        "name" : "KAFKA_HOST",
-        "value" : "kafka"
-      }, {
-        "name" : "KAFKA_PORT",
-        "value" : "9092"
-      }, {
-        "name" : "ENV",
-        "value" : "folio"
-      }, {
-        "name" : "REPLICATION_FACTOR",
-        "value" : "1"
       } ],
       "dockerArgs" : {
         "HostConfig" : {
