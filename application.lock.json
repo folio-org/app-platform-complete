@@ -1,9 +1,13 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010934",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010947",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000010934",
+  "version" : "3.4.0-SNAPSHOT.100200000010947",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
+    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2345",
+    "name" : "mod-data-export-worker",
+    "version" : "3.6.0-SNAPSHOT.2345"
+  }, {
     "id" : "mod-graphql-1.15.1000417",
     "name" : "mod-graphql",
     "version" : "1.15.1000417"
@@ -31,10 +35,6 @@
     "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2164",
     "name" : "mod-data-export-spring",
     "version" : "3.7.0-SNAPSHOT.2164"
-  }, {
-    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2334",
-    "name" : "mod-data-export-worker",
-    "version" : "3.6.0-SNAPSHOT.2334"
   }, {
     "id" : "mod-remote-storage-4.1.0-SNAPSHOT.2090",
     "name" : "mod-remote-storage",
@@ -69,9 +69,9 @@
     "version" : "3.12.0-SNAPSHOT.2010"
   } ],
   "uiModules" : [ {
-    "id" : "folio_users-13.1.1099000000001506",
+    "id" : "folio_users-13.1.1099000000001525",
     "name" : "folio_users",
-    "version" : "13.1.1099000000001506"
+    "version" : "13.1.1099000000001525"
   }, {
     "id" : "folio_servicepoints-9.0.1099000000000099",
     "name" : "folio_servicepoints",
@@ -4079,7 +4079,7 @@
       }
     }
   }, {
-    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2334",
+    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2345",
     "name" : "Data Export Worker Module",
     "requires" : [ {
       "id" : "users",
@@ -4295,7 +4295,7 @@
       "subPermissions" : [ "refresh-presigned-url.get" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-data-export-worker:3.6.0-SNAPSHOT.2334",
+      "dockerImage" : "folioci/mod-data-export-worker:3.6.0-SNAPSHOT.2345",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -7729,7 +7729,7 @@
       }
     }
   }, {
-    "id" : "folio_users-13.1.1099000000001506",
+    "id" : "folio_users-13.1.1099000000001525",
     "name" : "User management",
     "requires" : [ {
       "id" : "users",
