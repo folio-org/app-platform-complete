@@ -1,12 +1,12 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010981",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000010989",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000010981",
+  "version" : "3.4.0-SNAPSHOT.100200000010989",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2364",
-    "name" : "mod-circulation",
-    "version" : "24.6.0-SNAPSHOT.2364"
+    "id" : "mod-feesfines-19.5.0-SNAPSHOT.2081",
+    "name" : "mod-feesfines",
+    "version" : "19.5.0-SNAPSHOT.2081"
   }, {
     "id" : "mod-graphql-1.15.1000421",
     "name" : "mod-graphql",
@@ -16,9 +16,9 @@
     "name" : "mod-circulation-storage",
     "version" : "17.6.0-SNAPSHOT.2237"
   }, {
-    "id" : "mod-feesfines-19.5.0-SNAPSHOT.2065",
-    "name" : "mod-feesfines",
-    "version" : "19.5.0-SNAPSHOT.2065"
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2364",
+    "name" : "mod-circulation",
+    "version" : "24.6.0-SNAPSHOT.2364"
   }, {
     "id" : "mod-patron-blocks-1.14.0-SNAPSHOT.2079",
     "name" : "mod-patron-blocks",
@@ -2278,7 +2278,7 @@
       }
     }
   }, {
-    "id" : "mod-feesfines-19.5.0-SNAPSHOT.2065",
+    "id" : "mod-feesfines-19.5.0-SNAPSHOT.2081",
     "name" : "feesfines",
     "requires" : [ {
       "id" : "patron-notice",
@@ -2304,18 +2304,6 @@
     }, {
       "id" : "users",
       "version" : "15.1 16.0"
-    }, {
-      "id" : "pubsub-event-types",
-      "version" : "0.1"
-    }, {
-      "id" : "pubsub-publishers",
-      "version" : "0.1"
-    }, {
-      "id" : "pubsub-subscribers",
-      "version" : "0.1"
-    }, {
-      "id" : "pubsub-publish",
-      "version" : "0.1"
     }, {
       "id" : "actual-cost-record-storage",
       "version" : "0.7"
@@ -2390,17 +2378,17 @@
         "methods" : [ "POST" ],
         "pathPattern" : "/accounts",
         "permissionsRequired" : [ "accounts.item.post" ],
-        "modulePermissions" : [ "patron-notice.post", "pubsub.publish.post" ]
+        "modulePermissions" : [ "patron-notice.post" ]
       }, {
         "methods" : [ "PUT" ],
         "pathPattern" : "/accounts/{id}",
         "permissionsRequired" : [ "accounts.item.put" ],
-        "modulePermissions" : [ "patron-notice.post", "pubsub.publish.post" ]
+        "modulePermissions" : [ "patron-notice.post" ]
       }, {
         "methods" : [ "DELETE" ],
         "pathPattern" : "/accounts/{id}",
         "permissionsRequired" : [ "accounts.item.delete" ],
-        "modulePermissions" : [ "pubsub.publish.post" ]
+        "modulePermissions" : [ ]
       }, {
         "methods" : [ "POST" ],
         "pathPattern" : "/accounts/{id}/check-pay",
@@ -2421,27 +2409,27 @@
         "methods" : [ "POST" ],
         "pathPattern" : "/accounts/{id}/pay",
         "permissionsRequired" : [ "feesfines.accounts.pay.post" ],
-        "modulePermissions" : [ "pubsub.publish.post", "modperms.feesfines.patron-notices.post" ]
+        "modulePermissions" : [ "modperms.feesfines.patron-notices.post" ]
       }, {
         "methods" : [ "POST" ],
         "pathPattern" : "/accounts/{id}/waive",
         "permissionsRequired" : [ "feesfines.accounts.waive.post" ],
-        "modulePermissions" : [ "pubsub.publish.post", "modperms.feesfines.patron-notices.post" ]
+        "modulePermissions" : [ "modperms.feesfines.patron-notices.post" ]
       }, {
         "methods" : [ "POST" ],
         "pathPattern" : "/accounts/{id}/transfer",
         "permissionsRequired" : [ "feesfines.accounts.transfer.post" ],
-        "modulePermissions" : [ "pubsub.publish.post", "modperms.feesfines.patron-notices.post" ]
+        "modulePermissions" : [ "modperms.feesfines.patron-notices.post" ]
       }, {
         "methods" : [ "POST" ],
         "pathPattern" : "/accounts/{id}/cancel",
         "permissionsRequired" : [ "feesfines.accounts.cancel.post" ],
-        "modulePermissions" : [ "pubsub.publish.post", "modperms.feesfines.patron-notices.post" ]
+        "modulePermissions" : [ "modperms.feesfines.patron-notices.post" ]
       }, {
         "methods" : [ "POST" ],
         "pathPattern" : "/accounts/{id}/refund",
         "permissionsRequired" : [ "feesfines.accounts.refund.post" ],
-        "modulePermissions" : [ "pubsub.publish.post", "modperms.feesfines.patron-notices.post" ]
+        "modulePermissions" : [ "modperms.feesfines.patron-notices.post" ]
       }, {
         "methods" : [ "POST" ],
         "pathPattern" : "/accounts-bulk/check-pay",
@@ -2462,27 +2450,27 @@
         "methods" : [ "POST" ],
         "pathPattern" : "/accounts-bulk/pay",
         "permissionsRequired" : [ "feesfines.accounts-bulk.pay.post" ],
-        "modulePermissions" : [ "pubsub.publish.post", "modperms.feesfines.patron-notices.post" ]
+        "modulePermissions" : [ "modperms.feesfines.patron-notices.post" ]
       }, {
         "methods" : [ "POST" ],
         "pathPattern" : "/accounts-bulk/waive",
         "permissionsRequired" : [ "feesfines.accounts-bulk.waive.post" ],
-        "modulePermissions" : [ "pubsub.publish.post", "modperms.feesfines.patron-notices.post" ]
+        "modulePermissions" : [ "modperms.feesfines.patron-notices.post" ]
       }, {
         "methods" : [ "POST" ],
         "pathPattern" : "/accounts-bulk/transfer",
         "permissionsRequired" : [ "feesfines.accounts-bulk.transfer.post" ],
-        "modulePermissions" : [ "pubsub.publish.post", "modperms.feesfines.patron-notices.post" ]
+        "modulePermissions" : [ "modperms.feesfines.patron-notices.post" ]
       }, {
         "methods" : [ "POST" ],
         "pathPattern" : "/accounts-bulk/cancel",
         "permissionsRequired" : [ "feesfines.accounts-bulk.cancel.post" ],
-        "modulePermissions" : [ "pubsub.publish.post", "modperms.feesfines.patron-notices.post" ]
+        "modulePermissions" : [ "modperms.feesfines.patron-notices.post" ]
       }, {
         "methods" : [ "POST" ],
         "pathPattern" : "/accounts-bulk/refund",
         "permissionsRequired" : [ "feesfines.accounts-bulk.refund.post" ],
-        "modulePermissions" : [ "pubsub.publish.post", "modperms.feesfines.patron-notices.post" ]
+        "modulePermissions" : [ "modperms.feesfines.patron-notices.post" ]
       }, {
         "methods" : [ "GET" ],
         "pathPattern" : "/feefineactions",
@@ -2495,7 +2483,7 @@
         "methods" : [ "POST" ],
         "pathPattern" : "/feefineactions",
         "permissionsRequired" : [ "feefineactions.item.post" ],
-        "modulePermissions" : [ "modperms.feesfines.patron-notices.post", "pubsub.publish.post" ]
+        "modulePermissions" : [ "modperms.feesfines.patron-notices.post" ]
       }, {
         "methods" : [ "PUT" ],
         "pathPattern" : "/feefineactions/{id}",
@@ -2636,17 +2624,17 @@
         "methods" : [ "POST" ],
         "pathPattern" : "/manualblocks",
         "permissionsRequired" : [ "manualblocks.item.post" ],
-        "modulePermissions" : [ "pubsub.publish.post" ]
+        "modulePermissions" : [ ]
       }, {
         "methods" : [ "PUT" ],
         "pathPattern" : "/manualblocks/{id}",
         "permissionsRequired" : [ "manualblocks.item.put" ],
-        "modulePermissions" : [ "pubsub.publish.post" ]
+        "modulePermissions" : [ ]
       }, {
         "methods" : [ "DELETE" ],
         "pathPattern" : "/manualblocks/{id}",
         "permissionsRequired" : [ "manualblocks.item.delete" ],
-        "modulePermissions" : [ "pubsub.publish.post" ]
+        "modulePermissions" : [ ]
       }, {
         "methods" : [ "GET" ],
         "pathPattern" : "/overdue-fines-policies",
@@ -2715,12 +2703,12 @@
         "methods" : [ "POST" ],
         "pathPattern" : "/actual-cost-fee-fine/cancel",
         "permissionsRequired" : [ "actual-cost-fee-fine-cancel.post" ],
-        "modulePermissions" : [ "actual-cost-record-storage.actual-cost-records.collection.get", "actual-cost-record-storage.actual-cost-records.item.get", "actual-cost-record-storage.actual-cost-records.item.put", "pubsub.publish.post" ]
+        "modulePermissions" : [ "actual-cost-record-storage.actual-cost-records.collection.get", "actual-cost-record-storage.actual-cost-records.item.get", "actual-cost-record-storage.actual-cost-records.item.put" ]
       }, {
         "methods" : [ "POST" ],
         "pathPattern" : "/actual-cost-fee-fine/bill",
         "permissionsRequired" : [ "actual-cost-fee-fine-bill.post" ],
-        "modulePermissions" : [ "actual-cost-record-storage.actual-cost-records.item.get", "actual-cost-record-storage.actual-cost-records.collection.get", "actual-cost-record-storage.actual-cost-records.item.put", "circulation-storage.loans.item.get", "circulation-storage.loans.collection.get", "users.item.get", "users.collection.get", "pubsub.publish.post" ]
+        "modulePermissions" : [ "actual-cost-record-storage.actual-cost-records.item.get", "actual-cost-record-storage.actual-cost-records.collection.get", "actual-cost-record-storage.actual-cost-records.item.put", "circulation-storage.loans.item.get", "circulation-storage.loans.collection.get", "users.item.get", "users.collection.get" ]
       } ]
     }, {
       "id" : "_tenant",
@@ -2729,7 +2717,7 @@
       "handlers" : [ {
         "methods" : [ "POST" ],
         "pathPattern" : "/_/tenant",
-        "modulePermissions" : [ "pubsub.event-types.post", "pubsub.publishers.post", "pubsub.subscribers.post" ]
+        "modulePermissions" : [ ]
       }, {
         "methods" : [ "GET", "DELETE" ],
         "pathPattern" : "/_/tenant/{id}"
@@ -3156,7 +3144,7 @@
       "description" : "Bill actual cost fee/fine"
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-feesfines:19.5.0-SNAPSHOT.2065",
+      "dockerImage" : "folioci/mod-feesfines:19.5.0-SNAPSHOT.2081",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
