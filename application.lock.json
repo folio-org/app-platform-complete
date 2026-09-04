@@ -4,6 +4,10 @@
   "version" : "2.5.22",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
+    "id" : "mod-ncip-1.16.2",
+    "name" : "mod-ncip",
+    "version" : "1.16.2"
+  }, {
     "id" : "mod-graphql-1.13.1",
     "name" : "mod-graphql",
     "version" : "1.13.1"
@@ -140,10 +144,6 @@
     "name" : "mod-kb-ebsco-java",
     "version" : "6.0.2"
   }, {
-    "id" : "mod-ncip-1.16.1",
-    "name" : "mod-ncip",
-    "version" : "1.16.1"
-  }, {
     "id" : "mod-inventory-update-4.1.0",
     "name" : "mod-inventory-update",
     "version" : "4.1.0"
@@ -173,10 +173,6 @@
     "version" : "2.0.3"
   } ],
   "uiModules" : [ {
-    "id" : "folio_inventory-13.0.19",
-    "name" : "folio_inventory",
-    "version" : "13.0.19"
-  }, {
     "id" : "folio_marc-authorities-7.0.3",
     "name" : "folio_marc-authorities",
     "version" : "7.0.3"
@@ -188,6 +184,10 @@
     "id" : "folio_quick-marc-10.0.4",
     "name" : "folio_quick-marc",
     "version" : "10.0.4"
+  }, {
+    "id" : "folio_inventory-13.0.19",
+    "name" : "folio_inventory",
+    "version" : "13.0.19"
   }, {
     "id" : "folio_servicepoints-8.0.0",
     "name" : "folio_servicepoints",
@@ -15970,23 +15970,8 @@
       }
     }
   }, {
-    "id" : "mod-ncip-1.16.1",
+    "id" : "mod-ncip-1.16.2",
     "name" : "NCIP",
-    "provides" : [ {
-      "id" : "ncip",
-      "version" : "1.0",
-      "handlers" : [ {
-        "methods" : [ "POST" ],
-        "pathPattern" : "/ncip",
-        "permissionsRequired" : [ "ncip.post" ],
-        "modulePermissions" : [ "users.collection.get", "patron-blocks.automated-patron-blocks.collection.get", "addresstypes.collection.get", "circulation.requests.item.post", "circulation-storage.circulation-rules.get", "circulation-storage.cancellation-reasons.collection.get", "ui-circulation.settings.overdue-fines-policies", "ui-circulation.settings.lost-item-fees-policies", "inventory-storage.all", "inventory-storage.items.collection.get", "inventory-storage.service-points.collection.get", "inventory-storage.instance-types.collection.get", "inventory-storage.identifier-types.collection.get", "inventory-storage.material-types.collection.get", "inventory-storage.loan-types.collection.get", "inventory-storage.locations.collection.get", "configuration.entries.collection.get", "configuration.entries.item.get", "usergroups.item.get", "manualblocks.collection.get", "note.types.collection.get", "accounts.collection.get", "circulation.check-out-by-barcode.post", "circulation.check-in-by-barcode.post", "circulation.loans.collection.get", "circulation.requests.collection.get", "inventory.instances.item.post", "inventory.instances.item.delete", "inventory-storage.holdings.item.delete", "inventory.items.collection.get", "inventory.items.item.delete", "inventory.items.item.put", "inventory.instances.collection.get", "inventory.instances.item.delete", "inventory-storage.holdings.item.post", "inventory-storage.service-points-users.collection.get", "inventory.items.item.post", "inventory-storage.service-points.item.get", "owners.collection.get", "feefines.collection.get", "accounts.item.post", "circulation.requests.item.get", "circulation.requests.item.put", "note.types.collection.get", "circulation.loans.add-info.post" ]
-      }, {
-        "methods" : [ "GET" ],
-        "pathPattern" : "/ncipconfigcheck",
-        "permissionsRequired" : [ "ncip.ncipconfigcheck.get" ],
-        "modulePermissions" : [ "inventory-storage.all", "inventory-storage.service-points.collection.get", "inventory-storage.instance-types.collection.get", "inventory-storage.identifier-types.collection.get", "inventory-storage.material-types.collection.get", "configuration.entries.collection.get", "configuration.entries.item.get", "inventory-storage.loan-types.collection.get" ]
-      } ]
-    } ],
     "requires" : [ {
       "id" : "instance-types",
       "version" : "2.0"
@@ -16018,6 +16003,21 @@
       "id" : "circulation",
       "version" : "14.0"
     } ],
+    "provides" : [ {
+      "id" : "ncip",
+      "version" : "1.0",
+      "handlers" : [ {
+        "methods" : [ "POST" ],
+        "pathPattern" : "/ncip",
+        "permissionsRequired" : [ "ncip.post" ],
+        "modulePermissions" : [ "users.collection.get", "patron-blocks.automated-patron-blocks.collection.get", "addresstypes.collection.get", "circulation.requests.item.post", "circulation-storage.circulation-rules.get", "circulation-storage.cancellation-reasons.collection.get", "ui-circulation.settings.overdue-fines-policies", "ui-circulation.settings.lost-item-fees-policies", "inventory-storage.all", "inventory-storage.items.collection.get", "inventory-storage.service-points.collection.get", "inventory-storage.instance-types.collection.get", "inventory-storage.identifier-types.collection.get", "inventory-storage.material-types.collection.get", "inventory-storage.loan-types.collection.get", "inventory-storage.locations.collection.get", "configuration.entries.collection.get", "configuration.entries.item.get", "usergroups.item.get", "manualblocks.collection.get", "note.types.collection.get", "accounts.collection.get", "circulation.check-out-by-barcode.post", "circulation.check-in-by-barcode.post", "circulation.loans.collection.get", "circulation.requests.collection.get", "inventory.instances.item.post", "inventory.instances.item.delete", "inventory-storage.holdings.item.delete", "inventory.items.collection.get", "inventory.items.item.delete", "inventory.items.item.put", "inventory.instances.collection.get", "inventory.instances.item.delete", "inventory-storage.holdings.item.post", "inventory-storage.service-points-users.collection.get", "inventory.items.item.post", "inventory-storage.service-points.item.get", "owners.collection.get", "feefines.collection.get", "accounts.item.post", "circulation.requests.item.get", "circulation.requests.item.put", "note.types.collection.get", "circulation.loans.add-info.post" ]
+      }, {
+        "methods" : [ "GET" ],
+        "pathPattern" : "/ncipconfigcheck",
+        "permissionsRequired" : [ "ncip.ncipconfigcheck.get" ],
+        "modulePermissions" : [ "inventory-storage.all", "inventory-storage.service-points.collection.get", "inventory-storage.instance-types.collection.get", "inventory-storage.identifier-types.collection.get", "inventory-storage.material-types.collection.get", "configuration.entries.collection.get", "configuration.entries.item.get", "inventory-storage.loan-types.collection.get" ]
+      } ]
+    } ],
     "permissionSets" : [ {
       "permissionName" : "ncip.post",
       "displayName" : "NCIP Request",
@@ -16033,8 +16033,12 @@
       "subPermissions" : [ "ncip.post", "ncip.ncipconfigcheck.get" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "mod-ncip:1.16.1",
-      "dockerPull" : false,
+      "dockerImage" : "folioorg/mod-ncip:1.16.2",
+      "dockerPull" : true,
+      "env" : [ {
+        "name" : "JAVA_OPTIONS",
+        "value" : "-XX:MaxRAMPercentage=66.0"
+      } ],
       "dockerArgs" : {
         "HostConfig" : {
           "Memory" : 357913941,
@@ -16044,11 +16048,7 @@
             } ]
           }
         }
-      },
-      "env" : [ {
-        "name" : "JAVA_OPTIONS",
-        "value" : "-XX:MaxRAMPercentage=66.0"
-      } ]
+      }
     }
   }, {
     "id" : "mod-inventory-update-4.1.0",
