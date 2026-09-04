@@ -1,24 +1,16 @@
 {
-  "id" : "app-platform-complete-3.3.12",
+  "id" : "app-platform-complete-3.3.13",
   "name" : "app-platform-complete",
-  "version" : "3.3.12",
+  "version" : "3.3.13",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-patron-blocks-1.13.1",
-    "name" : "mod-patron-blocks",
-    "version" : "1.13.1"
-  }, {
-    "id" : "mod-patron-6.4.2",
-    "name" : "mod-patron",
-    "version" : "6.4.2"
+    "id" : "mod-circulation-storage-17.5.2",
+    "name" : "mod-circulation-storage",
+    "version" : "17.5.2"
   }, {
     "id" : "mod-graphql-1.15.1",
     "name" : "mod-graphql",
     "version" : "1.15.1"
-  }, {
-    "id" : "mod-circulation-storage-17.5.1",
-    "name" : "mod-circulation-storage",
-    "version" : "17.5.1"
   }, {
     "id" : "mod-circulation-24.5.1",
     "name" : "mod-circulation",
@@ -27,6 +19,14 @@
     "id" : "mod-feesfines-19.4.1",
     "name" : "mod-feesfines",
     "version" : "19.4.1"
+  }, {
+    "id" : "mod-patron-blocks-1.13.1",
+    "name" : "mod-patron-blocks",
+    "version" : "1.13.1"
+  }, {
+    "id" : "mod-patron-6.4.2",
+    "name" : "mod-patron",
+    "version" : "6.4.2"
   }, {
     "id" : "mod-data-export-spring-3.6.1",
     "name" : "mod-data-export-spring",
@@ -181,7 +181,7 @@
       }
     }
   }, {
-    "id" : "mod-circulation-storage-17.5.1",
+    "id" : "mod-circulation-storage-17.5.2",
     "name" : "Circulation Storage Module",
     "requires" : [ {
       "id" : "item-storage",
@@ -1081,7 +1081,7 @@
       "description" : "get locks"
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioorg/mod-circulation-storage:17.5.1",
+      "dockerImage" : "folioorg/mod-circulation-storage:17.5.2",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
