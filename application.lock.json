@@ -4,10 +4,6 @@
   "version" : "2.5.22",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-ncip-1.16.2",
-    "name" : "mod-ncip",
-    "version" : "1.16.2"
-  }, {
     "id" : "mod-graphql-1.13.1",
     "name" : "mod-graphql",
     "version" : "1.13.1"
@@ -144,6 +140,10 @@
     "name" : "mod-kb-ebsco-java",
     "version" : "6.0.2"
   }, {
+    "id" : "mod-ncip-1.16.2",
+    "name" : "mod-ncip",
+    "version" : "1.16.2"
+  }, {
     "id" : "mod-inventory-update-4.1.0",
     "name" : "mod-inventory-update",
     "version" : "4.1.0"
@@ -173,6 +173,10 @@
     "version" : "2.0.3"
   } ],
   "uiModules" : [ {
+    "id" : "folio_inventory-13.0.20",
+    "name" : "folio_inventory",
+    "version" : "13.0.20"
+  }, {
     "id" : "folio_marc-authorities-7.0.3",
     "name" : "folio_marc-authorities",
     "version" : "7.0.3"
@@ -184,10 +188,6 @@
     "id" : "folio_quick-marc-10.0.4",
     "name" : "folio_quick-marc",
     "version" : "10.0.4"
-  }, {
-    "id" : "folio_inventory-13.0.19",
-    "name" : "folio_inventory",
-    "version" : "13.0.19"
   }, {
     "id" : "folio_servicepoints-8.0.0",
     "name" : "folio_servicepoints",
@@ -17892,7 +17892,7 @@
       "visible" : false
     } ]
   }, {
-    "id" : "folio_inventory-13.0.19",
+    "id" : "folio_inventory-13.0.20",
     "name" : "Inventory manager",
     "requires" : [ {
       "id" : "alternative-title-types",
