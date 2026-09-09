@@ -1,16 +1,16 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011017",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011024",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011017",
+  "version" : "3.4.0-SNAPSHOT.100200000011024",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-feesfines-19.5.0-SNAPSHOT.2084",
-    "name" : "mod-feesfines",
-    "version" : "19.5.0-SNAPSHOT.2084"
-  }, {
-    "id" : "mod-graphql-1.15.1000421",
+    "id" : "mod-graphql-1.15.1000424",
     "name" : "mod-graphql",
-    "version" : "1.15.1000421"
+    "version" : "1.15.1000424"
+  }, {
+    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2348",
+    "name" : "mod-data-export-worker",
+    "version" : "3.6.0-SNAPSHOT.2348"
   }, {
     "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2237",
     "name" : "mod-circulation-storage",
@@ -19,6 +19,10 @@
     "id" : "mod-circulation-24.6.0-SNAPSHOT.2364",
     "name" : "mod-circulation",
     "version" : "24.6.0-SNAPSHOT.2364"
+  }, {
+    "id" : "mod-feesfines-19.5.0-SNAPSHOT.2084",
+    "name" : "mod-feesfines",
+    "version" : "19.5.0-SNAPSHOT.2084"
   }, {
     "id" : "mod-patron-blocks-1.14.0-SNAPSHOT.2079",
     "name" : "mod-patron-blocks",
@@ -31,10 +35,6 @@
     "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2164",
     "name" : "mod-data-export-spring",
     "version" : "3.7.0-SNAPSHOT.2164"
-  }, {
-    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2345",
-    "name" : "mod-data-export-worker",
-    "version" : "3.6.0-SNAPSHOT.2345"
   }, {
     "id" : "mod-remote-storage-4.1.0-SNAPSHOT.2090",
     "name" : "mod-remote-storage",
@@ -155,7 +155,7 @@
     "preRelease" : "only"
   } ],
   "moduleDescriptors" : [ {
-    "id" : "mod-graphql-1.15.1000421",
+    "id" : "mod-graphql-1.15.1000424",
     "name" : "GraphQL API for FOLIO",
     "provides" : [ {
       "id" : "graphql",
@@ -167,7 +167,7 @@
       } ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-graphql:1.15.1000421",
+      "dockerImage" : "folioci/mod-graphql:1.15.1000424",
       "dockerPull" : true,
       "dockerArgs" : {
         "HostConfig" : {
@@ -4079,7 +4079,7 @@
       }
     }
   }, {
-    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2345",
+    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2348",
     "name" : "Data Export Worker Module",
     "requires" : [ {
       "id" : "users",
@@ -4295,7 +4295,7 @@
       "subPermissions" : [ "refresh-presigned-url.get" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-data-export-worker:3.6.0-SNAPSHOT.2345",
+      "dockerImage" : "folioci/mod-data-export-worker:3.6.0-SNAPSHOT.2348",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
