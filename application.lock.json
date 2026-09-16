@@ -1,7 +1,7 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011071",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011072",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011071",
+  "version" : "3.4.0-SNAPSHOT.100200000011072",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
     "id" : "mod-graphql-1.15.1000424",
@@ -69,13 +69,9 @@
     "version" : "3.12.0-SNAPSHOT.2010"
   } ],
   "uiModules" : [ {
-    "id" : "folio_plugin-find-user-8.2.1099000000000180",
-    "name" : "folio_plugin-find-user",
-    "version" : "8.2.1099000000000180"
-  }, {
-    "id" : "folio_users-13.1.1099000000001580",
+    "id" : "folio_users-13.1.1099000000001590",
     "name" : "folio_users",
-    "version" : "13.1.1099000000001580"
+    "version" : "13.1.1099000000001590"
   }, {
     "id" : "folio_servicepoints-9.0.1099000000000099",
     "name" : "folio_servicepoints",
@@ -92,6 +88,10 @@
     "id" : "folio_circulation-12.1.1099000000000487",
     "name" : "folio_circulation",
     "version" : "12.1.1099000000000487"
+  }, {
+    "id" : "folio_plugin-find-user-8.2.1099000000000180",
+    "name" : "folio_plugin-find-user",
+    "version" : "8.2.1099000000000180"
   }, {
     "id" : "folio_export-manager-5.1.1099000000000199",
     "name" : "folio_export-manager",
@@ -7741,7 +7741,7 @@
       }
     }
   }, {
-    "id" : "folio_users-13.1.1099000000001580",
+    "id" : "folio_users-13.1.1099000000001590",
     "name" : "User management",
     "requires" : [ {
       "id" : "users",
