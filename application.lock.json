@@ -1,7 +1,7 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011067",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011071",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011067",
+  "version" : "3.4.0-SNAPSHOT.100200000011071",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
     "id" : "mod-graphql-1.15.1000424",
@@ -69,9 +69,13 @@
     "version" : "3.12.0-SNAPSHOT.2010"
   } ],
   "uiModules" : [ {
-    "id" : "folio_export-manager-5.1.1099000000000199",
-    "name" : "folio_export-manager",
-    "version" : "5.1.1099000000000199"
+    "id" : "folio_plugin-find-user-8.2.1099000000000180",
+    "name" : "folio_plugin-find-user",
+    "version" : "8.2.1099000000000180"
+  }, {
+    "id" : "folio_users-13.1.1099000000001580",
+    "name" : "folio_users",
+    "version" : "13.1.1099000000001580"
   }, {
     "id" : "folio_servicepoints-9.0.1099000000000099",
     "name" : "folio_servicepoints",
@@ -89,9 +93,9 @@
     "name" : "folio_circulation",
     "version" : "12.1.1099000000000487"
   }, {
-    "id" : "folio_plugin-find-user-8.1.1099000000000170",
-    "name" : "folio_plugin-find-user",
-    "version" : "8.1.1099000000000170"
+    "id" : "folio_export-manager-5.1.1099000000000199",
+    "name" : "folio_export-manager",
+    "version" : "5.1.1099000000000199"
   }, {
     "id" : "folio_plugin-bursar-export-6.0.1099000000000313",
     "name" : "folio_plugin-bursar-export",
@@ -128,10 +132,6 @@
     "id" : "folio_myprofile-11.0.1099000000000206",
     "name" : "folio_myprofile",
     "version" : "11.0.1099000000000206"
-  }, {
-    "id" : "folio_users-13.1.1099000000001574",
-    "name" : "folio_users",
-    "version" : "13.1.1099000000001574"
   } ],
   "dependencies" : [ {
     "name" : "app-platform-minimal",
@@ -7021,7 +7021,7 @@
       }
     }
   }, {
-    "id" : "folio_plugin-find-user-8.1.1099000000000170",
+    "id" : "folio_plugin-find-user-8.2.1099000000000180",
     "name" : "User-finder for Stripes",
     "requires" : [ ],
     "optional" : [ ],
@@ -7741,7 +7741,7 @@
       }
     }
   }, {
-    "id" : "folio_users-13.1.1099000000001574",
+    "id" : "folio_users-13.1.1099000000001580",
     "name" : "User management",
     "requires" : [ {
       "id" : "users",
