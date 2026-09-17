@@ -1,9 +1,17 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011073",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011078",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011073",
+  "version" : "3.4.0-SNAPSHOT.100200000011078",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
+    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2169",
+    "name" : "mod-data-export-spring",
+    "version" : "3.7.0-SNAPSHOT.2169"
+  }, {
+    "id" : "mod-audit-3.1.0-SNAPSHOT.2252",
+    "name" : "mod-audit",
+    "version" : "3.1.0-SNAPSHOT.2252"
+  }, {
     "id" : "mod-graphql-1.15.1000425",
     "name" : "mod-graphql",
     "version" : "1.15.1000425"
@@ -28,10 +36,6 @@
     "name" : "mod-patron",
     "version" : "6.5.0-SNAPSHOT.2031"
   }, {
-    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2164",
-    "name" : "mod-data-export-spring",
-    "version" : "3.7.0-SNAPSHOT.2164"
-  }, {
     "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2348",
     "name" : "mod-data-export-worker",
     "version" : "3.6.0-SNAPSHOT.2348"
@@ -43,10 +47,6 @@
     "id" : "mod-calendar-4.1.0-SNAPSHOT.2166",
     "name" : "mod-calendar",
     "version" : "4.1.0-SNAPSHOT.2166"
-  }, {
-    "id" : "mod-audit-3.1.0-SNAPSHOT.2235",
-    "name" : "mod-audit",
-    "version" : "3.1.0-SNAPSHOT.2235"
   }, {
     "id" : "mod-courses-1.6.0-SNAPSHOT.2015",
     "name" : "mod-courses",
@@ -69,6 +69,10 @@
     "version" : "3.12.0-SNAPSHOT.2010"
   } ],
   "uiModules" : [ {
+    "id" : "folio_users-13.1.1099000000001598",
+    "name" : "folio_users",
+    "version" : "13.1.1099000000001598"
+  }, {
     "id" : "folio_servicepoints-9.0.1099000000000099",
     "name" : "folio_servicepoints",
     "version" : "9.0.1099000000000099"
@@ -128,10 +132,6 @@
     "id" : "folio_myprofile-11.0.1099000000000206",
     "name" : "folio_myprofile",
     "version" : "11.0.1099000000000206"
-  }, {
-    "id" : "folio_users-13.1.1099000000001590",
-    "name" : "folio_users",
-    "version" : "13.1.1099000000001590"
   } ],
   "dependencies" : [ {
     "name" : "app-platform-minimal",
@@ -3781,7 +3781,7 @@
       }
     }
   }, {
-    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2164",
+    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2169",
     "name" : "Data Export Spring Module",
     "requires" : [ {
       "id" : "login",
@@ -3825,7 +3825,7 @@
         "methods" : [ "POST" ],
         "pathPattern" : "/data-export-spring/jobs",
         "permissionsRequired" : [ "data-export.job.item.post" ],
-        "modulePermissions" : [ "feesfines.accounts.transfer.post", "feesfines.accounts-bulk.transfer.post", "accounts.collection.get", "circulation-logs.collection.get", "data-export.job.collection.get", "data-export.config.collection.get", "feefineactions.collection.get", "finance.expense-classes.item.get", "inventory-storage.contributor-name-types.item.get", "inventory-storage.holdings.item.get", "inventory-storage.identifier-types.item.get", "inventory-storage.locations.item.get", "inventory-storage.material-types.item.get", "inventory-storage.service-points.collection.get", "organizations-storage.organizations.item.get", "orders-storage.po-lines.collection.get", "orders-storage.purchase-orders.collection.get", "orders-storage.pieces.collection.get", "orders-storage.titles.item.get", "transfers.collection.get", "users.collection.get", "users.item.get", "users.item.post", "users.item.put", "email.message.post", "template-request.post" ]
+        "modulePermissions" : [ "feesfines.accounts.transfer.post", "feesfines.accounts-bulk.transfer.post", "accounts.collection.get", "circulation-logs.collection.get", "data-export.job.collection.get", "data-export.config.collection.get", "feefineactions.collection.get", "finance.expense-classes.item.get", "inventory-storage.contributor-name-types.item.get", "inventory-storage.holdings.item.get", "inventory-storage.identifier-types.item.get", "inventory-storage.locations.item.get", "inventory-storage.material-types.item.get", "inventory-storage.service-points.collection.get", "organizations-storage.organizations.item.get", "orders-storage.po-lines.collection.get", "orders-storage.purchase-orders.collection.get", "orders-storage.pieces.collection.get", "orders-storage.titles.item.get", "orders-storage.custom-fields.collection.get", "transfers.collection.get", "users.collection.get", "users.item.get", "users.item.post", "users.item.put", "email.message.post", "template-request.post" ]
       }, {
         "methods" : [ "GET" ],
         "pathPattern" : "/data-export-spring/jobs/{id}/download",
@@ -3865,7 +3865,7 @@
         "methods" : [ "POST" ],
         "pathPattern" : "/data-export-spring/jobs/send",
         "permissionsRequired" : [ "data-export.job.send.item.execute" ],
-        "modulePermissions" : [ "feesfines.accounts.transfer.post", "feesfines.accounts-bulk.transfer.post", "accounts.collection.get", "circulation-logs.collection.get", "data-export.job.collection.get", "data-export.config.collection.get", "feefineactions.collection.get", "finance.expense-classes.item.get", "inventory-storage.contributor-name-types.item.get", "inventory-storage.holdings.item.get", "inventory-storage.identifier-types.item.get", "inventory-storage.locations.item.get", "inventory-storage.material-types.item.get", "inventory-storage.service-points.collection.get", "organizations-storage.organizations.item.get", "orders-storage.po-lines.collection.get", "orders-storage.purchase-orders.collection.get", "orders-storage.pieces.collection.get", "orders-storage.titles.item.get", "transfers.collection.get", "users.collection.get", "users.item.get", "users.item.post", "users.item.put", "email.message.post", "template-request.post" ]
+        "modulePermissions" : [ "feesfines.accounts.transfer.post", "feesfines.accounts-bulk.transfer.post", "accounts.collection.get", "circulation-logs.collection.get", "data-export.job.collection.get", "data-export.config.collection.get", "feefineactions.collection.get", "finance.expense-classes.item.get", "inventory-storage.contributor-name-types.item.get", "inventory-storage.holdings.item.get", "inventory-storage.identifier-types.item.get", "inventory-storage.locations.item.get", "inventory-storage.material-types.item.get", "inventory-storage.service-points.collection.get", "organizations-storage.organizations.item.get", "orders-storage.po-lines.collection.get", "orders-storage.purchase-orders.collection.get", "orders-storage.pieces.collection.get", "orders-storage.titles.item.get", "orders-storage.custom-fields.collection.get", "transfers.collection.get", "users.collection.get", "users.item.get", "users.item.post", "users.item.put", "email.message.post", "template-request.post" ]
       }, {
         "methods" : [ "GET" ],
         "pathPattern" : "/data-export-spring/job-deletion-intervals",
@@ -3981,7 +3981,7 @@
       "permissionName" : "data-export.edifact.orders.create",
       "displayName" : "Edifact export create permission",
       "description" : "Edifact export create permission",
-      "subPermissions" : [ "data-export.job.item.post", "finance.expense-classes.item.get", "inventory-storage.holdings.item.get", "inventory-storage.identifier-types.item.get", "inventory-storage.locations.item.get", "inventory-storage.material-types.item.get", "inventory-storage.service-points.collection.get", "organizations-storage.organizations.item.get", "orders-storage.po-lines.collection.get", "orders-storage.purchase-orders.collection.get", "orders-storage.pieces.collection.get" ]
+      "subPermissions" : [ "data-export.job.item.post", "finance.expense-classes.item.get", "inventory-storage.holdings.item.get", "inventory-storage.identifier-types.item.get", "inventory-storage.locations.item.get", "inventory-storage.material-types.item.get", "inventory-storage.service-points.collection.get", "organizations-storage.organizations.item.get", "orders-storage.po-lines.collection.get", "orders-storage.purchase-orders.collection.get", "orders-storage.pieces.collection.get", "orders-storage.custom-fields.collection.get" ]
     }, {
       "permissionName" : "data-export.job-deletion-intervals.collection.get",
       "displayName" : "Get job deletion intervals",
@@ -4011,11 +4011,11 @@
     "metadata" : {
       "user" : {
         "type" : "system",
-        "permissions" : [ "data-export.job.item.post", "data-export.job.send.item.execute", "feesfines.accounts.transfer.post", "feesfines.accounts-bulk.transfer.post", "accounts.collection.get", "circulation-logs.collection.get", "data-export.job.collection.get", "data-export.config.collection.get", "feefineactions.collection.get", "finance.expense-classes.item.get", "inventory-storage.contributor-name-types.item.get", "inventory-storage.holdings.item.get", "inventory-storage.identifier-types.item.get", "inventory-storage.locations.item.get", "inventory-storage.material-types.item.get", "inventory-storage.service-points.collection.get", "organizations-storage.organizations.item.get", "orders-storage.po-lines.collection.get", "orders-storage.purchase-orders.collection.get", "orders-storage.pieces.collection.get", "orders-storage.titles.item.get", "transfers.collection.get", "users.collection.get", "users.item.get", "users.item.post", "users.item.put", "tenant-addresses.item.get", "locale.item.get", "email.message.post", "template-request.post" ]
+        "permissions" : [ "data-export.job.item.post", "data-export.job.send.item.execute", "feesfines.accounts.transfer.post", "feesfines.accounts-bulk.transfer.post", "accounts.collection.get", "circulation-logs.collection.get", "data-export.job.collection.get", "data-export.config.collection.get", "feefineactions.collection.get", "finance.expense-classes.item.get", "inventory-storage.contributor-name-types.item.get", "inventory-storage.holdings.item.get", "inventory-storage.identifier-types.item.get", "inventory-storage.locations.item.get", "inventory-storage.material-types.item.get", "inventory-storage.service-points.collection.get", "organizations-storage.organizations.item.get", "orders-storage.po-lines.collection.get", "orders-storage.purchase-orders.collection.get", "orders-storage.pieces.collection.get", "orders-storage.titles.item.get", "orders-storage.custom-fields.collection.get", "transfers.collection.get", "users.collection.get", "users.item.get", "users.item.post", "users.item.put", "tenant-addresses.item.get", "locale.item.get", "email.message.post", "template-request.post" ]
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-data-export-spring:3.7.0-SNAPSHOT.2164",
+      "dockerImage" : "folioci/mod-data-export-spring:3.7.0-SNAPSHOT.2169",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -4930,7 +4930,7 @@
       }
     }
   }, {
-    "id" : "mod-audit-3.1.0-SNAPSHOT.2235",
+    "id" : "mod-audit-3.1.0-SNAPSHOT.2252",
     "name" : "Audit Module",
     "requires" : [ {
       "id" : "pubsub-event-types",
@@ -5292,7 +5292,7 @@
       "subPermissions" : [ "audit.collection.get", "audit.item.get", "audit.item.post", "audit.item.put", "audit.item.delete", "circulation-logs.collection.get", "acquisition.order.events.get", "acquisition.order-line.events.get", "acquisition.piece.events.get", "acquisition.piece.events.history.get", "acquisition.invoice.events.get", "acquisition.invoice-line.events.get", "acquisition.organization.events.get", "audit.inventory.instance.collection.get", "audit.inventory.holdings.collection.get", "audit.inventory.item.collection.get", "audit.user.collection.get", "audit.marc.bib.collection.get", "audit.marc.authority.collection.get" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-audit:3.1.0-SNAPSHOT.2235",
+      "dockerImage" : "folioci/mod-audit:3.1.0-SNAPSHOT.2252",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -7741,7 +7741,7 @@
       }
     }
   }, {
-    "id" : "folio_users-13.1.1099000000001590",
+    "id" : "folio_users-13.1.1099000000001598",
     "name" : "User management",
     "requires" : [ {
       "id" : "users",
