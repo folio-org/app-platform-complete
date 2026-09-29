@@ -1,12 +1,12 @@
 {
-  "id" : "app-platform-complete-3.3.14",
+  "id" : "app-platform-complete-3.3.15",
   "name" : "app-platform-complete",
-  "version" : "3.3.14",
+  "version" : "3.3.15",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-circulation-24.5.2",
-    "name" : "mod-circulation",
-    "version" : "24.5.2"
+    "id" : "mod-remote-storage-4.0.1",
+    "name" : "mod-remote-storage",
+    "version" : "4.0.1"
   }, {
     "id" : "mod-graphql-1.15.1",
     "name" : "mod-graphql",
@@ -15,6 +15,10 @@
     "id" : "mod-circulation-storage-17.5.2",
     "name" : "mod-circulation-storage",
     "version" : "17.5.2"
+  }, {
+    "id" : "mod-circulation-24.5.2",
+    "name" : "mod-circulation",
+    "version" : "24.5.2"
   }, {
     "id" : "mod-feesfines-19.4.1",
     "name" : "mod-feesfines",
@@ -35,10 +39,6 @@
     "id" : "mod-data-export-worker-3.5.3",
     "name" : "mod-data-export-worker",
     "version" : "3.5.3"
-  }, {
-    "id" : "mod-remote-storage-4.0.0",
-    "name" : "mod-remote-storage",
-    "version" : "4.0.0"
   }, {
     "id" : "mod-calendar-4.0.1",
     "name" : "mod-calendar",
@@ -4342,7 +4342,7 @@
       }
     }
   }, {
-    "id" : "mod-remote-storage-4.0.0",
+    "id" : "mod-remote-storage-4.0.1",
     "name" : "Remote storage API module",
     "requires" : [ {
       "id" : "inventory",
@@ -4678,7 +4678,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioorg/mod-remote-storage:4.0.0",
+      "dockerImage" : "folioorg/mod-remote-storage:4.0.1",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
