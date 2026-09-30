@@ -128,12 +128,12 @@
     {
       "name": "mod-agreements",
       "version": "7.2.9-1",
-      "preRelease": "false"
+      "preRelease": "true"
     },
     {
       "name": "mod-licenses",
       "version": "6.2.8-1",
-      "preRelease": "false"
+      "preRelease": "true"
     },
     {
       "name": "mod-email",
@@ -198,7 +198,7 @@
     {
       "name": "mod-service-interaction",
       "version": "4.2.9-1",
-      "preRelease": "false"
+      "preRelease": "true"
     },
     {
       "name": "mod-ebsconet",
@@ -213,7 +213,7 @@
     {
       "name": "mod-serials-management",
       "version": "2.0.8-1",
-      "preRelease": "false"
+      "preRelease": "true"
     },
     {
       "name": "mod-record-specifications",
