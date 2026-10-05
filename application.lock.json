@@ -1,16 +1,12 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011180",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011181",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011180",
+  "version" : "3.4.0-SNAPSHOT.100200000011181",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2179",
-    "name" : "mod-data-export-spring",
-    "version" : "3.7.0-SNAPSHOT.2179"
-  }, {
-    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2369",
+    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2376",
     "name" : "mod-data-export-worker",
-    "version" : "3.6.0-SNAPSHOT.2369"
+    "version" : "3.6.0-SNAPSHOT.2376"
   }, {
     "id" : "mod-graphql-1.15.1000425",
     "name" : "mod-graphql",
@@ -35,6 +31,10 @@
     "id" : "mod-patron-6.5.0-SNAPSHOT.2039",
     "name" : "mod-patron",
     "version" : "6.5.0-SNAPSHOT.2039"
+  }, {
+    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2179",
+    "name" : "mod-data-export-spring",
+    "version" : "3.7.0-SNAPSHOT.2179"
   }, {
     "id" : "mod-remote-storage-4.1.0-SNAPSHOT.2125",
     "name" : "mod-remote-storage",
@@ -69,10 +69,6 @@
     "version" : "3.12.0-SNAPSHOT.2010"
   } ],
   "uiModules" : [ {
-    "id" : "folio_circulation-12.1.1099000000000492",
-    "name" : "folio_circulation",
-    "version" : "12.1.1099000000000492"
-  }, {
     "id" : "folio_servicepoints-9.0.1099000000000099",
     "name" : "folio_servicepoints",
     "version" : "9.0.1099000000000099"
@@ -84,6 +80,10 @@
     "id" : "folio_checkout-13.1.1099000000000394",
     "name" : "folio_checkout",
     "version" : "13.1.1099000000000394"
+  }, {
+    "id" : "folio_circulation-12.1.1099000000000492",
+    "name" : "folio_circulation",
+    "version" : "12.1.1099000000000492"
   }, {
     "id" : "folio_plugin-find-user-8.2.1099000000000180",
     "name" : "folio_plugin-find-user",
@@ -3974,7 +3974,7 @@
       }
     }
   }, {
-    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2369",
+    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2376",
     "name" : "Data Export Worker Module",
     "requires" : [ {
       "id" : "users",
@@ -4196,7 +4196,7 @@
       "subPermissions" : [ "refresh-presigned-url.get" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-data-export-worker:3.6.0-SNAPSHOT.2369",
+      "dockerImage" : "folioci/mod-data-export-worker:3.6.0-SNAPSHOT.2376",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
