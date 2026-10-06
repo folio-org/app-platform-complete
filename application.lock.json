@@ -1,12 +1,12 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011181",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011184",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011181",
+  "version" : "3.4.0-SNAPSHOT.100200000011184",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2376",
-    "name" : "mod-data-export-worker",
-    "version" : "3.6.0-SNAPSHOT.2376"
+    "id" : "mod-copycat-1.10.0-SNAPSHOT.2026",
+    "name" : "mod-copycat",
+    "version" : "1.10.0-SNAPSHOT.2026"
   }, {
     "id" : "mod-graphql-1.15.1000425",
     "name" : "mod-graphql",
@@ -36,6 +36,10 @@
     "name" : "mod-data-export-spring",
     "version" : "3.7.0-SNAPSHOT.2179"
   }, {
+    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2376",
+    "name" : "mod-data-export-worker",
+    "version" : "3.6.0-SNAPSHOT.2376"
+  }, {
     "id" : "mod-remote-storage-4.1.0-SNAPSHOT.2125",
     "name" : "mod-remote-storage",
     "version" : "4.1.0-SNAPSHOT.2125"
@@ -55,10 +59,6 @@
     "id" : "mod-pubsub-2.18.0-SNAPSHOT.2039",
     "name" : "mod-pubsub",
     "version" : "2.18.0-SNAPSHOT.2039"
-  }, {
-    "id" : "mod-copycat-1.10.0-SNAPSHOT.2019",
-    "name" : "mod-copycat",
-    "version" : "1.10.0-SNAPSHOT.2019"
   }, {
     "id" : "mod-ncip-1.18.0-SNAPSHOT.2008",
     "name" : "mod-ncip",
@@ -6204,7 +6204,7 @@
       }
     }
   }, {
-    "id" : "mod-copycat-1.10.0-SNAPSHOT.2019",
+    "id" : "mod-copycat-1.10.0-SNAPSHOT.2026",
     "name" : "copycat",
     "requires" : [ {
       "id" : "source-storage-source-records",
@@ -6298,7 +6298,7 @@
       "subPermissions" : [ "copycat.profiles.all", "copycat.imports.post" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-copycat:1.10.0-SNAPSHOT.2019",
+      "dockerImage" : "folioci/mod-copycat:1.10.0-SNAPSHOT.2026",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
