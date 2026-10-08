@@ -1,9 +1,13 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011192",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011193",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011192",
+  "version" : "3.4.0-SNAPSHOT.100200000011193",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
+    "id" : "mod-audit-3.1.0-SNAPSHOT.2267",
+    "name" : "mod-audit",
+    "version" : "3.1.0-SNAPSHOT.2267"
+  }, {
     "id" : "mod-graphql-1.15.1000425",
     "name" : "mod-graphql",
     "version" : "1.15.1000425"
@@ -44,10 +48,6 @@
     "name" : "mod-calendar",
     "version" : "4.1.0-SNAPSHOT.2166"
   }, {
-    "id" : "mod-audit-3.1.0-SNAPSHOT.2257",
-    "name" : "mod-audit",
-    "version" : "3.1.0-SNAPSHOT.2257"
-  }, {
     "id" : "mod-courses-1.6.0-SNAPSHOT.2015",
     "name" : "mod-courses",
     "version" : "1.6.0-SNAPSHOT.2015"
@@ -69,10 +69,6 @@
     "version" : "3.12.0-SNAPSHOT.2010"
   } ],
   "uiModules" : [ {
-    "id" : "folio_circulation-log-6.2.1099000000000214",
-    "name" : "folio_circulation-log",
-    "version" : "6.2.1099000000000214"
-  }, {
     "id" : "folio_servicepoints-9.0.1099000000000099",
     "name" : "folio_servicepoints",
     "version" : "9.0.1099000000000099"
@@ -104,6 +100,10 @@
     "id" : "folio_remote-storage-7.1.1099000000000153",
     "name" : "folio_remote-storage",
     "version" : "7.1.1099000000000153"
+  }, {
+    "id" : "folio_circulation-log-6.2.1099000000000214",
+    "name" : "folio_circulation-log",
+    "version" : "6.2.1099000000000214"
   }, {
     "id" : "folio_calendar-13.0.1099000000000259",
     "name" : "folio_calendar",
@@ -4813,7 +4813,7 @@
       }
     }
   }, {
-    "id" : "mod-audit-3.1.0-SNAPSHOT.2257",
+    "id" : "mod-audit-3.1.0-SNAPSHOT.2267",
     "name" : "Audit Module",
     "requires" : [ {
       "id" : "users",
@@ -5159,7 +5159,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-audit:3.1.0-SNAPSHOT.2257",
+      "dockerImage" : "folioci/mod-audit:3.1.0-SNAPSHOT.2267",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
