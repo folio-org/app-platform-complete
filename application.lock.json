@@ -1,7 +1,7 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011189",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011192",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011189",
+  "version" : "3.4.0-SNAPSHOT.100200000011192",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
     "id" : "mod-graphql-1.15.1000425",
@@ -69,13 +69,17 @@
     "version" : "3.12.0-SNAPSHOT.2010"
   } ],
   "uiModules" : [ {
-    "id" : "folio_checkin-12.1.1099000000000434",
-    "name" : "folio_checkin",
-    "version" : "12.1.1099000000000434"
+    "id" : "folio_circulation-log-6.2.1099000000000214",
+    "name" : "folio_circulation-log",
+    "version" : "6.2.1099000000000214"
   }, {
     "id" : "folio_servicepoints-9.0.1099000000000099",
     "name" : "folio_servicepoints",
     "version" : "9.0.1099000000000099"
+  }, {
+    "id" : "folio_checkin-12.1.1099000000000434",
+    "name" : "folio_checkin",
+    "version" : "12.1.1099000000000434"
   }, {
     "id" : "folio_checkout-13.1.1099000000000394",
     "name" : "folio_checkout",
@@ -100,10 +104,6 @@
     "id" : "folio_remote-storage-7.1.1099000000000153",
     "name" : "folio_remote-storage",
     "version" : "7.1.1099000000000153"
-  }, {
-    "id" : "folio_circulation-log-6.1.1099000000000204",
-    "name" : "folio_circulation-log",
-    "version" : "6.1.1099000000000204"
   }, {
     "id" : "folio_calendar-13.0.1099000000000259",
     "name" : "folio_calendar",
@@ -7073,7 +7073,7 @@
       }
     }
   }, {
-    "id" : "folio_circulation-log-6.1.1099000000000204",
+    "id" : "folio_circulation-log-6.2.1099000000000214",
     "name" : "Description for circulation logs",
     "requires" : [ {
       "id" : "service-points",
