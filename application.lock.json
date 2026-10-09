@@ -1,12 +1,12 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011193",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011197",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011193",
+  "version" : "3.4.0-SNAPSHOT.100200000011197",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-audit-3.1.0-SNAPSHOT.2267",
-    "name" : "mod-audit",
-    "version" : "3.1.0-SNAPSHOT.2267"
+    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2186",
+    "name" : "mod-data-export-spring",
+    "version" : "3.7.0-SNAPSHOT.2186"
   }, {
     "id" : "mod-graphql-1.15.1000425",
     "name" : "mod-graphql",
@@ -32,10 +32,6 @@
     "name" : "mod-patron",
     "version" : "6.5.0-SNAPSHOT.2039"
   }, {
-    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2179",
-    "name" : "mod-data-export-spring",
-    "version" : "3.7.0-SNAPSHOT.2179"
-  }, {
     "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2376",
     "name" : "mod-data-export-worker",
     "version" : "3.6.0-SNAPSHOT.2376"
@@ -47,6 +43,10 @@
     "id" : "mod-calendar-4.1.0-SNAPSHOT.2166",
     "name" : "mod-calendar",
     "version" : "4.1.0-SNAPSHOT.2166"
+  }, {
+    "id" : "mod-audit-3.1.0-SNAPSHOT.2267",
+    "name" : "mod-audit",
+    "version" : "3.1.0-SNAPSHOT.2267"
   }, {
     "id" : "mod-courses-1.6.0-SNAPSHOT.2015",
     "name" : "mod-courses",
@@ -3676,7 +3676,7 @@
       }
     }
   }, {
-    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2179",
+    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2186",
     "name" : "Data Export Spring Module",
     "requires" : [ {
       "id" : "login",
@@ -3910,7 +3910,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-data-export-spring:3.7.0-SNAPSHOT.2179",
+      "dockerImage" : "folioci/mod-data-export-spring:3.7.0-SNAPSHOT.2186",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
