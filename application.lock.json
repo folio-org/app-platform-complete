@@ -1,12 +1,12 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011197",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011212",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011197",
+  "version" : "3.4.0-SNAPSHOT.100200000011212",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2186",
-    "name" : "mod-data-export-spring",
-    "version" : "3.7.0-SNAPSHOT.2186"
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2401",
+    "name" : "mod-circulation",
+    "version" : "24.6.0-SNAPSHOT.2401"
   }, {
     "id" : "mod-graphql-1.15.1000425",
     "name" : "mod-graphql",
@@ -15,10 +15,6 @@
     "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2275",
     "name" : "mod-circulation-storage",
     "version" : "17.6.0-SNAPSHOT.2275"
-  }, {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2388",
-    "name" : "mod-circulation",
-    "version" : "24.6.0-SNAPSHOT.2388"
   }, {
     "id" : "mod-feesfines-19.5.0-SNAPSHOT.2100",
     "name" : "mod-feesfines",
@@ -31,6 +27,10 @@
     "id" : "mod-patron-6.5.0-SNAPSHOT.2039",
     "name" : "mod-patron",
     "version" : "6.5.0-SNAPSHOT.2039"
+  }, {
+    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2186",
+    "name" : "mod-data-export-spring",
+    "version" : "3.7.0-SNAPSHOT.2186"
   }, {
     "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2376",
     "name" : "mod-data-export-worker",
@@ -1122,7 +1122,7 @@
       }
     }
   }, {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2388",
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2401",
     "name" : "Circulation Module",
     "requires" : [ {
       "id" : "loan-storage",
@@ -2188,7 +2188,7 @@
       "visible" : false
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-circulation:24.6.0-SNAPSHOT.2388",
+      "dockerImage" : "folioci/mod-circulation:24.6.0-SNAPSHOT.2401",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -2203,6 +2203,12 @@
         "name" : "ENABLE_FOR_USE_AT_LOCATION",
         "value" : "false"
       }, {
+        "name" : "HTTP_MAXPOOLSIZE",
+        "value" : "100"
+      }, {
+        "name" : "ECS_TLR_FEATURE_ENABLED",
+        "value" : "false"
+      }, {
         "name" : "KAFKA_HOST",
         "value" : "kafka"
       }, {
@@ -2212,8 +2218,14 @@
         "name" : "REPLICATION_FACTOR",
         "value" : "1"
       }, {
+        "name" : "MAX_REQUEST_SIZE",
+        "value" : "4000000"
+      }, {
         "name" : "ENV",
         "value" : "folio"
+      }, {
+        "name" : "OKAPI_URL",
+        "value" : "http://okapi:9130"
       } ],
       "dockerArgs" : {
         "HostConfig" : {
