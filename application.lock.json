@@ -1,16 +1,12 @@
 {
-  "id" : "app-platform-complete-2.5.24",
+  "id" : "app-platform-complete-2.5.25",
   "name" : "app-platform-complete",
-  "version" : "2.5.24",
+  "version" : "2.5.25",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-search-5.0.14",
+    "id" : "mod-search-5.0.15",
     "name" : "mod-search",
-    "version" : "5.0.14"
-  }, {
-    "id" : "mod-inventory-21.1.23",
-    "name" : "mod-inventory",
-    "version" : "21.1.23"
+    "version" : "5.0.15"
   }, {
     "id" : "mod-graphql-1.13.1",
     "name" : "mod-graphql",
@@ -27,6 +23,10 @@
     "id" : "mod-circulation-storage-17.4.6",
     "name" : "mod-circulation-storage",
     "version" : "17.4.6"
+  }, {
+    "id" : "mod-inventory-21.1.23",
+    "name" : "mod-inventory",
+    "version" : "21.1.23"
   }, {
     "id" : "mod-circulation-24.4.21",
     "name" : "mod-circulation",
@@ -3810,7 +3810,7 @@
       }
     }
   }, {
-    "id" : "mod-search-5.0.14",
+    "id" : "mod-search-5.0.15",
     "name" : "Search Module",
     "requires" : [ {
       "id" : "instance-storage",
@@ -4310,7 +4310,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioorg/mod-search:5.0.14",
+      "dockerImage" : "folioorg/mod-search:5.0.15",
       "dockerPull" : true,
       "env" : [ {
         "name" : "ENV",
@@ -4415,6 +4415,10 @@
         "name" : "ELASTICSEARCH_COMPRESSION_ENABLED",
         "value" : "true",
         "description" : "Specify if Elasticsearch request/response compression enabled"
+      }, {
+        "name" : "ELASTICSEARCH_SERVER",
+        "value" : "false",
+        "description" : "Specify whether it is Elasticsearch(true) or Opensearch(false) "
       }, {
         "name" : "DB_HOST",
         "value" : "postgres",
