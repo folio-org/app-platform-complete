@@ -1,12 +1,12 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011212",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011215",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011212",
+  "version" : "3.4.0-SNAPSHOT.100200000011215",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2401",
-    "name" : "mod-circulation",
-    "version" : "24.6.0-SNAPSHOT.2401"
+    "id" : "mod-audit-3.1.0-SNAPSHOT.2272",
+    "name" : "mod-audit",
+    "version" : "3.1.0-SNAPSHOT.2272"
   }, {
     "id" : "mod-graphql-1.15.1000425",
     "name" : "mod-graphql",
@@ -15,6 +15,10 @@
     "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2275",
     "name" : "mod-circulation-storage",
     "version" : "17.6.0-SNAPSHOT.2275"
+  }, {
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2401",
+    "name" : "mod-circulation",
+    "version" : "24.6.0-SNAPSHOT.2401"
   }, {
     "id" : "mod-feesfines-19.5.0-SNAPSHOT.2100",
     "name" : "mod-feesfines",
@@ -43,10 +47,6 @@
     "id" : "mod-calendar-4.1.0-SNAPSHOT.2166",
     "name" : "mod-calendar",
     "version" : "4.1.0-SNAPSHOT.2166"
-  }, {
-    "id" : "mod-audit-3.1.0-SNAPSHOT.2267",
-    "name" : "mod-audit",
-    "version" : "3.1.0-SNAPSHOT.2267"
   }, {
     "id" : "mod-courses-1.6.0-SNAPSHOT.2015",
     "name" : "mod-courses",
@@ -4825,7 +4825,7 @@
       }
     }
   }, {
-    "id" : "mod-audit-3.1.0-SNAPSHOT.2267",
+    "id" : "mod-audit-3.1.0-SNAPSHOT.2272",
     "name" : "Audit Module",
     "requires" : [ {
       "id" : "users",
@@ -5171,7 +5171,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-audit:3.1.0-SNAPSHOT.2267",
+      "dockerImage" : "folioci/mod-audit:3.1.0-SNAPSHOT.2272",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
