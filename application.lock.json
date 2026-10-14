@@ -1,12 +1,12 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011215",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011219",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011215",
+  "version" : "3.4.0-SNAPSHOT.100200000011219",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-audit-3.1.0-SNAPSHOT.2272",
-    "name" : "mod-audit",
-    "version" : "3.1.0-SNAPSHOT.2272"
+    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2195",
+    "name" : "mod-data-export-spring",
+    "version" : "3.7.0-SNAPSHOT.2195"
   }, {
     "id" : "mod-graphql-1.15.1000425",
     "name" : "mod-graphql",
@@ -32,10 +32,6 @@
     "name" : "mod-patron",
     "version" : "6.5.0-SNAPSHOT.2039"
   }, {
-    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2186",
-    "name" : "mod-data-export-spring",
-    "version" : "3.7.0-SNAPSHOT.2186"
-  }, {
     "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2376",
     "name" : "mod-data-export-worker",
     "version" : "3.6.0-SNAPSHOT.2376"
@@ -47,6 +43,10 @@
     "id" : "mod-calendar-4.1.0-SNAPSHOT.2166",
     "name" : "mod-calendar",
     "version" : "4.1.0-SNAPSHOT.2166"
+  }, {
+    "id" : "mod-audit-3.1.0-SNAPSHOT.2272",
+    "name" : "mod-audit",
+    "version" : "3.1.0-SNAPSHOT.2272"
   }, {
     "id" : "mod-courses-1.6.0-SNAPSHOT.2015",
     "name" : "mod-courses",
@@ -3688,7 +3688,7 @@
       }
     }
   }, {
-    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2186",
+    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2195",
     "name" : "Data Export Spring Module",
     "requires" : [ {
       "id" : "login",
@@ -3717,7 +3717,7 @@
     } ],
     "provides" : [ {
       "id" : "data-export-spring",
-      "version" : "2.0",
+      "version" : "2.1",
       "handlers" : [ {
         "methods" : [ "GET" ],
         "pathPattern" : "/data-export-spring/jobs",
@@ -3742,6 +3742,11 @@
         "methods" : [ "POST" ],
         "pathPattern" : "/data-export-spring/jobs/{id}/resend",
         "permissionsRequired" : [ "data-export.job.item.resend" ],
+        "modulePermissions" : [ ]
+      }, {
+        "methods" : [ "POST" ],
+        "pathPattern" : "/data-export-spring/configs/{id}/execute",
+        "permissionsRequired" : [ "data-export.config.item.execute" ],
         "modulePermissions" : [ ]
       }, {
         "methods" : [ "GET" ],
@@ -3854,6 +3859,10 @@
       "displayName" : "Change a data export configuration",
       "description" : "Change a data export configuration"
     }, {
+      "permissionName" : "data-export.config.item.execute",
+      "displayName" : "Run a data export configuration",
+      "description" : "Run a data export configuration for the given records"
+    }, {
       "permissionName" : "data-export.config.item.delete",
       "displayName" : "Delete data export configuration by id",
       "description" : "Delete data export configuration by id"
@@ -3878,7 +3887,7 @@
       "permissionName" : "data-export.config.all",
       "displayName" : "data export configurations - all permissions",
       "description" : "All permissions for data export configurations",
-      "subPermissions" : [ "data-export.config.collection.get", "data-export.config.item.get", "data-export.config.item.post", "data-export.config.item.put", "data-export.config.item.delete" ]
+      "subPermissions" : [ "data-export.config.collection.get", "data-export.config.item.get", "data-export.config.item.post", "data-export.config.item.put", "data-export.config.item.delete", "data-export.config.item.execute" ]
     }, {
       "permissionName" : "data-export.job.all",
       "displayName" : "data export jobs - all permissions",
@@ -3922,7 +3931,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-data-export-spring:3.7.0-SNAPSHOT.2186",
+      "dockerImage" : "folioci/mod-data-export-spring:3.7.0-SNAPSHOT.2195",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
