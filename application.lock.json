@@ -1,20 +1,16 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011219",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011220",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011219",
+  "version" : "3.4.0-SNAPSHOT.100200000011220",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2195",
-    "name" : "mod-data-export-spring",
-    "version" : "3.7.0-SNAPSHOT.2195"
+    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2288",
+    "name" : "mod-circulation-storage",
+    "version" : "17.6.0-SNAPSHOT.2288"
   }, {
     "id" : "mod-graphql-1.15.1000425",
     "name" : "mod-graphql",
     "version" : "1.15.1000425"
-  }, {
-    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2275",
-    "name" : "mod-circulation-storage",
-    "version" : "17.6.0-SNAPSHOT.2275"
   }, {
     "id" : "mod-circulation-24.6.0-SNAPSHOT.2401",
     "name" : "mod-circulation",
@@ -31,6 +27,10 @@
     "id" : "mod-patron-6.5.0-SNAPSHOT.2039",
     "name" : "mod-patron",
     "version" : "6.5.0-SNAPSHOT.2039"
+  }, {
+    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2195",
+    "name" : "mod-data-export-spring",
+    "version" : "3.7.0-SNAPSHOT.2195"
   }, {
     "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2376",
     "name" : "mod-data-export-worker",
@@ -181,7 +181,7 @@
       }
     }
   }, {
-    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2275",
+    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2288",
     "name" : "Circulation Storage Module",
     "requires" : [ {
       "id" : "item-storage",
@@ -621,7 +621,7 @@
       } ]
     }, {
       "id" : "check-in-storage",
-      "version" : "0.2",
+      "version" : "0.3",
       "handlers" : [ {
         "methods" : [ "GET" ],
         "pathPattern" : "/check-in-storage/check-ins",
@@ -1068,7 +1068,7 @@
       "description" : "get locks"
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-circulation-storage:17.6.0-SNAPSHOT.2275",
+      "dockerImage" : "folioci/mod-circulation-storage:17.6.0-SNAPSHOT.2288",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
