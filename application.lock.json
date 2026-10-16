@@ -1,24 +1,20 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011231",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011232",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011231",
+  "version" : "3.4.0-SNAPSHOT.100200000011232",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2383",
-    "name" : "mod-data-export-worker",
-    "version" : "3.6.0-SNAPSHOT.2383"
-  }, {
-    "id" : "mod-graphql-1.15.1000425",
+    "id" : "mod-graphql-1.15.1000426",
     "name" : "mod-graphql",
-    "version" : "1.15.1000425"
+    "version" : "1.15.1000426"
   }, {
-    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2288",
+    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2319",
     "name" : "mod-circulation-storage",
-    "version" : "17.6.0-SNAPSHOT.2288"
+    "version" : "17.6.0-SNAPSHOT.2319"
   }, {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2401",
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2415",
     "name" : "mod-circulation",
-    "version" : "24.6.0-SNAPSHOT.2401"
+    "version" : "24.6.0-SNAPSHOT.2415"
   }, {
     "id" : "mod-feesfines-19.5.0-SNAPSHOT.2100",
     "name" : "mod-feesfines",
@@ -35,6 +31,10 @@
     "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2195",
     "name" : "mod-data-export-spring",
     "version" : "3.7.0-SNAPSHOT.2195"
+  }, {
+    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2383",
+    "name" : "mod-data-export-worker",
+    "version" : "3.6.0-SNAPSHOT.2383"
   }, {
     "id" : "mod-remote-storage-4.1.0-SNAPSHOT.2125",
     "name" : "mod-remote-storage",
@@ -155,7 +155,7 @@
     "preRelease" : "only"
   } ],
   "moduleDescriptors" : [ {
-    "id" : "mod-graphql-1.15.1000425",
+    "id" : "mod-graphql-1.15.1000426",
     "name" : "GraphQL API for FOLIO",
     "provides" : [ {
       "id" : "graphql",
@@ -167,7 +167,7 @@
       } ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-graphql:1.15.1000425",
+      "dockerImage" : "folioci/mod-graphql:1.15.1000426",
       "dockerPull" : true,
       "dockerArgs" : {
         "HostConfig" : {
@@ -181,7 +181,7 @@
       }
     }
   }, {
-    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2288",
+    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2319",
     "name" : "Circulation Storage Module",
     "requires" : [ {
       "id" : "item-storage",
@@ -1068,7 +1068,7 @@
       "description" : "get locks"
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-circulation-storage:17.6.0-SNAPSHOT.2288",
+      "dockerImage" : "folioci/mod-circulation-storage:17.6.0-SNAPSHOT.2319",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -1122,7 +1122,7 @@
       }
     }
   }, {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2401",
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2415",
     "name" : "Circulation Module",
     "requires" : [ {
       "id" : "loan-storage",
@@ -1195,7 +1195,7 @@
       "version" : "0.3"
     }, {
       "id" : "check-in-storage",
-      "version" : "0.2"
+      "version" : "0.3"
     }, {
       "id" : "automated-patron-blocks",
       "version" : "0.1"
@@ -1351,7 +1351,7 @@
       } ]
     }, {
       "id" : "circulation",
-      "version" : "14.7",
+      "version" : "14.8",
       "handlers" : [ {
         "methods" : [ "POST" ],
         "pathPattern" : "/circulation/check-out-by-barcode",
@@ -2188,7 +2188,7 @@
       "visible" : false
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-circulation:24.6.0-SNAPSHOT.2401",
+      "dockerImage" : "folioci/mod-circulation:24.6.0-SNAPSHOT.2415",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
