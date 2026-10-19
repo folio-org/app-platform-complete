@@ -1,12 +1,12 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011232",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011253",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011232",
+  "version" : "3.4.0-SNAPSHOT.100200000011253",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-graphql-1.15.1000426",
+    "id" : "mod-graphql-1.15.1000429",
     "name" : "mod-graphql",
-    "version" : "1.15.1000426"
+    "version" : "1.15.1000429"
   }, {
     "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2319",
     "name" : "mod-circulation-storage",
@@ -155,7 +155,7 @@
     "preRelease" : "only"
   } ],
   "moduleDescriptors" : [ {
-    "id" : "mod-graphql-1.15.1000426",
+    "id" : "mod-graphql-1.15.1000429",
     "name" : "GraphQL API for FOLIO",
     "provides" : [ {
       "id" : "graphql",
@@ -167,7 +167,7 @@
       } ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-graphql:1.15.1000426",
+      "dockerImage" : "folioci/mod-graphql:1.15.1000429",
       "dockerPull" : true,
       "dockerArgs" : {
         "HostConfig" : {
