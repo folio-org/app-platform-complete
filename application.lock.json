@@ -1,12 +1,12 @@
 {
-  "id" : "app-platform-complete-2.5.25",
+  "id" : "app-platform-complete-2.5.26",
   "name" : "app-platform-complete",
-  "version" : "2.5.25",
+  "version" : "2.5.26",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-search-5.0.15",
-    "name" : "mod-search",
-    "version" : "5.0.15"
+    "id" : "mod-remote-storage-3.4.5",
+    "name" : "mod-remote-storage",
+    "version" : "3.4.5"
   }, {
     "id" : "mod-graphql-1.13.1",
     "name" : "mod-graphql",
@@ -23,6 +23,10 @@
     "id" : "mod-circulation-storage-17.4.6",
     "name" : "mod-circulation-storage",
     "version" : "17.4.6"
+  }, {
+    "id" : "mod-search-5.0.15",
+    "name" : "mod-search",
+    "version" : "5.0.15"
   }, {
     "id" : "mod-inventory-21.1.23",
     "name" : "mod-inventory",
@@ -71,10 +75,6 @@
     "id" : "mod-rtac-3.8.3",
     "name" : "mod-rtac",
     "version" : "3.8.3"
-  }, {
-    "id" : "mod-remote-storage-3.4.4",
-    "name" : "mod-remote-storage",
-    "version" : "3.4.4"
   }, {
     "id" : "mod-calendar-3.3.2",
     "name" : "mod-calendar",
@@ -10028,7 +10028,7 @@
       } ]
     }
   }, {
-    "id" : "mod-remote-storage-3.4.4",
+    "id" : "mod-remote-storage-3.4.5",
     "name" : "Remote storage API module",
     "requires" : [ {
       "id" : "inventory",
@@ -10364,7 +10364,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioorg/mod-remote-storage:3.4.4",
+      "dockerImage" : "folioorg/mod-remote-storage:3.4.5",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
