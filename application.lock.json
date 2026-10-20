@@ -1,12 +1,16 @@
 {
-  "id" : "app-platform-complete-2.5.26",
+  "id" : "app-platform-complete-2.5.27",
   "name" : "app-platform-complete",
-  "version" : "2.5.26",
+  "version" : "2.5.27",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-remote-storage-3.4.5",
-    "name" : "mod-remote-storage",
-    "version" : "3.4.5"
+    "id" : "mod-inventory-21.1.24",
+    "name" : "mod-inventory",
+    "version" : "21.1.24"
+  }, {
+    "id" : "mod-source-record-storage-5.10.16",
+    "name" : "mod-source-record-storage",
+    "version" : "5.10.16"
   }, {
     "id" : "mod-graphql-1.13.1",
     "name" : "mod-graphql",
@@ -27,10 +31,6 @@
     "id" : "mod-search-5.0.15",
     "name" : "mod-search",
     "version" : "5.0.15"
-  }, {
-    "id" : "mod-inventory-21.1.23",
-    "name" : "mod-inventory",
-    "version" : "21.1.23"
   }, {
     "id" : "mod-circulation-24.4.21",
     "name" : "mod-circulation",
@@ -76,6 +76,10 @@
     "name" : "mod-rtac",
     "version" : "3.8.3"
   }, {
+    "id" : "mod-remote-storage-3.4.5",
+    "name" : "mod-remote-storage",
+    "version" : "3.4.5"
+  }, {
     "id" : "mod-calendar-3.3.2",
     "name" : "mod-calendar",
     "version" : "3.3.2"
@@ -87,10 +91,6 @@
     "id" : "mod-courses-1.4.13",
     "name" : "mod-courses",
     "version" : "1.4.13"
-  }, {
-    "id" : "mod-source-record-storage-5.10.15",
-    "name" : "mod-source-record-storage",
-    "version" : "5.10.15"
   }, {
     "id" : "mod-data-import-3.3.6",
     "name" : "mod-data-import",
@@ -4589,7 +4589,7 @@
       }
     }
   }, {
-    "id" : "mod-inventory-21.1.23",
+    "id" : "mod-inventory-21.1.24",
     "name" : "Inventory Module",
     "requires" : [ {
       "id" : "holdings-sources",
@@ -5045,7 +5045,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioorg/mod-inventory:21.1.23",
+      "dockerImage" : "folioorg/mod-inventory:21.1.24",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -11650,7 +11650,7 @@
       } ]
     }
   }, {
-    "id" : "mod-source-record-storage-5.10.15",
+    "id" : "mod-source-record-storage-5.10.16",
     "name" : "Source Record Storage Module",
     "provides" : [ {
       "id" : "source-storage-snapshots",
@@ -11816,19 +11816,19 @@
     } ],
     "permissionSets" : [ {
       "permissionName" : "source-storage.records.populate.collection.post",
+      "replaces" : [ "source-storage.populate.records" ],
       "displayName" : "Source Storage - populate storage with test records",
-      "description" : "Populate storage with test records",
-      "replaces" : [ "source-storage.populate.records" ]
+      "description" : "Populate storage with test records"
     }, {
       "permissionName" : "source-storage.snapshots.item.get",
+      "replaces" : [ "source-storage.snapshots.get" ],
       "displayName" : "Source Storage - get snapshot",
-      "description" : "Get Snapshot",
-      "replaces" : [ "source-storage.snapshots.get" ]
+      "description" : "Get Snapshot"
     }, {
       "permissionName" : "source-storage.snapshots.collection.get",
+      "replaces" : [ "source-storage.snapshots.get" ],
       "displayName" : "Source Storage - get snapshots",
-      "description" : "Get Snapshots",
-      "replaces" : [ "source-storage.snapshots.get" ]
+      "description" : "Get Snapshots"
     }, {
       "permissionName" : "source-storage.snapshots.post",
       "displayName" : "Source Storage - create new snapshot",
@@ -11863,23 +11863,23 @@
       "description" : "Update records"
     }, {
       "permissionName" : "source-storage.parsed-records.fetch.collection.post",
+      "replaces" : [ "source-storage.records.fetch" ],
       "displayName" : "Source Storage - fetch records",
-      "description" : "Fetch Records",
-      "replaces" : [ "source-storage.records.fetch" ]
+      "description" : "Fetch Records"
     }, {
       "permissionName" : "source-storage.batch.records.collection.post",
       "displayName" : "Source Storage - stream collection of records",
       "description" : "Stream collection of records"
     }, {
       "permissionName" : "source-storage.stream.source-records.collection.get",
+      "replaces" : [ "source-storage.sourceRecords.get" ],
       "displayName" : "Source Storage - get results",
-      "description" : "Source Storage - get results",
-      "replaces" : [ "source-storage.sourceRecords.get" ]
+      "description" : "Source Storage - get results"
     }, {
       "permissionName" : "source-storage.stream.marc-record-identifiers.collection.post",
+      "replaces" : [ "source-storage.records.get" ],
       "displayName" : "Source Storage - post record's identifiers",
-      "description" : "Post record's identifiers",
-      "replaces" : [ "source-storage.records.get" ]
+      "description" : "Post record's identifiers"
     }, {
       "permissionName" : "source-storage.records.update",
       "displayName" : "Source Storage - update record",
@@ -11890,39 +11890,39 @@
       "description" : "Delete Record"
     }, {
       "permissionName" : "source-storage.source-records.item.get",
+      "replaces" : [ "source-storage.sourceRecords.get" ],
       "displayName" : "Source Storage - get source record",
-      "description" : "Get Source Record",
-      "replaces" : [ "source-storage.sourceRecords.get" ]
+      "description" : "Get Source Record"
     }, {
       "permissionName" : "source-storage.records.collection.get",
+      "replaces" : [ "source-storage.records.get" ],
       "displayName" : "Source Storage - get records",
-      "description" : "Get Records",
-      "replaces" : [ "source-storage.records.get" ]
+      "description" : "Get Records"
     }, {
       "permissionName" : "source-storage.records.item.get",
+      "replaces" : [ "source-storage.records.get" ],
       "displayName" : "Source Storage - get record",
-      "description" : "Get Record",
-      "replaces" : [ "source-storage.records.get" ]
+      "description" : "Get Record"
     }, {
       "permissionName" : "source-storage.source-records.collection.get",
+      "replaces" : [ "source-storage.sourceRecords.get" ],
       "displayName" : "Source Storage - get source record collection",
-      "description" : "Get Source Records",
-      "replaces" : [ "source-storage.sourceRecords.get" ]
+      "description" : "Get Source Records"
     }, {
       "permissionName" : "source-storage.records.formatted.item.get",
+      "replaces" : [ "source-storage.records.get" ],
       "displayName" : "Source Storage - get formatter record",
-      "description" : "Get formatted Record",
-      "replaces" : [ "source-storage.records.get" ]
+      "description" : "Get formatted Record"
     }, {
       "permissionName" : "source-storage.stream.records.collection.get",
+      "replaces" : [ "source-storage.records.get" ],
       "displayName" : "Source Storage - stream record",
-      "description" : "Stream record",
-      "replaces" : [ "source-storage.records.get" ]
+      "description" : "Stream record"
     }, {
       "permissionName" : "source-storage.records.matching.collection.post",
+      "replaces" : [ "source-storage.records.get" ],
       "displayName" : "Source Storage - get pairs of marc record ID to external entity ID",
-      "description" : "Get pairs of marc record ID to external entity ID",
-      "replaces" : [ "source-storage.records.get" ]
+      "description" : "Get pairs of marc record ID to external entity ID"
     }, {
       "permissionName" : "source-storage.verified-records.collection.post",
       "displayName" : "Source Storage - validate marc bib ids in the system",
@@ -11933,9 +11933,9 @@
       "description" : "Initiate asynchronous migration job"
     }, {
       "permissionName" : "source-storage.migrations.item.get",
+      "replaces" : [ "source-storage.migrations.get" ],
       "displayName" : "Source Storage - get migration job(s)",
-      "description" : "Get migration job(s)",
-      "replaces" : [ "source-storage.migrations.get" ]
+      "description" : "Get migration job(s)"
     }, {
       "permissionName" : "source-storage.all",
       "displayName" : "Source Record Storage - all permissions",
@@ -11950,18 +11950,8 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "mod-source-record-storage:5.10.15",
-      "dockerPull" : false,
-      "dockerArgs" : {
-        "HostConfig" : {
-          "Memory" : 1073741824,
-          "PortBindings" : {
-            "8081/tcp" : [ {
-              "HostPort" : "%p"
-            } ]
-          }
-        }
-      },
+      "dockerImage" : "folioorg/mod-source-record-storage:5.10.16",
+      "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
         "value" : "-XX:MaxRAMPercentage=66.0 -Djava.util.logging.config.file=vertx-default-jul-logging.properties"
@@ -11998,7 +11988,17 @@
       }, {
         "name" : "KAFKA_PORT",
         "value" : "9092"
-      } ]
+      } ],
+      "dockerArgs" : {
+        "HostConfig" : {
+          "Memory" : 1073741824,
+          "PortBindings" : {
+            "8081/tcp" : [ {
+              "HostPort" : "%p"
+            } ]
+          }
+        }
+      }
     }
   }, {
     "id" : "mod-data-import-3.3.6",
