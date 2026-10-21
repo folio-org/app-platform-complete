@@ -1,20 +1,20 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011264",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011265",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011264",
+  "version" : "3.4.0-SNAPSHOT.100200000011265",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-patron-6.5.0-SNAPSHOT.2062",
-    "name" : "mod-patron",
-    "version" : "6.5.0-SNAPSHOT.2062"
+    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2344",
+    "name" : "mod-circulation-storage",
+    "version" : "17.6.0-SNAPSHOT.2344"
+  }, {
+    "id" : "mod-patron-blocks-1.14.0-SNAPSHOT.2137",
+    "name" : "mod-patron-blocks",
+    "version" : "1.14.0-SNAPSHOT.2137"
   }, {
     "id" : "mod-graphql-1.15.1000429",
     "name" : "mod-graphql",
     "version" : "1.15.1000429"
-  }, {
-    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2319",
-    "name" : "mod-circulation-storage",
-    "version" : "17.6.0-SNAPSHOT.2319"
   }, {
     "id" : "mod-circulation-24.6.0-SNAPSHOT.2415",
     "name" : "mod-circulation",
@@ -24,9 +24,9 @@
     "name" : "mod-feesfines",
     "version" : "19.5.0-SNAPSHOT.2100"
   }, {
-    "id" : "mod-patron-blocks-1.14.0-SNAPSHOT.2126",
-    "name" : "mod-patron-blocks",
-    "version" : "1.14.0-SNAPSHOT.2126"
+    "id" : "mod-patron-6.5.0-SNAPSHOT.2062",
+    "name" : "mod-patron",
+    "version" : "6.5.0-SNAPSHOT.2062"
   }, {
     "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2195",
     "name" : "mod-data-export-spring",
@@ -181,7 +181,7 @@
       }
     }
   }, {
-    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2319",
+    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2344",
     "name" : "Circulation Storage Module",
     "requires" : [ {
       "id" : "item-storage",
@@ -287,7 +287,7 @@
       } ]
     }, {
       "id" : "loan-policy-storage",
-      "version" : "2.4",
+      "version" : "2.5",
       "handlers" : [ {
         "methods" : [ "GET" ],
         "pathPattern" : "/loan-policy-storage/loan-policies",
@@ -1068,7 +1068,7 @@
       "description" : "get locks"
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-circulation-storage:17.6.0-SNAPSHOT.2319",
+      "dockerImage" : "folioci/mod-circulation-storage:17.6.0-SNAPSHOT.2344",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -3159,7 +3159,7 @@
       }
     }
   }, {
-    "id" : "mod-patron-blocks-1.14.0-SNAPSHOT.2126",
+    "id" : "mod-patron-blocks-1.14.0-SNAPSHOT.2137",
     "name" : "Patron Blocks Module",
     "requires" : [ {
       "id" : "loan-storage",
@@ -3173,12 +3173,16 @@
     } ],
     "provides" : [ {
       "id" : "automated-patron-blocks",
-      "version" : "0.1",
+      "version" : "0.2",
       "handlers" : [ {
         "methods" : [ "GET" ],
         "pathPattern" : "/automated-patron-blocks/{userId}",
         "permissionsRequired" : [ "patron-blocks.automated-patron-blocks.collection.get" ],
         "modulePermissions" : [ "users.item.get" ]
+      }, {
+        "methods" : [ "POST" ],
+        "pathPattern" : "/automated-patron-blocks/batch",
+        "permissionsRequired" : [ "patron-blocks.automated-patron-blocks.batch.post" ]
       } ]
     }, {
       "id" : "user-summary",
@@ -3309,6 +3313,10 @@
       "displayName" : "Patron blocks - get blocks for patron",
       "description" : "Get automated patron blocks by user ID"
     }, {
+      "permissionName" : "patron-blocks.automated-patron-blocks.batch.post",
+      "displayName" : "Patron blocks - check blocks for batch of patrons",
+      "description" : "Check automated patron blocks for a batch of user IDs"
+    }, {
       "permissionName" : "patron-blocks.user-summary.item.get",
       "replaces" : [ "user-summary.item.get" ],
       "displayName" : "User summary - get UserSummary object",
@@ -3324,7 +3332,7 @@
       "description" : "Get Synchronization job"
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-patron-blocks:1.14.0-SNAPSHOT.2126",
+      "dockerImage" : "folioci/mod-patron-blocks:1.14.0-SNAPSHOT.2137",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
