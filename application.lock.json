@@ -1,12 +1,16 @@
 {
-  "id" : "app-platform-complete-3.3.15",
+  "id" : "app-platform-complete-3.3.16",
   "name" : "app-platform-complete",
-  "version" : "3.3.15",
+  "version" : "3.3.16",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-remote-storage-4.0.1",
+    "id" : "mod-patron-6.4.3",
+    "name" : "mod-patron",
+    "version" : "6.4.3"
+  }, {
+    "id" : "mod-remote-storage-4.0.2",
     "name" : "mod-remote-storage",
-    "version" : "4.0.1"
+    "version" : "4.0.2"
   }, {
     "id" : "mod-graphql-1.15.1",
     "name" : "mod-graphql",
@@ -27,10 +31,6 @@
     "id" : "mod-patron-blocks-1.13.1",
     "name" : "mod-patron-blocks",
     "version" : "1.13.1"
-  }, {
-    "id" : "mod-patron-6.4.2",
-    "name" : "mod-patron",
-    "version" : "6.4.2"
   }, {
     "id" : "mod-data-export-spring-3.6.1",
     "name" : "mod-data-export-spring",
@@ -3447,7 +3447,7 @@
       }
     }
   }, {
-    "id" : "mod-patron-6.4.2",
+    "id" : "mod-patron-6.4.3",
     "name" : "Patron Services Module",
     "requires" : [ {
       "id" : "settings",
@@ -3715,7 +3715,7 @@
       "subPermissions" : [ "patron.item.post", "patron.item.put", "patron.account.item.get", "patron.account.item.put", "patron.account-by-email.item.put", "patron.account.collection.get", "patron.account-renew.item.post", "patron.renew.item.post", "patron.account.item-hold.item.post", "patron.account.instance-hold.item.post", "patron.account.hold-cancel.item.post", "patron.account.item-allowed-service-points.item.get", "patron.account.instance-allowed-service-points.item.get", "patron.registration-status.item.get", "patron.account.instance-allowed-service-points-multi-item.collection.post", "patron.account.instance-batch-request.item.post", "patron.account.instance-batch-request-status.item.get", "patron.settings.all" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioorg/mod-patron:6.4.2",
+      "dockerImage" : "folioorg/mod-patron:6.4.3",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -4342,7 +4342,7 @@
       }
     }
   }, {
-    "id" : "mod-remote-storage-4.0.1",
+    "id" : "mod-remote-storage-4.0.2",
     "name" : "Remote storage API module",
     "requires" : [ {
       "id" : "inventory",
@@ -4678,7 +4678,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioorg/mod-remote-storage:4.0.1",
+      "dockerImage" : "folioorg/mod-remote-storage:4.0.2",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
