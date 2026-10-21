@@ -1,9 +1,13 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011253",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011264",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011253",
+  "version" : "3.4.0-SNAPSHOT.100200000011264",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
+    "id" : "mod-patron-6.5.0-SNAPSHOT.2062",
+    "name" : "mod-patron",
+    "version" : "6.5.0-SNAPSHOT.2062"
+  }, {
     "id" : "mod-graphql-1.15.1000429",
     "name" : "mod-graphql",
     "version" : "1.15.1000429"
@@ -23,10 +27,6 @@
     "id" : "mod-patron-blocks-1.14.0-SNAPSHOT.2126",
     "name" : "mod-patron-blocks",
     "version" : "1.14.0-SNAPSHOT.2126"
-  }, {
-    "id" : "mod-patron-6.5.0-SNAPSHOT.2039",
-    "name" : "mod-patron",
-    "version" : "6.5.0-SNAPSHOT.2039"
   }, {
     "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2195",
     "name" : "mod-data-export-spring",
@@ -3378,7 +3378,7 @@
       }
     }
   }, {
-    "id" : "mod-patron-6.5.0-SNAPSHOT.2039",
+    "id" : "mod-patron-6.5.0-SNAPSHOT.2062",
     "name" : "Patron Services Module",
     "requires" : [ {
       "id" : "settings",
@@ -3413,7 +3413,7 @@
     } ],
     "provides" : [ {
       "id" : "patron",
-      "version" : "6.6",
+      "version" : "6.7",
       "handlers" : [ {
         "methods" : [ "POST" ],
         "pathPattern" : "/patron",
@@ -3438,7 +3438,7 @@
         "methods" : [ "GET" ],
         "pathPattern" : "/patron/account/{accountId}",
         "permissionsRequired" : [ "patron.account.item.get" ],
-        "modulePermissions" : [ "mod-settings.entries.item.get", "mod-settings.entries.collection.get", "locale.item.get", "users.item.get", "circulation.loans.collection.get", "circulation.requests.collection.get", "accounts.collection.get", "inventory.items.item.get", "inventory.instances.item.get", "inventory.instances.collection.get", "feefines.item.get", "circulation-bff.requests.collection.get", "circulation-bff.batch-request.item.get", "circulation-bff.batch-request.details.collection.get", "circulation-item.item.get", "circulation-item.collection.get" ]
+        "modulePermissions" : [ "mod-settings.entries.item.get", "mod-settings.entries.collection.get", "locale.item.get", "users.item.get", "circulation.loans.collection.get", "circulation.requests.collection.get", "accounts.collection.get", "inventory.items.item.get", "inventory.instances.item.get", "inventory.instances.collection.get", "feefines.item.get", "circulation-bff.requests.collection.get", "circulation-bff.batch-request.item.get", "circulation-bff.batch-request.collection.get", "circulation-bff.batch-request.details.collection.get", "circulation-item.item.get", "circulation-item.collection.get" ]
       }, {
         "methods" : [ "PUT" ],
         "pathPattern" : "/patron/account/by-email/{email}",
@@ -3646,7 +3646,7 @@
       "subPermissions" : [ "patron.item.post", "patron.item.put", "patron.account.item.get", "patron.account.item.put", "patron.account-by-email.item.put", "patron.account.collection.get", "patron.account-renew.item.post", "patron.renew.item.post", "patron.account.item-hold.item.post", "patron.account.instance-hold.item.post", "patron.account.hold-cancel.item.post", "patron.account.item-allowed-service-points.item.get", "patron.account.instance-allowed-service-points.item.get", "patron.registration-status.item.get", "patron.account.instance-allowed-service-points-multi-item.collection.post", "patron.account.instance-batch-request.item.post", "patron.account.instance-batch-request-status.item.get", "patron.settings.all" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-patron:6.5.0-SNAPSHOT.2039",
+      "dockerImage" : "folioci/mod-patron:6.5.0-SNAPSHOT.2062",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
