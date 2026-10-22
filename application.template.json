@@ -127,7 +127,7 @@
     },
     {
       "name": "mod-agreements",
-      "version": "7.4.0",
+      "version": "~7.2.4 || ~7.4.0",
       "preRelease": "false"
     },
     {
