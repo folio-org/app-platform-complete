@@ -1,20 +1,24 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011265",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011275",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011265",
+  "version" : "3.4.0-SNAPSHOT.100200000011275",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2344",
-    "name" : "mod-circulation-storage",
-    "version" : "17.6.0-SNAPSHOT.2344"
+    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2388",
+    "name" : "mod-data-export-worker",
+    "version" : "3.6.0-SNAPSHOT.2388"
   }, {
-    "id" : "mod-patron-blocks-1.14.0-SNAPSHOT.2137",
-    "name" : "mod-patron-blocks",
-    "version" : "1.14.0-SNAPSHOT.2137"
+    "id" : "mod-audit-3.1.0-SNAPSHOT.2279",
+    "name" : "mod-audit",
+    "version" : "3.1.0-SNAPSHOT.2279"
   }, {
     "id" : "mod-graphql-1.15.1000429",
     "name" : "mod-graphql",
     "version" : "1.15.1000429"
+  }, {
+    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2344",
+    "name" : "mod-circulation-storage",
+    "version" : "17.6.0-SNAPSHOT.2344"
   }, {
     "id" : "mod-circulation-24.6.0-SNAPSHOT.2415",
     "name" : "mod-circulation",
@@ -24,6 +28,10 @@
     "name" : "mod-feesfines",
     "version" : "19.5.0-SNAPSHOT.2100"
   }, {
+    "id" : "mod-patron-blocks-1.14.0-SNAPSHOT.2137",
+    "name" : "mod-patron-blocks",
+    "version" : "1.14.0-SNAPSHOT.2137"
+  }, {
     "id" : "mod-patron-6.5.0-SNAPSHOT.2062",
     "name" : "mod-patron",
     "version" : "6.5.0-SNAPSHOT.2062"
@@ -32,10 +40,6 @@
     "name" : "mod-data-export-spring",
     "version" : "3.7.0-SNAPSHOT.2195"
   }, {
-    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2383",
-    "name" : "mod-data-export-worker",
-    "version" : "3.6.0-SNAPSHOT.2383"
-  }, {
     "id" : "mod-remote-storage-4.1.0-SNAPSHOT.2125",
     "name" : "mod-remote-storage",
     "version" : "4.1.0-SNAPSHOT.2125"
@@ -43,10 +47,6 @@
     "id" : "mod-calendar-4.1.0-SNAPSHOT.2166",
     "name" : "mod-calendar",
     "version" : "4.1.0-SNAPSHOT.2166"
-  }, {
-    "id" : "mod-audit-3.1.0-SNAPSHOT.2272",
-    "name" : "mod-audit",
-    "version" : "3.1.0-SNAPSHOT.2272"
   }, {
     "id" : "mod-courses-1.6.0-SNAPSHOT.2015",
     "name" : "mod-courses",
@@ -69,6 +69,10 @@
     "version" : "3.12.0-SNAPSHOT.2010"
   } ],
   "uiModules" : [ {
+    "id" : "folio_users-13.1.1099000000001651",
+    "name" : "folio_users",
+    "version" : "13.1.1099000000001651"
+  }, {
     "id" : "folio_servicepoints-9.0.1099000000000099",
     "name" : "folio_servicepoints",
     "version" : "9.0.1099000000000099"
@@ -128,10 +132,6 @@
     "id" : "folio_myprofile-11.0.1099000000000206",
     "name" : "folio_myprofile",
     "version" : "11.0.1099000000000206"
-  }, {
-    "id" : "folio_users-13.1.1099000000001646",
-    "name" : "folio_users",
-    "version" : "13.1.1099000000001646"
   } ],
   "dependencies" : [ {
     "name" : "app-platform-minimal",
@@ -4003,7 +4003,7 @@
       }
     }
   }, {
-    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2383",
+    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2388",
     "name" : "Data Export Worker Module",
     "requires" : [ {
       "id" : "users",
@@ -4225,7 +4225,7 @@
       "subPermissions" : [ "refresh-presigned-url.get" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-data-export-worker:3.6.0-SNAPSHOT.2383",
+      "dockerImage" : "folioci/mod-data-export-worker:3.6.0-SNAPSHOT.2388",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -4842,7 +4842,7 @@
       }
     }
   }, {
-    "id" : "mod-audit-3.1.0-SNAPSHOT.2272",
+    "id" : "mod-audit-3.1.0-SNAPSHOT.2279",
     "name" : "Audit Module",
     "requires" : [ {
       "id" : "users",
@@ -5188,7 +5188,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-audit:3.1.0-SNAPSHOT.2272",
+      "dockerImage" : "folioci/mod-audit:3.1.0-SNAPSHOT.2279",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -7637,7 +7637,7 @@
       }
     }
   }, {
-    "id" : "folio_users-13.1.1099000000001646",
+    "id" : "folio_users-13.1.1099000000001651",
     "name" : "User management",
     "requires" : [ {
       "id" : "users",
