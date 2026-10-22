@@ -22,7 +22,7 @@
     },
     {
       "name": "mod-inventory-storage",
-      "version": "~29.0.18",
+      "version": "29.0.23",
       "preRelease": "false"
     },
     {
