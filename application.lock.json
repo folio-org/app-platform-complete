@@ -1,16 +1,12 @@
 {
-  "id" : "app-platform-complete-2.5.27",
+  "id" : "app-platform-complete-2.5.28",
   "name" : "app-platform-complete",
-  "version" : "2.5.27",
+  "version" : "2.5.28",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-inventory-21.1.24",
-    "name" : "mod-inventory",
-    "version" : "21.1.24"
-  }, {
-    "id" : "mod-source-record-storage-5.10.16",
-    "name" : "mod-source-record-storage",
-    "version" : "5.10.16"
+    "id" : "mod-inventory-storage-29.0.23",
+    "name" : "mod-inventory-storage",
+    "version" : "29.0.23"
   }, {
     "id" : "mod-graphql-1.13.1",
     "name" : "mod-graphql",
@@ -20,10 +16,6 @@
     "name" : "mod-quick-marc",
     "version" : "7.0.0"
   }, {
-    "id" : "mod-inventory-storage-29.0.23",
-    "name" : "mod-inventory-storage",
-    "version" : "29.0.23"
-  }, {
     "id" : "mod-circulation-storage-17.4.6",
     "name" : "mod-circulation-storage",
     "version" : "17.4.6"
@@ -31,6 +23,10 @@
     "id" : "mod-search-5.0.15",
     "name" : "mod-search",
     "version" : "5.0.15"
+  }, {
+    "id" : "mod-inventory-21.1.24",
+    "name" : "mod-inventory",
+    "version" : "21.1.24"
   }, {
     "id" : "mod-circulation-24.4.21",
     "name" : "mod-circulation",
@@ -92,13 +88,17 @@
     "name" : "mod-courses",
     "version" : "1.4.13"
   }, {
+    "id" : "mod-source-record-storage-5.10.16",
+    "name" : "mod-source-record-storage",
+    "version" : "5.10.16"
+  }, {
     "id" : "mod-data-import-3.3.6",
     "name" : "mod-data-import",
     "version" : "3.3.6"
   }, {
-    "id" : "mod-agreements-7.2.10",
+    "id" : "mod-agreements-7.4.0",
     "name" : "mod-agreements",
-    "version" : "7.2.10"
+    "version" : "7.4.0"
   }, {
     "id" : "mod-licenses-6.2.8",
     "name" : "mod-licenses",
@@ -12351,11 +12351,15 @@
       } ]
     }
   }, {
-    "id" : "mod-agreements-7.2.10",
+    "id" : "mod-agreements-7.4.0",
     "name" : "mod-agreements",
+    "requires" : [ {
+      "id" : "okapi",
+      "version" : "1.9"
+    } ],
     "provides" : [ {
       "id" : "erm",
-      "version" : "7.2",
+      "version" : "7.4",
       "handlers" : [ {
         "methods" : [ "GET" ],
         "pathPattern" : "/erm/sas",
@@ -12427,6 +12431,22 @@
         "permissionsRequired" : [ "erm.agreements.item.delete" ]
       }, {
         "methods" : [ "GET" ],
+        "pathPattern" : "/erm/sas/{id}/can*",
+        "permissionsRequired" : [ "erm.agreements.item.accesscontrol.get" ]
+      }, {
+        "methods" : [ "GET" ],
+        "pathPattern" : "/erm/sas/can*",
+        "permissionsRequired" : [ "erm.agreements.collection.accesscontrol.get" ]
+      }, {
+        "methods" : [ "GET" ],
+        "pathPattern" : "/erm/sas/{id}/policies",
+        "permissionsRequired" : [ "erm.agreements.item.policies.get" ]
+      }, {
+        "methods" : [ "POST" ],
+        "pathPattern" : "/erm/sas/{id}/claim",
+        "permissionsRequired" : [ "erm.agreements.item.accesscontrol.post" ]
+      }, {
+        "methods" : [ "GET" ],
         "pathPattern" : "/export",
         "permissionsRequired" : [ "erm.all.agreements.resources.export" ]
       }, {
@@ -12453,6 +12473,22 @@
         "methods" : [ "DELETE" ],
         "pathPattern" : "/erm/entitlements/{id}",
         "permissionsRequired" : [ "erm.entitlements.item.delete" ]
+      }, {
+        "methods" : [ "GET" ],
+        "pathPattern" : "/erm/entitlements/{id}/can*",
+        "permissionsRequired" : [ "erm.entitlements.item.accesscontrol.get" ]
+      }, {
+        "methods" : [ "GET" ],
+        "pathPattern" : "/erm/entitlements/can*",
+        "permissionsRequired" : [ "erm.entitlements.collection.accesscontrol.get" ]
+      }, {
+        "methods" : [ "GET" ],
+        "pathPattern" : "/erm/entitlements/{id}/policies",
+        "permissionsRequired" : [ "erm.entitlements.item.policies.get" ]
+      }, {
+        "methods" : [ "POST" ],
+        "pathPattern" : "/erm/entitlements/{id}/claim",
+        "permissionsRequired" : [ "erm.entitlements.item.accesscontrol.post" ]
       }, {
         "methods" : [ "GET" ],
         "pathPattern" : "/erm/files",
@@ -12783,8 +12819,52 @@
         "permissionsRequired" : [ "erm.entitlements.logEntry.collection.get" ]
       }, {
         "methods" : [ "GET" ],
-        "pathPattern" : "/erm/admin/*",
-        "permissionsRequired" : [ "erm.admin.action.execute" ]
+        "pathPattern" : "/erm/admin/loadPackage",
+        "permissionsRequired" : [ "erm.admin.action.loadPackage.execute" ]
+      }, {
+        "methods" : [ "GET" ],
+        "pathPattern" : "/erm/admin/triggerCacheUpdate",
+        "permissionsRequired" : [ "erm.admin.action.triggerCacheUpdate.execute" ]
+      }, {
+        "methods" : [ "GET" ],
+        "pathPattern" : "/erm/admin/triggerSync",
+        "permissionsRequired" : [ "erm.admin.action.triggerSync.execute" ]
+      }, {
+        "methods" : [ "POST" ],
+        "pathPattern" : "/erm/admin/pullPackage",
+        "permissionsRequired" : [ "erm.admin.action.pullPackage.execute" ]
+      }, {
+        "methods" : [ "GET" ],
+        "pathPattern" : "/erm/admin/triggerActivationUpdate",
+        "permissionsRequired" : [ "erm.admin.action.triggerActivationUpdate.execute" ]
+      }, {
+        "methods" : [ "GET" ],
+        "pathPattern" : "/erm/admin/triggerHousekeeping",
+        "permissionsRequired" : [ "erm.admin.action.triggerHousekeeping.execute" ]
+      }, {
+        "methods" : [ "GET" ],
+        "pathPattern" : "/erm/admin/triggerEntitlementLogUpdate",
+        "permissionsRequired" : [ "erm.admin.action.triggerEntitlementLogUpdate.execute" ]
+      }, {
+        "methods" : [ "GET" ],
+        "pathPattern" : "/erm/admin/triggerDocMigration",
+        "permissionsRequired" : [ "erm.admin.action.triggerDocMigration.execute" ]
+      }, {
+        "methods" : [ "GET" ],
+        "pathPattern" : "/erm/admin/triggerEntitlementEholdings",
+        "permissionsRequired" : [ "erm.admin.action.triggerEntitlementEholdingsJob.execute" ]
+      }, {
+        "methods" : [ "GET" ],
+        "pathPattern" : "/erm/statistics/*",
+        "permissionsRequired" : [ "erm.statistics.get" ]
+      }, {
+        "methods" : [ "POST" ],
+        "pathPattern" : "/erm/resource/delete/*",
+        "permissionsRequired" : [ "erm.resources.delete.collection.execute" ]
+      }, {
+        "methods" : [ "POST" ],
+        "pathPattern" : "/erm/resource/markForDelete/*",
+        "permissionsRequired" : [ "erm.resources.markForDelete.collection.execute" ]
       }, {
         "methods" : [ "GET" ],
         "pathPattern" : "/erm/settings*",
@@ -12809,6 +12889,34 @@
         "methods" : [ "GET" ],
         "pathPattern" : "/erm/pushKB*",
         "permissionsRequired" : [ "erm.pushkb.get" ]
+      }, {
+        "methods" : [ "GET" ],
+        "pathPattern" : "/erm/identifiers",
+        "permissionsRequired" : [ "erm.identifiers.collection.get" ]
+      }, {
+        "methods" : [ "GET" ],
+        "pathPattern" : "/erm/identifiers/{id}",
+        "permissionsRequired" : [ "erm.identifiers.item.get" ]
+      }, {
+        "methods" : [ "GET" ],
+        "pathPattern" : "/erm/identifiers/namespaces",
+        "permissionsRequired" : [ "erm.identifiers.namespaces.collection.get" ]
+      }, {
+        "methods" : [ "GET" ],
+        "pathPattern" : "/erm/accessControl",
+        "permissionsRequired" : [ "erm.accesspolicies.collection.get" ]
+      }, {
+        "methods" : [ "GET" ],
+        "pathPattern" : "/erm/accessControl/{id}",
+        "permissionsRequired" : [ "erm.accesspolicies.item.get" ]
+      }, {
+        "methods" : [ "GET" ],
+        "pathPattern" : "/erm/accessControl/*Policies",
+        "permissionsRequired" : [ "erm.accesspolicies.policies.get" ]
+      }, {
+        "methods" : [ "GET" ],
+        "pathPattern" : "/erm/accessControl/enabledEngines",
+        "permissionsRequired" : [ "erm.accesspolicies.enabledengines.get" ]
       } ]
     }, {
       "id" : "dashboard",
@@ -12840,19 +12948,29 @@
         "unit" : "hour",
         "delay" : "24",
         "permissionsRequired" : [ ]
+      }, {
+        "methods" : [ "GET" ],
+        "pathPattern" : "/erm/admin/triggerEntitlementEholdings",
+        "unit" : "hour",
+        "delay" : "1",
+        "permissionsRequired" : [ ],
+        "modulePermissions" : [ "kb-ebsco.packages-bulk.collection.get", "kb-ebsco.resources-bulk.collection.get" ]
       } ]
     } ],
     "optional" : [ {
       "id" : "usage-data-providers",
-      "version" : "3.0"
+      "version" : "3.0 4.0"
     }, {
       "id" : "licenses",
       "version" : "6.1"
     }, {
       "id" : "eholdings",
-      "version" : "4.0"
+      "version" : "4.0 5.0"
     }, {
       "id" : "organizations.organizations",
+      "version" : "1.0"
+    }, {
+      "id" : "acquisitions-units",
       "version" : "1.0"
     } ],
     "permissionSets" : [ {
@@ -12925,8 +13043,29 @@
       "displayName" : "Validate SubscriptionAgreement property",
       "description" : "Validate a property on a SubscriptionAgreement record"
     }, {
+      "permissionName" : "erm.resources.delete",
+      "displayName" : "ERM delete resources",
+      "description" : "Mark resources for deletion and delete them",
+      "subPermissions" : [ "erm.resources.delete.collection.execute", "erm.resources.markForDelete.collection.execute" ]
+    }, {
+      "permissionName" : "erm.agreements.item.accesscontrol.get",
+      "displayName" : "Agreements item access control get",
+      "description" : "Obtain access control information for a SubscriptionAgreement record"
+    }, {
+      "permissionName" : "erm.agreements.collection.accesscontrol.get",
+      "displayName" : "Agreements collection access control get",
+      "description" : "Obtain access control information for a collection of SubscriptionAgreement records"
+    }, {
+      "permissionName" : "erm.agreements.item.policies.get",
+      "displayName" : "Agreements item policies get",
+      "description" : "Get the policies for a SubscriptionAgreement record"
+    }, {
+      "permissionName" : "erm.agreements.item.accesscontrol.post",
+      "displayName" : "Agreements item access control get",
+      "description" : "Claim a SubscriptionAgreement record with AccessPolicies"
+    }, {
       "permissionName" : "erm.agreements.view",
-      "subPermissions" : [ "erm.agreements.collection.get", "erm.agreements.item.get", "erm.agreements.resources.collection.get", "erm.agreements.resources.subset.collection.get", "erm.agreements.export", "erm.agreements_with_resource_subset.export", "erm.agreements.resources.export", "erm.agreements.resources.subset_by_format.export", "erm.all.agreements.resources.export", "erm.all.agreements.resources.subset_by_format.export", "erm.agreements.linkedLicenses.collection.get", "erm.usageDataProviders.collection.get", "erm.agreements.usageDataProviders.collection.get", "erm.resources.view" ]
+      "subPermissions" : [ "erm.agreements.collection.get", "erm.agreements.item.get", "erm.agreements.resources.collection.get", "erm.agreements.resources.subset.collection.get", "erm.agreements.export", "erm.agreements_with_resource_subset.export", "erm.agreements.resources.export", "erm.agreements.resources.subset_by_format.export", "erm.agreements.item.accesscontrol.get", "erm.agreements.collection.accesscontrol.get", "erm.agreements.item.policies.get", "erm.all.agreements.resources.export", "erm.all.agreements.resources.subset_by_format.export", "erm.agreements.linkedLicenses.collection.get", "erm.usageDataProviders.collection.get", "erm.agreements.usageDataProviders.collection.get", "erm.resources.view", "erm.statistics.get" ]
     }, {
       "permissionName" : "erm.agreements.item.post",
       "displayName" : "Agreements item post",
@@ -12942,7 +13081,7 @@
       "description" : "Clone an agreement"
     }, {
       "permissionName" : "erm.agreements.edit",
-      "subPermissions" : [ "erm.agreements.view", "erm.agreements.item.post", "erm.agreements.item.put", "erm.agreements.clone.execute", "erm.agreements.validate", "erm.agreements.property.validate" ]
+      "subPermissions" : [ "erm.agreements.view", "erm.agreements.item.post", "erm.agreements.item.put", "erm.agreements.item.accesscontrol.post", "erm.agreements.clone.execute", "erm.agreements.validate", "erm.agreements.property.validate" ]
     }, {
       "permissionName" : "erm.agreements.item.delete",
       "displayName" : "Agreements item delete",
@@ -13268,8 +13407,25 @@
       "displayName" : "Resources item entitlement options get",
       "description" : "Get resource's entitlement options records"
     }, {
+      "permissionName" : "erm.identifiers.collection.get",
+      "displayName" : "ERM: Identifiers collection get",
+      "description" : "Get a collection of identifier records"
+    }, {
+      "permissionName" : "erm.identifiers.item.get",
+      "displayName" : "ERM: Identifiers item get",
+      "description" : "Get an identifier record"
+    }, {
+      "permissionName" : "erm.identifiers.namespaces.collection.get",
+      "displayName" : "ERM: Identifier namespaces get",
+      "description" : "Get a collection of identifier namespace records"
+    }, {
+      "permissionName" : "erm.identifiers.view",
+      "displayName" : "ERM: Identifier view",
+      "description" : "Permissions to view identifier records",
+      "subPermissions" : [ "erm.identifiers.collection.get", "erm.identifiers.item.get", "erm.identifiers.namespaces.collection.get" ]
+    }, {
       "permissionName" : "erm.resources.view",
-      "subPermissions" : [ "erm.resources.collection.get", "erm.resources.electronic.collection.get", "erm.resources.item.get", "erm.resources.entitlement.collection.get", "erm.resources.entitlement.related.collection.get", "erm.resources.entitlementOptions.collection.get", "erm.resources.entitlementOptions.static.collection.get", "erm.entitlements.view", "erm.kbs.collection.get" ]
+      "subPermissions" : [ "erm.resources.collection.get", "erm.resources.electronic.collection.get", "erm.resources.item.get", "erm.resources.entitlement.collection.get", "erm.resources.entitlement.related.collection.get", "erm.resources.entitlementOptions.collection.get", "erm.resources.entitlementOptions.static.collection.get", "erm.entitlements.view", "erm.kbs.collection.get", "erm.identifiers.view" ]
     }, {
       "permissionName" : "erm.entitlements.collection.get",
       "displayName" : "Entitlements collection get",
@@ -13283,8 +13439,24 @@
       "displayName" : "Entitlements item get",
       "description" : "Get entitlement record"
     }, {
+      "permissionName" : "erm.entitlements.item.accesscontrol.get",
+      "displayName" : "Entitlements item access control get",
+      "description" : "Obtain access control information for a Entitlement record"
+    }, {
+      "permissionName" : "erm.entitlements.collection.accesscontrol.get",
+      "displayName" : "Entitlements collection access control get",
+      "description" : "Obtain access control information for a collection of Entitlement records"
+    }, {
+      "permissionName" : "erm.entitlements.item.policies.get",
+      "displayName" : "Entitlements item policies get",
+      "description" : "Get the policies for a Entitlement record"
+    }, {
+      "permissionName" : "erm.entitlements.item.accesscontrol.post",
+      "displayName" : "Entitlements item access control get",
+      "description" : "Claim a Entitlement record with AccessPolicies"
+    }, {
       "permissionName" : "erm.entitlements.view",
-      "subPermissions" : [ "erm.entitlements.collection.get", "erm.entitlements.logEntry.collection.get", "erm.entitlements.item.get" ]
+      "subPermissions" : [ "erm.entitlements.collection.get", "erm.entitlements.logEntry.collection.get", "erm.entitlements.item.get", "erm.entitlements.item.accesscontrol.get", "erm.entitlements.collection.accesscontrol.get", "erm.entitlements.item.policies.get" ]
     }, {
       "permissionName" : "erm.entitlements.item.post",
       "displayName" : "Entitlements item post",
@@ -13295,7 +13467,7 @@
       "description" : "Put entitlement record"
     }, {
       "permissionName" : "erm.entitlements.edit",
-      "subPermissions" : [ "erm.entitlements.view", "erm.entitlements.item.post", "erm.entitlements.item.put" ]
+      "subPermissions" : [ "erm.entitlements.view", "erm.entitlements.item.post", "erm.entitlements.item.put", "erm.entitlements.item.accesscontrol.post" ]
     }, {
       "permissionName" : "erm.entitlements.item.delete",
       "displayName" : "Entitlements item delete",
@@ -13409,10 +13581,72 @@
       "displayName" : "String templates perform template (DEPRECATED)",
       "description" : "Performs string templating (DEPRECATED)"
     }, {
-      "permissionName" : "erm.admin.action.execute",
-      "replaces" : [ "erm.admin.action" ],
-      "displayName" : "Admin endpoint perform action",
-      "description" : "Performs action from admin endpoint"
+      "permissionName" : "erm.admin.action.loadPackage.execute",
+      "displayName" : "Agreements: Admin endpoint perform loadPackage action",
+      "description" : "Allows performing of loadPackage action from admin endpoint",
+      "visible" : true
+    }, {
+      "permissionName" : "erm.admin.action.triggerCacheUpdate.execute",
+      "displayName" : "Agreements: Admin endpoint perform triggerCacheUpdate action",
+      "description" : "Allows performing of triggerCacheUpdate action from admin endpoint",
+      "visible" : true
+    }, {
+      "permissionName" : "erm.admin.action.triggerSync.execute",
+      "displayName" : "Agreements: Admin endpoint perform triggerSync action",
+      "description" : "Allows performing of triggerSync action from admin endpoint",
+      "visible" : true
+    }, {
+      "permissionName" : "erm.admin.action.pullPackage.execute",
+      "displayName" : "Agreements: Admin endpoint perform pullPackage action",
+      "description" : "Allows performing of pullPackage action from admin endpoint",
+      "visible" : true
+    }, {
+      "permissionName" : "erm.admin.action.triggerActivationUpdate.execute",
+      "displayName" : "Agreements: Admin endpoint perform triggerActivationUpdate action",
+      "description" : "Allows performing of triggerActivationUpdate action from admin endpoint",
+      "visible" : true
+    }, {
+      "permissionName" : "erm.admin.action.triggerHousekeeping.execute",
+      "displayName" : "Agreements: Admin endpoint perform triggerHousekeeping action",
+      "description" : "Allows performing of triggerHousekeeping action from admin endpoint",
+      "visible" : true
+    }, {
+      "permissionName" : "erm.admin.action.triggerEntitlementLogUpdate.execute",
+      "displayName" : "Agreements: Admin endpoint perform triggerEntitlementLogUpdate action",
+      "description" : "Allows performing of triggerEntitlementLogUpdate action from admin endpoint",
+      "visible" : true
+    }, {
+      "permissionName" : "erm.admin.action.triggerDocMigration.execute",
+      "displayName" : "Agreements: Admin endpoint perform triggerDocMigration action",
+      "description" : "Allows performing of triggerDocMigration action from admin endpoint",
+      "visible" : true
+    }, {
+      "permissionName" : "erm.admin.action.triggerEntitlementEholdingsJob.execute",
+      "displayName" : "Agreements: Admin endpoint perform triggerEntitlementEholdingsJob action",
+      "description" : "Allows performing of triggerEntitlementEholdingsJob action from admin endpoint",
+      "visible" : true
+    }, {
+      "permissionName" : "erm.admin.action.all.execute",
+      "replaces" : [ "erm.admin.action", "erm.admin.action.execute" ],
+      "displayName" : "Agreements: Admin endpoint perform all actions",
+      "description" : "Allows performing of all actions from admin endpoint",
+      "subPermissions" : [ "erm.admin.action.loadPackage.execute", "erm.admin.action.triggerCacheUpdate.execute", "erm.admin.action.triggerSync.execute", "erm.admin.action.pullPackage.execute", "erm.admin.action.triggerActivationUpdate.execute", "erm.admin.action.triggerHousekeeping.execute", "erm.admin.action.triggerEntitlementLogUpdate.execute", "erm.admin.action.triggerDocMigration.execute", "erm.admin.action.triggerEntitlementEholdingsJob.execute" ],
+      "visible" : true
+    }, {
+      "permissionName" : "erm.resources.markForDelete.collection.execute",
+      "displayName" : "ERM: Mark for delete resource collection",
+      "description" : "Allows POST to mark resources for deletion.",
+      "visible" : false
+    }, {
+      "permissionName" : "erm.resources.delete.collection.execute",
+      "displayName" : "ERM: Delete resource collection",
+      "description" : "Allows DELETE of resources from the DB",
+      "visible" : false
+    }, {
+      "permissionName" : "erm.statistics.get",
+      "displayName" : "ERM Statistics get",
+      "description" : "Allows GET of several statistics and counts from the DB",
+      "visible" : false
     }, {
       "permissionName" : "erm.settings.get",
       "displayName" : "settings get",
@@ -13468,19 +13702,41 @@
       "visible" : false
     }, {
       "permissionName" : "erm.pushkb.view",
-      "displayName" : "PushKB view",
-      "description" : "View pushKB objects and configurations",
+      "displayName" : "Agreements: PushKB view",
+      "description" : "View pushKB objects and configurations in the Agreements module",
       "subPermissions" : [ "erm.pushkb.get" ],
       "visible" : true
     }, {
       "permissionName" : "erm.pushkb.manage",
-      "displayName" : "PushKB manage",
-      "description" : "Post to pushKB endpoints, and view pushKB objects and configurations",
+      "displayName" : "Agreements: PushKB manage",
+      "description" : "Post to pushKB endpoints, and view pushKB objects and configurations in the Agreements module",
       "subPermissions" : [ "erm.pushkb.view", "erm.pushkb.post" ],
       "visible" : true
+    }, {
+      "permissionName" : "erm.accesspolicies.collection.get",
+      "displayName" : "Access policies collection get",
+      "description" : "GET a collection of AccessPolicy records"
+    }, {
+      "permissionName" : "erm.accesspolicies.item.get",
+      "displayName" : "Access policies item get",
+      "description" : "GET an AccessPolicy record"
+    }, {
+      "permissionName" : "erm.accesspolicies.policies.get",
+      "displayName" : "Access policies policies get",
+      "description" : "GET AccessPolicy policy options by restriction"
+    }, {
+      "permissionName" : "erm.accesspolicies.enabledengines.get",
+      "displayName" : "Access policies enabled engines get",
+      "description" : "GET the enabled engines for the policy engine"
+    }, {
+      "permissionName" : "erm.accesspolicies.view",
+      "displayName" : "Access policies view",
+      "description" : "GET all information from AccessPolicy endpoints",
+      "subPermissions" : [ "erm.accesspolicies.collection.get", "erm.accesspolicies.item.get", "erm.accesspolicies.policies.get", "erm.accesspolicies.enabledengines.get" ],
+      "visible" : false
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioorg/mod-agreements:7.2.10",
+      "dockerImage" : "folioorg/mod-agreements:7.4.0",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
