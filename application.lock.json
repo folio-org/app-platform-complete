@@ -1,9 +1,13 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011276",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011280",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011276",
+  "version" : "3.4.0-SNAPSHOT.100200000011280",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
+    "id" : "mod-graphql-1.15.1000429",
+    "name" : "mod-graphql",
+    "version" : "1.15.1000429"
+  }, {
     "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2368",
     "name" : "mod-circulation-storage",
     "version" : "17.6.0-SNAPSHOT.2368"
@@ -11,10 +15,6 @@
     "id" : "mod-circulation-24.6.0-SNAPSHOT.2428",
     "name" : "mod-circulation",
     "version" : "24.6.0-SNAPSHOT.2428"
-  }, {
-    "id" : "mod-graphql-1.15.1000429",
-    "name" : "mod-graphql",
-    "version" : "1.15.1000429"
   }, {
     "id" : "mod-feesfines-19.5.0-SNAPSHOT.2100",
     "name" : "mod-feesfines",
@@ -69,21 +69,21 @@
     "version" : "3.12.0-SNAPSHOT.2010"
   } ],
   "uiModules" : [ {
+    "id" : "folio_checkin-12.1.1099000000000453",
+    "name" : "folio_checkin",
+    "version" : "12.1.1099000000000453"
+  }, {
+    "id" : "folio_circulation-12.1.1099000000000508",
+    "name" : "folio_circulation",
+    "version" : "12.1.1099000000000508"
+  }, {
     "id" : "folio_servicepoints-9.0.1099000000000099",
     "name" : "folio_servicepoints",
     "version" : "9.0.1099000000000099"
   }, {
-    "id" : "folio_checkin-12.1.1099000000000434",
-    "name" : "folio_checkin",
-    "version" : "12.1.1099000000000434"
-  }, {
     "id" : "folio_checkout-13.1.1099000000000394",
     "name" : "folio_checkout",
     "version" : "13.1.1099000000000394"
-  }, {
-    "id" : "folio_circulation-12.1.1099000000000492",
-    "name" : "folio_circulation",
-    "version" : "12.1.1099000000000492"
   }, {
     "id" : "folio_plugin-find-user-8.2.1099000000000180",
     "name" : "folio_plugin-find-user",
@@ -6577,7 +6577,7 @@
       }
     }
   }, {
-    "id" : "folio_checkin-12.1.1099000000000434",
+    "id" : "folio_checkin-12.1.1099000000000453",
     "name" : "Item Check-in",
     "requires" : [ {
       "id" : "circulation",
@@ -6728,7 +6728,7 @@
       }
     }
   }, {
-    "id" : "folio_circulation-12.1.1099000000000492",
+    "id" : "folio_circulation-12.1.1099000000000508",
     "name" : "Circulation manager",
     "requires" : [ {
       "id" : "circulation",
