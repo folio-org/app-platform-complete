@@ -1,20 +1,16 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011300",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011301",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011300",
+  "version" : "3.4.0-SNAPSHOT.100200000011301",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
+    "id" : "mod-graphql-1.15.1000511",
+    "name" : "mod-graphql",
+    "version" : "1.15.1000511"
+  }, {
     "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2378",
     "name" : "mod-circulation-storage",
     "version" : "17.6.0-SNAPSHOT.2378"
-  }, {
-    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2395",
-    "name" : "mod-data-export-worker",
-    "version" : "3.6.0-SNAPSHOT.2395"
-  }, {
-    "id" : "mod-graphql-1.15.1000429",
-    "name" : "mod-graphql",
-    "version" : "1.15.1000429"
   }, {
     "id" : "mod-circulation-24.6.0-SNAPSHOT.2428",
     "name" : "mod-circulation",
@@ -35,6 +31,10 @@
     "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2195",
     "name" : "mod-data-export-spring",
     "version" : "3.7.0-SNAPSHOT.2195"
+  }, {
+    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2395",
+    "name" : "mod-data-export-worker",
+    "version" : "3.6.0-SNAPSHOT.2395"
   }, {
     "id" : "mod-remote-storage-4.1.0-SNAPSHOT.2125",
     "name" : "mod-remote-storage",
@@ -155,7 +155,7 @@
     "preRelease" : "only"
   } ],
   "moduleDescriptors" : [ {
-    "id" : "mod-graphql-1.15.1000429",
+    "id" : "mod-graphql-1.15.1000511",
     "name" : "GraphQL API for FOLIO",
     "provides" : [ {
       "id" : "graphql",
@@ -167,8 +167,8 @@
       } ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-graphql:1.15.1000429",
-      "dockerPull" : true,
+      "dockerImage" : "folioci/mod-graphql:1.15.1000511",
+      "dockerPull" : false,
       "dockerArgs" : {
         "HostConfig" : {
           "Memory" : 402653184,
