@@ -1,12 +1,12 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011312",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011314",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011312",
+  "version" : "3.4.0-SNAPSHOT.100200000011314",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-calendar-4.1.0-SNAPSHOT.2179",
-    "name" : "mod-calendar",
-    "version" : "4.1.0-SNAPSHOT.2179"
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2467",
+    "name" : "mod-circulation",
+    "version" : "24.6.0-SNAPSHOT.2467"
   }, {
     "id" : "mod-graphql-1.15.1000511",
     "name" : "mod-graphql",
@@ -15,10 +15,6 @@
     "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2378",
     "name" : "mod-circulation-storage",
     "version" : "17.6.0-SNAPSHOT.2378"
-  }, {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2460",
-    "name" : "mod-circulation",
-    "version" : "24.6.0-SNAPSHOT.2460"
   }, {
     "id" : "mod-feesfines-19.5.0-SNAPSHOT.2100",
     "name" : "mod-feesfines",
@@ -43,6 +39,10 @@
     "id" : "mod-remote-storage-4.1.0-SNAPSHOT.2125",
     "name" : "mod-remote-storage",
     "version" : "4.1.0-SNAPSHOT.2125"
+  }, {
+    "id" : "mod-calendar-4.1.0-SNAPSHOT.2179",
+    "name" : "mod-calendar",
+    "version" : "4.1.0-SNAPSHOT.2179"
   }, {
     "id" : "mod-audit-3.1.0-SNAPSHOT.2279",
     "name" : "mod-audit",
@@ -1150,11 +1150,11 @@
       }
     }
   }, {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2460",
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2467",
     "name" : "Circulation Module",
     "requires" : [ {
       "id" : "loan-storage",
-      "version" : "7.3"
+      "version" : "7.5"
     }, {
       "id" : "circulation-rules-storage",
       "version" : "1.0"
@@ -1685,7 +1685,7 @@
         "pathPattern" : "/circulation/scheduled-anonymize-processing",
         "unit" : "minute",
         "delay" : "60",
-        "modulePermissions" : [ "circulation-storage.loans.item.put", "circulation-storage.loans.item.get", "circulation-storage.loans.collection.get", "circulation-storage.loan-policies.item.get", "circulation-storage.loan-policies.collection.get", "circulation-storage.circulation-rules.get", "circulation-storage.requests.collection.get", "circulation-storage.requests.item.put", "circulation-storage.request-policies.item.get", "circulation-storage.fixed-due-date-schedules.item.get", "circulation-storage.fixed-due-date-schedules.collection.get", "circulation-storage.patron-notice-policies.item.get", "circulation-storage.circulation-settings.item.get", "circulation-storage.circulation-settings.collection.get", "circulation.rules.loan-policy.get", "circulation.rules.request-policy.get", "circulation.rules.notice-policy.get", "inventory-storage.items.item.put", "circulation.internal.fetch-items.collection.get", "users.item.get", "users.collection.get", "addresstypes.collection.get", "proxiesfor.collection.get", "scheduled-notice-storage.scheduled-notices.collection.delete", "scheduled-notice-storage.scheduled-notices.item.post", "patron-notice.post", "anonymize-storage-loans.post", "accounts.collection.get", "feefineactions.collection.get", "circulation-storage.loans-history.collection.get" ]
+        "modulePermissions" : [ "circulation-storage.loans.item.put", "circulation-storage.loans.item.get", "circulation-storage.loans.collection.get", "circulation-storage.loan-policies.item.get", "circulation-storage.loan-policies.collection.get", "circulation-storage.circulation-rules.get", "circulation-storage.requests.collection.get", "circulation-storage.requests.item.put", "circulation-storage.request-policies.item.get", "circulation-storage.fixed-due-date-schedules.item.get", "circulation-storage.fixed-due-date-schedules.collection.get", "circulation-storage.patron-notice-policies.item.get", "circulation-storage.circulation-settings.item.get", "circulation-storage.circulation-settings.collection.get", "circulation.rules.loan-policy.get", "circulation.rules.request-policy.get", "circulation.rules.notice-policy.get", "inventory-storage.items.item.put", "circulation.internal.fetch-items.collection.get", "users.item.get", "users.collection.get", "addresstypes.collection.get", "proxiesfor.collection.get", "scheduled-notice-storage.scheduled-notices.collection.delete", "scheduled-notice-storage.scheduled-notices.item.post", "patron-notice.post", "anonymize-storage-loans.post", "circulation-storage.anonymization-candidates.collection.get", "accounts.collection.get", "feefineactions.collection.get", "circulation-storage.loans-history.collection.get" ]
       }, {
         "methods" : [ "POST" ],
         "pathPattern" : "/circulation/scheduled-request-anonymize-processing",
@@ -2219,7 +2219,7 @@
       "visible" : false
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-circulation:24.6.0-SNAPSHOT.2460",
+      "dockerImage" : "folioci/mod-circulation:24.6.0-SNAPSHOT.2467",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
