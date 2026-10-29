@@ -1,20 +1,20 @@
 {
-  "id" : "app-platform-complete-2.5.28",
+  "id" : "app-platform-complete-2.5.29",
   "name" : "app-platform-complete",
-  "version" : "2.5.28",
+  "version" : "2.5.29",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-inventory-storage-29.0.23",
-    "name" : "mod-inventory-storage",
-    "version" : "29.0.23"
+    "id" : "mod-quick-marc-7.0.1",
+    "name" : "mod-quick-marc",
+    "version" : "7.0.1"
   }, {
     "id" : "mod-graphql-1.13.1",
     "name" : "mod-graphql",
     "version" : "1.13.1"
   }, {
-    "id" : "mod-quick-marc-7.0.0",
-    "name" : "mod-quick-marc",
-    "version" : "7.0.0"
+    "id" : "mod-inventory-storage-29.0.23",
+    "name" : "mod-inventory-storage",
+    "version" : "29.0.23"
   }, {
     "id" : "mod-circulation-storage-17.4.6",
     "name" : "mod-circulation-storage",
@@ -365,7 +365,7 @@
       }
     }
   }, {
-    "id" : "mod-quick-marc-7.0.0",
+    "id" : "mod-quick-marc-7.0.1",
     "name" : "quickMARC",
     "requires" : [ {
       "id" : "source-manager-parsed-records",
@@ -485,18 +485,8 @@
       "subPermissions" : [ "marc-records-editor.item.get", "marc-records-editor.item.post", "marc-records-editor.item.put", "marc-records-editor.status.item.get", "marc-records-editor.links.suggestion.post", "marc-records-editor.validate.post" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "mod-quick-marc:7.0.0",
-      "dockerPull" : false,
-      "dockerArgs" : {
-        "HostConfig" : {
-          "Memory" : 536870912,
-          "PortBindings" : {
-            "8081/tcp" : [ {
-              "HostPort" : "%p"
-            } ]
-          }
-        }
-      },
+      "dockerImage" : "folioorg/mod-quick-marc:7.0.1",
+      "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
         "value" : "-XX:MaxRAMPercentage=85.0"
@@ -539,7 +529,17 @@
       }, {
         "name" : "ENV",
         "value" : "folio"
-      } ]
+      } ],
+      "dockerArgs" : {
+        "HostConfig" : {
+          "Memory" : 536870912,
+          "PortBindings" : {
+            "8081/tcp" : [ {
+              "HostPort" : "%p"
+            } ]
+          }
+        }
+      }
     }
   }, {
     "id" : "mod-inventory-storage-29.0.23",
