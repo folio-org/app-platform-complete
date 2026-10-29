@@ -1,12 +1,12 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011311",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011312",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011311",
+  "version" : "3.4.0-SNAPSHOT.100200000011312",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2460",
-    "name" : "mod-circulation",
-    "version" : "24.6.0-SNAPSHOT.2460"
+    "id" : "mod-calendar-4.1.0-SNAPSHOT.2179",
+    "name" : "mod-calendar",
+    "version" : "4.1.0-SNAPSHOT.2179"
   }, {
     "id" : "mod-graphql-1.15.1000511",
     "name" : "mod-graphql",
@@ -15,6 +15,10 @@
     "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2378",
     "name" : "mod-circulation-storage",
     "version" : "17.6.0-SNAPSHOT.2378"
+  }, {
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2460",
+    "name" : "mod-circulation",
+    "version" : "24.6.0-SNAPSHOT.2460"
   }, {
     "id" : "mod-feesfines-19.5.0-SNAPSHOT.2100",
     "name" : "mod-feesfines",
@@ -39,10 +43,6 @@
     "id" : "mod-remote-storage-4.1.0-SNAPSHOT.2125",
     "name" : "mod-remote-storage",
     "version" : "4.1.0-SNAPSHOT.2125"
-  }, {
-    "id" : "mod-calendar-4.1.0-SNAPSHOT.2166",
-    "name" : "mod-calendar",
-    "version" : "4.1.0-SNAPSHOT.2166"
   }, {
     "id" : "mod-audit-3.1.0-SNAPSHOT.2279",
     "name" : "mod-audit",
@@ -4721,7 +4721,7 @@
       }
     }
   }, {
-    "id" : "mod-calendar-4.1.0-SNAPSHOT.2166",
+    "id" : "mod-calendar-4.1.0-SNAPSHOT.2179",
     "name" : "Calendar for Service Point Opening Hours",
     "requires" : [ ],
     "provides" : [ {
@@ -4840,7 +4840,7 @@
       "visible" : false
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-calendar:4.1.0-SNAPSHOT.2166",
+      "dockerImage" : "folioci/mod-calendar:4.1.0-SNAPSHOT.2179",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
