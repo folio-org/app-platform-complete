@@ -1,12 +1,12 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011316",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011319",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011316",
+  "version" : "3.4.0-SNAPSHOT.100200000011319",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2404",
-    "name" : "mod-data-export-worker",
-    "version" : "3.6.0-SNAPSHOT.2404"
+    "id" : "mod-audit-3.1.0-SNAPSHOT.2288",
+    "name" : "mod-audit",
+    "version" : "3.1.0-SNAPSHOT.2288"
   }, {
     "id" : "mod-graphql-1.15.1000511",
     "name" : "mod-graphql",
@@ -36,6 +36,10 @@
     "name" : "mod-data-export-spring",
     "version" : "3.7.0-SNAPSHOT.2195"
   }, {
+    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2404",
+    "name" : "mod-data-export-worker",
+    "version" : "3.6.0-SNAPSHOT.2404"
+  }, {
     "id" : "mod-remote-storage-4.1.0-SNAPSHOT.2125",
     "name" : "mod-remote-storage",
     "version" : "4.1.0-SNAPSHOT.2125"
@@ -43,10 +47,6 @@
     "id" : "mod-calendar-4.1.0-SNAPSHOT.2179",
     "name" : "mod-calendar",
     "version" : "4.1.0-SNAPSHOT.2179"
-  }, {
-    "id" : "mod-audit-3.1.0-SNAPSHOT.2279",
-    "name" : "mod-audit",
-    "version" : "3.1.0-SNAPSHOT.2279"
   }, {
     "id" : "mod-courses-1.6.0-SNAPSHOT.2015",
     "name" : "mod-courses",
@@ -4873,7 +4873,7 @@
       }
     }
   }, {
-    "id" : "mod-audit-3.1.0-SNAPSHOT.2279",
+    "id" : "mod-audit-3.1.0-SNAPSHOT.2288",
     "name" : "Audit Module",
     "requires" : [ {
       "id" : "users",
@@ -5219,7 +5219,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-audit:3.1.0-SNAPSHOT.2279",
+      "dockerImage" : "folioci/mod-audit:3.1.0-SNAPSHOT.2288",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -5259,7 +5259,7 @@
         "value" : "folio"
       }, {
         "name" : "REPLICATION_FACTOR",
-        "value" : "1"
+        "value" : "2"
       } ],
       "dockerArgs" : {
         "HostConfig" : {
