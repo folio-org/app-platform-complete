@@ -1,20 +1,16 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011319",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011320",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011319",
+  "version" : "3.4.0-SNAPSHOT.100200000011320",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-audit-3.1.0-SNAPSHOT.2288",
-    "name" : "mod-audit",
-    "version" : "3.1.0-SNAPSHOT.2288"
+    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2385",
+    "name" : "mod-circulation-storage",
+    "version" : "17.6.0-SNAPSHOT.2385"
   }, {
     "id" : "mod-graphql-1.15.1000511",
     "name" : "mod-graphql",
     "version" : "1.15.1000511"
-  }, {
-    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2378",
-    "name" : "mod-circulation-storage",
-    "version" : "17.6.0-SNAPSHOT.2378"
   }, {
     "id" : "mod-circulation-24.6.0-SNAPSHOT.2467",
     "name" : "mod-circulation",
@@ -47,6 +43,10 @@
     "id" : "mod-calendar-4.1.0-SNAPSHOT.2179",
     "name" : "mod-calendar",
     "version" : "4.1.0-SNAPSHOT.2179"
+  }, {
+    "id" : "mod-audit-3.1.0-SNAPSHOT.2288",
+    "name" : "mod-audit",
+    "version" : "3.1.0-SNAPSHOT.2288"
   }, {
     "id" : "mod-courses-1.6.0-SNAPSHOT.2015",
     "name" : "mod-courses",
@@ -181,7 +181,7 @@
       }
     }
   }, {
-    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2378",
+    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2385",
     "name" : "Circulation Storage Module",
     "requires" : [ {
       "id" : "item-storage",
@@ -1096,7 +1096,7 @@
       "description" : "Delete a request queue lock"
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-circulation-storage:17.6.0-SNAPSHOT.2378",
+      "dockerImage" : "folioci/mod-circulation-storage:17.6.0-SNAPSHOT.2385",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
