@@ -4,17 +4,9 @@
   "version" : "3.3.16",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-patron-6.4.3",
-    "name" : "mod-patron",
-    "version" : "6.4.3"
-  }, {
-    "id" : "mod-remote-storage-4.0.2",
-    "name" : "mod-remote-storage",
-    "version" : "4.0.2"
-  }, {
-    "id" : "mod-graphql-1.15.1",
+    "id" : "mod-graphql-1.15.2",
     "name" : "mod-graphql",
-    "version" : "1.15.1"
+    "version" : "1.15.2"
   }, {
     "id" : "mod-circulation-storage-17.5.2",
     "name" : "mod-circulation-storage",
@@ -32,6 +24,10 @@
     "name" : "mod-patron-blocks",
     "version" : "1.13.1"
   }, {
+    "id" : "mod-patron-6.4.3",
+    "name" : "mod-patron",
+    "version" : "6.4.3"
+  }, {
     "id" : "mod-data-export-spring-3.6.1",
     "name" : "mod-data-export-spring",
     "version" : "3.6.1"
@@ -39,6 +35,10 @@
     "id" : "mod-data-export-worker-3.5.3",
     "name" : "mod-data-export-worker",
     "version" : "3.5.3"
+  }, {
+    "id" : "mod-remote-storage-4.0.2",
+    "name" : "mod-remote-storage",
+    "version" : "4.0.2"
   }, {
     "id" : "mod-calendar-4.0.1",
     "name" : "mod-calendar",
@@ -155,7 +155,7 @@
     "preRelease" : "false"
   } ],
   "moduleDescriptors" : [ {
-    "id" : "mod-graphql-1.15.1",
+    "id" : "mod-graphql-1.15.2",
     "name" : "GraphQL API for FOLIO",
     "provides" : [ {
       "id" : "graphql",
@@ -167,8 +167,8 @@
       } ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioorg/mod-graphql:1.15.1",
-      "dockerPull" : true,
+      "dockerImage" : "folioorg/mod-graphql:1.15.2",
+      "dockerPull" : false,
       "dockerArgs" : {
         "HostConfig" : {
           "Memory" : 402653184,
