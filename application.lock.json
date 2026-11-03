@@ -1,9 +1,17 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011337",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011338",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011337",
+  "version" : "3.4.0-SNAPSHOT.100200000011338",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2499",
+    "name" : "mod-circulation",
+    "version" : "24.6.0-SNAPSHOT.2499"
+  }, {
+    "id" : "mod-copycat-1.10.0-SNAPSHOT.2040",
+    "name" : "mod-copycat",
+    "version" : "1.10.0-SNAPSHOT.2040"
+  }, {
     "id" : "mod-graphql-1.15.2000543",
     "name" : "mod-graphql",
     "version" : "1.15.2000543"
@@ -11,10 +19,6 @@
     "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2385",
     "name" : "mod-circulation-storage",
     "version" : "17.6.0-SNAPSHOT.2385"
-  }, {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2467",
-    "name" : "mod-circulation",
-    "version" : "24.6.0-SNAPSHOT.2467"
   }, {
     "id" : "mod-feesfines-19.5.0-SNAPSHOT.2100",
     "name" : "mod-feesfines",
@@ -55,10 +59,6 @@
     "id" : "mod-pubsub-2.18.0-SNAPSHOT.2039",
     "name" : "mod-pubsub",
     "version" : "2.18.0-SNAPSHOT.2039"
-  }, {
-    "id" : "mod-copycat-1.10.0-SNAPSHOT.2026",
-    "name" : "mod-copycat",
-    "version" : "1.10.0-SNAPSHOT.2026"
   }, {
     "id" : "mod-ncip-1.18.0-SNAPSHOT.2008",
     "name" : "mod-ncip",
@@ -1150,7 +1150,7 @@
       }
     }
   }, {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2467",
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2499",
     "name" : "Circulation Module",
     "requires" : [ {
       "id" : "loan-storage",
@@ -1382,7 +1382,7 @@
       } ]
     }, {
       "id" : "circulation",
-      "version" : "14.8",
+      "version" : "14.9",
       "handlers" : [ {
         "methods" : [ "POST" ],
         "pathPattern" : "/circulation/check-out-by-barcode",
@@ -2219,7 +2219,7 @@
       "visible" : false
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-circulation:24.6.0-SNAPSHOT.2467",
+      "dockerImage" : "folioci/mod-circulation:24.6.0-SNAPSHOT.2499",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -6264,7 +6264,7 @@
       }
     }
   }, {
-    "id" : "mod-copycat-1.10.0-SNAPSHOT.2026",
+    "id" : "mod-copycat-1.10.0-SNAPSHOT.2040",
     "name" : "copycat",
     "requires" : [ {
       "id" : "source-storage-source-records",
@@ -6358,7 +6358,7 @@
       "subPermissions" : [ "copycat.profiles.all", "copycat.imports.post" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-copycat:1.10.0-SNAPSHOT.2026",
+      "dockerImage" : "folioci/mod-copycat:1.10.0-SNAPSHOT.2040",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
