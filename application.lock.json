@@ -1,9 +1,13 @@
 {
-  "id" : "app-platform-complete-3.3.16",
+  "id" : "app-platform-complete-3.3.17",
   "name" : "app-platform-complete",
-  "version" : "3.3.16",
+  "version" : "3.3.17",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
+    "id" : "mod-copycat-1.9.1",
+    "name" : "mod-copycat",
+    "version" : "1.9.1"
+  }, {
     "id" : "mod-graphql-1.15.2",
     "name" : "mod-graphql",
     "version" : "1.15.2"
@@ -55,10 +59,6 @@
     "id" : "mod-pubsub-2.17.0",
     "name" : "mod-pubsub",
     "version" : "2.17.0"
-  }, {
-    "id" : "mod-copycat-1.9.0",
-    "name" : "mod-copycat",
-    "version" : "1.9.0"
   }, {
     "id" : "mod-ncip-1.17.3",
     "name" : "mod-ncip",
@@ -6288,7 +6288,7 @@
       }
     }
   }, {
-    "id" : "mod-copycat-1.9.0",
+    "id" : "mod-copycat-1.9.1",
     "name" : "copycat",
     "requires" : [ {
       "id" : "source-storage-source-records",
@@ -6382,7 +6382,7 @@
       "subPermissions" : [ "copycat.profiles.all", "copycat.imports.post" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioorg/mod-copycat:1.9.0",
+      "dockerImage" : "folioorg/mod-copycat:1.9.1",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
