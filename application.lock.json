@@ -1,16 +1,12 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011334",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011337",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011334",
+  "version" : "3.4.0-SNAPSHOT.100200000011337",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-audit-3.1.0-SNAPSHOT.2291",
-    "name" : "mod-audit",
-    "version" : "3.1.0-SNAPSHOT.2291"
-  }, {
-    "id" : "mod-graphql-1.15.1000511",
+    "id" : "mod-graphql-1.15.2000543",
     "name" : "mod-graphql",
-    "version" : "1.15.1000511"
+    "version" : "1.15.2000543"
   }, {
     "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2385",
     "name" : "mod-circulation-storage",
@@ -47,6 +43,10 @@
     "id" : "mod-calendar-4.1.0-SNAPSHOT.2179",
     "name" : "mod-calendar",
     "version" : "4.1.0-SNAPSHOT.2179"
+  }, {
+    "id" : "mod-audit-3.1.0-SNAPSHOT.2291",
+    "name" : "mod-audit",
+    "version" : "3.1.0-SNAPSHOT.2291"
   }, {
     "id" : "mod-courses-1.6.0-SNAPSHOT.2015",
     "name" : "mod-courses",
@@ -155,7 +155,7 @@
     "preRelease" : "only"
   } ],
   "moduleDescriptors" : [ {
-    "id" : "mod-graphql-1.15.1000511",
+    "id" : "mod-graphql-1.15.2000543",
     "name" : "GraphQL API for FOLIO",
     "provides" : [ {
       "id" : "graphql",
@@ -167,7 +167,7 @@
       } ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-graphql:1.15.1000511",
+      "dockerImage" : "folioci/mod-graphql:1.15.2000543",
       "dockerPull" : false,
       "dockerArgs" : {
         "HostConfig" : {
