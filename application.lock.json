@@ -1,17 +1,9 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011338",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011341",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011338",
+  "version" : "3.4.0-SNAPSHOT.100200000011341",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2499",
-    "name" : "mod-circulation",
-    "version" : "24.6.0-SNAPSHOT.2499"
-  }, {
-    "id" : "mod-copycat-1.10.0-SNAPSHOT.2040",
-    "name" : "mod-copycat",
-    "version" : "1.10.0-SNAPSHOT.2040"
-  }, {
     "id" : "mod-graphql-1.15.2000543",
     "name" : "mod-graphql",
     "version" : "1.15.2000543"
@@ -19,6 +11,10 @@
     "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2385",
     "name" : "mod-circulation-storage",
     "version" : "17.6.0-SNAPSHOT.2385"
+  }, {
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2499",
+    "name" : "mod-circulation",
+    "version" : "24.6.0-SNAPSHOT.2499"
   }, {
     "id" : "mod-feesfines-19.5.0-SNAPSHOT.2100",
     "name" : "mod-feesfines",
@@ -60,6 +56,10 @@
     "name" : "mod-pubsub",
     "version" : "2.18.0-SNAPSHOT.2039"
   }, {
+    "id" : "mod-copycat-1.10.0-SNAPSHOT.2040",
+    "name" : "mod-copycat",
+    "version" : "1.10.0-SNAPSHOT.2040"
+  }, {
     "id" : "mod-ncip-1.18.0-SNAPSHOT.2008",
     "name" : "mod-ncip",
     "version" : "1.18.0-SNAPSHOT.2008"
@@ -69,6 +69,10 @@
     "version" : "3.12.0-SNAPSHOT.2010"
   } ],
   "uiModules" : [ {
+    "id" : "folio_circulation-13.0.1099000000000523",
+    "name" : "folio_circulation",
+    "version" : "13.0.1099000000000523"
+  }, {
     "id" : "folio_servicepoints-9.0.1099000000000099",
     "name" : "folio_servicepoints",
     "version" : "9.0.1099000000000099"
@@ -80,10 +84,6 @@
     "id" : "folio_checkout-13.1.1099000000000394",
     "name" : "folio_checkout",
     "version" : "13.1.1099000000000394"
-  }, {
-    "id" : "folio_circulation-12.1.1099000000000508",
-    "name" : "folio_circulation",
-    "version" : "12.1.1099000000000508"
   }, {
     "id" : "folio_plugin-find-user-8.2.1099000000000180",
     "name" : "folio_plugin-find-user",
@@ -6736,7 +6736,7 @@
       }
     }
   }, {
-    "id" : "folio_circulation-12.1.1099000000000508",
+    "id" : "folio_circulation-13.0.1099000000000523",
     "name" : "Circulation manager",
     "requires" : [ {
       "id" : "circulation",
@@ -6749,7 +6749,7 @@
       "version" : "2.0"
     }, {
       "id" : "loan-policy-storage",
-      "version" : "1.0 2.0"
+      "version" : "2.5"
     }, {
       "id" : "staff-slips-storage",
       "version" : "1.0"
