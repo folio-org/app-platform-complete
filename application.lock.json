@@ -1,16 +1,20 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011344",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011345",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011344",
+  "version" : "3.4.0-SNAPSHOT.100200000011345",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2510",
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2517",
     "name" : "mod-circulation",
-    "version" : "24.6.0-SNAPSHOT.2510"
+    "version" : "24.6.0-SNAPSHOT.2517"
   }, {
-    "id" : "mod-user-import-3.12.0-SNAPSHOT.2035",
-    "name" : "mod-user-import",
-    "version" : "3.12.0-SNAPSHOT.2035"
+    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2407",
+    "name" : "mod-data-export-worker",
+    "version" : "3.6.0-SNAPSHOT.2407"
+  }, {
+    "id" : "mod-ncip-1.18.0-SNAPSHOT.2051",
+    "name" : "mod-ncip",
+    "version" : "1.18.0-SNAPSHOT.2051"
   }, {
     "id" : "mod-graphql-1.15.2000543",
     "name" : "mod-graphql",
@@ -36,10 +40,6 @@
     "name" : "mod-data-export-spring",
     "version" : "3.7.0-SNAPSHOT.2195"
   }, {
-    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2404",
-    "name" : "mod-data-export-worker",
-    "version" : "3.6.0-SNAPSHOT.2404"
-  }, {
     "id" : "mod-remote-storage-4.1.0-SNAPSHOT.2125",
     "name" : "mod-remote-storage",
     "version" : "4.1.0-SNAPSHOT.2125"
@@ -64,18 +64,18 @@
     "name" : "mod-copycat",
     "version" : "1.10.0-SNAPSHOT.2040"
   }, {
-    "id" : "mod-ncip-1.18.0-SNAPSHOT.2008",
-    "name" : "mod-ncip",
-    "version" : "1.18.0-SNAPSHOT.2008"
+    "id" : "mod-user-import-3.12.0-SNAPSHOT.2035",
+    "name" : "mod-user-import",
+    "version" : "3.12.0-SNAPSHOT.2035"
   } ],
   "uiModules" : [ {
+    "id" : "folio_checkin-12.1.1099000000000458",
+    "name" : "folio_checkin",
+    "version" : "12.1.1099000000000458"
+  }, {
     "id" : "folio_servicepoints-9.0.1099000000000099",
     "name" : "folio_servicepoints",
     "version" : "9.0.1099000000000099"
-  }, {
-    "id" : "folio_checkin-12.1.1099000000000453",
-    "name" : "folio_checkin",
-    "version" : "12.1.1099000000000453"
   }, {
     "id" : "folio_checkout-13.1.1099000000000394",
     "name" : "folio_checkout",
@@ -1150,7 +1150,7 @@
       }
     }
   }, {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2510",
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2517",
     "name" : "Circulation Module",
     "requires" : [ {
       "id" : "loan-storage",
@@ -1507,6 +1507,16 @@
         "pathPattern" : "/circulation/requests/instances",
         "permissionsRequired" : [ "circulation.requests.instances.item.post" ],
         "modulePermissions" : [ "modperms.circulation.requests.instances.item.post" ]
+      }, {
+        "methods" : [ "GET" ],
+        "pathPattern" : "/circulation/check-ins",
+        "permissionsRequired" : [ "circulation.check-ins.collection.get" ],
+        "modulePermissions" : [ "modperms.circulation.check-ins.collection.get" ]
+      }, {
+        "methods" : [ "GET" ],
+        "pathPattern" : "/circulation/check-ins/{id}",
+        "permissionsRequired" : [ "circulation.check-ins.item.get" ],
+        "modulePermissions" : [ "modperms.circulation.check-ins.item.get" ]
       } ]
     }, {
       "id" : "circulation-rules",
@@ -1755,6 +1765,14 @@
       "permissionName" : "circulation.check-in-by-barcode.post",
       "displayName" : "circulation - checkin loan by barcode",
       "description" : "checkin a loan using barcodes for item and loanee"
+    }, {
+      "permissionName" : "circulation.check-ins.collection.get",
+      "displayName" : "circulation - get check-ins",
+      "description" : "get a collection of check-in records"
+    }, {
+      "permissionName" : "circulation.check-ins.item.get",
+      "displayName" : "circulation - get an individual check-in",
+      "description" : "get an individual check-in record by ID"
     }, {
       "permissionName" : "circulation.renew-by-barcode.post",
       "displayName" : "circulation - renew loan by barcode",
@@ -2046,6 +2064,18 @@
       "subPermissions" : [ "circulation-storage.loans.item.post", "circulation-storage.loans.item.get", "circulation-storage.loans.collection.get", "circulation-storage.loan-policies.item.get", "circulation-storage.loan-policies.collection.get", "circulation-storage.circulation-rules.get", "circulation-storage.patron-notice-policies.item.get", "circulation-storage.request-batch.item.post", "circulation-storage.request-policies.item.get", "circulation-storage.request-policies.collection.get", "circulation-storage.requests.collection.get", "circulation-storage.requests.item.put", "circulation-storage.fixed-due-date-schedules.item.get", "circulation-storage.fixed-due-date-schedules.collection.get", "circulation.rules.overdue-fine-policy.get", "circulation.rules.lost-item-policy.get", "circulation.rules.loan-policy.get", "circulation.rules.request-policy.get", "inventory-storage.items.item.put", "circulation-item.item.put", "circulation.internal.fetch-items.collection.get", "users.item.get", "users.collection.get", "addresstypes.collection.get", "usergroups.collection.get", "usergroups.item.get", "proxiesfor.collection.get", "overdue-fines-policies.item.get", "overdue-fines-policies.collection.get", "lost-item-fees-policies.item.get", "lost-item-fees-policies.collection.get", "mod-settings.entries.collection.get", "mod-settings.entries.item.get", "locale.item.get", "mod-settings.global.read.mod-circulation", "mod-settings.global.read.circulation", "manualblocks.item.get", "manualblocks.collection.get", "patron-blocks.automated-patron-blocks.collection.get" ],
       "visible" : false
     }, {
+      "permissionName" : "modperms.circulation.check-ins.collection.get",
+      "displayName" : "module permissions for one op",
+      "description" : "to reduce X-Okapi-Token size",
+      "subPermissions" : [ "check-in-storage.check-ins.collection.get", "users.collection.get", "users.item.get", "inventory-storage.service-points.collection.get", "inventory-storage.service-points.item.get" ],
+      "visible" : false
+    }, {
+      "permissionName" : "modperms.circulation.check-ins.item.get",
+      "displayName" : "module permissions for one op",
+      "description" : "to reduce X-Okapi-Token size",
+      "subPermissions" : [ "check-in-storage.check-ins.item.get", "users.collection.get", "users.item.get", "inventory-storage.service-points.collection.get", "inventory-storage.service-points.item.get" ],
+      "visible" : false
+    }, {
       "permissionName" : "modperms.circulation.check-in-by-barcode.post",
       "displayName" : "module permissions for one op",
       "description" : "to reduce X-Okapi-Token size",
@@ -2219,7 +2249,7 @@
       "visible" : false
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-circulation:24.6.0-SNAPSHOT.2510",
+      "dockerImage" : "folioci/mod-circulation:24.6.0-SNAPSHOT.2517",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -4034,7 +4064,7 @@
       }
     }
   }, {
-    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2404",
+    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2407",
     "name" : "Data Export Worker Module",
     "requires" : [ {
       "id" : "users",
@@ -4256,7 +4286,7 @@
       "subPermissions" : [ "refresh-presigned-url.get" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-data-export-worker:3.6.0-SNAPSHOT.2404",
+      "dockerImage" : "folioci/mod-data-export-worker:3.6.0-SNAPSHOT.2407",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -6400,7 +6430,7 @@
       }
     }
   }, {
-    "id" : "mod-ncip-1.18.0-SNAPSHOT.2008",
+    "id" : "mod-ncip-1.18.0-SNAPSHOT.2051",
     "name" : "NCIP",
     "requires" : [ {
       "id" : "instance-types",
@@ -6486,7 +6516,7 @@
       "subPermissions" : [ "ncip.post", "ncip.ncipconfigcheck.get", "mod-settings.global.read.mod-ncip" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-ncip:1.18.0-SNAPSHOT.2008",
+      "dockerImage" : "folioci/mod-ncip:1.18.0-SNAPSHOT.2051",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -6585,7 +6615,7 @@
       }
     }
   }, {
-    "id" : "folio_checkin-12.1.1099000000000453",
+    "id" : "folio_checkin-12.1.1099000000000458",
     "name" : "Item Check-in",
     "requires" : [ {
       "id" : "circulation",
