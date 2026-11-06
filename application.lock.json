@@ -1,20 +1,12 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011345",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011350",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011345",
+  "version" : "3.4.0-SNAPSHOT.100200000011350",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2517",
-    "name" : "mod-circulation",
-    "version" : "24.6.0-SNAPSHOT.2517"
-  }, {
-    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2407",
-    "name" : "mod-data-export-worker",
-    "version" : "3.6.0-SNAPSHOT.2407"
-  }, {
-    "id" : "mod-ncip-1.18.0-SNAPSHOT.2051",
-    "name" : "mod-ncip",
-    "version" : "1.18.0-SNAPSHOT.2051"
+    "id" : "mod-patron-blocks-1.14.0-SNAPSHOT.2156",
+    "name" : "mod-patron-blocks",
+    "version" : "1.14.0-SNAPSHOT.2156"
   }, {
     "id" : "mod-graphql-1.15.2000543",
     "name" : "mod-graphql",
@@ -24,13 +16,13 @@
     "name" : "mod-circulation-storage",
     "version" : "17.6.0-SNAPSHOT.2385"
   }, {
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2517",
+    "name" : "mod-circulation",
+    "version" : "24.6.0-SNAPSHOT.2517"
+  }, {
     "id" : "mod-feesfines-19.5.0-SNAPSHOT.2100",
     "name" : "mod-feesfines",
     "version" : "19.5.0-SNAPSHOT.2100"
-  }, {
-    "id" : "mod-patron-blocks-1.14.0-SNAPSHOT.2137",
-    "name" : "mod-patron-blocks",
-    "version" : "1.14.0-SNAPSHOT.2137"
   }, {
     "id" : "mod-patron-6.5.0-SNAPSHOT.2062",
     "name" : "mod-patron",
@@ -39,6 +31,10 @@
     "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2195",
     "name" : "mod-data-export-spring",
     "version" : "3.7.0-SNAPSHOT.2195"
+  }, {
+    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2407",
+    "name" : "mod-data-export-worker",
+    "version" : "3.6.0-SNAPSHOT.2407"
   }, {
     "id" : "mod-remote-storage-4.1.0-SNAPSHOT.2125",
     "name" : "mod-remote-storage",
@@ -64,18 +60,22 @@
     "name" : "mod-copycat",
     "version" : "1.10.0-SNAPSHOT.2040"
   }, {
+    "id" : "mod-ncip-1.18.0-SNAPSHOT.2051",
+    "name" : "mod-ncip",
+    "version" : "1.18.0-SNAPSHOT.2051"
+  }, {
     "id" : "mod-user-import-3.12.0-SNAPSHOT.2035",
     "name" : "mod-user-import",
     "version" : "3.12.0-SNAPSHOT.2035"
   } ],
   "uiModules" : [ {
-    "id" : "folio_checkin-12.1.1099000000000458",
-    "name" : "folio_checkin",
-    "version" : "12.1.1099000000000458"
-  }, {
     "id" : "folio_servicepoints-9.0.1099000000000099",
     "name" : "folio_servicepoints",
     "version" : "9.0.1099000000000099"
+  }, {
+    "id" : "folio_checkin-12.1.1099000000000458",
+    "name" : "folio_checkin",
+    "version" : "12.1.1099000000000458"
   }, {
     "id" : "folio_checkout-13.1.1099000000000394",
     "name" : "folio_checkout",
@@ -3220,7 +3220,7 @@
       }
     }
   }, {
-    "id" : "mod-patron-blocks-1.14.0-SNAPSHOT.2137",
+    "id" : "mod-patron-blocks-1.14.0-SNAPSHOT.2156",
     "name" : "Patron Blocks Module",
     "requires" : [ {
       "id" : "loan-storage",
@@ -3243,7 +3243,8 @@
       }, {
         "methods" : [ "POST" ],
         "pathPattern" : "/automated-patron-blocks/batch",
-        "permissionsRequired" : [ "patron-blocks.automated-patron-blocks.batch.post" ]
+        "permissionsRequired" : [ "patron-blocks.automated-patron-blocks.batch.post" ],
+        "modulePermissions" : [ "users.collection.get" ]
       } ]
     }, {
       "id" : "user-summary",
@@ -3393,7 +3394,7 @@
       "description" : "Get Synchronization job"
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-patron-blocks:1.14.0-SNAPSHOT.2137",
+      "dockerImage" : "folioci/mod-patron-blocks:1.14.0-SNAPSHOT.2156",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
