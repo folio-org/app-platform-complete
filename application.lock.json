@@ -4,10 +4,6 @@
   "version" : "2.5.30",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-circulation-24.4.22",
-    "name" : "mod-circulation",
-    "version" : "24.4.22"
-  }, {
     "id" : "mod-graphql-1.13.1",
     "name" : "mod-graphql",
     "version" : "1.13.1"
@@ -31,6 +27,10 @@
     "id" : "mod-inventory-21.1.24",
     "name" : "mod-inventory",
     "version" : "21.1.24"
+  }, {
+    "id" : "mod-circulation-24.4.22",
+    "name" : "mod-circulation",
+    "version" : "24.4.22"
   }, {
     "id" : "mod-feesfines-19.3.3",
     "name" : "mod-feesfines",
@@ -173,6 +173,10 @@
     "version" : "2.0.3"
   } ],
   "uiModules" : [ {
+    "id" : "folio_quick-marc-10.0.5",
+    "name" : "folio_quick-marc",
+    "version" : "10.0.5"
+  }, {
     "id" : "folio_marc-authorities-7.0.3",
     "name" : "folio_marc-authorities",
     "version" : "7.0.3"
@@ -180,10 +184,6 @@
     "id" : "folio_stripes-authority-components-6.0.3",
     "name" : "folio_stripes-authority-components",
     "version" : "6.0.3"
-  }, {
-    "id" : "folio_quick-marc-10.0.4",
-    "name" : "folio_quick-marc",
-    "version" : "10.0.4"
   }, {
     "id" : "folio_inventory-13.0.20",
     "name" : "folio_inventory",
@@ -18063,7 +18063,7 @@
     "optional" : [ ],
     "permissionSets" : [ ]
   }, {
-    "id" : "folio_quick-marc-10.0.4",
+    "id" : "folio_quick-marc-10.0.5",
     "name" : "Quick MARC editor",
     "requires" : [ {
       "id" : "inventory",
@@ -18150,7 +18150,15 @@
       "permissionName" : "mod-settings.global.write.ui-quick-marc.lccn-duplicate-check.manage",
       "displayName" : "Settings (MARC): write LCCN duplicate check settings",
       "visible" : false
-    } ]
+    } ],
+    "metadata" : {
+      "stripes" : {
+        "actsAs" : [ "plugin" ],
+        "pluginType" : "quick-marc",
+        "displayName" : "ui-quick-marc.meta.title",
+        "stripesDeps" : [ "@folio/stripes-acq-components" ]
+      }
+    }
   }, {
     "id" : "folio_inventory-13.0.20",
     "name" : "Inventory manager",
