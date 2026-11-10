@@ -1,24 +1,24 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011363",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011367",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011363",
+  "version" : "3.4.0-SNAPSHOT.100200000011367",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2393",
+    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2404",
     "name" : "mod-circulation-storage",
-    "version" : "17.6.0-SNAPSHOT.2393"
+    "version" : "17.6.0-SNAPSHOT.2404"
   }, {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2524",
-    "name" : "mod-circulation",
-    "version" : "24.6.0-SNAPSHOT.2524"
-  }, {
-    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2205",
+    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2214",
     "name" : "mod-data-export-spring",
-    "version" : "3.7.0-SNAPSHOT.2205"
+    "version" : "3.7.0-SNAPSHOT.2214"
   }, {
     "id" : "mod-graphql-1.15.2000543",
     "name" : "mod-graphql",
     "version" : "1.15.2000543"
+  }, {
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2524",
+    "name" : "mod-circulation",
+    "version" : "24.6.0-SNAPSHOT.2524"
   }, {
     "id" : "mod-feesfines-19.5.0-SNAPSHOT.2100",
     "name" : "mod-feesfines",
@@ -181,7 +181,7 @@
       }
     }
   }, {
-    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2393",
+    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2404",
     "name" : "Circulation Storage Module",
     "requires" : [ {
       "id" : "item-storage",
@@ -1108,7 +1108,7 @@
       "description" : "Delete a request queue lock"
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-circulation-storage:17.6.0-SNAPSHOT.2393",
+      "dockerImage" : "folioci/mod-circulation-storage:17.6.0-SNAPSHOT.2404",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -3781,7 +3781,7 @@
       }
     }
   }, {
-    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2205",
+    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2214",
     "name" : "Data Export Spring Module",
     "requires" : [ {
       "id" : "login",
@@ -4033,7 +4033,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-data-export-spring:3.7.0-SNAPSHOT.2205",
+      "dockerImage" : "folioci/mod-data-export-spring:3.7.0-SNAPSHOT.2214",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
