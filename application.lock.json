@@ -1,20 +1,20 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011367",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011370",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011367",
+  "version" : "3.4.0-SNAPSHOT.100200000011370",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2404",
-    "name" : "mod-circulation-storage",
-    "version" : "17.6.0-SNAPSHOT.2404"
-  }, {
-    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2214",
+    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2219",
     "name" : "mod-data-export-spring",
-    "version" : "3.7.0-SNAPSHOT.2214"
+    "version" : "3.7.0-SNAPSHOT.2219"
   }, {
     "id" : "mod-graphql-1.15.2000543",
     "name" : "mod-graphql",
     "version" : "1.15.2000543"
+  }, {
+    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2404",
+    "name" : "mod-circulation-storage",
+    "version" : "17.6.0-SNAPSHOT.2404"
   }, {
     "id" : "mod-circulation-24.6.0-SNAPSHOT.2524",
     "name" : "mod-circulation",
@@ -69,21 +69,21 @@
     "version" : "3.12.0-SNAPSHOT.2035"
   } ],
   "uiModules" : [ {
+    "id" : "folio_checkin-12.1.1099000000000471",
+    "name" : "folio_checkin",
+    "version" : "12.1.1099000000000471"
+  }, {
+    "id" : "folio_circulation-13.0.1099000000000538",
+    "name" : "folio_circulation",
+    "version" : "13.0.1099000000000538"
+  }, {
     "id" : "folio_servicepoints-9.0.1099000000000099",
     "name" : "folio_servicepoints",
     "version" : "9.0.1099000000000099"
   }, {
-    "id" : "folio_checkin-12.1.1099000000000458",
-    "name" : "folio_checkin",
-    "version" : "12.1.1099000000000458"
-  }, {
     "id" : "folio_checkout-13.1.1099000000000394",
     "name" : "folio_checkout",
     "version" : "13.1.1099000000000394"
-  }, {
-    "id" : "folio_circulation-13.0.1099000000000523",
-    "name" : "folio_circulation",
-    "version" : "13.0.1099000000000523"
   }, {
     "id" : "folio_plugin-find-user-8.2.1099000000000180",
     "name" : "folio_plugin-find-user",
@@ -3781,7 +3781,7 @@
       }
     }
   }, {
-    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2214",
+    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2219",
     "name" : "Data Export Spring Module",
     "requires" : [ {
       "id" : "login",
@@ -4033,7 +4033,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-data-export-spring:3.7.0-SNAPSHOT.2214",
+      "dockerImage" : "folioci/mod-data-export-spring:3.7.0-SNAPSHOT.2219",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -6648,7 +6648,7 @@
       }
     }
   }, {
-    "id" : "folio_checkin-12.1.1099000000000458",
+    "id" : "folio_checkin-12.1.1099000000000471",
     "name" : "Item Check-in",
     "requires" : [ {
       "id" : "circulation",
@@ -6799,7 +6799,7 @@
       }
     }
   }, {
-    "id" : "folio_circulation-13.0.1099000000000523",
+    "id" : "folio_circulation-13.0.1099000000000538",
     "name" : "Circulation manager",
     "requires" : [ {
       "id" : "circulation",
