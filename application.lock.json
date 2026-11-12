@@ -1,20 +1,20 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011373",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011374",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011373",
+  "version" : "3.4.0-SNAPSHOT.100200000011374",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2407",
-    "name" : "mod-circulation-storage",
-    "version" : "17.6.0-SNAPSHOT.2407"
-  }, {
-    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2224",
+    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2231",
     "name" : "mod-data-export-spring",
-    "version" : "3.7.0-SNAPSHOT.2224"
+    "version" : "3.7.0-SNAPSHOT.2231"
   }, {
     "id" : "mod-graphql-1.15.2000543",
     "name" : "mod-graphql",
     "version" : "1.15.2000543"
+  }, {
+    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2407",
+    "name" : "mod-circulation-storage",
+    "version" : "17.6.0-SNAPSHOT.2407"
   }, {
     "id" : "mod-circulation-24.6.0-SNAPSHOT.2524",
     "name" : "mod-circulation",
@@ -69,6 +69,10 @@
     "version" : "3.12.0-SNAPSHOT.2035"
   } ],
   "uiModules" : [ {
+    "id" : "folio_myprofile-11.1.1099000000000231",
+    "name" : "folio_myprofile",
+    "version" : "11.1.1099000000000231"
+  }, {
     "id" : "folio_servicepoints-9.0.1099000000000099",
     "name" : "folio_servicepoints",
     "version" : "9.0.1099000000000099"
@@ -124,10 +128,6 @@
     "id" : "folio_handler-stripes-registry-3.2.1099000000000166",
     "name" : "folio_handler-stripes-registry",
     "version" : "3.2.1099000000000166"
-  }, {
-    "id" : "folio_myprofile-11.0.1099000000000206",
-    "name" : "folio_myprofile",
-    "version" : "11.0.1099000000000206"
   }, {
     "id" : "folio_users-13.1.1099000000001651",
     "name" : "folio_users",
@@ -3825,7 +3825,7 @@
       }
     }
   }, {
-    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2224",
+    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2231",
     "name" : "Data Export Spring Module",
     "requires" : [ {
       "id" : "login",
@@ -4077,7 +4077,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-data-export-spring:3.7.0-SNAPSHOT.2224",
+      "dockerImage" : "folioci/mod-data-export-spring:3.7.0-SNAPSHOT.2231",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -7725,7 +7725,7 @@
       }
     }
   }, {
-    "id" : "folio_myprofile-11.0.1099000000000206",
+    "id" : "folio_myprofile-11.1.1099000000000231",
     "name" : "My profile",
     "requires" : [ {
       "id" : "settings",
