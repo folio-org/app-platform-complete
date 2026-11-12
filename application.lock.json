@@ -1,20 +1,20 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011370",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011373",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011370",
+  "version" : "3.4.0-SNAPSHOT.100200000011373",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2219",
+    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2407",
+    "name" : "mod-circulation-storage",
+    "version" : "17.6.0-SNAPSHOT.2407"
+  }, {
+    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2224",
     "name" : "mod-data-export-spring",
-    "version" : "3.7.0-SNAPSHOT.2219"
+    "version" : "3.7.0-SNAPSHOT.2224"
   }, {
     "id" : "mod-graphql-1.15.2000543",
     "name" : "mod-graphql",
     "version" : "1.15.2000543"
-  }, {
-    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2404",
-    "name" : "mod-circulation-storage",
-    "version" : "17.6.0-SNAPSHOT.2404"
   }, {
     "id" : "mod-circulation-24.6.0-SNAPSHOT.2524",
     "name" : "mod-circulation",
@@ -69,21 +69,21 @@
     "version" : "3.12.0-SNAPSHOT.2035"
   } ],
   "uiModules" : [ {
-    "id" : "folio_checkin-12.1.1099000000000471",
-    "name" : "folio_checkin",
-    "version" : "12.1.1099000000000471"
-  }, {
-    "id" : "folio_circulation-13.0.1099000000000538",
-    "name" : "folio_circulation",
-    "version" : "13.0.1099000000000538"
-  }, {
     "id" : "folio_servicepoints-9.0.1099000000000099",
     "name" : "folio_servicepoints",
     "version" : "9.0.1099000000000099"
   }, {
+    "id" : "folio_checkin-12.1.1099000000000471",
+    "name" : "folio_checkin",
+    "version" : "12.1.1099000000000471"
+  }, {
     "id" : "folio_checkout-13.1.1099000000000394",
     "name" : "folio_checkout",
     "version" : "13.1.1099000000000394"
+  }, {
+    "id" : "folio_circulation-13.0.1099000000000538",
+    "name" : "folio_circulation",
+    "version" : "13.0.1099000000000538"
   }, {
     "id" : "folio_plugin-find-user-8.2.1099000000000180",
     "name" : "folio_plugin-find-user",
@@ -181,7 +181,7 @@
       }
     }
   }, {
-    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2404",
+    "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2407",
     "name" : "Circulation Storage Module",
     "requires" : [ {
       "id" : "item-storage",
@@ -296,6 +296,30 @@
         "methods" : [ "DELETE" ],
         "pathPattern" : "/circulation-settings-storage/circulation-settings/{id}",
         "permissionsRequired" : [ "circulation-storage.circulation-settings.item.delete" ]
+      } ]
+    }, {
+      "id" : "bulk-renewal-job-storage",
+      "version" : "1.0",
+      "handlers" : [ {
+        "methods" : [ "GET" ],
+        "pathPattern" : "/bulk-renewal-job-storage/bulk-renewal-jobs",
+        "permissionsRequired" : [ "bulk-renewal-job-storage.bulk-renewal-jobs.collection.get" ]
+      }, {
+        "methods" : [ "GET" ],
+        "pathPattern" : "/bulk-renewal-job-storage/bulk-renewal-jobs/{id}",
+        "permissionsRequired" : [ "bulk-renewal-job-storage.bulk-renewal-jobs.item.get" ]
+      }, {
+        "methods" : [ "PUT" ],
+        "pathPattern" : "/bulk-renewal-job-storage/bulk-renewal-jobs/{id}",
+        "permissionsRequired" : [ "bulk-renewal-job-storage.bulk-renewal-jobs.item.put" ]
+      }, {
+        "methods" : [ "POST" ],
+        "pathPattern" : "/bulk-renewal-job-storage/bulk-renewal-jobs",
+        "permissionsRequired" : [ "bulk-renewal-job-storage.bulk-renewal-jobs.item.post" ]
+      }, {
+        "methods" : [ "DELETE" ],
+        "pathPattern" : "/bulk-renewal-job-storage/bulk-renewal-jobs/{id}",
+        "permissionsRequired" : [ "bulk-renewal-job-storage.bulk-renewal-jobs.item.delete" ]
       } ]
     }, {
       "id" : "loan-policy-storage",
@@ -1014,10 +1038,30 @@
       "displayName" : "Circulation storage - delete circulation setting by id",
       "description" : "Delete circulation setting by id"
     }, {
+      "permissionName" : "bulk-renewal-job-storage.bulk-renewal-jobs.collection.get",
+      "displayName" : "Circulation storage - get bulk renewal jobs collection",
+      "description" : "Get bulk renewal jobs collection from storage"
+    }, {
+      "permissionName" : "bulk-renewal-job-storage.bulk-renewal-jobs.item.get",
+      "displayName" : "Circulation storage - get bulk renewal job by id",
+      "description" : "Get bulk renewal job by id from storage"
+    }, {
+      "permissionName" : "bulk-renewal-job-storage.bulk-renewal-jobs.item.post",
+      "displayName" : "Circulation storage - create bulk renewal job",
+      "description" : "Create bulk renewal job in storage"
+    }, {
+      "permissionName" : "bulk-renewal-job-storage.bulk-renewal-jobs.item.put",
+      "displayName" : "Circulation storage - update bulk renewal job by id",
+      "description" : "Update bulk renewal job by id"
+    }, {
+      "permissionName" : "bulk-renewal-job-storage.bulk-renewal-jobs.item.delete",
+      "displayName" : "Circulation storage - delete bulk renewal job by id",
+      "description" : "Delete bulk renewal job by id"
+    }, {
       "permissionName" : "circulation-storage.all",
       "displayName" : "Circulation storage module - all permissions",
       "description" : "Entire set of permissions needed to use the circulation storage module",
-      "subPermissions" : [ "circulation-storage.loans.collection.get", "circulation-storage.loans.item.get", "circulation-storage.loans.item.post", "circulation-storage.loans.item.put", "circulation-storage.loans.item.delete", "circulation-storage.loans.collection.delete", "circulation-storage.loans.anonymize.execute", "circulation-storage.loans-history.collection.get", "circulation-storage.anonymization-candidates.collection.get", "circulation-storage.loan-anonymization-preferences.collection.put", "circulation-storage.circulation-rules.get", "circulation-storage.circulation-rules.put", "circulation-storage.loan-policies.collection.get", "circulation-storage.loan-policies.item.get", "circulation-storage.loan-policies.item.post", "circulation-storage.loan-policies.item.put", "circulation-storage.loan-policies.item.delete", "circulation-storage.loan-policies.collection.delete", "circulation-storage.requests.collection.get", "circulation-storage.requests.item.get", "circulation-storage.requests.item.post", "circulation-storage.requests.item.put", "circulation-storage.requests.item.delete", "circulation-storage.requests.collection.delete", "circulation-storage.fixed-due-date-schedules.collection.delete", "circulation-storage.fixed-due-date-schedules.item.delete", "circulation-storage.fixed-due-date-schedules.item.put", "circulation-storage.fixed-due-date-schedules.item.post", "circulation-storage.fixed-due-date-schedules.item.get", "circulation-storage.fixed-due-date-schedules.collection.get", "circulation-storage.staff-slips.item.delete", "circulation-storage.staff-slips.collection.delete", "circulation-storage.staff-slips.collection.get", "circulation-storage.staff-slips.item.post", "circulation-storage.staff-slips.item.put", "circulation-storage.staff-slips.item.get", "circulation-storage.cancellation-reasons.collection.get", "circulation-storage.cancellation-reasons.item.get", "circulation-storage.cancellation-reasons.item.post", "circulation-storage.cancellation-reasons.item.put", "circulation-storage.cancellation-reasons.collection.delete", "circulation-storage.cancellation-reasons.item.delete", "circulation-storage.patron-notice-policies.item.post", "circulation-storage.patron-notice-policies.item.put", "circulation-storage.patron-notice-policies.item.delete", "circulation-storage.patron-notice-policies.collection.get", "circulation-storage.patron-notice-policies.item.get", "circulation-storage.request-preferences.item.post", "circulation-storage.request-preferences.item.put", "circulation-storage.request-preferences.item.delete", "circulation-storage.request-preferences.collection.get", "circulation-storage.request-preferences.item.get", "circulation-storage.request-policies.collection.get", "circulation-storage.request-policies.item.get", "circulation-storage.request-policies.collection.delete", "circulation-storage.request-policies.item.delete", "circulation-storage.request-policies.item.post", "circulation-storage.request-policies.item.put", "circulation-storage.request-batch.item.post", "scheduled-notice-storage.scheduled-notices.collection.get", "scheduled-notice-storage.scheduled-notices.item.get", "scheduled-notice-storage.scheduled-notices.item.post", "scheduled-notice-storage.scheduled-notices.item.put", "scheduled-notice-storage.scheduled-notices.item.delete", "scheduled-notice-storage.scheduled-notices.collection.delete", "anonymize-storage-loans.post", "patron-action-session-storage.patron-action-sessions.collection.get", "patron-action-session-storage.patron-action-sessions.item.get", "patron-action-session-storage.patron-action-sessions.item.post", "patron-action-session-storage.patron-action-sessions.item.put", "patron-action-session-storage.patron-action-sessions.item.delete", "patron-action-session-storage.expired-session-patron-ids.collection.get", "check-in-storage.check-ins.collection.get", "check-in-storage.check-ins.item.post", "check-in-storage.check-ins.item.get", "tlr-feature-toggle-job-storage.tlr-feature-toggle-jobs.item.post", "tlr-feature-toggle-job-storage.tlr-feature-toggle-jobs.collection.get", "tlr-feature-toggle-job-storage.tlr-feature-toggle-jobs.item.get", "tlr-feature-toggle-job-storage.tlr-feature-toggle-jobs.item.put", "tlr-feature-toggle-job-storage.tlr-feature-toggle-jobs.item.delete", "actual-cost-record-storage.actual-cost-records.collection.get", "actual-cost-record-storage.actual-cost-records.item.get", "actual-cost-record-storage.actual-cost-records.item.post", "actual-cost-record-storage.actual-cost-records.item.put", "actual-cost-record-storage.actual-cost-records.item.delete", "checkout-lock-storage.checkout-locks.item.post", "checkout-lock-storage.checkout-locks.item.delete", "checkout-lock-storage.checkout-locks.item.get", "checkout-lock-storage.checkout-locks.collection.get", "request-queue-lock-storage.request-queue-locks.item.post", "request-queue-lock-storage.request-queue-locks.item.delete", "circulation-storage.circulation-settings.collection.get", "circulation-storage.circulation-settings.item.get", "circulation-storage.circulation-settings.item.post", "circulation-storage.circulation-settings.item.put", "circulation-storage.circulation-settings.item.delete", "print-events-storage.print-events-entry.item.post", "print-events-storage.print-events-status.item.post" ]
+      "subPermissions" : [ "circulation-storage.loans.collection.get", "circulation-storage.loans.item.get", "circulation-storage.loans.item.post", "circulation-storage.loans.item.put", "circulation-storage.loans.item.delete", "circulation-storage.loans.collection.delete", "circulation-storage.loans.anonymize.execute", "circulation-storage.loans-history.collection.get", "circulation-storage.anonymization-candidates.collection.get", "circulation-storage.loan-anonymization-preferences.collection.put", "circulation-storage.circulation-rules.get", "circulation-storage.circulation-rules.put", "circulation-storage.loan-policies.collection.get", "circulation-storage.loan-policies.item.get", "circulation-storage.loan-policies.item.post", "circulation-storage.loan-policies.item.put", "circulation-storage.loan-policies.item.delete", "circulation-storage.loan-policies.collection.delete", "circulation-storage.requests.collection.get", "circulation-storage.requests.item.get", "circulation-storage.requests.item.post", "circulation-storage.requests.item.put", "circulation-storage.requests.item.delete", "circulation-storage.requests.collection.delete", "circulation-storage.fixed-due-date-schedules.collection.delete", "circulation-storage.fixed-due-date-schedules.item.delete", "circulation-storage.fixed-due-date-schedules.item.put", "circulation-storage.fixed-due-date-schedules.item.post", "circulation-storage.fixed-due-date-schedules.item.get", "circulation-storage.fixed-due-date-schedules.collection.get", "circulation-storage.staff-slips.item.delete", "circulation-storage.staff-slips.collection.delete", "circulation-storage.staff-slips.collection.get", "circulation-storage.staff-slips.item.post", "circulation-storage.staff-slips.item.put", "circulation-storage.staff-slips.item.get", "circulation-storage.cancellation-reasons.collection.get", "circulation-storage.cancellation-reasons.item.get", "circulation-storage.cancellation-reasons.item.post", "circulation-storage.cancellation-reasons.item.put", "circulation-storage.cancellation-reasons.collection.delete", "circulation-storage.cancellation-reasons.item.delete", "circulation-storage.patron-notice-policies.item.post", "circulation-storage.patron-notice-policies.item.put", "circulation-storage.patron-notice-policies.item.delete", "circulation-storage.patron-notice-policies.collection.get", "circulation-storage.patron-notice-policies.item.get", "circulation-storage.request-preferences.item.post", "circulation-storage.request-preferences.item.put", "circulation-storage.request-preferences.item.delete", "circulation-storage.request-preferences.collection.get", "circulation-storage.request-preferences.item.get", "circulation-storage.request-policies.collection.get", "circulation-storage.request-policies.item.get", "circulation-storage.request-policies.collection.delete", "circulation-storage.request-policies.item.delete", "circulation-storage.request-policies.item.post", "circulation-storage.request-policies.item.put", "circulation-storage.request-batch.item.post", "scheduled-notice-storage.scheduled-notices.collection.get", "scheduled-notice-storage.scheduled-notices.item.get", "scheduled-notice-storage.scheduled-notices.item.post", "scheduled-notice-storage.scheduled-notices.item.put", "scheduled-notice-storage.scheduled-notices.item.delete", "scheduled-notice-storage.scheduled-notices.collection.delete", "anonymize-storage-loans.post", "patron-action-session-storage.patron-action-sessions.collection.get", "patron-action-session-storage.patron-action-sessions.item.get", "patron-action-session-storage.patron-action-sessions.item.post", "patron-action-session-storage.patron-action-sessions.item.put", "patron-action-session-storage.patron-action-sessions.item.delete", "patron-action-session-storage.expired-session-patron-ids.collection.get", "check-in-storage.check-ins.collection.get", "check-in-storage.check-ins.item.post", "check-in-storage.check-ins.item.get", "tlr-feature-toggle-job-storage.tlr-feature-toggle-jobs.item.post", "tlr-feature-toggle-job-storage.tlr-feature-toggle-jobs.collection.get", "tlr-feature-toggle-job-storage.tlr-feature-toggle-jobs.item.get", "tlr-feature-toggle-job-storage.tlr-feature-toggle-jobs.item.put", "tlr-feature-toggle-job-storage.tlr-feature-toggle-jobs.item.delete", "actual-cost-record-storage.actual-cost-records.collection.get", "actual-cost-record-storage.actual-cost-records.item.get", "actual-cost-record-storage.actual-cost-records.item.post", "actual-cost-record-storage.actual-cost-records.item.put", "actual-cost-record-storage.actual-cost-records.item.delete", "checkout-lock-storage.checkout-locks.item.post", "checkout-lock-storage.checkout-locks.item.delete", "checkout-lock-storage.checkout-locks.item.get", "checkout-lock-storage.checkout-locks.collection.get", "request-queue-lock-storage.request-queue-locks.item.post", "request-queue-lock-storage.request-queue-locks.item.delete", "circulation-storage.circulation-settings.collection.get", "circulation-storage.circulation-settings.item.get", "circulation-storage.circulation-settings.item.post", "circulation-storage.circulation-settings.item.put", "circulation-storage.circulation-settings.item.delete", "print-events-storage.print-events-entry.item.post", "print-events-storage.print-events-status.item.post", "bulk-renewal-job-storage.bulk-renewal-jobs.collection.get", "bulk-renewal-job-storage.bulk-renewal-jobs.item.get", "bulk-renewal-job-storage.bulk-renewal-jobs.item.post", "bulk-renewal-job-storage.bulk-renewal-jobs.item.put", "bulk-renewal-job-storage.bulk-renewal-jobs.item.delete" ]
     }, {
       "permissionName" : "circulation-storage.request-policies.collection.get",
       "displayName" : "Circulation storage - get request policy collection",
@@ -1108,7 +1152,7 @@
       "description" : "Delete a request queue lock"
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-circulation-storage:17.6.0-SNAPSHOT.2404",
+      "dockerImage" : "folioci/mod-circulation-storage:17.6.0-SNAPSHOT.2407",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -3781,7 +3825,7 @@
       }
     }
   }, {
-    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2219",
+    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2224",
     "name" : "Data Export Spring Module",
     "requires" : [ {
       "id" : "login",
@@ -4033,7 +4077,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-data-export-spring:3.7.0-SNAPSHOT.2219",
+      "dockerImage" : "folioci/mod-data-export-spring:3.7.0-SNAPSHOT.2224",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
