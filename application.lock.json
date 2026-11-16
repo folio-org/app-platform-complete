@@ -1,12 +1,12 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011377",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011389",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011377",
+  "version" : "3.4.0-SNAPSHOT.100200000011389",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2422",
-    "name" : "mod-data-export-worker",
-    "version" : "3.6.0-SNAPSHOT.2422"
+    "id" : "mod-patron-6.5.0-SNAPSHOT.2073",
+    "name" : "mod-patron",
+    "version" : "6.5.0-SNAPSHOT.2073"
   }, {
     "id" : "mod-graphql-1.15.2000543",
     "name" : "mod-graphql",
@@ -28,13 +28,13 @@
     "name" : "mod-patron-blocks",
     "version" : "1.14.0-SNAPSHOT.2156"
   }, {
-    "id" : "mod-patron-6.5.0-SNAPSHOT.2062",
-    "name" : "mod-patron",
-    "version" : "6.5.0-SNAPSHOT.2062"
-  }, {
     "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2231",
     "name" : "mod-data-export-spring",
     "version" : "3.7.0-SNAPSHOT.2231"
+  }, {
+    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2422",
+    "name" : "mod-data-export-worker",
+    "version" : "3.6.0-SNAPSHOT.2422"
   }, {
     "id" : "mod-remote-storage-4.1.0-SNAPSHOT.2125",
     "name" : "mod-remote-storage",
@@ -69,6 +69,14 @@
     "version" : "3.12.0-SNAPSHOT.2035"
   } ],
   "uiModules" : [ {
+    "id" : "folio_circulation-13.0.1099000000000541",
+    "name" : "folio_circulation",
+    "version" : "13.0.1099000000000541"
+  }, {
+    "id" : "folio_users-13.1.1099000000001657",
+    "name" : "folio_users",
+    "version" : "13.1.1099000000001657"
+  }, {
     "id" : "folio_servicepoints-9.0.1099000000000099",
     "name" : "folio_servicepoints",
     "version" : "9.0.1099000000000099"
@@ -80,10 +88,6 @@
     "id" : "folio_checkout-13.1.1099000000000394",
     "name" : "folio_checkout",
     "version" : "13.1.1099000000000394"
-  }, {
-    "id" : "folio_circulation-13.0.1099000000000538",
-    "name" : "folio_circulation",
-    "version" : "13.0.1099000000000538"
   }, {
     "id" : "folio_plugin-find-user-8.2.1099000000000180",
     "name" : "folio_plugin-find-user",
@@ -128,10 +132,6 @@
     "id" : "folio_myprofile-11.1.1099000000000231",
     "name" : "folio_myprofile",
     "version" : "11.1.1099000000000231"
-  }, {
-    "id" : "folio_users-13.1.1099000000001651",
-    "name" : "folio_users",
-    "version" : "13.1.1099000000001651"
   } ],
   "dependencies" : [ {
     "name" : "app-platform-minimal",
@@ -3515,7 +3515,7 @@
       }
     }
   }, {
-    "id" : "mod-patron-6.5.0-SNAPSHOT.2062",
+    "id" : "mod-patron-6.5.0-SNAPSHOT.2073",
     "name" : "Patron Services Module",
     "requires" : [ {
       "id" : "settings",
@@ -3560,7 +3560,7 @@
         "methods" : [ "PUT" ],
         "pathPattern" : "/patron/{externalSystemId}",
         "permissionsRequired" : [ "patron.item.put" ],
-        "modulePermissions" : [ "staging-users.item.put" ]
+        "modulePermissions" : [ "staging-users.external-system-id.put" ]
       }, {
         "methods" : [ "GET" ],
         "pathPattern" : "/patron/registration-status/{identifier}",
@@ -3783,7 +3783,7 @@
       "subPermissions" : [ "patron.item.post", "patron.item.put", "patron.account.item.get", "patron.account.item.put", "patron.account-by-email.item.put", "patron.account.collection.get", "patron.account-renew.item.post", "patron.renew.item.post", "patron.account.item-hold.item.post", "patron.account.instance-hold.item.post", "patron.account.hold-cancel.item.post", "patron.account.item-allowed-service-points.item.get", "patron.account.instance-allowed-service-points.item.get", "patron.registration-status.item.get", "patron.account.instance-allowed-service-points-multi-item.collection.post", "patron.account.instance-batch-request.item.post", "patron.account.instance-batch-request-status.item.get", "patron.settings.all" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-patron:6.5.0-SNAPSHOT.2062",
+      "dockerImage" : "folioci/mod-patron:6.5.0-SNAPSHOT.2073",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -6843,11 +6843,14 @@
       }
     }
   }, {
-    "id" : "folio_circulation-13.0.1099000000000538",
+    "id" : "folio_circulation-13.0.1099000000000541",
     "name" : "Circulation manager",
     "requires" : [ {
       "id" : "circulation",
       "version" : "9.0 10.0 11.0 12.0 13.0 14.0"
+    }, {
+      "id" : "circulation-settings",
+      "version" : "1.0"
     }, {
       "id" : "configuration",
       "version" : "2.0"
@@ -7775,11 +7778,11 @@
       }
     }
   }, {
-    "id" : "folio_users-13.1.1099000000001651",
+    "id" : "folio_users-13.1.1099000000001657",
     "name" : "User management",
     "requires" : [ {
       "id" : "users",
-      "version" : "16.5"
+      "version" : "16.6"
     }, {
       "id" : "users.settings",
       "version" : "2.0"
@@ -7845,8 +7848,11 @@
       "id" : "circulation-bff-loans",
       "version" : "1.6"
     }, {
-      "id" : "users-keycloak",
+      "id" : "circulation-settings",
       "version" : "1.0"
+    }, {
+      "id" : "users-keycloak",
+      "version" : "1.2"
     }, {
       "id" : "audit-user",
       "version" : "1.0"
@@ -7869,7 +7875,7 @@
       "permissionName" : "ui-users.view",
       "displayName" : "Users: Can view user profile",
       "description" : "Some subperms can be deleted later when submodules use modern permission names",
-      "subPermissions" : [ "module.users.enabled", "users-bl.collection.get", "users-bl.item.get", "addresstypes.collection.get", "users.collection.get", "users.item.get", "users-keycloak.collection.get", "users-keycloak.item.get", "usergroups.collection.get", "mod-settings.global.read.ui-users.custom-fields-label.manage", "mod-settings.global.read.ui-users.number-generator-settings.manage", "mod-settings.global.read.ui-tags.tags.manage", "mod-settings.entries.collection.get", "mod-settings.entries.item.get", "user-settings.custom-fields.collection.get", "user-settings.custom-fields.item.get", "user-settings.custom-fields.item.stats.get", "departments.collection.get", "departments.item.get", "circulation-storage.request-preferences.collection.get", "users.settings.collection.get", "users-keycloak.auth-users.item.get" ],
+      "subPermissions" : [ "module.users.enabled", "users-bl.collection.get", "users-bl.item.get", "addresstypes.collection.get", "users.collection.get", "users.item.get", "users-keycloak.collection.get", "users-keycloak.item.get", "usergroups.collection.get", "mod-settings.global.read.ui-users.custom-fields-label.manage", "mod-settings.global.read.ui-users.number-generator-settings.manage", "mod-settings.global.read.ui-tags.tags.manage", "mod-settings.entries.collection.get", "mod-settings.entries.item.get", "user-settings.custom-fields.collection.get", "user-settings.custom-fields.item.get", "user-settings.custom-fields.item.stats.get", "departments.collection.get", "departments.item.get", "circulation-storage.request-preferences.collection.get", "circulation.settings.collection.get", "users.settings.collection.get", "users-keycloak.auth-users.item.get" ],
       "visible" : true
     }, {
       "permissionName" : "ui-users.edit",
