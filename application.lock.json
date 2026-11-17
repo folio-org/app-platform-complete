@@ -1,12 +1,12 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011392",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011393",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011392",
+  "version" : "3.4.0-SNAPSHOT.100200000011393",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-calendar-4.1.0-SNAPSHOT.2194",
-    "name" : "mod-calendar",
-    "version" : "4.1.0-SNAPSHOT.2194"
+    "id" : "mod-courses-1.6.0-SNAPSHOT.2027",
+    "name" : "mod-courses",
+    "version" : "1.6.0-SNAPSHOT.2027"
   }, {
     "id" : "mod-graphql-1.15.2000543",
     "name" : "mod-graphql",
@@ -44,13 +44,13 @@
     "name" : "mod-remote-storage",
     "version" : "4.1.0-SNAPSHOT.2125"
   }, {
+    "id" : "mod-calendar-4.1.0-SNAPSHOT.2194",
+    "name" : "mod-calendar",
+    "version" : "4.1.0-SNAPSHOT.2194"
+  }, {
     "id" : "mod-audit-3.1.0-SNAPSHOT.2291",
     "name" : "mod-audit",
     "version" : "3.1.0-SNAPSHOT.2291"
-  }, {
-    "id" : "mod-courses-1.6.0-SNAPSHOT.2015",
-    "name" : "mod-courses",
-    "version" : "1.6.0-SNAPSHOT.2015"
   }, {
     "id" : "mod-pubsub-2.18.0-SNAPSHOT.2039",
     "name" : "mod-pubsub",
@@ -5380,7 +5380,7 @@
       }
     }
   }, {
-    "id" : "mod-courses-1.6.0-SNAPSHOT.2015",
+    "id" : "mod-courses-1.6.0-SNAPSHOT.2027",
     "name" : "Courses Storage Module",
     "requires" : [ {
       "id" : "item-storage",
@@ -6041,7 +6041,7 @@
       "subPermissions" : [ "course-reserves-storage.terms.write", "course-reserves-storage.courselistings.write", "course-reserves-storage.roles.write", "course-reserves-storage.departments.write", "course-reserves-storage.course-types.write", "course-reserves-storage.processing-statuses.write", "course-reserves-storage.copyright-statuses.write", "course-reserves-storage.courses.write", "course-reserves-storage.reserves.write" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-courses:1.6.0-SNAPSHOT.2015",
+      "dockerImage" : "folioci/mod-courses:1.6.0-SNAPSHOT.2027",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
