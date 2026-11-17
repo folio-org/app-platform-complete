@@ -4,9 +4,9 @@
   "version" : "2.5.31",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-ncip-1.16.3",
-    "name" : "mod-ncip",
-    "version" : "1.16.3"
+    "id" : "mod-data-export-5.3.1",
+    "name" : "mod-data-export",
+    "version" : "5.3.1"
   }, {
     "id" : "mod-graphql-1.13.1",
     "name" : "mod-graphql",
@@ -59,10 +59,6 @@
     "id" : "mod-patron-6.3.6",
     "name" : "mod-patron",
     "version" : "6.3.6"
-  }, {
-    "id" : "mod-data-export-5.3.0",
-    "name" : "mod-data-export",
-    "version" : "5.3.0"
   }, {
     "id" : "mod-data-export-spring-3.5.2",
     "name" : "mod-data-export-spring",
@@ -143,6 +139,10 @@
     "id" : "mod-kb-ebsco-java-6.0.2",
     "name" : "mod-kb-ebsco-java",
     "version" : "6.0.2"
+  }, {
+    "id" : "mod-ncip-1.16.3",
+    "name" : "mod-ncip",
+    "version" : "1.16.3"
   }, {
     "id" : "mod-inventory-update-4.1.0",
     "name" : "mod-inventory-update",
@@ -8951,7 +8951,7 @@
       } ]
     }
   }, {
-    "id" : "mod-data-export-5.3.0",
+    "id" : "mod-data-export-5.3.1",
     "name" : "Data Export Module",
     "requires" : [ {
       "id" : "source-storage-source-records",
@@ -9040,16 +9040,6 @@
     }, {
       "id" : "permissions",
       "version" : "5.6"
-    } ],
-    "optional" : [ {
-      "id" : "consortia",
-      "version" : "1.1"
-    }, {
-      "id" : "permissions-users",
-      "version" : "1.0"
-    }, {
-      "id" : "users-keycloak",
-      "version" : "1.0"
     } ],
     "provides" : [ {
       "id" : "data-export",
@@ -9214,16 +9204,26 @@
       "handlers" : [ {
         "methods" : [ "POST" ],
         "pathPattern" : "/data-export/expire-jobs",
-        "modulePermissions" : [ ],
         "unit" : "hour",
-        "delay" : "6"
+        "delay" : "6",
+        "modulePermissions" : [ ]
       }, {
         "methods" : [ "POST" ],
         "pathPattern" : "/data-export/clean-up-files",
-        "modulePermissions" : [ ],
         "unit" : "hour",
-        "delay" : "24"
+        "delay" : "24",
+        "modulePermissions" : [ ]
       } ]
+    } ],
+    "optional" : [ {
+      "id" : "consortia",
+      "version" : "1.1"
+    }, {
+      "id" : "permissions-users",
+      "version" : "1.0"
+    }, {
+      "id" : "users-keycloak",
+      "version" : "1.0"
     } ],
     "permissionSets" : [ {
       "permissionName" : "data-export.export.post",
@@ -9345,18 +9345,8 @@
       "visible" : false
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "${artifactId}:${version}",
-      "dockerPull" : false,
-      "dockerArgs" : {
-        "HostConfig" : {
-          "Memory" : 542293850,
-          "PortBindings" : {
-            "8081/tcp" : [ {
-              "HostPort" : "%p"
-            } ]
-          }
-        }
-      },
+      "dockerImage" : "folioorg/mod-data-export:5.3.1",
+      "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
         "value" : "-XX:MaxRAMPercentage=66.0"
@@ -9384,7 +9374,17 @@
       }, {
         "name" : "DB_MAXPOOLSIZE",
         "value" : "10"
-      } ]
+      } ],
+      "dockerArgs" : {
+        "HostConfig" : {
+          "Memory" : 542293850,
+          "PortBindings" : {
+            "8081/tcp" : [ {
+              "HostPort" : "%p"
+            } ]
+          }
+        }
+      }
     }
   }, {
     "id" : "mod-data-export-spring-3.5.2",
