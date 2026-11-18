@@ -1,12 +1,16 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011393",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011396",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011393",
+  "version" : "3.4.0-SNAPSHOT.100200000011396",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-courses-1.6.0-SNAPSHOT.2027",
-    "name" : "mod-courses",
-    "version" : "1.6.0-SNAPSHOT.2027"
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2575",
+    "name" : "mod-circulation",
+    "version" : "24.6.0-SNAPSHOT.2575"
+  }, {
+    "id" : "mod-pubsub-2.18.0-SNAPSHOT.2060",
+    "name" : "mod-pubsub",
+    "version" : "2.18.0-SNAPSHOT.2060"
   }, {
     "id" : "mod-graphql-1.15.2000543",
     "name" : "mod-graphql",
@@ -15,10 +19,6 @@
     "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2407",
     "name" : "mod-circulation-storage",
     "version" : "17.6.0-SNAPSHOT.2407"
-  }, {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2540",
-    "name" : "mod-circulation",
-    "version" : "24.6.0-SNAPSHOT.2540"
   }, {
     "id" : "mod-feesfines-19.5.0-SNAPSHOT.2100",
     "name" : "mod-feesfines",
@@ -52,9 +52,9 @@
     "name" : "mod-audit",
     "version" : "3.1.0-SNAPSHOT.2291"
   }, {
-    "id" : "mod-pubsub-2.18.0-SNAPSHOT.2039",
-    "name" : "mod-pubsub",
-    "version" : "2.18.0-SNAPSHOT.2039"
+    "id" : "mod-courses-1.6.0-SNAPSHOT.2027",
+    "name" : "mod-courses",
+    "version" : "1.6.0-SNAPSHOT.2027"
   }, {
     "id" : "mod-copycat-1.10.0-SNAPSHOT.2040",
     "name" : "mod-copycat",
@@ -69,6 +69,10 @@
     "version" : "3.12.0-SNAPSHOT.2035"
   } ],
   "uiModules" : [ {
+    "id" : "folio_myprofile-11.1.1099000000000241",
+    "name" : "folio_myprofile",
+    "version" : "11.1.1099000000000241"
+  }, {
     "id" : "folio_servicepoints-9.0.1099000000000099",
     "name" : "folio_servicepoints",
     "version" : "9.0.1099000000000099"
@@ -124,10 +128,6 @@
     "id" : "folio_handler-stripes-registry-3.2.1099000000000166",
     "name" : "folio_handler-stripes-registry",
     "version" : "3.2.1099000000000166"
-  }, {
-    "id" : "folio_myprofile-11.1.1099000000000231",
-    "name" : "folio_myprofile",
-    "version" : "11.1.1099000000000231"
   }, {
     "id" : "folio_users-13.1.1099000000001657",
     "name" : "folio_users",
@@ -1206,7 +1206,7 @@
       }
     }
   }, {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2540",
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2575",
     "name" : "Circulation Module",
     "requires" : [ {
       "id" : "loan-storage",
@@ -2316,7 +2316,7 @@
       "visible" : false
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-circulation:24.6.0-SNAPSHOT.2540",
+      "dockerImage" : "folioci/mod-circulation:24.6.0-SNAPSHOT.2575",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -6083,7 +6083,7 @@
       }
     }
   }, {
-    "id" : "mod-pubsub-2.18.0-SNAPSHOT.2039",
+    "id" : "mod-pubsub-2.18.0-SNAPSHOT.2060",
     "name" : "Pubsub",
     "requires" : [ {
       "id" : "users",
@@ -6314,7 +6314,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-pubsub:2.18.0-SNAPSHOT.2039",
+      "dockerImage" : "folioci/mod-pubsub:2.18.0-SNAPSHOT.2060",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -6358,6 +6358,27 @@
       }, {
         "name" : "SYSTEM_USER_PASSWORD",
         "value" : "pubsub"
+      }, {
+        "name" : "DELIVERY_RETRY_NUMBER",
+        "value" : "5"
+      }, {
+        "name" : "DELIVERY_RETRY_DELAY_MS",
+        "value" : "1000"
+      }, {
+        "name" : "HTTP_RESPONSE_TIMEOUT_MS",
+        "value" : "60000"
+      }, {
+        "name" : "HTTP_POOL_WAIT_TIMEOUT_MS",
+        "value" : "10000"
+      }, {
+        "name" : "HTTP_IDLE_TIMEOUT_SECONDS",
+        "value" : "60"
+      }, {
+        "name" : "HTTP_MAX_POOL_SIZE",
+        "value" : "100"
+      }, {
+        "name" : "HTTP_MAX_WAIT_QUEUE_SIZE",
+        "value" : "1000"
       } ],
       "dockerArgs" : {
         "HostConfig" : {
@@ -7728,7 +7749,7 @@
       }
     }
   }, {
-    "id" : "folio_myprofile-11.1.1099000000000231",
+    "id" : "folio_myprofile-11.1.1099000000000241",
     "name" : "My profile",
     "requires" : [ {
       "id" : "settings",
