@@ -1,12 +1,12 @@
 {
-  "id" : "app-platform-complete-3.3.22",
+  "id" : "app-platform-complete-3.3.23",
   "name" : "app-platform-complete",
-  "version" : "3.3.22",
+  "version" : "3.3.23",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-calendar-4.0.2",
-    "name" : "mod-calendar",
-    "version" : "4.0.2"
+    "id" : "mod-pubsub-2.17.1",
+    "name" : "mod-pubsub",
+    "version" : "2.17.1"
   }, {
     "id" : "mod-graphql-1.15.2",
     "name" : "mod-graphql",
@@ -44,6 +44,10 @@
     "name" : "mod-remote-storage",
     "version" : "4.0.2"
   }, {
+    "id" : "mod-calendar-4.0.2",
+    "name" : "mod-calendar",
+    "version" : "4.0.2"
+  }, {
     "id" : "mod-audit-3.0.1",
     "name" : "mod-audit",
     "version" : "3.0.1"
@@ -51,10 +55,6 @@
     "id" : "mod-courses-1.6.0",
     "name" : "mod-courses",
     "version" : "1.6.0"
-  }, {
-    "id" : "mod-pubsub-2.17.0",
-    "name" : "mod-pubsub",
-    "version" : "2.17.0"
   }, {
     "id" : "mod-copycat-1.9.2",
     "name" : "mod-copycat",
@@ -6023,7 +6023,7 @@
       }
     }
   }, {
-    "id" : "mod-pubsub-2.17.0",
+    "id" : "mod-pubsub-2.17.1",
     "name" : "Pubsub",
     "requires" : [ {
       "id" : "users",
@@ -6254,7 +6254,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioorg/mod-pubsub:2.17.0",
+      "dockerImage" : "folioorg/mod-pubsub:2.17.1",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
