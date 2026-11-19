@@ -1,16 +1,12 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011396",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011399",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011396",
+  "version" : "3.4.0-SNAPSHOT.100200000011399",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2575",
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2582",
     "name" : "mod-circulation",
-    "version" : "24.6.0-SNAPSHOT.2575"
-  }, {
-    "id" : "mod-pubsub-2.18.0-SNAPSHOT.2060",
-    "name" : "mod-pubsub",
-    "version" : "2.18.0-SNAPSHOT.2060"
+    "version" : "24.6.0-SNAPSHOT.2582"
   }, {
     "id" : "mod-graphql-1.15.2000543",
     "name" : "mod-graphql",
@@ -56,6 +52,10 @@
     "name" : "mod-courses",
     "version" : "1.6.0-SNAPSHOT.2027"
   }, {
+    "id" : "mod-pubsub-2.18.0-SNAPSHOT.2060",
+    "name" : "mod-pubsub",
+    "version" : "2.18.0-SNAPSHOT.2060"
+  }, {
     "id" : "mod-copycat-1.10.0-SNAPSHOT.2040",
     "name" : "mod-copycat",
     "version" : "1.10.0-SNAPSHOT.2040"
@@ -69,10 +69,6 @@
     "version" : "3.12.0-SNAPSHOT.2035"
   } ],
   "uiModules" : [ {
-    "id" : "folio_myprofile-11.1.1099000000000241",
-    "name" : "folio_myprofile",
-    "version" : "11.1.1099000000000241"
-  }, {
     "id" : "folio_servicepoints-9.0.1099000000000099",
     "name" : "folio_servicepoints",
     "version" : "9.0.1099000000000099"
@@ -128,6 +124,10 @@
     "id" : "folio_handler-stripes-registry-3.2.1099000000000166",
     "name" : "folio_handler-stripes-registry",
     "version" : "3.2.1099000000000166"
+  }, {
+    "id" : "folio_myprofile-11.1.1099000000000241",
+    "name" : "folio_myprofile",
+    "version" : "11.1.1099000000000241"
   }, {
     "id" : "folio_users-13.1.1099000000001657",
     "name" : "folio_users",
@@ -1206,7 +1206,7 @@
       }
     }
   }, {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2575",
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2582",
     "name" : "Circulation Module",
     "requires" : [ {
       "id" : "loan-storage",
@@ -1441,7 +1441,7 @@
       } ]
     }, {
       "id" : "circulation",
-      "version" : "14.9",
+      "version" : "14.10",
       "handlers" : [ {
         "methods" : [ "POST" ],
         "pathPattern" : "/circulation/check-out-by-barcode",
@@ -1469,6 +1469,12 @@
         "methods" : [ "POST" ],
         "pathPattern" : "/circulation/renew-by-id",
         "permissionsRequired" : [ "circulation.renew-by-id.post" ],
+        "modulePermissions" : [ "circulation.renew-loan.all" ]
+      }, {
+        "methods" : [ "POST" ],
+        "pathPattern" : "/circulation/bulk-renew-open-loans",
+        "permissionsRequired" : [ "circulation.bulk-renew-open-loans.post" ],
+        "permissionsDesired" : [ "circulation.override-patron-block.post", "circulation.override-renewal-block.post" ],
         "modulePermissions" : [ "circulation.renew-loan.all" ]
       }, {
         "methods" : [ "POST" ],
@@ -1849,6 +1855,10 @@
       "displayName" : "circulation - renew loan using id",
       "description" : "renew a loan using IDs for item and loanee"
     }, {
+      "permissionName" : "circulation.bulk-renew-open-loans.post",
+      "displayName" : "circulation - bulk renew open loans",
+      "description" : "trigger bulk renewal of currently open loans"
+    }, {
       "permissionName" : "circulation.pickup-by-barcode-for-use-at-location.post",
       "displayName" : "circulation - pick up from hold shelf for use at location",
       "description" : "pick up item of an existing loan from hold shelf for use at location (i.e. in reading room)"
@@ -2105,7 +2115,7 @@
       "permissionName" : "circulation.all",
       "displayName" : "circulation - all permissions",
       "description" : "Entire set of permissions needed to use the circulation",
-      "subPermissions" : [ "circulation.check-out-by-barcode.post", "circulation.check-in-by-barcode.post", "circulation.renew-by-barcode.post", "circulation.renew-by-id.post", "circulation.hold-by-barcode-for-use-at-location.post", "circulation.pickup-by-barcode-for-use-at-location.post", "circulation.loans.collection.get", "circulation.loans.item.get", "circulation.loans.item.post", "circulation.loans.item.put", "circulation.loans.item.delete", "circulation.loans.collection.delete", "circulation.loans.change-due-date.post", "circulation.loans.add-info.post", "circulation.loans.claim-item-returned.post", "circulation.loans.declare-claimed-returned-item-as-missing.post", "circulation.rules.put", "circulation.rules.get", "circulation.rules.loan-policy.get", "circulation.rules.loan-policy-all.get", "circulation.rules.request-policy.get", "circulation.rules.request-policy-all.get", "circulation.rules.notice-policy.get", "circulation.rules.notice-policy-all.get", "circulation.requests.collection.get", "circulation.requests.item.get", "circulation.requests.item.post", "circulation.requests.item.put", "circulation.requests.item.delete", "circulation.requests.item.move.post", "circulation.requests.collection.delete", "circulation.requests.queue-instance.collection.get", "circulation.requests.queue-item.collection.get", "circulation.requests.queue.reorder.collection.post", "circulation.requests.instances.item.post", "circulation.requests.hold-shelf-clearance-report.get", "circulation.requests.allowed-service-points.get", "circulation.inventory.items-in-transit-report.get", "circulation.pick-slips.get", "circulation.search-slips.get", "circulation.items-by-instance.get" ]
+      "subPermissions" : [ "circulation.check-out-by-barcode.post", "circulation.check-in-by-barcode.post", "circulation.renew-by-barcode.post", "circulation.renew-by-id.post", "circulation.bulk-renew-open-loans.post", "circulation.hold-by-barcode-for-use-at-location.post", "circulation.pickup-by-barcode-for-use-at-location.post", "circulation.loans.collection.get", "circulation.loans.item.get", "circulation.loans.item.post", "circulation.loans.item.put", "circulation.loans.item.delete", "circulation.loans.collection.delete", "circulation.loans.change-due-date.post", "circulation.loans.add-info.post", "circulation.loans.claim-item-returned.post", "circulation.loans.declare-claimed-returned-item-as-missing.post", "circulation.rules.put", "circulation.rules.get", "circulation.rules.loan-policy.get", "circulation.rules.loan-policy-all.get", "circulation.rules.request-policy.get", "circulation.rules.request-policy-all.get", "circulation.rules.notice-policy.get", "circulation.rules.notice-policy-all.get", "circulation.requests.collection.get", "circulation.requests.item.get", "circulation.requests.item.post", "circulation.requests.item.put", "circulation.requests.item.delete", "circulation.requests.item.move.post", "circulation.requests.collection.delete", "circulation.requests.queue-instance.collection.get", "circulation.requests.queue-item.collection.get", "circulation.requests.queue.reorder.collection.post", "circulation.requests.instances.item.post", "circulation.requests.hold-shelf-clearance-report.get", "circulation.requests.allowed-service-points.get", "circulation.inventory.items-in-transit-report.get", "circulation.pick-slips.get", "circulation.search-slips.get", "circulation.items-by-instance.get" ]
     }, {
       "permissionName" : "modperms.circulation.requests.hold-shelf-clearance-report.get",
       "displayName" : "module permissions for one op",
@@ -2316,7 +2326,7 @@
       "visible" : false
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-circulation:24.6.0-SNAPSHOT.2575",
+      "dockerImage" : "folioci/mod-circulation:24.6.0-SNAPSHOT.2582",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
