@@ -1,12 +1,12 @@
 {
-  "id" : "app-platform-complete-3.3.23",
+  "id" : "app-platform-complete-3.3.24",
   "name" : "app-platform-complete",
-  "version" : "3.3.23",
+  "version" : "3.3.24",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-pubsub-2.17.1",
+    "id" : "mod-pubsub-2.17.2",
     "name" : "mod-pubsub",
-    "version" : "2.17.1"
+    "version" : "2.17.2"
   }, {
     "id" : "mod-graphql-1.15.2",
     "name" : "mod-graphql",
@@ -6023,7 +6023,7 @@
       }
     }
   }, {
-    "id" : "mod-pubsub-2.17.1",
+    "id" : "mod-pubsub-2.17.2",
     "name" : "Pubsub",
     "requires" : [ {
       "id" : "users",
@@ -6254,7 +6254,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioorg/mod-pubsub:2.17.1",
+      "dockerImage" : "folioorg/mod-pubsub:2.17.2",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
