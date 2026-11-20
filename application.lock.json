@@ -1,20 +1,16 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011402",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011403",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011402",
+  "version" : "3.4.0-SNAPSHOT.100200000011403",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2244",
-    "name" : "mod-data-export-spring",
-    "version" : "3.7.0-SNAPSHOT.2244"
+    "id" : "mod-courses-1.6.0-SNAPSHOT.2036",
+    "name" : "mod-courses",
+    "version" : "1.6.0-SNAPSHOT.2036"
   }, {
-    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2442",
-    "name" : "mod-data-export-worker",
-    "version" : "3.6.0-SNAPSHOT.2442"
-  }, {
-    "id" : "mod-calendar-4.1.0-SNAPSHOT.2200",
-    "name" : "mod-calendar",
-    "version" : "4.1.0-SNAPSHOT.2200"
+    "id" : "mod-ncip-1.18.0-SNAPSHOT.2069",
+    "name" : "mod-ncip",
+    "version" : "1.18.0-SNAPSHOT.2069"
   }, {
     "id" : "mod-graphql-1.15.2000543",
     "name" : "mod-graphql",
@@ -40,17 +36,25 @@
     "name" : "mod-patron",
     "version" : "6.5.0-SNAPSHOT.2073"
   }, {
+    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2244",
+    "name" : "mod-data-export-spring",
+    "version" : "3.7.0-SNAPSHOT.2244"
+  }, {
+    "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2442",
+    "name" : "mod-data-export-worker",
+    "version" : "3.6.0-SNAPSHOT.2442"
+  }, {
     "id" : "mod-remote-storage-4.1.0-SNAPSHOT.2125",
     "name" : "mod-remote-storage",
     "version" : "4.1.0-SNAPSHOT.2125"
   }, {
+    "id" : "mod-calendar-4.1.0-SNAPSHOT.2200",
+    "name" : "mod-calendar",
+    "version" : "4.1.0-SNAPSHOT.2200"
+  }, {
     "id" : "mod-audit-3.1.0-SNAPSHOT.2291",
     "name" : "mod-audit",
     "version" : "3.1.0-SNAPSHOT.2291"
-  }, {
-    "id" : "mod-courses-1.6.0-SNAPSHOT.2027",
-    "name" : "mod-courses",
-    "version" : "1.6.0-SNAPSHOT.2027"
   }, {
     "id" : "mod-pubsub-2.18.0-SNAPSHOT.2060",
     "name" : "mod-pubsub",
@@ -59,10 +63,6 @@
     "id" : "mod-copycat-1.10.0-SNAPSHOT.2040",
     "name" : "mod-copycat",
     "version" : "1.10.0-SNAPSHOT.2040"
-  }, {
-    "id" : "mod-ncip-1.18.0-SNAPSHOT.2051",
-    "name" : "mod-ncip",
-    "version" : "1.18.0-SNAPSHOT.2051"
   }, {
     "id" : "mod-user-import-3.12.0-SNAPSHOT.2035",
     "name" : "mod-user-import",
@@ -5390,7 +5390,7 @@
       }
     }
   }, {
-    "id" : "mod-courses-1.6.0-SNAPSHOT.2027",
+    "id" : "mod-courses-1.6.0-SNAPSHOT.2036",
     "name" : "Courses Storage Module",
     "requires" : [ {
       "id" : "item-storage",
@@ -6051,7 +6051,7 @@
       "subPermissions" : [ "course-reserves-storage.terms.write", "course-reserves-storage.courselistings.write", "course-reserves-storage.roles.write", "course-reserves-storage.departments.write", "course-reserves-storage.course-types.write", "course-reserves-storage.processing-statuses.write", "course-reserves-storage.copyright-statuses.write", "course-reserves-storage.courses.write", "course-reserves-storage.reserves.write" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-courses:1.6.0-SNAPSHOT.2027",
+      "dockerImage" : "folioci/mod-courses:1.6.0-SNAPSHOT.2036",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -6538,7 +6538,7 @@
       }
     }
   }, {
-    "id" : "mod-ncip-1.18.0-SNAPSHOT.2051",
+    "id" : "mod-ncip-1.18.0-SNAPSHOT.2069",
     "name" : "NCIP",
     "requires" : [ {
       "id" : "instance-types",
@@ -6624,7 +6624,7 @@
       "subPermissions" : [ "ncip.post", "ncip.ncipconfigcheck.get", "mod-settings.global.read.mod-ncip" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-ncip:1.18.0-SNAPSHOT.2051",
+      "dockerImage" : "folioci/mod-ncip:1.18.0-SNAPSHOT.2069",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
