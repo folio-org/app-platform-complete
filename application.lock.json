@@ -4,9 +4,9 @@
   "version" : "2.5.32",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-inventory-storage-29.0.24",
-    "name" : "mod-inventory-storage",
-    "version" : "29.0.24"
+    "id" : "mod-courses-1.4.14",
+    "name" : "mod-courses",
+    "version" : "1.4.14"
   }, {
     "id" : "mod-graphql-1.13.1",
     "name" : "mod-graphql",
@@ -15,6 +15,10 @@
     "id" : "mod-quick-marc-7.0.1",
     "name" : "mod-quick-marc",
     "version" : "7.0.1"
+  }, {
+    "id" : "mod-inventory-storage-29.0.24",
+    "name" : "mod-inventory-storage",
+    "version" : "29.0.24"
   }, {
     "id" : "mod-circulation-storage-17.4.6",
     "name" : "mod-circulation-storage",
@@ -83,10 +87,6 @@
     "id" : "mod-audit-2.11.5",
     "name" : "mod-audit",
     "version" : "2.11.5"
-  }, {
-    "id" : "mod-courses-1.4.13",
-    "name" : "mod-courses",
-    "version" : "1.4.13"
   }, {
     "id" : "mod-source-record-storage-5.10.16",
     "name" : "mod-source-record-storage",
@@ -10947,8 +10947,30 @@
       } ]
     }
   }, {
-    "id" : "mod-courses-1.4.13",
+    "id" : "mod-courses-1.4.14",
     "name" : "Courses Storage Module",
+    "requires" : [ {
+      "id" : "item-storage",
+      "version" : "7.0 8.0 9.0 10.0 11.0"
+    }, {
+      "id" : "instance-storage",
+      "version" : "7.2 8.0 9.0 10.0 11.0"
+    }, {
+      "id" : "holdings-storage",
+      "version" : "2.0 3.0 4.0 5.0 6.0 7.0 8.0"
+    }, {
+      "id" : "locations",
+      "version" : "2.0 3.0"
+    }, {
+      "id" : "service-points",
+      "version" : "3.0"
+    }, {
+      "id" : "loan-types",
+      "version" : "2.0"
+    }, {
+      "id" : "users",
+      "version" : "16.0"
+    } ],
     "provides" : [ {
       "id" : "course-reserves-storage",
       "version" : "0.3",
@@ -11248,28 +11270,6 @@
         "methods" : [ "GET", "DELETE" ],
         "pathPattern" : "/_/tenant/{id}"
       } ]
-    } ],
-    "requires" : [ {
-      "id" : "item-storage",
-      "version" : "7.0 8.0 9.0 10.0"
-    }, {
-      "id" : "instance-storage",
-      "version" : "7.2 8.0 9.0 10.0 11.0"
-    }, {
-      "id" : "holdings-storage",
-      "version" : "2.0 3.0 4.0 5.0 6.0 7.0 8.0"
-    }, {
-      "id" : "locations",
-      "version" : "2.0 3.0"
-    }, {
-      "id" : "service-points",
-      "version" : "3.0"
-    }, {
-      "id" : "loan-types",
-      "version" : "2.0"
-    }, {
-      "id" : "users",
-      "version" : "16.0"
     } ],
     "permissionSets" : [ {
       "permissionName" : "course-reserves-storage.courselistings.collection.get",
@@ -11608,18 +11608,8 @@
       "subPermissions" : [ "course-reserves-storage.terms.write", "course-reserves-storage.courselistings.write", "course-reserves-storage.roles.write", "course-reserves-storage.departments.write", "course-reserves-storage.course-types.write", "course-reserves-storage.processing-statuses.write", "course-reserves-storage.copyright-statuses.write", "course-reserves-storage.courses.write", "course-reserves-storage.reserves.write" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "mod-courses:1.4.13",
-      "dockerPull" : false,
-      "dockerArgs" : {
-        "HostConfig" : {
-          "Memory" : 357913941,
-          "PortBindings" : {
-            "8081/tcp" : [ {
-              "HostPort" : "%p"
-            } ]
-          }
-        }
-      },
+      "dockerImage" : "folioorg/mod-courses:1.4.14",
+      "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
         "value" : "-XX:MaxRAMPercentage=66.0"
@@ -11647,7 +11637,17 @@
       }, {
         "name" : "DB_MAXPOOLSIZE",
         "value" : "5"
-      } ]
+      } ],
+      "dockerArgs" : {
+        "HostConfig" : {
+          "Memory" : 357913941,
+          "PortBindings" : {
+            "8081/tcp" : [ {
+              "HostPort" : "%p"
+            } ]
+          }
+        }
+      }
     }
   }, {
     "id" : "mod-source-record-storage-5.10.16",
