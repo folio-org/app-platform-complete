@@ -1,16 +1,12 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011403",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011412",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011403",
+  "version" : "3.4.0-SNAPSHOT.100200000011412",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-courses-1.6.0-SNAPSHOT.2036",
-    "name" : "mod-courses",
-    "version" : "1.6.0-SNAPSHOT.2036"
-  }, {
-    "id" : "mod-ncip-1.18.0-SNAPSHOT.2069",
-    "name" : "mod-ncip",
-    "version" : "1.18.0-SNAPSHOT.2069"
+    "id" : "mod-audit-3.1.0-SNAPSHOT.2294",
+    "name" : "mod-audit",
+    "version" : "3.1.0-SNAPSHOT.2294"
   }, {
     "id" : "mod-graphql-1.15.2000543",
     "name" : "mod-graphql",
@@ -52,9 +48,9 @@
     "name" : "mod-calendar",
     "version" : "4.1.0-SNAPSHOT.2200"
   }, {
-    "id" : "mod-audit-3.1.0-SNAPSHOT.2291",
-    "name" : "mod-audit",
-    "version" : "3.1.0-SNAPSHOT.2291"
+    "id" : "mod-courses-1.6.0-SNAPSHOT.2036",
+    "name" : "mod-courses",
+    "version" : "1.6.0-SNAPSHOT.2036"
   }, {
     "id" : "mod-pubsub-2.18.0-SNAPSHOT.2060",
     "name" : "mod-pubsub",
@@ -63,6 +59,10 @@
     "id" : "mod-copycat-1.10.0-SNAPSHOT.2040",
     "name" : "mod-copycat",
     "version" : "1.10.0-SNAPSHOT.2040"
+  }, {
+    "id" : "mod-ncip-1.18.0-SNAPSHOT.2069",
+    "name" : "mod-ncip",
+    "version" : "1.18.0-SNAPSHOT.2069"
   }, {
     "id" : "mod-user-import-3.12.0-SNAPSHOT.2035",
     "name" : "mod-user-import",
@@ -4990,7 +4990,7 @@
       }
     }
   }, {
-    "id" : "mod-audit-3.1.0-SNAPSHOT.2291",
+    "id" : "mod-audit-3.1.0-SNAPSHOT.2294",
     "name" : "Audit Module",
     "requires" : [ {
       "id" : "users",
@@ -5336,7 +5336,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-audit:3.1.0-SNAPSHOT.2291",
+      "dockerImage" : "folioci/mod-audit:3.1.0-SNAPSHOT.2294",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
