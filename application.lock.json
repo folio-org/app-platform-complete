@@ -4,9 +4,9 @@
   "version" : "2.5.32",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-courses-1.4.14",
+    "id" : "mod-courses-1.4.15",
     "name" : "mod-courses",
-    "version" : "1.4.14"
+    "version" : "1.4.15"
   }, {
     "id" : "mod-graphql-1.13.1",
     "name" : "mod-graphql",
@@ -10947,7 +10947,7 @@
       } ]
     }
   }, {
-    "id" : "mod-courses-1.4.14",
+    "id" : "mod-courses-1.4.15",
     "name" : "Courses Storage Module",
     "requires" : [ {
       "id" : "item-storage",
@@ -11608,7 +11608,7 @@
       "subPermissions" : [ "course-reserves-storage.terms.write", "course-reserves-storage.courselistings.write", "course-reserves-storage.roles.write", "course-reserves-storage.departments.write", "course-reserves-storage.course-types.write", "course-reserves-storage.processing-statuses.write", "course-reserves-storage.copyright-statuses.write", "course-reserves-storage.courses.write", "course-reserves-storage.reserves.write" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioorg/mod-courses:1.4.14",
+      "dockerImage" : "folioorg/mod-courses:1.4.15",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
