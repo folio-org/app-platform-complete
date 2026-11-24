@@ -1,12 +1,12 @@
 {
-  "id" : "app-platform-complete-3.3.25",
+  "id" : "app-platform-complete-3.3.26",
   "name" : "app-platform-complete",
-  "version" : "3.3.25",
+  "version" : "3.3.26",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-audit-3.0.2",
-    "name" : "mod-audit",
-    "version" : "3.0.2"
+    "id" : "mod-calendar-4.0.4",
+    "name" : "mod-calendar",
+    "version" : "4.0.4"
   }, {
     "id" : "mod-graphql-1.15.2",
     "name" : "mod-graphql",
@@ -44,9 +44,9 @@
     "name" : "mod-remote-storage",
     "version" : "4.0.2"
   }, {
-    "id" : "mod-calendar-4.0.2",
-    "name" : "mod-calendar",
-    "version" : "4.0.2"
+    "id" : "mod-audit-3.0.2",
+    "name" : "mod-audit",
+    "version" : "3.0.2"
   }, {
     "id" : "mod-courses-1.6.0",
     "name" : "mod-courses",
@@ -4764,7 +4764,7 @@
       }
     }
   }, {
-    "id" : "mod-calendar-4.0.2",
+    "id" : "mod-calendar-4.0.4",
     "name" : "Calendar for Service Point Opening Hours",
     "requires" : [ ],
     "provides" : [ {
@@ -4883,7 +4883,7 @@
       "visible" : false
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioorg/mod-calendar:4.0.2",
+      "dockerImage" : "folioorg/mod-calendar:4.0.4",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
