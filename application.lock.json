@@ -1,9 +1,13 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011415",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011416",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011415",
+  "version" : "3.4.0-SNAPSHOT.100200000011416",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2590",
+    "name" : "mod-circulation",
+    "version" : "24.6.0-SNAPSHOT.2590"
+  }, {
     "id" : "mod-graphql-1.15.2000543",
     "name" : "mod-graphql",
     "version" : "1.15.2000543"
@@ -11,10 +15,6 @@
     "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2422",
     "name" : "mod-circulation-storage",
     "version" : "17.6.0-SNAPSHOT.2422"
-  }, {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2582",
-    "name" : "mod-circulation",
-    "version" : "24.6.0-SNAPSHOT.2582"
   }, {
     "id" : "mod-feesfines-19.5.0-SNAPSHOT.2100",
     "name" : "mod-feesfines",
@@ -69,10 +69,6 @@
     "version" : "3.12.0-SNAPSHOT.2035"
   } ],
   "uiModules" : [ {
-    "id" : "folio_requests-13.1.1099000000000512",
-    "name" : "folio_requests",
-    "version" : "13.1.1099000000000512"
-  }, {
     "id" : "folio_servicepoints-9.0.1099000000000099",
     "name" : "folio_servicepoints",
     "version" : "9.0.1099000000000099"
@@ -116,6 +112,10 @@
     "id" : "folio_courses-7.1.1099000000000233",
     "name" : "folio_courses",
     "version" : "7.1.1099000000000233"
+  }, {
+    "id" : "folio_requests-13.1.1099000000000512",
+    "name" : "folio_requests",
+    "version" : "13.1.1099000000000512"
   }, {
     "id" : "folio_tenant-settings-11.0.1099000000000312",
     "name" : "folio_tenant-settings",
@@ -1218,7 +1218,7 @@
       }
     }
   }, {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2582",
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2590",
     "name" : "Circulation Module",
     "requires" : [ {
       "id" : "loan-storage",
@@ -2338,7 +2338,7 @@
       "visible" : false
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-circulation:24.6.0-SNAPSHOT.2582",
+      "dockerImage" : "folioci/mod-circulation:24.6.0-SNAPSHOT.2590",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
