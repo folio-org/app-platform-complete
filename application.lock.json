@@ -1,12 +1,12 @@
 {
-  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011416",
+  "id" : "app-platform-complete-3.4.0-SNAPSHOT.100200000011418",
   "name" : "app-platform-complete",
-  "version" : "3.4.0-SNAPSHOT.100200000011416",
+  "version" : "3.4.0-SNAPSHOT.100200000011418",
   "description" : "Application comprised of most Folio modules not present in app-platform-minimal",
   "modules" : [ {
-    "id" : "mod-circulation-24.6.0-SNAPSHOT.2590",
-    "name" : "mod-circulation",
-    "version" : "24.6.0-SNAPSHOT.2590"
+    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2249",
+    "name" : "mod-data-export-spring",
+    "version" : "3.7.0-SNAPSHOT.2249"
   }, {
     "id" : "mod-graphql-1.15.2000543",
     "name" : "mod-graphql",
@@ -15,6 +15,10 @@
     "id" : "mod-circulation-storage-17.6.0-SNAPSHOT.2422",
     "name" : "mod-circulation-storage",
     "version" : "17.6.0-SNAPSHOT.2422"
+  }, {
+    "id" : "mod-circulation-24.6.0-SNAPSHOT.2590",
+    "name" : "mod-circulation",
+    "version" : "24.6.0-SNAPSHOT.2590"
   }, {
     "id" : "mod-feesfines-19.5.0-SNAPSHOT.2100",
     "name" : "mod-feesfines",
@@ -27,10 +31,6 @@
     "id" : "mod-patron-6.5.0-SNAPSHOT.2073",
     "name" : "mod-patron",
     "version" : "6.5.0-SNAPSHOT.2073"
-  }, {
-    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2244",
-    "name" : "mod-data-export-spring",
-    "version" : "3.7.0-SNAPSHOT.2244"
   }, {
     "id" : "mod-data-export-worker-3.6.0-SNAPSHOT.2442",
     "name" : "mod-data-export-worker",
@@ -3847,7 +3847,7 @@
       }
     }
   }, {
-    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2244",
+    "id" : "mod-data-export-spring-3.7.0-SNAPSHOT.2249",
     "name" : "Data Export Spring Module",
     "requires" : [ {
       "id" : "login",
@@ -4099,7 +4099,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-data-export-spring:3.7.0-SNAPSHOT.2244",
+      "dockerImage" : "folioci/mod-data-export-spring:3.7.0-SNAPSHOT.2249",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
